@@ -2,18 +2,21 @@
 sidebar_position: 1
 ---
 
-# 简介
+# Mind elixir？
 
-Mind elixir is a free open source mind map core.
+思维导图（Mind Map）是一种革命性的思考工具，它能够帮助人们处理信息、产生新想法、加强记忆、充分利用休闲时间以及改进工作方式。思维导图由托尼·布赞（Tony Buzan）在 20 世纪 60 年代中期发明，其核心原理是模仿大脑神经元的结构，通过分支从中心向外扩展，形成一种与大脑工作方式相呼应的复杂图表。这种图表通过分支和关联模式来捕捉信息，使信息以一种创造性和高效的方式呈现。
 
-- Lightweight
-- High performance
-- Framework agnostic
-- Pluginable
-- Export as SVG or PNG
-- Build-in drag and drop / node edit plugin
-- Summarize nodes
-- Bulk operations supported
-- Undo / Redo
-- Efficient shortcuts
-- Styling your node with CSS
+而 Mind elixir 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
+
+- 体积小，高速安装
+- 高性能节点操作
+- 不与前端框架绑定
+- 可使用插件
+- 输出 SVG 或 PNG
+- 节点多选与拖拽功能
+- 多节点总结
+- 节点关联
+- 支持实用快捷键操作
+- 撤销与重做
+- 可以自定义主题，让你的节点更多彩
+- 支持一定的 CSS 样式修改
