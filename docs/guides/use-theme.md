@@ -63,7 +63,7 @@ let mind = new MindElixir(options)
 
 :::
 
-你可以在 Codepen 中试着调整 Mind Elixir 主题：
+你可以在 Codepen 中试着调整 Mind Elixir 主题，下面的例子把主题的调色板设置为蓝色：
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/oNVwZJw">
