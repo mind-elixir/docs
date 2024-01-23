@@ -7,7 +7,6 @@ import Heading from '@theme/Heading'
 
 import styles from './index.module.css'
 import { useEffect } from 'react'
-import MindElixir from 'mind-elixir'
 import example from 'mind-elixir/example'
 
 function HomepageHeader() {
@@ -35,13 +34,13 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   useEffect(() => {
-    let options = {
-      el: '#map', // or HTMLDivElement
-    }
-
-    let mind = new MindElixir(options)
-
-    mind.init(example)
+    import('mind-elixir').then((MindElixir) => {
+      let options = {
+        el: '#map', // or HTMLDivElement
+      }
+      let mind = new MindElixir.default(options)
+      mind.init(example)
+    })
   })
   return (
     <Layout
