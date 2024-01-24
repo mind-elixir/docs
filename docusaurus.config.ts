@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'Mind Elixir',
-  tagline: '开源思维导图框架',
+  tagline: '开源 JavaScript 思维导图框架',
   favicon: 'img/mind-elixir-logo.png',
 
   // Set the production url of your site here
@@ -57,7 +57,13 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    metadata: [
+      {
+        name: 'keywords',
+        content:
+          'mindmap, JavaScript, framework, library, mind-elixir, mindmap, mindmap editor, mindmap viewer, mindmap visualization',
+      },
+    ],
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Mind Elixir',
@@ -77,6 +83,11 @@ const config: Config = {
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://mind-elixir.com',
+          label: 'Mind Elixir Cloud',
           position: 'right',
         },
         {
@@ -135,6 +146,15 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-Z1C98YX0V0',
+        anonymizeIP: true,
+      },
+    ],
+  ],
 }
 
 export default config
