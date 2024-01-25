@@ -45,3 +45,9 @@ mind.init(data)
   }
 </style>
 ```
+
+## 刷新思维导图
+
+```js
+mind.refresh(data)
+```

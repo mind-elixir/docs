@@ -28,6 +28,8 @@ mind.bus.addListener('expandNode', (node) => {
 })
 ```
 
+最常用的是监听 `operation` 事件，所有节点操作都会归到这个事件。
+
 ## 节点操作守卫
 
 节点操作守卫就如其名，他能拦截某个节点操作的操作行为。

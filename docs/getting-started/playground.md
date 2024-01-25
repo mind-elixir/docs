@@ -1,6 +1,6 @@
 # Playground
 
-欢迎大家在如 Codepen、codesandbox、[stackblitz](https://stackblitz.com/) 等站点试用 Mind Elixir
+欢迎大家在如 [Codepen](https://codepen.io/pen?template=GReMQPX)、codesandbox、[stackblitz](https://stackblitz.com/) 等站点试用 Mind Elixir
 
 - Vanilla JS - https://codepen.io/ssshooter/pen/OJrJowN
 - React - https://codesandbox.io/s/mind-elixir-3-x-react-18-x-vy9fcq
