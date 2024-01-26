@@ -1,0 +1,67 @@
+---
+sidebar_position: 2
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+# Installation and Usage
+
+A brief guide on installing and using Mind Elixir.
+
+## Installation
+
+```bash
+npm i mind-elixir -S
+```
+
+## Usage
+
+```js
+import MindElixir from 'mind-elixir'
+
+let options = {
+  el: '#map', // or HTMLDivElement
+}
+
+let mind = new MindElixir(options)
+
+// create new map data
+const data = MindElixir.new('new topic')
+mind.init(data)
+```
+
+For additional configurations, refer to the [complete options](../api/mind-elixir.options.md).
+
+:::warning
+
+Mind Elixir is set to a height of 100% of the container when mounted, so be sure to set the container height to avoid display issues.
+
+:::
+
+```html
+<div id="map"></div>
+<style>
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+</style>
+```
+
+## Mind Map Operations
+
+<MindElixirShowcase />
+
+## Data Export and Update
+
+After user interactions with the mind map, you can use the `getData` method to retrieve the latest data. See [Data Export](./data-export.md) for the data format.
+
+```js
+const data = mind.getData()
+```
+
+If you need to refresh the current mind map with an entirely new set of data, you can use the `refresh` method.
+
+```js
+mind.refresh(data)
+``` 

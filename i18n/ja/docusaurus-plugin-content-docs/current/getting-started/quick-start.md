@@ -46,10 +46,18 @@ mind.init(data)
 </style>
 ```
 
-## 刷新思维导图
+## 对思维导图的操作
+
+## 数据导出与更新
+
+用户对思维导图的操作后，可以调用 `getData` 方法获取最新数据。数据格式可见[数据导出](./data-export.md)。
+
+```js
+const data = mind.getData()
+```
+
+有需要使用整组新数据刷新当前思维导图时，可以使用 `refresh` 方法。
 
 ```js
 mind.refresh(data)
 ```
-
-数据格式可见[数据导出](./data-export.md)。

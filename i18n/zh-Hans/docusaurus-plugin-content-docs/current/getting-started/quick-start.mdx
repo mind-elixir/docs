@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
 # 安装与使用
 
 简单介绍 Mind Elixir 的安装与使用。
@@ -46,10 +48,20 @@ mind.init(data)
 </style>
 ```
 
-## 刷新思维导图
+## 对思维导图的操作
+
+<MindElixirShowcase />
+
+## 数据导出与更新
+
+用户对思维导图的操作后，数据随即改变，可以调用 `getData` 方法获取最新数据。数据格式可见[数据导出](./data-export.md)。
+
+```js
+const data = mind.getData()
+```
+
+有需要使用整组新数据刷新当前思维导图时，可以使用 `refresh` 方法。
 
 ```js
 mind.refresh(data)
 ```
-
-数据格式可见[数据导出](./data-export.md)。

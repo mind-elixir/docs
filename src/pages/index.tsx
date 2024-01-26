@@ -6,8 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import Heading from '@theme/Heading'
 
 import styles from './index.module.css'
-import { useEffect } from 'react'
-import example from 'mind-elixir/example'
+import MindElixirShowcase from '../components/MindElixirShowcase'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
@@ -33,28 +32,13 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
-  useEffect(() => {
-    import('mind-elixir').then((MindElixir) => {
-      let options = {
-        el: '#map', // or HTMLDivElement
-      }
-      let mind = new MindElixir.default(options)
-      mind.init(example)
-    })
-  })
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       {/* <HomepageHeader /> */}
-      <div
-        id="map"
-        style={{
-          height: '800px',
-          width: '100%',
-        }}
-      ></div>
+      <MindElixirShowcase />
       {/* <main>
         <HomepageFeatures />
       </main> */}
