@@ -2,27 +2,27 @@
 sidebar_position: 1
 ---
 
-# 什么是 Mind elixir？
+# What is Mind Elixir?
 
 ![](/img/screenshot.png)
 
-**Mind elixir** 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
+**Mind Elixir** is an open-source JavaScript mind mapping framework designed to leverage the advantages of mind maps. It comes with the following features:
 
-- 体积小，高速安装
-- 高性能节点操作
-- 不与前端框架绑定
-- 可使用插件
-- 输出 SVG 或 PNG
-- 节点多选与拖拽功能
-- 多节点总结
-- 节点关联
-- 支持实用快捷键操作
-- 撤销与重做
-- 可以自定义主题，让你的节点更多彩
-- 支持一定的 CSS 样式修改
+- Zero dependencies, fast installation (33kb after gzip)
+- High-performance node operations
+- Not tied to any frontend framework
+- Support for plugins
+- Output in SVG or PNG format
+- Multi-node selection and drag-and-drop functionality
+- Multi-node summarization
+- Node linking
+- Support for practical keyboard shortcuts
+- Undo and redo functionality
+- Customizable themes to add vibrancy to your nodes
+- Support for certain CSS style modifications
 
 :::info
 
-思维导图（Mind Map）是一种革命性的思考工具，它能够帮助人们处理信息、产生新想法、加强记忆、充分利用休闲时间以及改进工作方式。其核心原理是模仿大脑神经元的结构，通过分支从中心向外扩展，形成一种与大脑工作方式相呼应的复杂图表。这种图表通过分支和关联模式来捕捉信息，使信息以一种创造性和高效的方式呈现。
+Mind Mapping is a revolutionary thinking tool that helps individuals process information, generate new ideas, enhance memory, make the most of leisure time, and improve work methods. Its core principle involves mimicking the structure of neurons in the brain, branching out from the center to form a complex chart that resonates with the brain's working mechanism. This chart captures information through branching and association patterns, presenting information in a creative and efficient manner.
 
 :::
