@@ -14,6 +14,7 @@ export default function MindElixirShowcase(): JSX.Element {
   return (
     <div
       id="map"
+      className="me-showcase"
       style={{
         height: '800px',
         width: '100%',
