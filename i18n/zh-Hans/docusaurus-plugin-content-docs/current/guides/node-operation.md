@@ -1,14 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 节点操作
 
-如果使用了节点操作方法，请注意大版本更新时可能会造成接口改动。
+本节讲述如何监听和拦截节点操作，同时介绍编程式操作节点的方式。
 
 ## 订阅节点操作
 
-原则上不推荐直接编程式操作节点，而是使用[快捷键](./shortcuts.md)和拖拽等方式直接输入，再通过订阅操作事件响应节点操作。
+我们可以通过订阅操作事件订阅用户对思维导图的操作。十分简单，就像监听 DOM 事件那样：
 
 ```js
 mind.bus.addListener('operation', (operation) => {
@@ -34,7 +34,7 @@ mind.bus.addListener('expandNode', (node) => {
 })
 ```
 
-最常用的是监听 `operation` 事件，所有节点操作都会归到这个事件。
+其中最常用的是 `operation` 事件，所有节点操作都会归到这个事件中。
 
 ## 节点操作守卫
 
@@ -65,3 +65,56 @@ let mind = new MindElixir({
 ```
 
 我们可以通过 `async` 操作守卫可以拦截需要异步获取信息才能决定是否通过的情况。
+
+## 编程式节点操作
+
+Mind Elixir 提供直接操作节点的 API：
+
+```ts
+{
+  insertSibling: (
+    this: MindElixirInstance,
+    type: 'before' | 'after',
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  insertParent: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  addChild: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  copyNode: (this: MindElixirInstance, node: Topic, to: Topic) => Promise<void>
+  copyNodes: (this: MindElixirInstance, tpcs: Topic[], to: Topic) =>
+    Promise<void>
+  moveUpNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  moveDownNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNodes: (this: MindElixirInstance, tpcs: Topic[]) => Promise<void>
+  moveNodeIn: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeBefore: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeAfter: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+}
+```
+
+使用 `insertSibling` 举例，如果需要对 id 为 `d6e5f69edb6336c3` 的节点新增一个兄弟节点，我们可以这么做：
+
+```js
+mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
+```
+
+:::tip
+
+`MindElixir.E` 是一个通过节点 id 获取节点 DOM 对象的方法，在 Mind Elixir 中很多 API 会使用类型为 `Topic` 的 DOM 对象，都可以使用 `E` 函数获取。
+
+:::

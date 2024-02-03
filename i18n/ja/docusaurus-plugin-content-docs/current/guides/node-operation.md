@@ -1,25 +1,25 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# 节点操作
+# ノード操作
 
-如果使用了节点操作方法，请注意大版本更新时可能会造成接口改动。
+このセクションでは、ノード操作をリッスンし、インターセプトする方法について説明し、同時にプログラムでノードを操作する方法も紹介します。
 
-## 订阅节点操作
+## ノード操作の購読
 
-原则上不推荐直接编程式操作节点，而是使用[快捷键](./shortcuts.md)和拖拽等方式直接输入，再通过订阅操作事件响应节点操作。
+マインドマップ上のユーザー操作に購読して、操作イベントをリッスンすることができます。これは DOM イベントをリッスンするのと同じくらい簡単です。
 
 ```js
 mind.bus.addListener('operation', (operation) => {
   console.log(operation)
   // return {
-  //   name: action name,
-  //   obj: target object
+  //   name: アクション名,
+  //   obj: 対象オブジェクト
   // }
 
   // name: [insertSibling|addChild|removeNode|beginEdit|finishEdit]
-  // obj: target
+  // obj: 対象
 
   // name: moveNode
   // obj: {from:target1,to:target2}
@@ -34,13 +34,13 @@ mind.bus.addListener('expandNode', (node) => {
 })
 ```
 
-最常用的是监听 `operation` 事件，所有节点操作都会归到这个事件。
+最も一般的に使用されるイベントは `operation` イベントで、これにはすべてのノード操作が含まれます。
 
-## 节点操作守卫
+## ノード操作ガード
 
-节点操作守卫就如其名，他能拦截某个节点操作的操作行为。
+その名の通り、ノード操作ガードは特定のノード操作の挙動をインターセプトできます。
 
-在配置中设定 `before` 对象，属性名为对应节点操作，值为一个返回布尔值（或由 Promise 包裹的布尔值）的函数。
+構成で `before` オブジェクトを設定し、プロパティ名はノード操作に対応し、値はブール値（または Promise で包まれたブール値）を返す関数です。
 
 ```js
 let mind = new MindElixir({
@@ -64,4 +64,57 @@ let mind = new MindElixir({
 })
 ```
 
-我们可以通过 `async` 操作守卫可以拦截需要异步获取信息才能决定是否通过的情况。
+`async` を使用することで、非同期情報が必要な場合に進行するかどうかを決定できるようになります。
+
+## プログラムでのノード操作
+
+Mind Elixir はノードを直接操作するための API を提供しています。
+
+```ts
+{
+  insertSibling: (
+    this: MindElixirInstance,
+    type: 'before' | 'after',
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  insertParent: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  addChild: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  copyNode: (this: MindElixirInstance, node: Topic, to: Topic) => Promise<void>
+  copyNodes: (this: MindElixirInstance, tpcs: Topic[], to: Topic) =>
+    Promise<void>
+  moveUpNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  moveDownNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNodes: (this: MindElixirInstance, tpcs: Topic[]) => Promise<void>
+  moveNodeIn: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeBefore: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeAfter: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+}
+```
+
+例えば、`insertSibling` を使用して、id が `d6e5f69edb6336c3` のノードに兄弟ノードを追加したい場合、次のようにします。
+
+```js
+mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
+```
+
+:::tip
+
+`MindElixir.E` は、id によってノードの DOM オブジェクトを取得するメソッドです。Mind Elixir の多くの API では DOM オブジェクトの型として `Topic` を使用し、それらを取得するために `E` 関数を使用できます。
+
+:::

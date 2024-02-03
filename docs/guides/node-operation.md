@@ -1,14 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# 节点操作
+# Node Operations
 
-如果使用了节点操作方法，请注意大版本更新时可能会造成接口改动。
+This section discusses how to listen to and intercept node operations, while also introducing ways to programmatically manipulate nodes.
 
-## 订阅节点操作
+## Subscribe to Node Operations
 
-原则上不推荐直接编程式操作节点，而是使用[快捷键](./shortcuts.md)和拖拽等方式直接输入，再通过订阅操作事件响应节点操作。
+We can subscribe to user operations on the mind map by listening to operation events. It's as simple as listening to DOM events:
 
 ```js
 mind.bus.addListener('operation', (operation) => {
@@ -34,13 +34,13 @@ mind.bus.addListener('expandNode', (node) => {
 })
 ```
 
-最常用的是监听 `operation` 事件，所有节点操作都会归到这个事件。
+The most commonly used event is the `operation` event, which encompasses all node operations.
 
-## 节点操作守卫
+## Node Operation Guards
 
-节点操作守卫就如其名，他能拦截某个节点操作的操作行为。
+As the name suggests, node operation guards can intercept the behavior of a specific node operation.
 
-在配置中设定 `before` 对象，属性名为对应节点操作，值为一个返回布尔值（或由 Promise 包裹的布尔值）的函数。
+In the configuration, set the `before` object, where the property names correspond to node operations, and the values are functions returning a boolean (or a boolean wrapped in a Promise).
 
 ```js
 let mind = new MindElixir({
@@ -64,4 +64,57 @@ let mind = new MindElixir({
 })
 ```
 
-我们可以通过 `async` 操作守卫可以拦截需要异步获取信息才能决定是否通过的情况。
+With `async` in operation guards, we can intercept cases where asynchronous information is needed to decide whether to proceed.
+
+## Programmatic Node Operations
+
+Mind Elixir provides an API for directly manipulating nodes:
+
+```ts
+{
+  insertSibling: (
+    this: MindElixirInstance,
+    type: 'before' | 'after',
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  insertParent: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  addChild: (
+    this: MindElixirInstance,
+    el?: Topic | undefined,
+    node?: NodeObj | undefined
+  ) => Promise<void>
+  copyNode: (this: MindElixirInstance, node: Topic, to: Topic) => Promise<void>
+  copyNodes: (this: MindElixirInstance, tpcs: Topic[], to: Topic) =>
+    Promise<void>
+  moveUpNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  moveDownNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNode: (this: MindElixirInstance, el?: Topic | undefined) =>
+    Promise<void>
+  removeNodes: (this: MindElixirInstance, tpcs: Topic[]) => Promise<void>
+  moveNodeIn: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeBefore: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+  moveNodeAfter: (this: MindElixirInstance, from: Topic[], to: Topic) =>
+    Promise<void>
+}
+```
+
+For example, using `insertSibling`, if we want to add a sibling node to the node with the id `d6e5f69edb6336c3`, we can do the following:
+
+```js
+mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
+```
+
+:::tip
+
+`MindElixir.E` is a method to obtain the DOM object of a node by its id. Many APIs in Mind Elixir use `Topic` as the type for DOM objects, and you can use the `E` function to get them.
+
+:::
