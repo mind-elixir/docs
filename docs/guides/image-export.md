@@ -1,33 +1,35 @@
-# 图片导出
+# Image Export
 
-Mind Elixir 导出图片的方法有两个：
+Mind Elixir provides two APIs for exporting images:
 
 ```ts
 exportSvg: (
   this: MindElixirInstance,
-  noForiegnObject?: boolean,
+  noForeignObject?: boolean,
   injectCss?: string | undefined
 ) => Blob
 exportPng: (
   this: MindElixirInstance,
-  noForiegnObject?: boolean,
+  noForeignObject?: boolean,
   injectCss?: string | undefined
 ) => Promise<Blob | null>
 ```
 
-如果把 `noForiegnObject` 导出时不会使用 foreignObject。不是所有的 SVG 渲染器都支持 foreignObject，因此在特定场景无法使用导出的 SVG 时可以禁用 foreignObject，其代价是节点内的超长文本无法换行。（当然也可以选择直接输出 png）
+If `noForeignObject` is set to `true`, the SVG export will not use foreignObject.
 
-`injectCss` 是针对使用 `dangerouslySetInnerHTML` 时，如果需要补充自定义节点内的 CSS，可以直接传入 CSS 字符串。传入的 CSS 会添加到生成的 SVG 内，保证渲染不与浏览器相差太远。
+Not all SVG renderers support foreignObject, so in specific scenarios where exported SVG cannot be used, you can disable foreignObject. The trade-off is that long text inside nodes won't wrap. (Alternatively, you can choose to directly output PNG.)
+
+`injectCss` is for cases using `dangerouslySetInnerHTML`. If you need to supplement custom CSS inside nodes, you can directly pass a CSS string. The provided CSS will be added to the generated SVG, ensuring the rendering is not too different from the browser.
 
 :::warning
 
-使用 `dangerouslySetInnerHTML` 时，因为可以注入任意内容，可能会出现导出算法无法兼顾的情况，此时导出图片可能会出现无法预料的问题。
+When using `dangerouslySetInnerHTML`, as it allows injecting arbitrary content, there may be situations where the export algorithm cannot accommodate. In such cases, unexpected issues may arise when exporting images.
 
 :::
 
-## 实践
+## Practice
 
-以下是一个封装 `download` 函数的例子，其中 `style + katex` 是自定义 CSS 和 katex 的必要样式（具体内容参考[此链接](https://github.com/SSShooter/mind-elixir-core/blob/87bb57ff060a62f4c4c66cc57689af29da780393/src/dev.ts#L102)），如此传入输出函数即可使用输出 SVG 时样式正确。
+Here is an example of encapsulating a `download` function. In this example, `style + katex` represents the necessary styles for custom CSS and Katex (refer to [this link](https://github.com/SSShooter/mind-elixir-core/blob/87bb57ff060a62f4c4c66cc57689af29da780393/src/dev.ts#L102) for specific content). By passing this to the export functions, you can ensure correct styling when exporting SVG.
 
 ```js
 const download = (type) => {
