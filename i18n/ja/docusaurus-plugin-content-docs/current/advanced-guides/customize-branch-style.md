@@ -1,8 +1,8 @@
-# 自定义分支样式
+# カスタムブランチスタイル
 
-可以在配置中传入 `generateMainBranch` 和 `generateSubBranch`，修改主分支（连接根节点到主节点的分支）和次分支（连接主节点与其后代的分支）的样式。
+`generateMainBranch` と `generateSubBranch` に `generateMainBranch` と `generateSubBranch` を設定して、メインブランチ（ルートノードとメインノードを接続するブランチ）とサブブランチ（メインノードとその子孫を接続するブランチ）のスタイルを変更できます。
 
-下面将分别给出 `generateMainBranch` 和 `generateSubBranch` 的例子。
+以下に `generateMainBranch` と `generateSubBranch` の例を示します。
 
 ## generateMainBranch
 
@@ -42,9 +42,9 @@ function generateMainBranch({
 }
 ```
 
-输入参数中的 `direction` 代表节点位于左侧还是右侧，值为 `'lhs'|'rhs'`。`containerHeight` 为思维导图的高度。
+入力パラメータの `direction` はノードが左側にあるか右側にあるかを示し、値は `'lhs'|'rhs'` です。`containerHeight` はマインドマップの高さです。
 
-`pT`、`pL`、`pH`、`pW` 分别代表父节点的 top、left、height、width 数值；`cT, cL, cW, cH` 同理，对应子节点的相应数值。
+`pT`、`pL`、`pH`、`pW` は親ノードの top、left、height、width の値をそれぞれ表し、`cT, cL, cW, cH` は同様に、対応する子ノードの対応する値です。
 
 ## generateSubBranch
 
@@ -84,17 +84,17 @@ function generateSubBranch({
   }
 
   if (y2 < y1 + 50 && y2 > y1 - 50) {
-    // draw straight line if the distance is between +-50
+    // 距離が+-50の範囲内の場合、直線を描画
     return `M ${x1} ${y1} H ${xMiddle} V ${y2} H ${x2}`
   } else if (y2 >= y1) {
-    // child bottom lower than parent
+    // 子ボトムが親より低い場合
     return `M ${x1} ${y1} H ${xMiddle} V ${
       y2 - TURNPOINT_R
     } A ${TURNPOINT_R} ${TURNPOINT_R} 0 0 ${x1 > x2 ? 1 : 0} ${
       x1 > x2 ? xMiddle - TURNPOINT_R : xMiddle + TURNPOINT_R
     } ${y2} H ${x2}`
   } else {
-    // child bottom higher than parent
+    // 子ボトムが親より高い場合
     return `M ${x1} ${y1} H ${xMiddle} V ${
       y2 + TURNPOINT_R
     } A ${TURNPOINT_R} ${TURNPOINT_R} 0 0 ${x1 > x2 ? 0 : 1} ${
@@ -104,9 +104,11 @@ function generateSubBranch({
 }
 ```
 
-`isFirst` 参数代表是否为主分支之外的第一层分支，一些样式的第一层分支或许会有特殊的处理方法，因而添加此参数。
+`isFirst` パラメータは、メインブランチ以外の最初のレベルのブランチかどうかを示し、いくつかのスタイルの最初のレベルのブランチには特別な処理方法があるかもしれないため、このパラメータが追加されています。他のパラメータの意味は `generateMainBranch` の対応するパラメータと同じですので、詳細は省略します。
 
-## 自由尝试
+## 自由に試す
+
+以下の例では、すべてのブランチが角丸に設定されています。`generateMainBranch` と `generateSubBranch` を調整して、最も満足のいく曲線を得るために自由に調整できます。
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/ssshooter/embed/WNmZMmq?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/WNmZMmq">

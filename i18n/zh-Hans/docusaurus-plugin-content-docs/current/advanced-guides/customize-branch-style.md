@@ -84,7 +84,7 @@ function generateSubBranch({
   }
 
   if (y2 < y1 + 50 && y2 > y1 - 50) {
-    // draw straight line if the distance is between +-50
+    // draw a straight line if the distance is between +-50
     return `M ${x1} ${y1} H ${xMiddle} V ${y2} H ${x2}`
   } else if (y2 >= y1) {
     // child bottom lower than parent
@@ -104,9 +104,11 @@ function generateSubBranch({
 }
 ```
 
-`isFirst` 参数代表是否为主分支之外的第一层分支，一些样式的第一层分支或许会有特殊的处理方法，因而添加此参数。
+`isFirst` 参数代表是否为主分支之外的第一层分支，一些样式的第一层分支或许会有特殊的处理方法，因而添加此参数。其他参数的含义与 `generateMainBranch` 的对应参数一致因此不赘述。
 
 ## 自由尝试
+
+以下例子中，分支都被设置为圆角，你可以继续自由调整 `generateMainBranch` 和 `generateSubBranch` 得到你最满意的曲线。
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/ssshooter/embed/WNmZMmq?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/WNmZMmq">
