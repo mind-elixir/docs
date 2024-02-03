@@ -4,17 +4,17 @@ sidebar_position: 2
 
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
-# Installation and Usage
+# 安装与使用
 
-A brief guide on installing and using Mind Elixir.
+简单介绍 Mind Elixir 的安装与使用。
 
-## Installation
+## 安装
 
-```bash
+```
 npm i mind-elixir -S
 ```
 
-## Usage
+## 使用
 
 ```js
 import MindElixir from 'mind-elixir'
@@ -30,11 +30,11 @@ const data = MindElixir.new('new topic')
 mind.init(data)
 ```
 
-For additional configurations, refer to the [complete options](../api/mind-elixir.options.md).
+其他设定可查阅[完整配置](../api/mind-elixir.options.md)
 
 :::warning
 
-Mind Elixir is set to a height of 100% of the container when mounted, so be sure to set the container height to avoid display issues.
+因为 Mind Elixir 挂载时高度为容器高度的 100%，所以请务必设置容器高度，否则造成显示异常。
 
 :::
 
@@ -48,20 +48,27 @@ Mind Elixir is set to a height of 100% of the container when mounted, so be sure
 </style>
 ```
 
-## Mind Map Operations
+## 对思维导图的操作
+
+- 操作与常见思维导图应用基本一致
+- 快捷键可见[快捷键章节](../guides/shortcuts.md)
+- 鼠标左键可拖动节点，或多选节点
+- 鼠标右键可拖动画布
+- 右键选择“连接”后再点击另一个节点，可连接两个节点
 
 <MindElixirShowcase />
 
-## Data Export and Update
 
-After user interactions with the mind map, you can use the `getData` method to retrieve the latest data. See [Data Export](./data-export.md) for the data format.
+## 数据导出与更新
+
+用户对思维导图的操作后，数据随即改变，可以调用 `getData` 方法获取最新数据。数据格式可见[数据导出](../guides/data-export.md)。
 
 ```js
 const data = mind.getData()
 ```
 
-If you need to refresh the current mind map with an entirely new set of data, you can use the `refresh` method.
+有需要使用整组新数据刷新当前思维导图时，可以使用 `refresh` 方法。
 
 ```js
 mind.refresh(data)
-``` 
+```

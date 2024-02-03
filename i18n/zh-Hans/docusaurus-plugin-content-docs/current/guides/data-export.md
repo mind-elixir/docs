@@ -1,6 +1,6 @@
 # 数据导出
 
-Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（不推荐）。
+Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
 
 ```js
 // data export

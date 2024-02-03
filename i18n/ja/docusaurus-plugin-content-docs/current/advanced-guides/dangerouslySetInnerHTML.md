@@ -25,7 +25,7 @@ const data = {
 
 :::warning
 
-使用 `dangerouslySetInnerHTML` 后，输出图片功能可能存在无法预料的问题
+使用 `dangerouslySetInnerHTML` 后，输出图片功能可能存在无法预料的问题。存在自定义样式时注意传入 `injectCss`。
 
 :::
 
@@ -55,4 +55,4 @@ const data = {
 }
 ```
 
-我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类的防范 XSS 攻击的库对数据进行处理。
+我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类的库防范 XSS 攻击的库对数据进行处理。
