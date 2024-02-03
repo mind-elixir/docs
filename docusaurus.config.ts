@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'Mind Elixir',
-  tagline: '开源 JavaScript 思维导图框架',
+  tagline: 'A Open Source JavaScript Mind Map Library',
   favicon: 'img/mind-elixir-logo.png',
 
   // Set the production url of your site here
