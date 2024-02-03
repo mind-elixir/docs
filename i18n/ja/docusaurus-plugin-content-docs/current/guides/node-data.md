@@ -1,31 +1,45 @@
-# 节点数据
+# ノードデータ
 
 ```typescript
 export type NodeObj = {
-  topic: string // 主题内同
-  id: Uid // 节点 ID（自动生成）
+  topic: string // トピック内容
+  id: Uid // ノードID（自動生成）
   style?: {
-    // 节点样式
+    // ノードのスタイル
     fontSize?: string
     color?: string
     background?: string
     fontWeight?: string
   }
-  children?: NodeObj[] // 子节点
-  tags?: string[] // 标签
-  icons?: string[] // 标记
-  hyperLink?: string // 超链接
-  expanded?: boolean // 是否展开
-  direction?: number // 节点方向（仅主节点生效）
-  root?: boolean // 是否根节点
+  children?: NodeObj[] // 子ノード
+  tags?: string[] // タグ
+  icons?: string[] // アイコン
+  hyperLink?: string // ハイパーリンク
+  expanded?: boolean // 展開されているかどうか
+  direction?: number // ノードの方向（メインノードのみ有効）
+  root?: boolean // ルートノードかどうか
   image?: {
-    // 添加图片到节点，添加图片时，必须填写宽高
-    url: string // 图片链接
+    // ノードに画像を追加する際は、幅と高さを指定する必要があります
+    url: string // 画像のリンク
     width: number
     height: number
   }
-  branchColor?: string // 此分支的颜色
-  parent?: NodeObj // 此节点的父节点对象（程序自动生成）
-  dangerouslySetInnerHTML?: string // 直接插入 html
+  branchColor?: string // このブランチの色
+  parent?: NodeObj // このノードの親ノードオブジェクト（プログラムによって自動生成）
+  dangerouslySetInnerHTML?: string // HTMLを直接挿入
 }
+```
+
+:::tip
+
+`image` プロパティを使用する場合、画像の幅と高さは必須です。これは `new Image()` を使用して取得できます。詳細な方法は[このリンク](https://stackoverflow.com/questions/623172/how-to-get-the-image-size-height-width-using-javascript)を参照してください。
+
+:::
+
+## 個別のノードの更新
+
+特定のノードを更新するには、`reshapeNode` を使用できます。前述の `E` 関数も使用でき、2 番目の引数には更新するノードのデータが含まれます：
+
+```js
+mind.reshapeNode(MindElixir.E('d6e5f69edb6336c3'), { style: { fontWeight } })
 ```
