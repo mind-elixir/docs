@@ -37,8 +37,8 @@ export default function Home(): JSX.Element {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      {/* <HomepageHeader /> */}
-      <MindElixirShowcase />
+      <MindElixirShowcase height={'500px'} />
+      <HomepageHeader />
       {/* <main>
         <HomepageFeatures />
       </main> */}

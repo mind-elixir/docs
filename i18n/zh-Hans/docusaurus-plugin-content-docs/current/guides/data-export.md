@@ -94,7 +94,7 @@ const data = {
 
 比较重要的部分是：
 
-- 节点数据 `nodeData`
+- 节点数据 `nodeData`，详见[节点数据](./node-data.md)
 - 关联节点连线数据 `arrows`
 - 多节点摘要数据 `summaries`
 - 主题数据 `theme`

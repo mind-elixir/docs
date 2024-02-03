@@ -1,7 +1,11 @@
 import { useEffect } from 'react'
 import example from 'mind-elixir/example'
 
-export default function MindElixirShowcase(): JSX.Element {
+export default function MindElixirShowcase({
+  height,
+}: {
+  height?: string
+}): JSX.Element {
   useEffect(() => {
     import('mind-elixir').then((MindElixir) => {
       let options = {
@@ -16,7 +20,7 @@ export default function MindElixirShowcase(): JSX.Element {
       id="map"
       className="me-showcase"
       style={{
-        height: '800px',
+        height: height || '800px',
         width: '100%',
       }}
     ></div>
