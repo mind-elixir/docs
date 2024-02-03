@@ -1,38 +1,42 @@
-# 数据导出
+---
+sidebar_position: 1
+---
 
-Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（不推荐）。
+# データのエクスポート
+
+Mind Elixir は3つのデータ出力フォーマットを提供しています：JavaScript オブジェクト、オブジェクトの文字列、markdown（非推奨、お勧めしません）。それぞれ以下の3つのAPIに対応しています：
 
 ```js
-// data export
-const data = mind.getData() // javascript object, see src/example.js
-mind.getDataString() // stringify object
+// データのエクスポート
+const data = mind.getData() // JavaScriptオブジェクト、src/example.jsを参照してください
+mind.getDataString() // オブジェクトの文字列化
 mind.getDataMd() // markdown
 ```
 
-`getData` 输出范例：
+`getData` の出力例：
 
 ```js
 const data = {
   nodeData: {
     id: 'd451a556d866ba7b',
-    topic: 'new topic',
+    topic: '新しいトピック',
     root: true,
     children: [
       {
-        topic: 'new node',
+        topic: '新しいノード',
         id: 'd451a6f027c33b1f',
         direction: 0,
         children: [
           {
-            topic: 'new node',
+            topic: '新しいノード',
             id: 'd451a724b7c10970',
           },
           {
-            topic: 'new node',
+            topic: '新しいノード',
             id: 'd451a77ca7348eae',
           },
           {
-            topic: 'new node',
+            topic: '新しいノード',
             id: 'd451a78e1ec7181c',
           },
         ],
@@ -42,7 +46,7 @@ const data = {
   arrows: [
     {
       id: 'd451a9149a1e3a15',
-      label: 'Custom Link',
+      label: 'カスタムリンク',
       from: 'd451a77ca7348eae',
       to: 'd451a78e1ec7181c',
       delta1: {
@@ -61,12 +65,12 @@ const data = {
       parent: 'd451a6f027c33b1f',
       start: 0,
       end: 0,
-      text: 'summary',
+      text: '要約',
     },
   ],
   direction: 2,
   theme: {
-    name: 'Latte',
+    name: 'ラテ',
     palette: [
       '#4968a3',
       '#3b88c4',
@@ -92,15 +96,15 @@ const data = {
 }
 ```
 
-比较重要的部分是：
+重要な部分は：
 
-- 节点数据 `nodeData`，详见[节点数据](./node-data.md)
-- 关联节点连线数据 `arrows`
-- 多节点摘要数据 `summaries`
-- 主题数据 `theme`
+- ノードデータ `nodeData`、詳細は[ノードデータ](./node-data.md)を参照
+- 関連ノードの接続データ `arrows`
+- 複数のノードの要約データ `summaries`
+- テーマデータ `theme`、詳細は[テーマの使用](./use-theme.md)を参照
 
 :::info
 
-输出的数据会默认包含当前主题，渲染时也会优先使用数据中的主题。如果需要按统一的主题渲染，可以在得到数据后手动清除 `theme` 字段。
+出力されたデータにはデフォルトで現在のテーマが含まれ、レンダリング時にもデータの中のテーマが優先されます。一貫したテーマでレンダリングが必要な場合は、データを取得した後に `theme` フィールドを手動でクリアすることができます。
 
 :::

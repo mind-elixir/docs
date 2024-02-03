@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # 数据导出
 
 Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
@@ -97,7 +101,7 @@ const data = {
 - 节点数据 `nodeData`，详见[节点数据](./node-data.md)
 - 关联节点连线数据 `arrows`
 - 多节点摘要数据 `summaries`
-- 主题数据 `theme`
+- 主题数据 `theme`，详见[使用主题](./use-theme.md)
 
 :::info
 

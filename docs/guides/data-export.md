@@ -1,15 +1,19 @@
-# 数据导出
+---
+sidebar_position: 1
+---
 
-Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
+# Data Export
+
+Mind Elixir provides three data export formats: JavaScript objects, object strings, and markdown (deprecated, not recommended). Corresponding to the following three APIs:
 
 ```js
 // data export
-const data = mind.getData() // javascript object, see src/example.js
+const data = mind.getData() // JavaScript object, see src/example.js
 mind.getDataString() // stringify object
 mind.getDataMd() // markdown
 ```
 
-`getData` 输出范例：
+The `getData` output example:
 
 ```js
 const data = {
@@ -92,15 +96,15 @@ const data = {
 }
 ```
 
-比较重要的部分是：
+Key parts to note are:
 
-- 节点数据 `nodeData`，详见[节点数据](./node-data.md)
-- 关联节点连线数据 `arrows`
-- 多节点摘要数据 `summaries`
-- 主题数据 `theme`
+- Node data `nodeData`, see [Node Data](./node-data.md)
+- Associated node connection data `arrows`
+- Multi-node summary data `summaries`
+- Theme data `theme`, see [Using Themes](./use-theme.md)
 
 :::info
 
-输出的数据会默认包含当前主题，渲染时也会优先使用数据中的主题。如果需要按统一的主题渲染，可以在得到数据后手动清除 `theme` 字段。
+The exported data will default to include the current theme, and during rendering, it will prioritize using the theme from the data. If you need to render with a consistent theme, you can manually remove the `theme` field after obtaining the data.
 
 :::
