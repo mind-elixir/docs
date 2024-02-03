@@ -1,27 +1,8 @@
-# 使用主题
+# テーマの使用
 
-## 默认主题
+## カスタムテーマ
 
-默认主题配色来自 [Catppuccin Theme](https://github.com/catppuccin/catppuccin)，我们可以通过 `MindElixir` 的静态属性获取默认主题。
-
-```js
-import MindElixir from 'mind-elixir'
-
-MindElixir.THEME = THEME
-MindElixir.DARK_THEME = DARK_THEME
-```
-
-Mind Elixir 在**实例化时**会根据系统当前配色偏好决定使用亮色主题或暗色主题。
-
-:::info
-
-Mind Elixir 本身没有监听系统配色偏好修改，换言之系统配色方案修改时 Mind Elixir 不会自动切换主题，相关功能请自行实现。
-
-:::
-
-## 自定义主题
-
-要使用自定义主题，只需要定义自己的 `theme` 传入 `options` 即可。其中 `palette` 是根节点到主要节点的连线，决定整个分支的颜色，Mind Elixir 会循环使用这个数组的颜色。`cssVar` 是其他主要的颜色选项，可以覆盖原本 css 的变量。
+カスタムテーマを使用するには、独自の `theme` を定義し、それを `options` に渡すだけです。`palette` はルートノードから主要ノードへの接続線であり、Mind Elixir はこの配列の色をループして使用します。`cssVar` は他の主要な色のオプションであり、元の CSS 変数をオーバーライドできます。
 
 ```js
 const theme = {
@@ -50,23 +31,47 @@ const theme = {
 }
 
 let options = {
-  el: '#map', // or HTMLDivElement
+  el: '#map', // または HTMLDivElement
   theme,
 }
 
 let mind = new MindElixir(options)
+
+// 初期化後にテーマを変更
+mind.changeTheme(theme)
 ```
 
 :::info
 
-完整配置可以参考[theme API 章节](../api/mind-elixir.theme.md)
+完全な構成は[theme API セクション](../api/mind-elixir.theme.md)を参照してください。
 
 :::
 
-你可以在 Codepen 中试着调整 Mind Elixir 主题，下面的例子把主题的调色板设置为蓝色：
+Codepen で Mind Elixir のテーマを調整する例を以下に示します。この例では、テーマの調色板を青色に設定しています：
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/oNVwZJw">
   Mind Elixir 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+## デフォルトのテーマ
+
+デフォルトのテーマのカラーリングは [Catppuccin Theme](https://github.com/catppuccin/catppuccin) から取得しています。
+
+デフォルトのテーマを使用する必要がある場合や、ライトモードとダークモードのテーマを切り替える必要がある場合、`MindElixir` の静的プロパティを使用してデフォルトのテーマを取得できます。
+
+```js
+import MindElixir from 'mind-elixir'
+
+MindElixir.THEME = THEME
+MindElixir.DARK_THEME = DARK_THEME
+```
+
+Mind Elixir は**インスタンス化時**に、システムの現在のカラープリファレンスに基づいてライトモードまたはダークモードのテーマを使用するかを決定します。
+
+:::info
+
+Mind Elixir 自体はシステムのカラープリファレンスの変更を監視しておらず、言い換えれば、システムのカラースキームが変更されたときに Mind Elixir は自動的にテーマを切り替えません。関連する機能は、`changeTheme`を使用して自分で実装してください。
+
+:::

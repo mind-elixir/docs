@@ -1,27 +1,8 @@
-# 使用主题
+# Theme Usage
 
-## 默认主题
+## Custom Theme
 
-默认主题配色来自 [Catppuccin Theme](https://github.com/catppuccin/catppuccin)，我们可以通过 `MindElixir` 的静态属性获取默认主题。
-
-```js
-import MindElixir from 'mind-elixir'
-
-MindElixir.THEME = THEME
-MindElixir.DARK_THEME = DARK_THEME
-```
-
-Mind Elixir 在**实例化时**会根据系统当前配色偏好决定使用亮色主题或暗色主题。
-
-:::info
-
-Mind Elixir 本身没有监听系统配色偏好修改，换言之系统配色方案修改时 Mind Elixir 不会自动切换主题，相关功能请自行实现。
-
-:::
-
-## 自定义主题
-
-要使用自定义主题，只需要定义自己的 `theme` 传入 `options` 即可。其中 `palette` 是根节点到主要节点的连线，决定整个分支的颜色，Mind Elixir 会循环使用这个数组的颜色。`cssVar` 是其他主要的颜色选项，可以覆盖原本 css 的变量。
+To use a custom theme, simply define your `theme` and pass it into the `options`. The `palette` determines the colors from the root node to the main nodes, influencing the entire branch in Mind Elixir. This array of colors will be cyclically used. `cssVar` includes other major color options, allowing you to override the original CSS variables.
 
 ```js
 const theme = {
@@ -55,18 +36,42 @@ let options = {
 }
 
 let mind = new MindElixir(options)
+
+// Change the theme after initialization
+mind.changeTheme(theme)
 ```
 
 :::info
 
-完整配置可以参考[theme API 章节](../api/mind-elixir.theme.md)
+For a complete configuration, refer to the [theme API section](../api/mind-elixir.theme.md).
 
 :::
 
-你可以在 Codepen 中试着调整 Mind Elixir 主题，下面的例子把主题的调色板设置为蓝色：
+You can experiment with adjusting the Mind Elixir theme in Codepen. The example below sets the theme's color palette to blue:
 
 <iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/oNVwZJw">
   Mind Elixir 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+## Default Theme
+
+The default theme color scheme is inspired by the [Catppuccin Theme](https://github.com/catppuccin/catppuccin).
+
+If you need to revert to the default theme or switch between light and dark themes, you can use the static properties of `MindElixir` to access the default themes.
+
+```js
+import MindElixir from 'mind-elixir'
+
+MindElixir.THEME = THEME
+MindElixir.DARK_THEME = DARK_THEME
+```
+
+Mind Elixir will determine whether to use the light or dark theme based on the system's current color preferences during **instantiation**.
+
+:::info
+
+Mind Elixir does not automatically switch themes when the system color preferences change. You need to implement this functionality manually using `changeTheme`.
+
+:::
