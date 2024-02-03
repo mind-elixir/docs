@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # TypeScript 支持
 
-Mind Elixir 使用 TypeScript 编写，天然支持 TypeScript。
+Mind Elixir 使用 TypeScript 编写，不用安装其他 npm 包，天然支持 TypeScript。
 
 ```ts
 import MindElixir, { MindElixirData, Options } from 'mind-elixir'

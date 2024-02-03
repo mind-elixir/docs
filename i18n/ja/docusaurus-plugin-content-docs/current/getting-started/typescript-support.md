@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# TypeScript 支持
+# TypeScript サポート
 
-Mind Elixir 使用 TypeScript 编写，天然支持 TypeScript。
+Mind ElixirはTypeScriptで書かれており、他のnpmパッケージのインストールは不要で、ネイティブでTypeScriptをサポートしています。
 
 ```ts
 import MindElixir, { MindElixirData, Options } from 'mind-elixir'

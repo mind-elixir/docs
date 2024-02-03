@@ -4,11 +4,11 @@ sidebar_position: 2
 
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
-# 安装与使用
+# インストールと使用
 
-简单介绍 Mind Elixir 的安装与使用。
+Mind Elixirのインストールと使用の簡単な紹介。
 
-## 安装
+## インストール
 
 ```
 npm i mind-elixir -S
@@ -20,21 +20,21 @@ npm i mind-elixir -S
 import MindElixir from 'mind-elixir'
 
 let options = {
-  el: '#map', // or HTMLDivElement
+  el: '#map', // または HTMLDivElement
 }
 
 let mind = new MindElixir(options)
 
-// create new map data
-const data = MindElixir.new('new topic')
+// 新しいマップデータの作成
+const data = MindElixir.new('新しいトピック')
 mind.init(data)
 ```
 
-其他设定可查阅[完整配置](../api/mind-elixir.options.md)
+他の設定については[完全な設定](../api/mind-elixir.options.md)を参照してください。
 
 :::warning
 
-因为 Mind Elixir 挂载时高度为容器高度的 100%，所以请务必设置容器高度，否则造成显示异常。
+Mind Elixirはマウントされるときにコンテナの高さが100％になるため、コンテナの高さを必ず設定してください。そうしないと表示が異常になります。
 
 :::
 
@@ -48,26 +48,26 @@ mind.init(data)
 </style>
 ```
 
-## 对思维导图的操作
+## マインドマップの操作
 
-- 操作与常见思维导图应用基本一致
-- 快捷键可见[快捷键章节](../guides/shortcuts.md)
-- 鼠标左键可拖动节点，或多选节点
-- 鼠标右键可拖动画布
-- 右键选择“连接”后再点击另一个节点，可连接两个节点
+- 操作は一般的なマインドマップアプリと基本的に同じです。
+- ショートカットは[ショートカットセクション](../guides/shortcuts.md)で確認できます。
+- マウスの左クリックでノードをドラッグしたり、複数のノードを選択したりできます。
+- マウスの右クリックでキャンバスをドラッグできます。
+- "接続"を選択した後、別のノードをクリックすると、2つのノードを接続できます。
 
 <MindElixirShowcase />
 
 
-## 数据导出与更新
+## データのエクスポートと更新
 
-用户对思维导图的操作后，数据随即改变，可以调用 `getData` 方法获取最新数据。数据格式可见[数据导出](../guides/data-export.md)。
+ユーザーがマインドマップを操作すると、データが変更されます。最新のデータを取得するには、`getData`メソッドを呼び出すことができます。データの形式については[データのエクスポート](../guides/data-export.md)を参照してください。
 
 ```js
 const data = mind.getData()
 ```
 
-有需要使用整组新数据刷新当前思维导图时，可以使用 `refresh` 方法。
+現在のマインドマップを新しいデータセット全体で更新する必要がある場合は、`refresh`メソッドを使用できます。
 
 ```js
 mind.refresh(data)
