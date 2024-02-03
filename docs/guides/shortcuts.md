@@ -1,23 +1,25 @@
-# 快捷键
+# Keyboard Shortcuts
 
-| 快捷键             | 功能                   |
-| ------------------ | ---------------------- |
-| Enter              | 插入兄弟节点           |
-| Shift + Enter      | 向前插入兄弟节点       |
-| Tab                | 插入子节点             |
-| Ctrl + Enter       | 插入父节点             |
-| F1                 | 居中思维导图           |
-| F2                 | 编辑当前节点           |
-| ↑                  | 选择上一个节点         |
-| ↓                  | 选择下一个节点         |
-| ← / →              | 选择左右侧的节点       |
-| PageUp / Alt + ↑   | 上移                   |
-| PageDown / Alt + ↓ | 下移                   |
-| Ctrl + ↑           | 使用两侧分布的布局方式 |
-| Ctrl + ←           | 使用左侧分布的布局方式 |
-| Ctrl + →           | 使用右侧分布的布局方式 |
-| Ctrl + C           | 复制                   |
-| Ctrl + V           | 粘贴                   |
-| Ctrl + "+"         | 放大思维导图           |
-| Ctrl + "-"         | 缩小思维导图           |
-| Ctrl + 0           | 重置大小               |
+Performing operations on nodes through the right-click menu can be inconvenient, significantly reducing work and learning efficiency. Mind Elixir supports more efficient keyboard shortcuts, allowing you to smoothly create diagrams!
+
+| Shortcut           | Function                  |
+| ------------------ | ------------------------- |
+| Enter              | Insert sibling node       |
+| Shift + Enter      | Insert sibling node before|
+| Tab                | Insert child node         |
+| Ctrl + Enter       | Insert parent node         |
+| F1                 | Center mind map            |
+| F2                 | Edit current node          |
+| ↑                  | Select previous node       |
+| ↓                  | Select next node           |
+| ← / →              | Select nodes on the left/right|
+| PageUp / Alt + ↑   | Move up                   |
+| PageDown / Alt + ↓ | Move down                 |
+| Ctrl + ↑           | Use two-sided layout      |
+| Ctrl + ←           | Use left-sided layout      |
+| Ctrl + →           | Use right-sided layout     |
+| Ctrl + C           | Copy                      |
+| Ctrl + V           | Paste                     |
+| Ctrl + "+"         | Zoom in mind map          |
+| Ctrl + "-"         | Zoom out mind map         |
+| Ctrl + 0           | Reset size                |
