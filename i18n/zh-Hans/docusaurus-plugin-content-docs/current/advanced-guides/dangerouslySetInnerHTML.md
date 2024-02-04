@@ -55,4 +55,4 @@ const data = {
 }
 ```
 
-我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类的库防范 XSS 攻击的库对数据进行处理。
+我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类防范 XSS 攻击的库对数据进行处理。

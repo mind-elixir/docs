@@ -25,19 +25,19 @@ const data = {
 
 :::warning
 
-使用 `dangerouslySetInnerHTML` 后，输出图片功能可能存在无法预料的问题。存在自定义样式时注意传入 `injectCss`。
+When using `dangerouslySetInnerHTML`, be aware that there may be unexpected issues with the image output functionality. If custom styles are present, make sure to pass them through the `injectCss` prop.
 
 :::
 
-## 注意危险
+## Caution: Handle with Care
 
 :::danger
 
-`dangerouslySetInnerHTML` 就如其名，无限制使用会让网站遭到 XSS 攻击，请确保内容可信时使用 `dangerouslySetInnerHTML`
+As the name suggests, the unrestrained use of `dangerouslySetInnerHTML` can expose your website to XSS attacks. Only use `dangerouslySetInnerHTML` when the content is trusted.
 
 :::
 
-像以下情况，未经处理会暴露用户 cookie：
+In scenarios like the one below, leaving it unhandled may expose user cookies:
 
 ```json
 {
@@ -55,4 +55,4 @@ const data = {
 }
 ```
 
-我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类的库防范 XSS 攻击的库对数据进行处理。
+Before assigning to `dangerouslySetInnerHTML`, consider using a library like [DOMPurify](https://github.com/cure53/DOMPurify) to sanitize the data and prevent XSS attacks.

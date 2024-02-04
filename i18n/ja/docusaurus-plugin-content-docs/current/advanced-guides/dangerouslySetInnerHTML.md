@@ -19,25 +19,25 @@ const data = {
   dangerouslySetInnerHTML: styledDiv,
   id: 'root',
   root: true,
-  topic: 'ceshi',
+  topic: 'test',
 }
 ```
 
 :::warning
 
-使用 `dangerouslySetInnerHTML` 后，输出图片功能可能存在无法预料的问题。存在自定义样式时注意传入 `injectCss`。
+`dangerouslySetInnerHTML` を使用した場合、画像の出力機能に予測できない問題が発生する可能性があります。カスタムスタイルが存在する場合は、`injectCss` を指定することに注意してください。
 
 :::
 
-## 注意危险
+## 危険に注意
 
 :::danger
 
-`dangerouslySetInnerHTML` 就如其名，无限制使用会让网站遭到 XSS 攻击，请确保内容可信时使用 `dangerouslySetInnerHTML`
+`dangerouslySetInnerHTML` はその名の通り、制限なしに使用すると XSS 攻撃にさらされる可能性があります。`dangerouslySetInnerHTML` を使用する際は、コンテンツが信頼できることを確認してください。
 
 :::
 
-像以下情况，未经处理会暴露用户 cookie：
+以下のようなケースでは、処理を行わないとユーザーのクッキー情報が露出します：
 
 ```json
 {
@@ -45,14 +45,14 @@ const data = {
     {
       "direction": 0,
       "id": "d34338c074901546",
-      "topic": "new node"
+      "topic": "新しいノード"
     }
   ],
   "dangerouslySetInnerHTML": "<img src=\"\" onerror=\"alert(document.cookie);\"><img src=\"https://dda.com\" />",
   "id": "root",
   "root": true,
-  "topic": "ceshi"
+  "topic": "テスト"
 }
 ```
 
-我们可以在赋值到 `dangerouslySetInnerHTML` 之前，可以使用如 [DOMPurify](https://github.com/cure53/DOMPurify) 之类的库防范 XSS 攻击的库对数据进行处理。
+`dangerouslySetInnerHTML` に値を代入する前に、[DOMPurify](https://github.com/cure53/DOMPurify)などの XSS 攻撃を防ぐライブラリを使用してデータを処理できます。
