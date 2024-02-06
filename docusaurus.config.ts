@@ -78,8 +78,8 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        // { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/docs/api/mind-elixir', label: 'APIs', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -92,7 +92,7 @@ const config: Config = {
         },
         {
           type: 'localeDropdown',
-          position: 'left',
+          position: 'right',
         },
       ],
     },
@@ -128,10 +128,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/ssshooter/mind-elixir-core',
@@ -144,6 +144,35 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'JUPDK6RJX0',
+
+      // Public API key: it is safe to commit it
+      apiKey: '1e662f14ac1d3169aad9aa7b696b31b0',
+
+      indexName: 'mind-elixir',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      // externalUrlRegex: 'external\\.com|domain\\.com',
+
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      // replaceSearchResultPathname: {
+      //   from: '/docs/', // or as RegExp: /\/docs\//
+      //   to: '/',
+      // },
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      //... other Algolia params
     },
   } satisfies Preset.ThemeConfig,
   plugins: [
