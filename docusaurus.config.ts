@@ -150,7 +150,7 @@ const config: Config = {
       appId: 'JUPDK6RJX0',
 
       // Public API key: it is safe to commit it
-      apiKey: '1e662f14ac1d3169aad9aa7b696b31b0',
+      apiKey: '6a7a638ec93d941cc8103950fdf23188',
 
       indexName: 'mind-elixir',
 
