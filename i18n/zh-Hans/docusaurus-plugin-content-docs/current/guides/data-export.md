@@ -2,7 +2,22 @@
 sidebar_position: 1
 ---
 
-# 数据导出
+# 数据导入与导出
+
+## 导入
+
+Mind Elixir 提供两种数据导入方式：初始化时传入、调用刷新方法时传入。
+
+```js
+let mind = new MindElixir(options)
+
+mind.init(data) // 初始化
+mind.refresh(data) // 使用新数据刷新
+```
+
+不向 `refresh` 传入 `data` 时会使用原来的数据对象进行更新。
+
+## 导出
 
 Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
 

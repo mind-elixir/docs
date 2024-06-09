@@ -2,7 +2,22 @@
 sidebar_position: 1
 ---
 
-# Data Export
+# Data Import and Export
+
+## Import
+
+Mind Elixir provides two ways to import data: when initializing and when calling the refresh method.
+
+```js
+let mind = new MindElixir(options)
+
+mind.init(data) // initialization
+mind.refresh(data) // refresh with new data
+```
+
+When `data` is not passed into `refresh`, the original data object will be used for updating.
+
+## Export
 
 Mind Elixir provides three data export formats: JavaScript objects, object strings, and markdown (deprecated, not recommended). Corresponding to the following three APIs:
 
