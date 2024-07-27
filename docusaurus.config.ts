@@ -81,7 +81,7 @@ const config: Config = {
         { to: '/docs/api/mind-elixir', label: 'APIs', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/ssshooter/mind-elixir-core',
           label: 'GitHub',
           position: 'right',
         },
