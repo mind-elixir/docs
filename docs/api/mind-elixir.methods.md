@@ -11,6 +11,7 @@ Methods that mind-elixir instance can use
 ```typescript
 methods: {
     init(this: MindElixirInstance, data: MindElixirData): Error | undefined;
+    destroy(this: Partial<MindElixirInstance>): void;
     exportSvg: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string | undefined) => Blob;
     exportPng: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string | undefined) => Promise<Blob | null>;
     createSummary: (this: MindElixirInstance) => void;
@@ -26,7 +27,7 @@ methods: {
     removeArrow: (this: MindElixirInstance, linkSvg?: import("./index").CustomSvg | undefined) => void;
     selectArrow: (this: MindElixirInstance, link: import("./index").CustomSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;
-    mainToSub: (this: MindElixirInstance, tpc: import("./index").Topic) => Promise<void>;
+    rmSubline: (this: MindElixirInstance, tpc: import("./index").Topic) => Promise<void>;
     reshapeNode: (this: MindElixirInstance, tpc: import("./index").Topic, patchData: import("./types").NodeObj) => Promise<void>;
     insertSibling: (this: MindElixirInstance, type: "before" | "after", el?: import("./index").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
     insertParent: (this: MindElixirInstance, el?: import("./index").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
@@ -60,7 +61,7 @@ methods: {
     initLeft: (this: MindElixirInstance) => void;
     initRight: (this: MindElixirInstance) => void;
     initSide: (this: MindElixirInstance) => void;
-    setLocale: (this: MindElixirInstance, locale: string) => void;
+    setLocale: (this: MindElixirInstance, locale: import("./i18n").Locale) => void;
     expandNode: (this: MindElixirInstance, el: import("./index").Topic, isExpand?: boolean | undefined) => void;
     refresh: (this: MindElixirInstance, data?: MindElixirData | undefined) => void;
     getObjById: (id: string, data: import("./types").NodeObj) => import("./types").NodeObj | null;

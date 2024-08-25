@@ -12,7 +12,7 @@ The MindElixir options
 export type Options = {
     el: string | HTMLElement;
     direction?: number;
-    locale?: string;
+    locale?: Locale;
     draggable?: boolean;
     editable?: boolean;
     contextMenu?: boolean;
@@ -31,5 +31,5 @@ export type Options = {
     nodeMenu?: boolean;
 };
 ```
-**References:** [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)
+**References:** [Locale](./mind-elixir.locale.md)<!-- -->, [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)
 

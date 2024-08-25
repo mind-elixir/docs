@@ -13,8 +13,59 @@ export interface CustomSvg extends SVGGElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [arrowObj](./mind-elixir.customsvg.arrowobj.md) |  | [Arrow](./mind-elixir.arrow.md) |  |
-|  [children](./mind-elixir.customsvg.children.md) |  | HTMLCollection &amp; \[[CustomLine](./mind-elixir.customline.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, SVGTextElement\] |  |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[arrowObj](./mind-elixir.customsvg.arrowobj.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Arrow](./mind-elixir.arrow.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[children](./mind-elixir.customsvg.children.md)
+
+
+</td><td>
+
+
+</td><td>
+
+HTMLCollection &amp; \[[CustomLine](./mind-elixir.customline.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, SVGTextElement\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
