@@ -136,6 +136,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/ssshooter/mind-elixir-core',
             },
+            {
+              label: 'SS ToolBox',
+              href: 'https://tools.mind-elixir.com/',
+            },
           ],
         },
       ],
