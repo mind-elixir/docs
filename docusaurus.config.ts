@@ -86,7 +86,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://mind-elixir.com',
+          href: 'https://cloud.mind-elixir.com',
           label: 'Mind Elixir Cloud',
           position: 'right',
         },
