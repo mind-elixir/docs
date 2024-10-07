@@ -24,7 +24,6 @@ export type NodeObj = {
     hyperLink?: string;
     expanded?: boolean;
     direction?: number;
-    root?: boolean;
     image?: {
         url: string;
         width: number;

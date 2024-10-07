@@ -12,8 +12,8 @@ Methods that mind-elixir instance can use
 methods: {
     init(this: MindElixirInstance, data: MindElixirData): Error | undefined;
     destroy(this: Partial<MindElixirInstance>): void;
-    exportSvg: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string | undefined) => Blob;
-    exportPng: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string | undefined) => Promise<Blob | null>;
+    exportSvg: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string) => Blob;
+    exportPng: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string) => Promise<Blob | null>;
     createSummary: (this: MindElixirInstance) => void;
     removeSummary: (this: MindElixirInstance, id: string) => void;
     selectSummary: (this: MindElixirInstance, el: summary.SummarySvgGroup) => void;
@@ -24,7 +24,7 @@ methods: {
     editArrowLabel(this: MindElixirInstance, el: import("./index").CustomSvg): void;
     tidyArrow(this: MindElixirInstance): void;
     createArrow: (this: MindElixirInstance, from: import("./index").Topic, to: import("./index").Topic) => void;
-    removeArrow: (this: MindElixirInstance, linkSvg?: import("./index").CustomSvg | undefined) => void;
+    removeArrow: (this: MindElixirInstance, linkSvg?: import("./index").CustomSvg) => void;
     selectArrow: (this: MindElixirInstance, link: import("./index").CustomSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;
     rmSubline: (this: MindElixirInstance, tpc: import("./index").Topic) => Promise<void>;
@@ -43,7 +43,7 @@ methods: {
     moveNodeAfter: (this: MindElixirInstance, from: import("./index").Topic[], to: import("./index").Topic) => Promise<void>;
     beginEdit: (this: MindElixirInstance, el?: import("./index").Topic | undefined) => Promise<void>;
     setNodeTopic: (this: MindElixirInstance, el: import("./index").Topic, topic: string) => Promise<void>;
-    selectNode: (this: MindElixirInstance, targetElement: import("./index").Topic, isNewNode?: boolean | undefined, e?: MouseEvent | undefined) => void;
+    selectNode: (this: MindElixirInstance, targetElement: import("./index").Topic, isNewNode?: boolean, e?: MouseEvent) => void;
     unselectNode: (this: MindElixirInstance) => void;
     selectNodes: (this: MindElixirInstance, tpc: import("./index").Topic[]) => void;
     unselectNodes: (this: MindElixirInstance) => void;
@@ -62,14 +62,14 @@ methods: {
     initRight: (this: MindElixirInstance) => void;
     initSide: (this: MindElixirInstance) => void;
     setLocale: (this: MindElixirInstance, locale: import("./i18n").Locale) => void;
-    expandNode: (this: MindElixirInstance, el: import("./index").Topic, isExpand?: boolean | undefined) => void;
-    refresh: (this: MindElixirInstance, data?: MindElixirData | undefined) => void;
+    expandNode: (this: MindElixirInstance, el: import("./index").Topic, isExpand?: boolean) => void;
+    refresh: (this: MindElixirInstance, data?: MindElixirData) => void;
     getObjById: (id: string, data: import("./types").NodeObj) => import("./types").NodeObj | null;
     generateNewObj: (this: MindElixirInstance) => import("./types").NodeObjExport;
     layout: (this: MindElixirInstance) => void;
-    linkDiv: (this: MindElixirInstance, mainNode?: import("./index").Wrapper | undefined) => void;
+    linkDiv: (this: MindElixirInstance, mainNode?: import("./index").Wrapper) => void;
     editTopic: (this: MindElixirInstance, el: import("./index").Topic) => void;
-    createWrapper: (this: MindElixirInstance, nodeObj: import("./types").NodeObj, omitChildren?: boolean | undefined) => {
+    createWrapper: (this: MindElixirInstance, nodeObj: import("./types").NodeObj, omitChildren?: boolean) => {
         grp: import("./index").Wrapper;
         top: import("./index").Parent;
         tpc: import("./index").Topic;
@@ -80,7 +80,7 @@ methods: {
     };
     createChildren: (this: MindElixirInstance, wrappers: import("./index").Wrapper[]) => import("./index").Children;
     createTopic: (this: MindElixirInstance, nodeObj: import("./types").NodeObj) => import("./index").Topic;
-    findEle: (id: string, instance?: MindElixirInstance | undefined) => import("./index").Topic;
+    findEle: (id: string, instance?: MindElixirInstance) => import("./index").Topic;
     changeTheme: (this: MindElixirInstance, theme: import("./types").Theme, shouldRefresh?: boolean) => void;
 }
 ```
