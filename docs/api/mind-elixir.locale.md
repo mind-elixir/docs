@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-export type Locale = 'cn' | 'zh_CN' | 'zh_TW' | 'en' | 'ru' | 'ja' | 'pt' | 'it' | 'es';
+export type Locale = 'cn' | 'zh_CN' | 'zh_TW' | 'en' | 'ru' | 'ja' | 'pt' | 'it' | 'es' | 'fr' | 'ko';
 ```

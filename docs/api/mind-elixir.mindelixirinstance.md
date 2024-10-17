@@ -752,6 +752,25 @@ SelectionArea
 </td></tr>
 <tr><td>
 
+[selectionContainer?](./mind-elixir.mindelixirinstance.selectioncontainer.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| HTMLElement
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [subBranchStyle](./mind-elixir.mindelixirinstance.subbranchstyle.md)
 
 
