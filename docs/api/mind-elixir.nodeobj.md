@@ -28,6 +28,7 @@ export type NodeObj = {
         url: string;
         width: number;
         height: number;
+        fit?: 'fill' | 'contain' | 'cover';
     };
     branchColor?: string;
     parent?: NodeObj;

@@ -28,7 +28,7 @@ methods: {
     selectArrow: (this: MindElixirInstance, link: import("./index").CustomSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;
     rmSubline: (this: MindElixirInstance, tpc: import("./index").Topic) => Promise<void>;
-    reshapeNode: (this: MindElixirInstance, tpc: import("./index").Topic, patchData: import("./types").NodeObj) => Promise<void>;
+    reshapeNode: (this: MindElixirInstance, tpc: import("./index").Topic, patchData: Partial<import("./types").NodeObj>) => Promise<void>;
     insertSibling: (this: MindElixirInstance, type: "before" | "after", el?: import("./index").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
     insertParent: (this: MindElixirInstance, el?: import("./index").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
     addChild: (this: MindElixirInstance, el?: import("./index").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;

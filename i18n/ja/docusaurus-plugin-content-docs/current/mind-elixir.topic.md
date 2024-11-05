@@ -93,7 +93,7 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
-[linkContainer?](./mind-elixir.topic.linkcontainer.md)
+[link?](./mind-elixir.topic.link.md)
 
 
 </td><td>

@@ -4,11 +4,14 @@
 
 ## Theme type
 
+MindElixir Theme
+
 **Signature:**
 
 ```typescript
 export type Theme = {
     name: string;
+    type?: 'light' | 'dark';
     palette: string[];
     cssVar: Partial<{
         '--gap': string;

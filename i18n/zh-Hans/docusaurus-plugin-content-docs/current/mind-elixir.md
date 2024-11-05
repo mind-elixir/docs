@@ -253,6 +253,8 @@ The MindElixir options
 
 </td><td>
 
+MindElixir Theme
+
 
 </td></tr>
 </tbody></table>
