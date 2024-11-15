@@ -23,7 +23,7 @@ export type NodeObj = {
     icons?: string[];
     hyperLink?: string;
     expanded?: boolean;
-    direction?: number;
+    direction?: Left | Right;
     image?: {
         url: string;
         width: number;
