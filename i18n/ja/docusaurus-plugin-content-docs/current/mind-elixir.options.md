@@ -16,7 +16,7 @@ export type Options = {
     draggable?: boolean;
     editable?: boolean;
     contextMenu?: boolean;
-    contextMenuOption?: any;
+    contextMenuOption?: ContextMenuOption;
     toolBar?: boolean;
     keypress?: boolean;
     mouseSelectionButton?: 0 | 2;

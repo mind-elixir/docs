@@ -140,7 +140,7 @@ boolean
 </td></tr>
 <tr><td>
 
-[contextMenuOption](./mind-elixir.mindelixirinstance.contextmenuoption.md)
+[contextMenuOption?](./mind-elixir.mindelixirinstance.contextmenuoption.md)
 
 
 </td><td>
@@ -148,10 +148,12 @@ boolean
 
 </td><td>
 
-object
+ContextMenuOption
 
 
 </td><td>
+
+_(Optional)_
 
 
 </td></tr>

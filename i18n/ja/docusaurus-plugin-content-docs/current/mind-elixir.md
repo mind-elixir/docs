@@ -46,6 +46,15 @@ Description
 </td></tr>
 <tr><td>
 
+[MainLineParams](./mind-elixir.mainlineparams.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [MindElixirInstance](./mind-elixir.mindelixirinstance.md)
 
 
@@ -58,6 +67,15 @@ The MindElixir instance
 <tr><td>
 
 [Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SubLineParams](./mind-elixir.sublineparams.md)
 
 
 </td><td>
@@ -161,15 +179,6 @@ Description
 </td></tr>
 <tr><td>
 
-[MainLineParams](./mind-elixir.mainlineparams.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [MindElixirData](./mind-elixir.mindelixirdata.md)
 
 
@@ -216,15 +225,6 @@ MindElixir node object
 </td><td>
 
 The MindElixir options
-
-
-</td></tr>
-<tr><td>
-
-[SubLineParams](./mind-elixir.sublineparams.md)
-
-
-</td><td>
 
 
 </td></tr>

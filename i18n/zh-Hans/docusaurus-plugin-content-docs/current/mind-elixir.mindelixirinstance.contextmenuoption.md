@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-contextMenuOption: object;
+contextMenuOption?: ContextMenuOption;
 ```
