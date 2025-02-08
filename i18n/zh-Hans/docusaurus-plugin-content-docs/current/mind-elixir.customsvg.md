@@ -61,7 +61,7 @@ Description
 
 </td><td>
 
-HTMLCollection &amp; \[[CustomLine](./mind-elixir.customline.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, SVGTextElement\]
+HTMLCollection &amp; \[[CustomLine](./mind-elixir.customline.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, SVGTextElement\]
 
 
 </td><td>

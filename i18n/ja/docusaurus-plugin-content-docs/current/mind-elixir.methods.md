@@ -23,7 +23,7 @@ methods: {
     renderArrow(this: MindElixirInstance): void;
     editArrowLabel(this: MindElixirInstance, el: import("./index").CustomSvg): void;
     tidyArrow(this: MindElixirInstance): void;
-    createArrow: (this: MindElixirInstance, from: import("./index").Topic, to: import("./index").Topic) => void;
+    createArrow: (this: MindElixirInstance, from: import("./index").Topic, to: import("./index").Topic, options?: arrow.ArrowOptions) => void;
     removeArrow: (this: MindElixirInstance, linkSvg?: import("./index").CustomSvg) => void;
     selectArrow: (this: MindElixirInstance, link: import("./index").CustomSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;

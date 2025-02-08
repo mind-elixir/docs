@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-children: HTMLCollection & [CustomLine, CustomArrow, SVGTextElement];
+children: HTMLCollection & [CustomLine, CustomArrow, CustomArrow, SVGTextElement];
 ```

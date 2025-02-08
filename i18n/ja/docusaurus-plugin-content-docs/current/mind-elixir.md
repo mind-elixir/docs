@@ -148,6 +148,8 @@ Description
 
 </td><td>
 
+FYI p1: starting point p2: control point of starting point p3: control point of ending point p4: ending point
+
 
 </td></tr>
 <tr><td>

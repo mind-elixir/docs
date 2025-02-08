@@ -4,6 +4,8 @@
 
 ## Arrow type
 
+FYI p1: starting point p2: control point of starting point p3: control point of ending point p4: ending point
+
 **Signature:**
 
 ```typescript
@@ -20,5 +22,6 @@ export type Arrow = {
         x: number;
         y: number;
     };
+    bidirectional?: boolean;
 };
 ```
