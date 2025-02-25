@@ -154,6 +154,15 @@ FYI p1: starting point p2: control point of starting point p3: control point of 
 </td></tr>
 <tr><td>
 
+[ArrowOperation](./mind-elixir.arrowoperation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [CustomArrow](./mind-elixir.customarrow.md)
 
 
@@ -164,6 +173,15 @@ FYI p1: starting point p2: control point of starting point p3: control point of 
 <tr><td>
 
 [CustomLine](./mind-elixir.customline.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[EventMap](./mind-elixir.eventmap.md)
 
 
 </td><td>
@@ -221,6 +239,24 @@ MindElixir node object
 </td></tr>
 <tr><td>
 
+[Operation](./mind-elixir.operation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[OperationType](./mind-elixir.operationtype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [Options](./mind-elixir.options.md)
 
 
@@ -233,6 +269,15 @@ The MindElixir options
 <tr><td>
 
 [Summary](./mind-elixir.summary.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SummaryOperation](./mind-elixir.summaryoperation.md)
 
 
 </td><td>

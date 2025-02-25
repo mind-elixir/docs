@@ -97,7 +97,7 @@ Before
 
 </td><td>
 
-ReturnType&lt;typeof Bus.create&lt;EventMap&gt;&gt;
+ReturnType&lt;typeof Bus.create&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&gt;&gt;
 
 
 </td><td>
@@ -337,7 +337,7 @@ boolean
 
 </td><td>
 
-Operation\[\]
+[Operation](./mind-elixir.operation.md)<!-- -->\[\]
 
 
 </td><td>
