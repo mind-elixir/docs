@@ -1,0 +1,28 @@
+---
+sidebar_position: 3
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# 箭头数据
+
+<MindElixirShowcase />
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```

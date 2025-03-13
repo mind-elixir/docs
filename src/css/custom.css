@@ -32,3 +32,7 @@
 .me-showcase li {
   margin-top: unset !important;
 }
+.me-showcase {
+  height: 600px;
+  width: 100%;
+}
