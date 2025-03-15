@@ -19,6 +19,15 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[Arrow](./mind-elixir.arrow.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [Children](./mind-elixir.children.md)
 
 
@@ -84,6 +93,16 @@ The MindElixir instance
 </td></tr>
 <tr><td>
 
+[Summary](./mind-elixir.summary.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
 [Topic](./mind-elixir.topic.md)
 
 
@@ -143,17 +162,6 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[Arrow](./mind-elixir.arrow.md)
-
-
-</td><td>
-
-FYI p1: starting point p2: control point of starting point p3: control point of ending point p4: ending point
-
-
-</td></tr>
-<tr><td>
-
 [ArrowOperation](./mind-elixir.arrowoperation.md)
 
 
@@ -194,6 +202,7 @@ FYI p1: starting point p2: control point of starting point p3: control point of 
 
 
 </td><td>
+
 
 
 </td></tr>
@@ -263,15 +272,6 @@ MindElixir node object
 </td><td>
 
 The MindElixir options
-
-
-</td></tr>
-<tr><td>
-
-[Summary](./mind-elixir.summary.md)
-
-
-</td><td>
 
 
 </td></tr>

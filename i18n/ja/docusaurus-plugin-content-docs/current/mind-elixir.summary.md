@@ -2,16 +2,127 @@
 
 [Home](./index.md) &gt; [mind-elixir](./mind-elixir.md) &gt; [Summary](./mind-elixir.summary.md)
 
-## Summary type
+## Summary interface
+
 
 **Signature:**
 
 ```typescript
-export type Summary = {
-    id: string;
-    text: string;
-    parent: string;
-    start: number;
-    end: number;
-};
+export interface Summary 
 ```
+
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[end](./mind-elixir.summary.end.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+end index of the summary
+
+
+</td></tr>
+<tr><td>
+
+[id](./mind-elixir.summary.id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parent](./mind-elixir.summary.parent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+parent node id of the summary
+
+
+</td></tr>
+<tr><td>
+
+[start](./mind-elixir.summary.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+start index of the summary
+
+
+</td></tr>
+<tr><td>
+
+[text](./mind-elixir.summary.text.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

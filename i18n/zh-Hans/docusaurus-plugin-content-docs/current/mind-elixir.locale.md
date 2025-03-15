@@ -4,6 +4,7 @@
 
 ## Locale type
 
+
 **Signature:**
 
 ```typescript
