@@ -5,9 +5,9 @@ sidebar_position: 3
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
 
-# 摘要
+# Summary
 
-Mind Elixir 支持在思维导图中添加节点摘要，如下图所示：
+Mind Elixir supports adding node summaries in mind maps, as shown below:
 
 <MindElixirShowcase
     height='380px'
@@ -54,7 +54,7 @@ Mind Elixir 支持在思维导图中添加节点摘要，如下图所示：
     }}
  />
 
-## 摘要数据
+## Summary Data
 
 ```typescript
 export interface Summary {
@@ -66,16 +66,16 @@ export interface Summary {
 }
 ```
 
-摘要数据包含以下字段：
+The summary data contains the following fields:
 
-- `id`: 唯一 id
-- `text`: 摘要文本
-- `parent`: 摘要所属节点 id
-- `start`: 摘要开始的子节点索引
-- `end`: 摘要结束的子节点索引
+- `id`: Unique identifier
+- `text`: Summary text
+- `parent`: Parent node ID that the summary belongs to
+- `start`: Starting child node index of the summary
+- `end`: Ending child node index of the summary
 
 :::warning
 
-摘要的父节点不能是根节点。
+The parent node of a summary cannot be the root node.
 
 :::

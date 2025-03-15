@@ -5,9 +5,9 @@ sidebar_position: 3
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
 
-# 摘要
+# サマリー
 
-Mind Elixir 支持在思维导图中添加节点摘要，如下图所示：
+Mind Elixirはマインドマップにノードのサマリーを追加することができます。以下の例をご覧ください：
 
 <MindElixirShowcase
     height='380px'
@@ -54,7 +54,7 @@ Mind Elixir 支持在思维导图中添加节点摘要，如下图所示：
     }}
  />
 
-## 摘要数据
+## サマリーデータ
 
 ```typescript
 export interface Summary {
@@ -66,16 +66,16 @@ export interface Summary {
 }
 ```
 
-摘要数据包含以下字段：
+サマリーデータは以下のフィールドを含みます：
 
-- `id`: 唯一 id
-- `text`: 摘要文本
-- `parent`: 摘要所属节点 id
-- `start`: 摘要开始的子节点索引
-- `end`: 摘要结束的子节点索引
+- `id`: ユニークID
+- `text`: サマリーテキスト
+- `parent`: サマリーが属するノードのID
+- `start`: サマリーが開始する子ノードのインデックス
+- `end`: サマリーが終了する子ノードのインデックス
 
 :::warning
 
-摘要的父节点不能是根节点。
+サマリーの親ノードはルートノードにすることはできません。
 
 :::

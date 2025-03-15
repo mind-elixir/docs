@@ -5,9 +5,9 @@ sidebar_position: 3
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
 
-# 箭头
+# 矢印
 
-Mind Elixir 支持在思维导图中添加箭头，如下图所示：
+Mind Elixirはマインドマップに矢印を追加することができます。以下の例をご覧ください：
 
 <MindElixirShowcase
     height='380px'
@@ -70,7 +70,7 @@ Mind Elixir 支持在思维导图中添加箭头，如下图所示：
     }}
  />
 
-## 箭头数据
+## 矢印データ
 
 ```typescript
 export type Arrow = {
@@ -90,14 +90,14 @@ export type Arrow = {
 };
 ```
 
-箭头数据包含以下字段：
+矢印データは以下のフィールドを含みます：
 
-- `id`: 唯一 id
-- `label`: 显示的文本
-- `from`: 起始节点 id
-- `to`: 目标节点 id
-- `delta1`: 起始节点的控制点偏移量
-- `delta2`: 目标节点的控制点偏移量
-- `bidirectional`: 是否双向箭头
+- `id`: 一意のID
+- `label`: 表示テキスト
+- `from`: 開始ノードのID
+- `to`: 終了ノードのID
+- `delta1`: 開始ノードのコントロールポイントのオフセット
+- `delta2`: 終了ノードのコントロールポイントのオフセット
+- `bidirectional`: 双方向矢印かどうか
 
-控制点是指箭头二次贝塞尔曲线的控制点，通过调整控制点的偏移量可以调整箭头的形状。可以参考 [SVG Path 的 `C` 命令](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves)。
+コントロールポイントは、矢印の2次ベジェ曲線のコントロールポイントを指します。コントロールポイントのオフセットを調整することで、矢印の形状を調整できます。詳しくは[SVG Pathの `C` コマンド](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves)を参照してください。
