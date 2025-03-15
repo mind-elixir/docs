@@ -18,5 +18,11 @@ export default function MindElixirShowcase({
       mind.init(data || example)
     })
   })
-  return <div id="map" className="me-showcase"></div>
+  return (
+    <div
+      id="map"
+      className="me-showcase"
+      style={{ height: height || '500px', width: '100%' }}
+    ></div>
+  )
 }

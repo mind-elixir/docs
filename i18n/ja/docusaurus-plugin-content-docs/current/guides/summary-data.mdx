@@ -1,0 +1,81 @@
+---
+sidebar_position: 3
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# 摘要
+
+Mind Elixir 支持在思维导图中添加节点摘要，如下图所示：
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 0',
+                        id: 'child0',
+                        children:[
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ]
+                    }, 
+                ],
+            }
+         ,
+        summaries:[{
+            id: 's1',
+            text: 'Summary',
+            parent: 'child0',
+            start: 0,
+            end: 2
+        }
+
+        ]
+    }}
+ />
+
+## 摘要数据
+
+```typescript
+export interface Summary {
+    id: string;
+    text: string; 
+    parent: string; 
+    start: number; 
+    end: number;
+}
+```
+
+摘要数据包含以下字段：
+
+- `id`: 唯一 id
+- `text`: 摘要文本
+- `parent`: 摘要所属节点 id
+- `start`: 摘要开始的子节点索引
+- `end`: 摘要结束的子节点索引
+
+:::warning
+
+摘要的父节点不能是根节点。
+
+:::
