@@ -1,0 +1,103 @@
+---
+sidebar_position: 3
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# 箭头
+
+Mind Elixir 支持在思维导图中添加箭头，如下图所示：
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ],
+            }
+         ,
+        arrows: [ 
+            {
+                id: 'arrow',
+                label: 'Arrow',
+                from: 'child1',
+                to: 'child2',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+            },
+            {
+                id: 'arrow2',
+                label: 'Arrow2',
+                from: 'child3',
+                to: 'child4',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+                bidirectional: true,
+            }
+        ],
+    }}
+ />
+
+## 箭头数据
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```
+
+箭头数据包含以下字段：
+
+- `id`: 唯一 id
+- `label`: 显示的文本
+- `from`: 起始节点 id
+- `to`: 目标节点 id
+- `delta1`: 起始节点的控制点偏移量
+- `delta2`: 目标节点的控制点偏移量
+- `bidirectional`: 是否双向箭头
+
+控制点是指箭头二次贝塞尔曲线的控制点，通过调整控制点的偏移量可以调整箭头的形状。可以参考 [SVG Path 的 `C` 命令](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves)。

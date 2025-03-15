@@ -1,0 +1,103 @@
+---
+sidebar_position: 3
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Arrows
+
+Mind Elixir supports adding arrows in mind maps, as shown below:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ],
+            }
+         ,
+        arrows: [ 
+            {
+                id: 'arrow',
+                label: 'Arrow',
+                from: 'child1',
+                to: 'child2',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+            },
+            {
+                id: 'arrow2',
+                label: 'Arrow2',
+                from: 'child3',
+                to: 'child4',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+                bidirectional: true,
+            }
+        ],
+    }}
+ />
+
+## Arrow Data
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```
+
+Arrow data contains the following fields:
+
+- `id`: Unique identifier
+- `label`: Display text
+- `from`: Source node id
+- `to`: Target node id
+- `delta1`: Control point offset for the source node
+- `delta2`: Control point offset for the target node
+- `bidirectional`: Whether it's a bidirectional arrow
+
+Control points refer to the control points of the arrow's quadratic Bezier curve. By adjusting the control point offsets, you can modify the shape of the arrow. You can refer to the [SVG Path `C` command](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves) for more information.

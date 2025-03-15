@@ -1,0 +1,81 @@
+---
+sidebar_position: 3
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Summary
+
+Mind Elixir supports adding node summaries in mind maps, as shown below:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 0',
+                        id: 'child0',
+                        children:[
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ]
+                    }, 
+                ],
+            }
+         ,
+        summaries:[{
+            id: 's1',
+            text: 'Summary',
+            parent: 'child0',
+            start: 0,
+            end: 2
+        }
+
+        ]
+    }}
+ />
+
+## Summary Data
+
+```typescript
+export interface Summary {
+    id: string;
+    text: string; 
+    parent: string; 
+    start: number; 
+    end: number;
+}
+```
+
+The summary data contains the following fields:
+
+- `id`: Unique identifier
+- `text`: Summary text
+- `parent`: Parent node ID that the summary belongs to
+- `start`: Starting child node index of the summary
+- `end`: Ending child node index of the summary
+
+:::warning
+
+The parent node of a summary cannot be the root node.
+
+:::
