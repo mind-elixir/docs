@@ -29,6 +29,7 @@ export type Options = {
     theme?: Theme;
     nodeMenu?: boolean;
     selectionContainer?: string | HTMLElement;
+    alignment?: Alignment;
 };
 ```
 **References:** [Locale](./mind-elixir.locale.md)<!-- -->, [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)

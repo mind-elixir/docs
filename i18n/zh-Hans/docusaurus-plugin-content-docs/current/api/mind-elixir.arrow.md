@@ -2,23 +2,166 @@
 
 [Home](./index.md) &gt; [mind-elixir](./mind-elixir.md) &gt; [Arrow](./mind-elixir.arrow.md)
 
-## Arrow type
+## Arrow interface
 
 **Signature:**
 
 ```typescript
-export type Arrow = {
-    id: string;
-    label: string;
-    from: Uid;
-    to: Uid;
-    delta1: {
-        x: number;
-        y: number;
-    };
-    delta2: {
-        x: number;
-        y: number;
-    };
-};
+export interface Arrow 
 ```
+
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bidirectional?](./mind-elixir.arrow.bidirectional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ whether the arrow is bidirectional
+
+
+</td></tr>
+<tr><td>
+
+[delta1](./mind-elixir.arrow.delta1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ x: number; y: number; }
+
+
+</td><td>
+
+offset of control point from start point
+
+
+</td></tr>
+<tr><td>
+
+[delta2](./mind-elixir.arrow.delta2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ x: number; y: number; }
+
+
+</td><td>
+
+offset of control point from end point
+
+
+</td></tr>
+<tr><td>
+
+[from](./mind-elixir.arrow.from.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Uid
+
+
+</td><td>
+
+id of start node
+
+
+</td></tr>
+<tr><td>
+
+[id](./mind-elixir.arrow.id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[label](./mind-elixir.arrow.label.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+label of arrow
+
+
+</td></tr>
+<tr><td>
+
+[to](./mind-elixir.arrow.to.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Uid
+
+
+</td><td>
+
+id of end node
+
+
+</td></tr>
+</tbody></table>

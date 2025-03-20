@@ -4,25 +4,30 @@
 
 ## Theme type
 
+MindElixir Theme
+
 **Signature:**
 
 ```typescript
 export type Theme = {
     name: string;
+    type?: 'light' | 'dark';
     palette: string[];
     cssVar: Partial<{
+        '--gap': string;
         '--main-color': string;
         '--main-bgcolor': string;
         '--color': string;
         '--bgcolor': string;
         '--selected': string;
-        '--panel-color': string;
-        '--panel-bgcolor': string;
         '--root-color': string;
         '--root-bgcolor': string;
+        '--root-border-color': string;
         '--root-radius': string;
         '--main-radius': string;
         '--topic-padding': string;
+        '--panel-color': string;
+        '--panel-bgcolor': string;
         '--panel-border-color': string;
     }>;
 };

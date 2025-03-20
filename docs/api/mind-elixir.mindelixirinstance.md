@@ -38,6 +38,23 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[alignment](./mind-elixir.mindelixirinstance.alignment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Alignment
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [allowUndo](./mind-elixir.mindelixirinstance.allowundo.md)
 
 
@@ -482,23 +499,6 @@ SVGElement
 </td></tr>
 <tr><td>
 
-[mainBranchStyle](./mind-elixir.mindelixirinstance.mainbranchstyle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [map](./mind-elixir.mindelixirinstance.map.md)
 
 
@@ -751,23 +751,6 @@ string \| HTMLElement
 </td><td>
 
 _(Optional)_
-
-
-</td></tr>
-<tr><td>
-
-[subBranchStyle](./mind-elixir.mindelixirinstance.subbranchstyle.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
 
 
 </td></tr>

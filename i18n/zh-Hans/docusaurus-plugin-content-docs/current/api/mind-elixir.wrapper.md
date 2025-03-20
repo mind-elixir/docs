@@ -13,13 +13,144 @@ export interface Wrapper extends HTMLElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [children](./mind-elixir.wrapper.children.md) |  | HTMLCollection &amp; \[[Parent](./mind-elixir.parent.md)<!-- -->, [Children](./mind-elixir.children.md)<!-- -->\] |  |
-|  [firstChild](./mind-elixir.wrapper.firstchild.md) |  | [Parent](./mind-elixir.parent.md) |  |
-|  [nextSibling](./mind-elixir.wrapper.nextsibling.md) |  | [Wrapper](./mind-elixir.wrapper.md) \| null |  |
-|  [offsetParent](./mind-elixir.wrapper.offsetparent.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [parentElement](./mind-elixir.wrapper.parentelement.md) |  | [Children](./mind-elixir.children.md) |  |
-|  [parentNode](./mind-elixir.wrapper.parentnode.md) |  | [Children](./mind-elixir.children.md) |  |
-|  [previousSibling](./mind-elixir.wrapper.previoussibling.md) |  | [Wrapper](./mind-elixir.wrapper.md) \| null |  |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[children](./mind-elixir.wrapper.children.md)
+
+
+</td><td>
+
+
+</td><td>
+
+HTMLCollection &amp; \[[Parent](./mind-elixir.parent.md)<!-- -->, [Children](./mind-elixir.children.md)<!-- -->\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[firstChild](./mind-elixir.wrapper.firstchild.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[nextSibling](./mind-elixir.wrapper.nextsibling.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md) \| null
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[offsetParent](./mind-elixir.wrapper.offsetparent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentElement](./mind-elixir.wrapper.parentelement.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Children](./mind-elixir.children.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentNode](./mind-elixir.wrapper.parentnode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Children](./mind-elixir.children.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[previousSibling](./mind-elixir.wrapper.previoussibling.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md) \| null
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

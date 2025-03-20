@@ -12,11 +12,11 @@ The MindElixir options
 export type Options = {
     el: string | HTMLElement;
     direction?: number;
-    locale?: string;
+    locale?: Locale;
     draggable?: boolean;
     editable?: boolean;
     contextMenu?: boolean;
-    contextMenuOption?: any;
+    contextMenuOption?: ContextMenuOption;
     toolBar?: boolean;
     keypress?: boolean;
     mouseSelectionButton?: 0 | 2;
@@ -26,10 +26,11 @@ export type Options = {
     overflowHidden?: boolean;
     generateMainBranch?: (this: MindElixirInstance, params: MainLineParams) => PathString;
     generateSubBranch?: (this: MindElixirInstance, params: SubLineParams) => PathString;
-    mobileMenu?: boolean;
     theme?: Theme;
     nodeMenu?: boolean;
+    selectionContainer?: string | HTMLElement;
+    alignment?: Alignment;
 };
 ```
-**References:** [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)
+**References:** [Locale](./mind-elixir.locale.md)<!-- -->, [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)
 

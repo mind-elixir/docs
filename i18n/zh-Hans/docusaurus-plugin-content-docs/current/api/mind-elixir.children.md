@@ -13,11 +13,110 @@ export interface Children extends HTMLElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [children](./mind-elixir.children.children.md) |  | HTMLCollection &amp; [Wrapper](./mind-elixir.wrapper.md)<!-- -->\[\] |  |
-|  [firstChild](./mind-elixir.children.firstchild.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [parentElement](./mind-elixir.children.parentelement.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [parentNode](./mind-elixir.children.parentnode.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [previousSibling](./mind-elixir.children.previoussibling.md) |  | [Parent](./mind-elixir.parent.md) |  |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[children](./mind-elixir.children.children.md)
+
+
+</td><td>
+
+
+</td><td>
+
+HTMLCollection &amp; [Wrapper](./mind-elixir.wrapper.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[firstChild](./mind-elixir.children.firstchild.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentElement](./mind-elixir.children.parentelement.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentNode](./mind-elixir.children.parentnode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[previousSibling](./mind-elixir.children.previoussibling.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

@@ -6,7 +6,24 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [mind-elixir](./mind-elixir.md) |  |
+<table><thead><tr><th>
 
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[mind-elixir](./mind-elixir.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

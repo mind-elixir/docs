@@ -6,37 +6,302 @@
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [Children](./mind-elixir.children.md) |  |
-|  [CustomSvg](./mind-elixir.customsvg.md) |  |
-|  [Expander](./mind-elixir.expander.md) |  |
-|  [MindElixirInstance](./mind-elixir.mindelixirinstance.md) | The MindElixir instance |
-|  [Parent](./mind-elixir.parent.md) |  |
-|  [Topic](./mind-elixir.topic.md) |  |
-|  [Wrapper](./mind-elixir.wrapper.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Arrow](./mind-elixir.arrow.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Children](./mind-elixir.children.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CustomSvg](./mind-elixir.customsvg.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Expander](./mind-elixir.expander.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MainLineParams](./mind-elixir.mainlineparams.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MindElixirInstance](./mind-elixir.mindelixirinstance.md)
+
+
+</td><td>
+
+The MindElixir instance
+
+
+</td></tr>
+<tr><td>
+
+[Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SubLineParams](./mind-elixir.sublineparams.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Summary](./mind-elixir.summary.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[Topic](./mind-elixir.topic.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [methods](./mind-elixir.methods.md) | Methods that mind-elixir instance can use |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods](./mind-elixir.methods.md)
+
+
+</td><td>
+
+Methods that mind-elixir instance can use
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Arrow](./mind-elixir.arrow.md) |  |
-|  [CustomArrow](./mind-elixir.customarrow.md) |  |
-|  [CustomLine](./mind-elixir.customline.md) |  |
-|  [MainLineParams](./mind-elixir.mainlineparams.md) |  |
-|  [MindElixirData](./mind-elixir.mindelixirdata.md) | The exported data of MindElixir |
-|  [MindElixirMethods](./mind-elixir.mindelixirmethods.md) |  |
-|  [NodeObj](./mind-elixir.nodeobj.md) | MindElixir node object |
-|  [NodeObjExport](./mind-elixir.nodeobjexport.md) |  |
-|  [Options](./mind-elixir.options.md) | The MindElixir options |
-|  [SubLineParams](./mind-elixir.sublineparams.md) |  |
-|  [Summary](./mind-elixir.summary.md) |  |
-|  [SummarySvgGroup](./mind-elixir.summarysvggroup.md) |  |
-|  [Theme](./mind-elixir.theme.md) |  |
+<table><thead><tr><th>
 
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ArrowOperation](./mind-elixir.arrowoperation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CustomArrow](./mind-elixir.customarrow.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CustomLine](./mind-elixir.customline.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[EventMap](./mind-elixir.eventmap.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Locale](./mind-elixir.locale.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[MindElixirData](./mind-elixir.mindelixirdata.md)
+
+
+</td><td>
+
+The exported data of MindElixir
+
+
+</td></tr>
+<tr><td>
+
+[MindElixirMethods](./mind-elixir.mindelixirmethods.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[NodeObj](./mind-elixir.nodeobj.md)
+
+
+</td><td>
+
+MindElixir node object
+
+
+</td></tr>
+<tr><td>
+
+[NodeObjExport](./mind-elixir.nodeobjexport.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Operation](./mind-elixir.operation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[OperationType](./mind-elixir.operationtype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Options](./mind-elixir.options.md)
+
+
+</td><td>
+
+The MindElixir options
+
+
+</td></tr>
+<tr><td>
+
+[SummaryOperation](./mind-elixir.summaryoperation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SummarySvgGroup](./mind-elixir.summarysvggroup.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Theme](./mind-elixir.theme.md)
+
+
+</td><td>
+
+MindElixir Theme
+
+
+</td></tr>
+</tbody></table>

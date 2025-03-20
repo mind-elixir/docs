@@ -23,12 +23,12 @@ export type NodeObj = {
     icons?: string[];
     hyperLink?: string;
     expanded?: boolean;
-    direction?: number;
-    root?: boolean;
+    direction?: Left | Right;
     image?: {
         url: string;
         width: number;
         height: number;
+        fit?: 'fill' | 'contain' | 'cover';
     };
     branchColor?: string;
     parent?: NodeObj;

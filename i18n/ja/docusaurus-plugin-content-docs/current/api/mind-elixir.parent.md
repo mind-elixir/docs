@@ -13,12 +13,127 @@ export interface Parent extends HTMLElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [children](./mind-elixir.parent.children.md) |  | HTMLCollection &amp; \[[Topic](./mind-elixir.topic.md)<!-- -->, [Expander](./mind-elixir.expander.md) \| undefined\] |  |
-|  [firstChild](./mind-elixir.parent.firstchild.md) |  | [Topic](./mind-elixir.topic.md) |  |
-|  [nextSibling](./mind-elixir.parent.nextsibling.md) |  | [Children](./mind-elixir.children.md) |  |
-|  [offsetParent](./mind-elixir.parent.offsetparent.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [parentElement](./mind-elixir.parent.parentelement.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
-|  [parentNode](./mind-elixir.parent.parentnode.md) |  | [Wrapper](./mind-elixir.wrapper.md) |  |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[children](./mind-elixir.parent.children.md)
+
+
+</td><td>
+
+
+</td><td>
+
+HTMLCollection &amp; \[[Topic](./mind-elixir.topic.md)<!-- -->, [Expander](./mind-elixir.expander.md) \| undefined\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[firstChild](./mind-elixir.parent.firstchild.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Topic](./mind-elixir.topic.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[nextSibling](./mind-elixir.parent.nextsibling.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Children](./mind-elixir.children.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[offsetParent](./mind-elixir.parent.offsetparent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentElement](./mind-elixir.parent.parentelement.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentNode](./mind-elixir.parent.parentnode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Wrapper](./mind-elixir.wrapper.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

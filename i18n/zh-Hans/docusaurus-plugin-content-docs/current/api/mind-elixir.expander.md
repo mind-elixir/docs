@@ -13,10 +13,95 @@ export interface Expander extends HTMLElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [expanded?](./mind-elixir.expander.expanded.md) |  | boolean | _(Optional)_ |
-|  [parentElement](./mind-elixir.expander.parentelement.md) |  | [Parent](./mind-elixir.parent.md) |  |
-|  [parentNode](./mind-elixir.expander.parentnode.md) |  | [Parent](./mind-elixir.parent.md) |  |
-|  [previousSibling](./mind-elixir.expander.previoussibling.md) |  | [Topic](./mind-elixir.topic.md) |  |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[expanded?](./mind-elixir.expander.expanded.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[parentElement](./mind-elixir.expander.parentelement.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parentNode](./mind-elixir.expander.parentnode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Parent](./mind-elixir.parent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[previousSibling](./mind-elixir.expander.previoussibling.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Topic](./mind-elixir.topic.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
