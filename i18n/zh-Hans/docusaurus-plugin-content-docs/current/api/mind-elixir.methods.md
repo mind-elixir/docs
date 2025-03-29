@@ -54,6 +54,7 @@ methods: {
     enableEdit: (this: MindElixirInstance) => void;
     disableEdit: (this: MindElixirInstance) => void;
     scale: (this: MindElixirInstance, scaleVal: number) => void;
+    scaleFit: (this: MindElixirInstance) => void;
     toCenter: (this: MindElixirInstance) => void;
     install: (this: MindElixirInstance, plugin: (instance: MindElixirInstance) => void) => void;
     focusNode: (this: MindElixirInstance, el: import("./index").Topic) => void;

@@ -2,38 +2,303 @@
 
 [Home](./index.md) &gt; [mind-elixir](./mind-elixir.md) &gt; [NodeObj](./mind-elixir.nodeobj.md)
 
-## NodeObj type
+## NodeObj interface
 
 MindElixir node object
 
 **Signature:**
 
 ```typescript
-export type NodeObj = {
-    topic: string;
-    id: Uid;
-    style?: {
-        fontSize?: string;
-        color?: string;
-        background?: string;
-        fontWeight?: string;
-    };
-    children?: NodeObj[];
-    tags?: string[];
-    icons?: string[];
-    hyperLink?: string;
-    expanded?: boolean;
-    direction?: Left | Right;
-    image?: {
-        url: string;
-        width: number;
-        height: number;
-        fit?: 'fill' | 'contain' | 'cover';
-    };
-    branchColor?: string;
-    parent?: NodeObj;
-    dangerouslySetInnerHTML?: string;
-};
+export interface NodeObj 
 ```
-**References:** [NodeObj](./mind-elixir.nodeobj.md)
 
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[branchColor?](./mind-elixir.nodeobj.branchcolor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The color of the branch.
+
+
+</td></tr>
+<tr><td>
+
+[children?](./mind-elixir.nodeobj.children.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[dangerouslySetInnerHTML?](./mind-elixir.nodeobj.dangerouslysetinnerhtml.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Render custom HTML in the node.
+
+Everything in the node will be replaced by this property.
+
+
+</td></tr>
+<tr><td>
+
+[direction?](./mind-elixir.nodeobj.direction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Left \| Right
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[expanded?](./mind-elixir.nodeobj.expanded.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[hyperLink?](./mind-elixir.nodeobj.hyperlink.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[icons?](./mind-elixir.nodeobj.icons.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[id](./mind-elixir.nodeobj.id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Uid
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[image?](./mind-elixir.nodeobj.image.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ url: string; width: number; height: number; fit?: 'fill' \| 'contain' \| 'cover'; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[note?](./mind-elixir.nodeobj.note.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Extra data for the node, which can be used to store any custom data.
+
+
+</td></tr>
+<tr><td>
+
+[parent?](./mind-elixir.nodeobj.parent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NodeObj](./mind-elixir.nodeobj.md)
+
+
+</td><td>
+
+_(Optional)_ This property is added programatically, do not set it manually.
+
+the Root node has no parent!
+
+
+</td></tr>
+<tr><td>
+
+[style?](./mind-elixir.nodeobj.style.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ fontSize?: string; color?: string; background?: string; fontWeight?: string; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[tags?](./mind-elixir.nodeobj.tags.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[topic](./mind-elixir.nodeobj.topic.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>

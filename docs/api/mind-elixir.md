@@ -75,6 +75,17 @@ The MindElixir instance
 </td></tr>
 <tr><td>
 
+[NodeObj](./mind-elixir.nodeobj.md)
+
+
+</td><td>
+
+MindElixir node object
+
+
+</td></tr>
+<tr><td>
+
 [Parent](./mind-elixir.parent.md)
 
 
@@ -223,17 +234,6 @@ The exported data of MindElixir
 
 
 </td><td>
-
-
-</td></tr>
-<tr><td>
-
-[NodeObj](./mind-elixir.nodeobj.md)
-
-
-</td><td>
-
-MindElixir node object
 
 
 </td></tr>
