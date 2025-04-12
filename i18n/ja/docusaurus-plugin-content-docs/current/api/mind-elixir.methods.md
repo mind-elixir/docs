@@ -15,6 +15,7 @@ methods: {
     exportSvg: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string) => Blob;
     exportPng: (this: MindElixirInstance, noForeignObject?: boolean, injectCss?: string) => Promise<Blob | null>;
     createSummary: (this: MindElixirInstance) => void;
+    createSummaryFrom: (this: MindElixirInstance, summary: Omit<summary.Summary, "id">) => void;
     removeSummary: (this: MindElixirInstance, id: string) => void;
     selectSummary: (this: MindElixirInstance, el: summary.SummarySvgGroup) => void;
     unselectSummary: (this: MindElixirInstance) => void;
