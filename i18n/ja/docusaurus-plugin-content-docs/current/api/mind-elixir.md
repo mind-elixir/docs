@@ -86,6 +86,17 @@ MindElixir node object
 </td></tr>
 <tr><td>
 
+[Options](./mind-elixir.options.md)
+
+
+</td><td>
+
+The MindElixir options
+
+
+</td></tr>
+<tr><td>
+
 [Parent](./mind-elixir.parent.md)
 
 
@@ -261,17 +272,6 @@ The exported data of MindElixir
 
 
 </td><td>
-
-
-</td></tr>
-<tr><td>
-
-[Options](./mind-elixir.options.md)
-
-
-</td><td>
-
-The MindElixir options
 
 
 </td></tr>

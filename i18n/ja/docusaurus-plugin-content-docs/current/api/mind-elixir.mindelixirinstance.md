@@ -9,9 +9,9 @@ The MindElixir instance
 **Signature:**
 
 ```typescript
-export interface MindElixirInstance extends MindElixirMethods 
+export interface MindElixirInstance extends Required<Options>, MindElixirMethods 
 ```
-**Extends:** [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
+**Extends:** Required&lt;[Options](./mind-elixir.options.md)<!-- -->&gt;, [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
 
 ## Properties
 
@@ -38,40 +38,6 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[alignment](./mind-elixir.mindelixirinstance.alignment.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Alignment
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[allowUndo](./mind-elixir.mindelixirinstance.allowundo.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [arrows](./mind-elixir.mindelixirinstance.arrows.md)
 
 
@@ -81,23 +47,6 @@ boolean
 </td><td>
 
 [Arrow](./mind-elixir.arrow.md)<!-- -->\[\]
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[before](./mind-elixir.mindelixirinstance.before.md)
-
-
-</td><td>
-
-
-</td><td>
-
-Before
 
 
 </td><td>
@@ -135,42 +84,6 @@ HTMLElement
 
 
 </td><td>
-
-
-</td></tr>
-<tr><td>
-
-[contextMenu](./mind-elixir.mindelixirinstance.contextmenu.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[contextMenuOption?](./mind-elixir.mindelixirinstance.contextmenuoption.md)
-
-
-</td><td>
-
-
-</td><td>
-
-ContextMenuOption
-
-
-</td><td>
-
-_(Optional)_
 
 
 </td></tr>
@@ -244,23 +157,6 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
-[direction](./mind-elixir.mindelixirinstance.direction.md)
-
-
-</td><td>
-
-
-</td><td>
-
-number
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [disposable](./mind-elixir.mindelixirinstance.disposable.md)
 
 
@@ -278,7 +174,7 @@ Array&lt;() =&gt; void&gt;
 </td></tr>
 <tr><td>
 
-[draggable](./mind-elixir.mindelixirinstance.draggable.md)
+[el](./mind-elixir.mindelixirinstance.el.md)
 
 
 </td><td>
@@ -286,58 +182,7 @@ Array&lt;() =&gt; void&gt;
 
 </td><td>
 
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[editable](./mind-elixir.mindelixirinstance.editable.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[generateMainBranch](./mind-elixir.mindelixirinstance.generatemainbranch.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; PathString
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[generateSubBranch](./mind-elixir.mindelixirinstance.generatesubbranch.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; PathString
+HTMLElement
 
 
 </td><td>
@@ -364,23 +209,6 @@ boolean
 <tr><td>
 
 [isFocusMode](./mind-elixir.mindelixirinstance.isfocusmode.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[keypress](./mind-elixir.mindelixirinstance.keypress.md)
 
 
 </td><td>
@@ -482,23 +310,6 @@ SVGElement
 </td></tr>
 <tr><td>
 
-[locale](./mind-elixir.mindelixirinstance.locale.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[Locale](./mind-elixir.locale.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [map](./mind-elixir.mindelixirinstance.map.md)
 
 
@@ -508,57 +319,6 @@ SVGElement
 </td><td>
 
 HTMLElement
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[mindElixirBox](./mind-elixir.mindelixirinstance.mindelixirbox.md)
-
-
-</td><td>
-
-
-</td><td>
-
-HTMLElement
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[mouseSelectionButton](./mind-elixir.mindelixirinstance.mouseselectionbutton.md)
-
-
-</td><td>
-
-
-</td><td>
-
-0 \| 2
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[newTopicName](./mind-elixir.mindelixirinstance.newtopicname.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
 
 
 </td><td>
@@ -610,23 +370,6 @@ string
 </td><td>
 
 HTMLElement
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[overflowHidden](./mind-elixir.mindelixirinstance.overflowhidden.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
 
 
 </td><td>
@@ -737,25 +480,6 @@ SelectionArea
 </td></tr>
 <tr><td>
 
-[selectionContainer?](./mind-elixir.mindelixirinstance.selectioncontainer.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string \| HTMLElement
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
 [summaries](./mind-elixir.mindelixirinstance.summaries.md)
 
 
@@ -807,40 +531,6 @@ number \| null
 </td></tr>
 <tr><td>
 
-[theme](./mind-elixir.mindelixirinstance.theme.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[Theme](./mind-elixir.theme.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[toolBar](./mind-elixir.mindelixirinstance.toolbar.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [undo](./mind-elixir.mindelixirinstance.undo.md)
 
 
@@ -853,25 +543,6 @@ boolean
 
 
 </td><td>
-
-
-</td></tr>
-<tr><td>
-
-[userTheme?](./mind-elixir.mindelixirinstance.usertheme.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[Theme](./mind-elixir.theme.md)
-
-
-</td><td>
-
-_(Optional)_
 
 
 </td></tr>

@@ -2,35 +2,377 @@
 
 [Home](./index.md) &gt; [mind-elixir](./mind-elixir.md) &gt; [Options](./mind-elixir.options.md)
 
-## Options type
+## Options interface
 
 The MindElixir options
 
 **Signature:**
 
 ```typescript
-export type Options = {
-    el: string | HTMLElement;
-    direction?: number;
-    locale?: Locale;
-    draggable?: boolean;
-    editable?: boolean;
-    contextMenu?: boolean;
-    contextMenuOption?: ContextMenuOption;
-    toolBar?: boolean;
-    keypress?: boolean;
-    mouseSelectionButton?: 0 | 2;
-    before?: Before;
-    newTopicName?: string;
-    allowUndo?: boolean;
-    overflowHidden?: boolean;
-    generateMainBranch?: (this: MindElixirInstance, params: MainLineParams) => PathString;
-    generateSubBranch?: (this: MindElixirInstance, params: SubLineParams) => PathString;
-    theme?: Theme;
-    nodeMenu?: boolean;
-    selectionContainer?: string | HTMLElement;
-    alignment?: Alignment;
-};
+export interface Options 
 ```
-**References:** [Locale](./mind-elixir.locale.md)<!-- -->, [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->, [Theme](./mind-elixir.theme.md)
 
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alignment?](./mind-elixir.options.alignment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Alignment
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[allowUndo?](./mind-elixir.options.allowundo.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[before?](./mind-elixir.options.before.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Before
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[contextMenu?](./mind-elixir.options.contextmenu.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| ContextMenuOption
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[direction?](./mind-elixir.options.direction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[draggable?](./mind-elixir.options.draggable.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[editable?](./mind-elixir.options.editable.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[el](./mind-elixir.options.el.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| HTMLElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[generateMainBranch?](./mind-elixir.options.generatemainbranch.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; PathString
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[generateSubBranch?](./mind-elixir.options.generatesubbranch.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; PathString
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[keypress?](./mind-elixir.options.keypress.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| KeypressOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[locale?](./mind-elixir.options.locale.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Locale](./mind-elixir.locale.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[mouseSelectionButton?](./mind-elixir.options.mouseselectionbutton.md)
+
+
+</td><td>
+
+
+</td><td>
+
+0 \| 2
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[newTopicName?](./mind-elixir.options.newtopicname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[overflowHidden?](./mind-elixir.options.overflowhidden.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[selectionContainer?](./mind-elixir.options.selectioncontainer.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| HTMLElement
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[theme?](./mind-elixir.options.theme.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Theme](./mind-elixir.theme.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[toolBar?](./mind-elixir.options.toolbar.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
