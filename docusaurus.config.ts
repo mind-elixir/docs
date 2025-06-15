@@ -87,7 +87,12 @@ const config: Config = {
         },
         {
           href: 'https://cloud.mind-elixir.com',
-          label: 'Mind Elixir Cloud',
+          label: 'Cloud',
+          position: 'right',
+        },
+        {
+          href: 'https://desktop.mind-elixir.com',
+          label: 'Mind Elixir Desktop',
           position: 'right',
         },
         {
@@ -108,23 +113,19 @@ const config: Config = {
             },
           ],
         },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/docusaurus',
-        //     },
-        //   ],
-        // },
+        {
+          title: 'Products',
+          items: [
+            {
+              label: 'Mind Elixir Cloud',
+              href: 'https://cloud.mind-elixir.com',
+            },
+            {
+              label: 'Mind Elixir Desktop',
+              href: 'https://desktop.mind-elixir.com',
+            }, 
+          ],
+        },
         {
           title: 'More',
           items: [

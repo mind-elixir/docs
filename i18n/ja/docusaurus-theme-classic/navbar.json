@@ -19,8 +19,12 @@
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
   },
-  "item.label.Mind Elixir Cloud": {
-    "message": "Mind Elixir Cloud",
-    "description": "Navbar item with label Mind Elixir Cloud"
+  "item.label.Cloud": {
+    "message": "Cloud",
+    "description": "Navbar item with label Cloud"
+  },
+  "item.label.Mind Elixir Desktop": {
+    "message": "Mind Elixir Desktop",
+    "description": "Navbar item with label Mind Elixir Desktop"
   }
 }
