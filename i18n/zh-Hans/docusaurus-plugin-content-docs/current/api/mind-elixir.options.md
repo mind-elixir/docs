@@ -320,6 +320,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[scaleSensitivity?](./mind-elixir.options.scalesensitivity.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [selectionContainer?](./mind-elixir.options.selectioncontainer.md)
 
 
