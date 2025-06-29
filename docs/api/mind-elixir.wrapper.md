@@ -154,3 +154,4 @@ HTMLCollection &amp; \[[Parent](./mind-elixir.parent.md)<!-- -->, [Children](./m
 
 </td></tr>
 </tbody></table>
+

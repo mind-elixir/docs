@@ -120,3 +120,4 @@ HTMLCollection &amp; [Wrapper](./mind-elixir.wrapper.md)<!-- -->\[\]
 
 </td></tr>
 </tbody></table>
+
