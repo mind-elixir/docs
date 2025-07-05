@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-currentNode: Topic | null;
+readonly currentNode: Topic | null;
 ```

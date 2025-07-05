@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-bus: ReturnType<typeof Bus.create<EventMap>>;
+bus: ReturnType<typeof createBus<EventMap>>;
 ```

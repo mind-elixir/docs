@@ -63,7 +63,7 @@ Description
 
 </td><td>
 
-ReturnType&lt;typeof Bus.create&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&gt;&gt;
+ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&gt;&gt;
 
 
 </td><td>
@@ -111,6 +111,8 @@ HTMLElement
 
 </td><td>
 
+`readonly`
+
 
 </td><td>
 
@@ -131,7 +133,7 @@ HTMLElement
 
 </td><td>
 
-[Topic](./mind-elixir.topic.md)<!-- -->\[\] \| null
+[Topic](./mind-elixir.topic.md)<!-- -->\[\]
 
 
 </td><td>
@@ -166,6 +168,40 @@ HTMLElement
 </td><td>
 
 Array&lt;() =&gt; void&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[dragged](./mind-elixir.mindelixirinstance.dragged.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Topic](./mind-elixir.topic.md)<!-- -->\[\] \| null
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[dragMoveHelper](./mind-elixir.mindelixirinstance.dragmovehelper.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReturnType&lt;typeof createDragMoveHelper&gt;
 
 
 </td><td>

@@ -7,10 +7,14 @@
 **Signature:**
 
 ```typescript
-style?: {
-        fontSize?: string;
-        color?: string;
-        background?: string;
-        fontWeight?: string;
-    };
+style?: Partial<{
+        fontSize: string;
+        fontFamily: string;
+        color: string;
+        background: string;
+        fontWeight: string;
+        width: string;
+        border: string;
+        textDecoration: string;
+    }>;
 ```

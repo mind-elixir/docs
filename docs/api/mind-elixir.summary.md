@@ -72,6 +72,23 @@ string
 </td></tr>
 <tr><td>
 
+[label](./mind-elixir.summary.label.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [parent](./mind-elixir.summary.parent.md)
 
 
@@ -105,23 +122,6 @@ number
 </td><td>
 
 start index of the summary
-
-
-</td></tr>
-<tr><td>
-
-[text](./mind-elixir.summary.text.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
 
 
 </td></tr>

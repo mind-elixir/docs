@@ -13,8 +13,11 @@ export type Theme = {
     name: string;
     type?: 'light' | 'dark';
     palette: string[];
-    cssVar: Partial<{
-        '--gap': string;
+    cssVar: {
+        '--node-gap-x': string;
+        '--node-gap-y': string;
+        '--main-gap-x': string;
+        '--main-gap-y': string;
         '--main-color': string;
         '--main-bgcolor': string;
         '--color': string;
@@ -29,6 +32,7 @@ export type Theme = {
         '--panel-color': string;
         '--panel-bgcolor': string;
         '--panel-border-color': string;
-    }>;
+        '--map-padding': string;
+    };
 };
 ```

@@ -147,6 +147,25 @@ label of arrow
 </td></tr>
 <tr><td>
 
+[style?](./mind-elixir.arrow.style.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ stroke?: string; strokeWidth?: string \| number; strokeDasharray?: string; strokeLinecap?: 'butt' \| 'round' \| 'square'; opacity?: string \| number; labelColor?: string; }
+
+
+</td><td>
+
+_(Optional)_ style properties for the arrow
+
+
+</td></tr>
+<tr><td>
+
 [to](./mind-elixir.arrow.to.md)
 
 

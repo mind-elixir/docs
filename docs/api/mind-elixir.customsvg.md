@@ -36,6 +36,40 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[arrow1](./mind-elixir.customsvg.arrow1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SVGPathElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[arrow2](./mind-elixir.customsvg.arrow2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SVGPathElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [arrowObj](./mind-elixir.customsvg.arrowobj.md)
 
 
@@ -53,7 +87,7 @@ Description
 </td></tr>
 <tr><td>
 
-[children](./mind-elixir.customsvg.children.md)
+[label](./mind-elixir.customsvg.label.md)
 
 
 </td><td>
@@ -61,7 +95,24 @@ Description
 
 </td><td>
 
-HTMLCollection &amp; \[[CustomLine](./mind-elixir.customline.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, [CustomArrow](./mind-elixir.customarrow.md)<!-- -->, SVGTextElement\]
+SVGTextElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[line](./mind-elixir.customsvg.line.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SVGPathElement
 
 
 </td><td>

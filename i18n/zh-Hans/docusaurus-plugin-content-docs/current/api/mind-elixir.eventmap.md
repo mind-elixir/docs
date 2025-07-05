@@ -12,12 +12,16 @@ export type EventMap = {
     selectNode: (nodeObj: NodeObj, e?: MouseEvent) => void;
     selectNewNode: (nodeObj: NodeObj) => void;
     selectNodes: (nodeObj: NodeObj[]) => void;
-    unselectNode: () => void;
-    unselectNodes: () => void;
+    unselectNodes: (nodeObj: NodeObj[]) => void;
     expandNode: (nodeObj: NodeObj) => void;
     linkDiv: () => void;
     scale: (scale: number) => void;
+    move: (data: {
+        dx: number;
+        dy: number;
+    }) => void;
     updateArrowDelta: (arrow: Arrow) => void;
+    showContextMenu: (e: MouseEvent) => void;
 };
 ```
 **References:** [Operation](./mind-elixir.operation.md)<!-- -->, [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, [Arrow](./mind-elixir.arrow.md)

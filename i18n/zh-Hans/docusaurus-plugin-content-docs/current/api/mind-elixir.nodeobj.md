@@ -256,7 +256,7 @@ the Root node has no parent!
 
 </td><td>
 
-{ fontSize?: string; color?: string; background?: string; fontWeight?: string; }
+Partial&lt;{ fontSize: string; fontFamily: string; color: string; background: string; fontWeight: string; width: string; border: string; textDecoration: string; }&gt;
 
 
 </td><td>
