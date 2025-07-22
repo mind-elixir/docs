@@ -225,6 +225,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[handleWheel?](./mind-elixir.options.handlewheel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+true \| ((e: WheelEvent) =&gt; void)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [keypress?](./mind-elixir.options.keypress.md)
 
 
