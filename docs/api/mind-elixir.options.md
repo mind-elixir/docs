@@ -339,6 +339,44 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[scaleMax?](./mind-elixir.options.scalemax.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[scaleMin?](./mind-elixir.options.scalemin.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [scaleSensitivity?](./mind-elixir.options.scalesensitivity.md)
 
 
