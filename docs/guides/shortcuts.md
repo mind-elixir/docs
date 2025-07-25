@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-Performing operations on nodes through the right-click menu can be inconvenient, significantly reducing work and learning efficiency. Mind Elixir supports more efficient keyboard shortcuts, allowing you to smoothly create diagrams!
+Performing operations on nodes through the right-click menu can be inconvenient, significantly reducing work and learning efficiency. Mind Elixir supports more efficient keyboard shortcuts, allowing you to smoothly create diagrams and navigate through your mind maps with ease! These shortcuts make browsing and exploring complex mind maps much more convenient and intuitive.
 
 | Shortcut           | Function                  |
 | ------------------ | ------------------------- |
@@ -19,7 +19,12 @@ Performing operations on nodes through the right-click menu can be inconvenient,
 | Ctrl + ←           | Use left-sided layout      |
 | Ctrl + →           | Use right-sided layout     |
 | Ctrl + C           | Copy                      |
+| Ctrl + X           | Cut                       |
 | Ctrl + V           | Paste                     |
+| Delete / Backspace | Remove node/arrow/summary |
 | Ctrl + "+"         | Zoom in mind map          |
 | Ctrl + "-"         | Zoom out mind map         |
-| Ctrl + 0           | Reset size                |
+| Ctrl + 0           | Reset zoom                |
+| Ctrl + K, Ctrl + 0 | Collapse all nodes        |
+| Ctrl + K, Ctrl + = | Expand all nodes          |
+| Ctrl + K, Ctrl + 1-9 | Expand to level N       |
