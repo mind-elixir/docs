@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import example from 'mind-elixir/example'
 import { MindElixirData } from 'mind-elixir'
+import 'mind-elixir/style.css'
 
 export default function MindElixirShowcase({
   height,

@@ -27,8 +27,8 @@ importers:
         specifier: ^2.0.0
         version: 2.1.1
       mind-elixir:
-        specifier: ^5.0.2
-        version: 5.0.2
+        specifier: ^5.0.4
+        version: 5.0.4
       prism-react-renderer:
         specifier: ^2.3.0
         version: 2.4.1(react@18.3.1)
@@ -3615,8 +3615,8 @@ packages:
     resolution: {integrity: sha512-e5ISH9xMYU0DzrT+jl8q2ze9D6eWBto+I8CNpe+VI+K2J/F/k3PdkdTdz4wvGVH4NTpo+NRYTVIuMQEMMcsLqg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  mind-elixir@5.0.2:
-    resolution: {integrity: sha512-ucSTSAT5y5bqDjf1dhlPCpPNQ1WBaaN2edvp2mFTmQgSWdusoRJIvZrnqNcoYAV3MZ6o/WtCfbG3hCbH6DrOgA==}
+  mind-elixir@5.0.4:
+    resolution: {integrity: sha512-/hffgIS8OsdMhSk6ZwcGQbbaQ84vOPIh0F31X8ywP7oq1LOzRn0mT+AXTR5bDlVUdXzKUcoAa3xcS/JP6hLwlQ==}
 
   mini-css-extract-plugin@2.9.2:
     resolution: {integrity: sha512-GJuACcS//jtq4kCtd5ii/M0SZf7OZRH+BxdqXZHaJfb8TJiVl+NgQRPwiYt2EuqeSkNydn/7vP+bcE27C5mb9w==}
@@ -9950,7 +9950,7 @@ snapshots:
 
   mimic-response@4.0.0: {}
 
-  mind-elixir@5.0.2: {}
+  mind-elixir@5.0.4: {}
 
   mini-css-extract-plugin@2.9.2(webpack@5.100.1(@swc/core@1.12.14)):
     dependencies:
