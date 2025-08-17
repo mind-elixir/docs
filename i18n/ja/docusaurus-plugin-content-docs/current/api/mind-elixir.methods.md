@@ -58,7 +58,7 @@ methods: {
         y: number;
     }) => void;
     scaleFit: (this: MindElixirInstance) => void;
-    move: (this: MindElixirInstance, dx: number, dy: number) => void;
+    move: (this: MindElixirInstance, dx: number, dy: number, smooth?: boolean) => void;
     toCenter: (this: MindElixirInstance) => void;
     install: (this: MindElixirInstance, plugin: (instance: MindElixirInstance) => void) => void;
     focusNode: (this: MindElixirInstance, el: import("./index").Topic) => void;
