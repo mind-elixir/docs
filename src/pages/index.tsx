@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import Heading from '@theme/Heading'
+import {translate} from '@docusaurus/Translate'
 
 import styles from './index.module.css'
 import MindElixirShowcase from '../components/MindElixirShowcase'
@@ -34,8 +35,16 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={translate({
+        id: 'homepage.title',
+        message: `${siteConfig.title} - Professional JavaScript Mind Mapping Core`,
+        description: 'The title of the homepage'
+      })}
+      description={translate({
+        id: 'homepage.description',
+        message: 'A powerful JavaScript mind mapping library for creating interactive mind maps',
+        description: 'The description of the homepage'
+      })}
     >
       <MindElixirShowcase height={'500px'} />
       <HomepageHeader />
