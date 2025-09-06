@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-tags?: string[];
+tags?: (string | TagObj)[];
 ```

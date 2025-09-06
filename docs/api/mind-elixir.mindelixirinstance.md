@@ -9,9 +9,9 @@ The MindElixir instance
 **Signature:**
 
 ```typescript
-export interface MindElixirInstance extends Required<Options>, MindElixirMethods 
+export interface MindElixirInstance extends Omit<Required<Options>, 'markdown' | 'imageProxy'>, MindElixirMethods 
 ```
-**Extends:** Required&lt;[Options](./mind-elixir.options.md)<!-- -->&gt;, [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
+**Extends:** Omit&lt;Required&lt;[Options](./mind-elixir.options.md)<!-- -->&gt;, 'markdown' \| 'imageProxy'&gt;, [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
 
 ## Properties
 
@@ -244,6 +244,25 @@ HTMLElement
 </td></tr>
 <tr><td>
 
+[imageProxy?](./mind-elixir.mindelixirinstance.imageproxy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(url: string) =&gt; string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [isFocusMode](./mind-elixir.mindelixirinstance.isfocusmode.md)
 
 
@@ -358,6 +377,25 @@ HTMLElement
 
 
 </td><td>
+
+
+</td></tr>
+<tr><td>
+
+[markdown?](./mind-elixir.mindelixirinstance.markdown.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(markdown: string) =&gt; string
+
+
+</td><td>
+
+_(Optional)_
 
 
 </td></tr>

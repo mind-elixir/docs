@@ -275,7 +275,7 @@ _(Optional)_
 
 </td><td>
 
-string\[\]
+(string \| TagObj)\[\]
 
 
 </td><td>

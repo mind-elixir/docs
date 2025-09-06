@@ -244,6 +244,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[imageProxy?](./mind-elixir.options.imageproxy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(url: string) =&gt; string
+
+
+</td><td>
+
+_(Optional)_ Image proxy function to handle image URLs, mainly used to solve CORS issues If provided, all image URLs will be processed through this function before setting to img src  undefined
+
+
+</td></tr>
+<tr><td>
+
 [keypress?](./mind-elixir.options.keypress.md)
 
 
@@ -277,6 +296,25 @@ _(Optional)_
 </td><td>
 
 _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[markdown?](./mind-elixir.options.markdown.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(markdown: string) =&gt; string
+
+
+</td><td>
+
+_(Optional)_ Custom markdown parser function that takes markdown string and returns HTML string If not provided, markdown will be disabled  undefined
 
 
 </td></tr>
