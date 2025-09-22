@@ -149,6 +149,17 @@ The MindElixir options
 </td></tr>
 <tr><td>
 
+[TagObj](./mind-elixir.tagobj.md)
+
+
+</td><td>
+
+Tag object for node tags with optional styling
+
+
+</td></tr>
+<tr><td>
+
 [Topic](./mind-elixir.topic.md)
 
 

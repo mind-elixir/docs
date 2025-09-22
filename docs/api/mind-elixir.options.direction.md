@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-direction?: number;
+direction?: 0 | 1 | 2;
 ```

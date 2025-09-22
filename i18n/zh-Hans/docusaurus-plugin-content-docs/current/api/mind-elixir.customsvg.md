@@ -87,7 +87,7 @@ SVGPathElement
 </td></tr>
 <tr><td>
 
-[label](./mind-elixir.customsvg.label.md)
+[labelEl?](./mind-elixir.customsvg.labelel.md)
 
 
 </td><td>
@@ -95,10 +95,12 @@ SVGPathElement
 
 </td><td>
 
-SVGTextElement
+HTMLDivElement
 
 
 </td><td>
+
+_(Optional)_
 
 
 </td></tr>

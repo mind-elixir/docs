@@ -155,7 +155,7 @@ label of arrow
 
 </td><td>
 
-{ stroke?: string; strokeWidth?: string \| number; strokeDasharray?: string; strokeLinecap?: 'butt' \| 'round' \| 'square'; opacity?: string \| number; labelColor?: string; }
+ArrowStyle
 
 
 </td><td>

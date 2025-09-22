@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-tempDirection: number | null;
+tempDirection: 0 | 1 | 2 | null;
 ```

@@ -8,8 +8,9 @@
 
 ```typescript
 export type SummarySvgGroup = SVGGElement & {
-    children: [SVGPathElement, SVGTextElement];
+    children: [SVGPathElement];
     summaryObj: Summary;
+    labelEl?: HTMLDivElement;
 };
 ```
 **References:** [Summary](./mind-elixir.summary.md)

@@ -9,12 +9,5 @@ style properties for the arrow
 **Signature:**
 
 ```typescript
-style?: {
-        stroke?: string;
-        strokeWidth?: string | number;
-        strokeDasharray?: string;
-        strokeLinecap?: 'butt' | 'round' | 'square';
-        opacity?: string | number;
-        labelColor?: string;
-    };
+style?: ArrowStyle;
 ```

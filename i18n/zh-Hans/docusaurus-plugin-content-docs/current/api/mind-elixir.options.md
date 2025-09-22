@@ -121,7 +121,7 @@ _(Optional)_
 
 </td><td>
 
-number
+0 \| 1 \| 2
 
 
 </td><td>
@@ -309,7 +309,7 @@ _(Optional)_
 
 </td><td>
 
-(markdown: string) =&gt; string
+(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; string
 
 
 </td><td>

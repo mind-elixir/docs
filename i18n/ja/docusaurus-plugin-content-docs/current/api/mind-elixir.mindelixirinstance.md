@@ -280,6 +280,23 @@ boolean
 </td></tr>
 <tr><td>
 
+[labelContainer](./mind-elixir.mindelixirinstance.labelcontainer.md)
+
+
+</td><td>
+
+
+</td><td>
+
+HTMLElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [line1](./mind-elixir.mindelixirinstance.line1.md)
 
 
@@ -390,7 +407,7 @@ HTMLElement
 
 </td><td>
 
-(markdown: string) =&gt; string
+(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; string
 
 
 </td><td>
@@ -554,6 +571,23 @@ SelectionArea
 </td></tr>
 <tr><td>
 
+[spacePressed](./mind-elixir.mindelixirinstance.spacepressed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [summaries](./mind-elixir.mindelixirinstance.summaries.md)
 
 
@@ -596,7 +630,7 @@ SVGElement
 
 </td><td>
 
-number \| null
+0 \| 1 \| 2 \| null
 
 
 </td><td>

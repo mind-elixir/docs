@@ -275,7 +275,7 @@ _(Optional)_
 
 </td><td>
 
-(string \| TagObj)\[\]
+(string \| [TagObj](./mind-elixir.tagobj.md)<!-- -->)\[\]
 
 
 </td><td>

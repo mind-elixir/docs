@@ -125,5 +125,24 @@ start index of the summary
 
 
 </td></tr>
+<tr><td>
+
+[style?](./mind-elixir.summary.style.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SummaryStyle
+
+
+</td><td>
+
+_(Optional)_ style of the summary
+
+
+</td></tr>
 </tbody></table>
 
