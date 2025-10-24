@@ -9,5 +9,5 @@ Custom markdown parser function that takes markdown string and returns HTML stri
 **Signature:**
 
 ```typescript
-markdown?: (markdown: string, obj: NodeObj) => string;
+markdown?: (markdown: string, obj: NodeObj | Arrow | Summary) => string;
 ```

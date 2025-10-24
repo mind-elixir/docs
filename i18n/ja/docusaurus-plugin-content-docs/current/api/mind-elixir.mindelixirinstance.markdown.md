@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-markdown?: (markdown: string, obj: NodeObj) => string;
+markdown?: (markdown: string, obj: NodeObj | Arrow | Summary) => string;
 ```

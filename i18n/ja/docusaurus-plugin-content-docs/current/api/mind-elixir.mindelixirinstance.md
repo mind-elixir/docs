@@ -407,7 +407,7 @@ HTMLElement
 
 </td><td>
 
-(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; string
+(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md) \| [Arrow](./mind-elixir.arrow.md) \| [Summary](./mind-elixir.summary.md)<!-- -->) =&gt; string
 
 
 </td><td>
