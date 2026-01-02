@@ -46,8 +46,8 @@ methods: {
     setNodeTopic: (this: MindElixirInstance, el: import("./docs").Topic, topic: string) => Promise<void>;
     scrollIntoView: (this: MindElixirInstance, el: HTMLElement) => void;
     selectNode: (this: MindElixirInstance, tpc: import("./docs").Topic, isNewNode?: boolean, e?: MouseEvent) => void;
-    selectNodes: (this: MindElixirInstance, tpc: import("./docs").Topic[]) => void;
-    unselectNodes: (this: MindElixirInstance, tpc: import("./docs").Topic[]) => void;
+    selectNodes: (this: MindElixirInstance, tpcs: import("./docs").Topic[]) => void;
+    unselectNodes: (this: MindElixirInstance, tpcs: import("./docs").Topic[]) => void;
     clearSelection: (this: MindElixirInstance) => void;
     getDataString: (this: MindElixirInstance) => string;
     getData: (this: MindElixirInstance) => MindElixirData;
