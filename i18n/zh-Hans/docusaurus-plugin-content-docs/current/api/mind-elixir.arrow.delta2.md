@@ -9,7 +9,7 @@ offset of control point from end point
 **Signature:**
 
 ```typescript
-delta2: {
+delta2?: {
         x: number;
         y: number;
     };

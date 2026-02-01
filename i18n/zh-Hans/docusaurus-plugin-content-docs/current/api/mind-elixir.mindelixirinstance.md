@@ -654,22 +654,5 @@ SVGElement
 
 
 </td></tr>
-<tr><td>
-
-[waitCopy](./mind-elixir.mindelixirinstance.waitcopy.md)
-
-
-</td><td>
-
-
-</td><td>
-
-[Topic](./mind-elixir.topic.md)<!-- -->\[\] \| null
-
-
-</td><td>
-
-
-</td></tr>
 </tbody></table>
 

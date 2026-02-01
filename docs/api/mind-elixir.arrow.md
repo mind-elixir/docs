@@ -54,7 +54,7 @@ _(Optional)_ whether the arrow is bidirectional
 </td></tr>
 <tr><td>
 
-[delta1](./mind-elixir.arrow.delta1.md)
+[delta1?](./mind-elixir.arrow.delta1.md)
 
 
 </td><td>
@@ -67,13 +67,13 @@ _(Optional)_ whether the arrow is bidirectional
 
 </td><td>
 
-offset of control point from start point
+_(Optional)_ offset of control point from start point
 
 
 </td></tr>
 <tr><td>
 
-[delta2](./mind-elixir.arrow.delta2.md)
+[delta2?](./mind-elixir.arrow.delta2.md)
 
 
 </td><td>
@@ -86,7 +86,7 @@ offset of control point from start point
 
 </td><td>
 
-offset of control point from end point
+_(Optional)_ offset of control point from end point
 
 
 </td></tr>

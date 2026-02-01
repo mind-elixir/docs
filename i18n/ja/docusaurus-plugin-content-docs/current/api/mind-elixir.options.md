@@ -377,6 +377,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[pasteHandler?](./mind-elixir.options.pastehandler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(e: ClipboardEvent) =&gt; void
+
+
+</td><td>
+
+_(Optional)_ Custom paste handler when there are no nodes copied;  undefined
+
+
+</td></tr>
+<tr><td>
+
 [scaleMax?](./mind-elixir.options.scalemax.md)
 
 

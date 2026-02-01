@@ -4,6 +4,11 @@
 
 ## Options.draggable property
 
+> Warning: This API is now obsolete.
+> 
+> Use `editable` instead
+> 
+
 **Signature:**
 
 ```typescript

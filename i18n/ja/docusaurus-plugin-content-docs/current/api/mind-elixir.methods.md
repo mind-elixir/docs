@@ -49,6 +49,7 @@ methods: {
     selectNodes: (this: MindElixirInstance, tpcs: import("./docs").Topic[]) => void;
     unselectNodes: (this: MindElixirInstance, tpcs: import("./docs").Topic[]) => void;
     clearSelection: (this: MindElixirInstance) => void;
+    stringifyData: (data: object) => string;
     getDataString: (this: MindElixirInstance) => string;
     getData: (this: MindElixirInstance) => MindElixirData;
     enableEdit: (this: MindElixirInstance) => void;
