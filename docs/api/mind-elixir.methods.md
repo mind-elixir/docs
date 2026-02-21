@@ -30,10 +30,10 @@ methods: {
     selectArrow: (this: MindElixirInstance, link: import("./docs").CustomSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;
     rmSubline: (this: MindElixirInstance, tpc: import("./docs").Topic) => Promise<void>;
-    reshapeNode: (this: MindElixirInstance, tpc: import("./docs").Topic, patchData: Partial<import("./types").NodeObj>) => Promise<void>;
-    insertSibling: (this: MindElixirInstance, type: "before" | "after", el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
-    insertParent: (this: MindElixirInstance, el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
-    addChild: (this: MindElixirInstance, el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj | undefined) => Promise<void>;
+    reshapeNode: (this: MindElixirInstance, tpc: import("./docs").Topic, patchData: Partial<import("./types").NodeObj<unknown>>) => Promise<void>;
+    insertSibling: (this: MindElixirInstance, type: "before" | "after", el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj<unknown> | undefined) => Promise<void>;
+    insertParent: (this: MindElixirInstance, el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj<unknown> | undefined) => Promise<void>;
+    addChild: (this: MindElixirInstance, el?: import("./docs").Topic | undefined, node?: import("./types").NodeObj<unknown> | undefined) => Promise<void>;
     copyNode: (this: MindElixirInstance, node: import("./docs").Topic, to: import("./docs").Topic) => Promise<void>;
     copyNodes: (this: MindElixirInstance, tpcs: import("./docs").Topic[], to: import("./docs").Topic) => Promise<void>;
     moveUpNode: (this: MindElixirInstance, el?: import("./docs").Topic | undefined) => Promise<void>;

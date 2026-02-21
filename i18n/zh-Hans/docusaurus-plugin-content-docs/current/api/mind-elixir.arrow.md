@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-export interface Arrow 
+export interface Arrow<M = unknown> 
 ```
 
 ## Properties
@@ -142,6 +142,25 @@ string
 </td><td>
 
 label of arrow
+
+
+</td></tr>
+<tr><td>
+
+[metadata?](./mind-elixir.arrow.metadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+M
+
+
+</td><td>
+
+_(Optional)_ Generic metadata for the arrow, can be used to store any custom data.
 
 
 </td></tr>

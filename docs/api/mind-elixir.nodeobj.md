@@ -9,7 +9,7 @@ MindElixir node object
 **Signature:**
 
 ```typescript
-export interface NodeObj 
+export interface NodeObj<M = unknown> 
 ```
 
 ## Properties
@@ -203,6 +203,25 @@ Uid
 </td><td>
 
 _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[metadata?](./mind-elixir.nodeobj.metadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+M
+
+
+</td><td>
+
+_(Optional)_ Generic metadata for the node, can be used to store any custom data.
 
 
 </td></tr>
