@@ -72,6 +72,27 @@ ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&
 </td></tr>
 <tr><td>
 
+[clearHistory?](./mind-elixir.mindelixirinstance.clearhistory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+_(Optional)_ Reset the undo/redo stack and update the internal baseline snapshot to the current diagram state. Call this after loading new data into an existing instance (e.g. after `refresh()`<!-- -->) to prevent users from undoing back into a previously loaded diagram.
+
+Only available when `allowUndo` is `true` (the default).
+
+
+</td></tr>
+<tr><td>
+
 [container](./mind-elixir.mindelixirinstance.container.md)
 
 

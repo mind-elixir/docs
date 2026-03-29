@@ -67,7 +67,6 @@ methods: {
     initLeft: (this: MindElixirInstance) => void;
     initRight: (this: MindElixirInstance) => void;
     initSide: (this: MindElixirInstance) => void;
-    setLocale: (this: MindElixirInstance, locale: import("./i18n").Locale) => void;
     expandNode: (this: MindElixirInstance, el: import("./docs").Topic, isExpand?: boolean) => void;
     expandNodeAll: (this: MindElixirInstance, el: import("./docs").Topic, isExpand?: boolean) => void;
     refresh: (this: MindElixirInstance, data?: MindElixirData) => void;

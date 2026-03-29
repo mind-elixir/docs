@@ -290,7 +290,7 @@ _(Optional)_
 
 </td><td>
 
-[Locale](./mind-elixir.locale.md)
+string
 
 
 </td><td>

@@ -255,11 +255,10 @@ Description
 </td></tr>
 <tr><td>
 
-[Locale](./mind-elixir.locale.md)
+[LangPack](./mind-elixir.langpack.md)
 
 
 </td><td>
-
 
 
 </td></tr>

@@ -4,8 +4,13 @@
 
 ## Options.locale property
 
+> Warning: This API is now obsolete.
+> 
+> Use `contextMenu.locale` instead.
+> 
+
 **Signature:**
 
 ```typescript
-locale?: Locale;
+locale?: string;
 ```
