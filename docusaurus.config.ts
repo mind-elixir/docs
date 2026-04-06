@@ -82,12 +82,6 @@ const config: Config = {
         },
         { to: '/docs/api/mind-elixir', label: 'APIs', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
-
-        {
-          href: 'https://cloud.mind-elixir.com',
-          label: 'Cloud',
-          position: 'right',
-        },
         {
           href: 'https://desktop.mind-elixir.com',
           label: 'Mind Elixir Desktop',

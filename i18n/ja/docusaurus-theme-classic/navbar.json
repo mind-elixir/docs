@@ -19,10 +19,6 @@
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
   },
-  "item.label.Cloud": {
-    "message": "Cloud",
-    "description": "Navbar item with label Cloud"
-  },
   "item.label.Mind Elixir Desktop": {
     "message": "Mind Elixir Desktop",
     "description": "Navbar item with label Mind Elixir Desktop"
