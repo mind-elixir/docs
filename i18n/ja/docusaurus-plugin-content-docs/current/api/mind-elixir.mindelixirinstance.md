@@ -214,23 +214,6 @@ Array&lt;() =&gt; void&gt;
 </td></tr>
 <tr><td>
 
-[dragMoveHelper](./mind-elixir.mindelixirinstance.dragmovehelper.md)
-
-
-</td><td>
-
-
-</td><td>
-
-ReturnType&lt;typeof createDragMoveHelper&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [el](./mind-elixir.mindelixirinstance.el.md)
 
 
@@ -516,6 +499,23 @@ HTMLElement
 </td><td>
 
 HTMLElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[panHelper](./mind-elixir.mindelixirinstance.panhelper.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReturnType&lt;typeof createPanHelper&gt;
 
 
 </td><td>
