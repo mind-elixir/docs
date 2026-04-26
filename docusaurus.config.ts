@@ -66,7 +66,7 @@ const config: Config = {
         content: 'mindmap, JavaScript, framework, library, mind-elixir, mindmap, mindmap editor, mindmap viewer, mindmap visualization',
       },
     ],
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/og-image.png',
     navbar: {
       title: 'Mind Elixir',
       logo: {
