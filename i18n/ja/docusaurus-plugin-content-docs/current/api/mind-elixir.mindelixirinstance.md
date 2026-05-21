@@ -55,6 +55,23 @@ Description
 </td></tr>
 <tr><td>
 
+[arrowSvg](./mind-elixir.mindelixirinstance.arrowsvg.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SVGElement
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [bus](./mind-elixir.mindelixirinstance.bus.md)
 
 
@@ -118,7 +135,7 @@ HTMLElement
 
 </td><td>
 
-[CustomSvg](./mind-elixir.customsvg.md) \| null
+[ArrowSvg](./mind-elixir.arrowsvg.md) \| null
 
 
 </td><td>
@@ -171,7 +188,7 @@ HTMLElement
 
 </td><td>
 
-[SummarySvgGroup](./mind-elixir.summarysvggroup.md) \| null
+[SummarySvg](./mind-elixir.summarysvg.md) \| null
 
 
 </td><td>
@@ -369,23 +386,6 @@ SVGElement
 </td></tr>
 <tr><td>
 
-[linkSvgGroup](./mind-elixir.mindelixirinstance.linksvggroup.md)
-
-
-</td><td>
-
-
-</td><td>
-
-SVGElement
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [map](./mind-elixir.mindelixirinstance.map.md)
 
 
@@ -417,6 +417,23 @@ HTMLElement
 </td><td>
 
 _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[mobileMultiSelect](./mind-elixir.mindelixirinstance.mobilemultiselect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
 
 
 </td></tr>
@@ -519,6 +536,25 @@ ReturnType&lt;typeof createPanHelper&gt;
 
 
 </td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ptState?](./mind-elixir.mindelixirinstance.ptstate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
 
 
 </td></tr>

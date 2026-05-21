@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-currentArrow: CustomSvg | null;
+currentArrow: ArrowSvg | null;
 ```

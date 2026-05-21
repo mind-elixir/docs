@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-currentSummary: SummarySvgGroup | null;
+currentSummary: SummarySvg | null;
 ```

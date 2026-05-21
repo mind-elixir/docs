@@ -320,6 +320,25 @@ _(Optional)_ Custom markdown parser function that takes markdown string and retu
 </td></tr>
 <tr><td>
 
+[mobileMultiSelect?](./mind-elixir.options.mobilemultiselect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Enable mobile multi-select mode  false
+
+
+</td></tr>
+<tr><td>
+
 [mouseSelectionButton?](./mind-elixir.options.mouseselectionbutton.md)
 
 

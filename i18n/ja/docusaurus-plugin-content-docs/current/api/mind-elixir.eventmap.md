@@ -21,8 +21,12 @@ export type EventMap = {
         dy: number;
     }) => void;
     updateArrowDelta: (arrow: Arrow) => void;
+    selectArrow: (arrow: Arrow) => void;
+    unselectArrow: () => void;
+    selectSummary: (summary: Summary) => void;
+    unselectSummary: () => void;
     showContextMenu: (e: MouseEvent) => void;
 };
 ```
-**References:** [Operation](./mind-elixir.operation.md)<!-- -->, [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, [Arrow](./mind-elixir.arrow.md)
+**References:** [Operation](./mind-elixir.operation.md)<!-- -->, [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, [Arrow](./mind-elixir.arrow.md)<!-- -->, [Summary](./mind-elixir.summary.md)
 

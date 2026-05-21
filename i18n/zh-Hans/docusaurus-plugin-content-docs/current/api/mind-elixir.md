@@ -52,7 +52,7 @@ Description
 </td></tr>
 <tr><td>
 
-[Children](./mind-elixir.children.md)
+[ArrowSvg](./mind-elixir.arrowsvg.md)
 
 
 </td><td>
@@ -61,7 +61,7 @@ Description
 </td></tr>
 <tr><td>
 
-[CustomSvg](./mind-elixir.customsvg.md)
+[Children](./mind-elixir.children.md)
 
 
 </td><td>
@@ -149,6 +149,15 @@ The MindElixir options
 </td></tr>
 <tr><td>
 
+[SummarySvg](./mind-elixir.summarysvg.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [TagObj](./mind-elixir.tagobj.md)
 
 
@@ -228,24 +237,6 @@ Description
 </td></tr>
 <tr><td>
 
-[CustomArrow](./mind-elixir.customarrow.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[CustomLine](./mind-elixir.customline.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [EventMap](./mind-elixir.eventmap.md)
 
 
@@ -312,15 +303,6 @@ The exported data of MindElixir
 <tr><td>
 
 [SummaryOperation](./mind-elixir.summaryoperation.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[SummarySvgGroup](./mind-elixir.summarysvggroup.md)
 
 
 </td><td>
