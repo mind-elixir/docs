@@ -55,7 +55,8 @@ methods: {
     getData: (this: MindElixirInstance) => MindElixirData;
     enableEdit: (this: MindElixirInstance) => void;
     disableEdit: (this: MindElixirInstance) => void;
-    scale: (this: MindElixirInstance, scaleVal: number, offset?: {
+    scale: (this: MindElixirInstance, 
+    scaleVal: number, offset?: {
         x: number;
         y: number;
     }) => void;
@@ -89,5 +90,6 @@ methods: {
     createTopic: (this: MindElixirInstance, nodeObj: import("./types").NodeObj) => import("./docs").Topic;
     findEle: (this: MindElixirInstance, id: string, el?: HTMLElement) => import("./docs").Topic;
     changeTheme: (this: MindElixirInstance, theme: import("./types").Theme, shouldRefresh?: boolean) => void;
+    changeCompact: (this: MindElixirInstance, compact: boolean) => void;
 }
 ```

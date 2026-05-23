@@ -94,6 +94,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[compact?](./mind-elixir.options.compact.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Compact mode. If true, distance fields will be controlled to a small value.
+
+
+</td></tr>
+<tr><td>
+
 [contextMenu?](./mind-elixir.options.contextmenu.md)
 
 
