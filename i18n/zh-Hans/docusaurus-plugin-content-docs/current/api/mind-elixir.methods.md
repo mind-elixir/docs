@@ -55,8 +55,7 @@ methods: {
     getData: (this: MindElixirInstance) => MindElixirData;
     enableEdit: (this: MindElixirInstance) => void;
     disableEdit: (this: MindElixirInstance) => void;
-    scale: (this: MindElixirInstance, 
-    scaleVal: number, offset?: {
+    scale: (this: MindElixirInstance, scaleVal: number, offset?: {
         x: number;
         y: number;
     }) => void;
