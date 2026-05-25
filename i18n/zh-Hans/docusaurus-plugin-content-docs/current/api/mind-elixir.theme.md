@@ -13,28 +13,10 @@ export type Theme = {
     name: string;
     type?: 'light' | 'dark';
     palette: string[];
-    cssVar: {
-        '--node-gap-x': string;
-        '--node-gap-y': string;
-        '--main-gap-x': string;
-        '--main-gap-y': string;
-        '--main-color': string;
-        '--main-bgcolor': string;
-        '--main-bgcolor-transparent': string;
-        '--color': string;
-        '--bgcolor': string;
-        '--selected': string;
-        '--accent-color': string;
-        '--root-color': string;
-        '--root-bgcolor': string;
-        '--root-border-color': string;
-        '--root-radius': string;
-        '--main-radius': string;
-        '--topic-padding': string;
-        '--panel-color': string;
-        '--panel-bgcolor': string;
-        '--panel-border-color': string;
-        '--map-padding': string;
-    };
+    cssVar?: Partial<ThemeCssVar>;
+    generateMainBranch?: (this: MindElixirInstance, params: MainLineParams) => string;
+    generateSubBranch?: (this: MindElixirInstance, params: SubLineParams) => string;
 };
 ```
+**References:** [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)
+

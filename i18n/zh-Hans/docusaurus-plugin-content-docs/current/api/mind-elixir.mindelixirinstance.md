@@ -9,9 +9,9 @@ The MindElixir instance
 **Signature:**
 
 ```typescript
-export interface MindElixirInstance extends Omit<Required<Options>, 'markdown' | 'imageProxy'>, MindElixirMethods 
+export interface MindElixirInstance extends Omit<Required<Options>, 'markdown' | 'imageProxy' | 'theme'>, MindElixirMethods 
 ```
-**Extends:** Omit&lt;Required&lt;[Options](./mind-elixir.options.md)<!-- -->&gt;, 'markdown' \| 'imageProxy'&gt;, [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
+**Extends:** Omit&lt;Required&lt;[Options](./mind-elixir.options.md)<!-- -->&gt;, 'markdown' \| 'imageProxy' \| 'theme'&gt;, [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
 
 ## Properties
 
@@ -422,6 +422,25 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
+[meta?](./mind-elixir.mindelixirinstance.meta.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, any&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [mobileMultiSelect](./mind-elixir.mindelixirinstance.mobilemultiselect.md)
 
 
@@ -688,6 +707,23 @@ SVGElement
 </td><td>
 
 0 \| 1 \| 2 \| null
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[theme](./mind-elixir.mindelixirinstance.theme.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Omit&lt;[Theme](./mind-elixir.theme.md)<!-- -->, 'cssVar'&gt; &amp; { cssVar: ThemeCssVar; }
 
 
 </td><td>

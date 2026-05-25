@@ -7,5 +7,7 @@
 **Signature:**
 
 ```typescript
-theme: Theme;
+theme: Omit<Theme, 'cssVar'> & {
+        cssVar: ThemeCssVar;
+    };
 ```

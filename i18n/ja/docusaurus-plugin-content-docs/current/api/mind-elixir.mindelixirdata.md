@@ -16,6 +16,7 @@ export type MindElixirData = {
     direction?: 0 | 1 | 2;
     theme?: Theme;
     compact?: boolean;
+    meta?: Record<string, any>;
 };
 ```
 **References:** [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, [Arrow](./mind-elixir.arrow.md)<!-- -->, [Summary](./mind-elixir.summary.md)<!-- -->, [Theme](./mind-elixir.theme.md)
