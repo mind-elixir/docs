@@ -30,6 +30,7 @@ methods: {
     removeArrow: (this: MindElixirInstance, linkSvg?: import("./docs").ArrowSvg) => void;
     selectArrow: (this: MindElixirInstance, link: import("./docs").ArrowSvg) => void;
     unselectArrow: (this: MindElixirInstance) => void;
+    reshapeArrow: (this: MindElixirInstance, arrow: arrow.Arrow, patchData: Partial<arrow.Arrow>) => void;
     moveNodeIn: (this: MindElixirInstance, from: import("./docs").Topic[], to: import("./docs").Topic) => Promise<void>;
     moveDownNode: (this: MindElixirInstance, el?: import("./docs").Topic | undefined) => Promise<void>;
     moveUpNode: (this: MindElixirInstance, el?: import("./docs").Topic | undefined) => Promise<void>;

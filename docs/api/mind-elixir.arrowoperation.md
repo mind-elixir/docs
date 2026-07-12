@@ -18,6 +18,10 @@ export type ArrowOperation = {
 } | {
     name: 'finishEditArrowLabel';
     obj: Arrow;
+} | {
+    name: 'reshapeArrow';
+    obj: Arrow;
+    origin: Arrow;
 };
 ```
 **References:** [Arrow](./mind-elixir.arrow.md)
