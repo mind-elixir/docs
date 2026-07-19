@@ -33,6 +33,116 @@
   margin-top: unset !important;
 }
 
+/* Mind map Markdown (aligned with mind-elixir-desktop) */
+/* me-tpc uses white-space: pre-wrap for plain text; HTML from markdown
+   needs normal flow so block elements (tables, lists) don't pick up
+   source newlines as visible gaps. */
+.map-container me-tpc > .text {
+  white-space: normal;
+}
+
+.map-container p {
+  margin: 0;
+}
+
+.map-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.15rem 0;
+}
+
+.map-container h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.15rem 0;
+}
+
+.map-container h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0.1rem 0;
+}
+
+.map-container strong.asterisk,
+.map-container em {
+  color: var(--selected);
+}
+
+.map-container strong.underscore {
+  background-color: rgba(255, 255, 0, 0.3);
+  padding: 0 0.2rem;
+  border-radius: 0.1rem;
+}
+
+.map-container a {
+  color: var(--selected);
+}
+
+.map-container .katex-display {
+  margin: 0.25em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Undo Infima's global table { display: block } which splits thead/tbody
+   into separate visual blocks inside mind map nodes. */
+.map-container table {
+  display: table;
+  width: auto;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0.25em 0;
+  overflow: visible;
+}
+
+.map-container thead {
+  display: table-header-group;
+  background-color: transparent;
+}
+
+.map-container tbody {
+  display: table-row-group;
+}
+
+.map-container tr {
+  display: table-row;
+  background-color: transparent;
+  border-top: none;
+}
+
+.map-container tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+.map-container th,
+.map-container td {
+  display: table-cell;
+  border: 1px solid var(--ifm-color-emphasis-300, #d0d0d0);
+  padding: 0.2em 0.55em;
+  color: inherit;
+  background-color: transparent;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.map-container th {
+  font-weight: 600;
+  background-color: var(--ifm-color-emphasis-100, rgba(0, 0, 0, 0.04));
+  color: inherit;
+}
+
+.map-container ul,
+.map-container ol {
+  margin: 0.15em 0;
+  padding-left: 1.25em;
+}
+
+.map-container code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25em;
+}
+
 /* GitHub and AtomGit icon button styling to match theme toggle */
 .navbar-github-link,
 .navbar-atomgit-link {
