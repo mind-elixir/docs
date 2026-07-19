@@ -23,6 +23,14 @@
     "message": "Mind Elixir 桌面版",
     "description": "The label of footer link with label=Mind Elixir Desktop"
   },
+  "link.item.label.mindmapcn": {
+    "message": "mindmapcn",
+    "description": "The label of footer link with label=mindmapcn"
+  },
+  "link.item.label.mindmapcn-svelte": {
+    "message": "mindmapcn-svelte",
+    "description": "The label of footer link with label=mindmapcn-svelte"
+  },
   "link.item.label.Blog": {
     "message": "博客",
     "description": "The label of footer link with label=Blog linking to /blog"

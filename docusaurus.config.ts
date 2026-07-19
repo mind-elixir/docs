@@ -128,6 +128,14 @@ const config: Config = {
               label: 'Mind Elixir Desktop',
               href: 'https://desktop.mind-elixir.com',
             },
+            {
+              label: 'mindmapcn',
+              href: 'https://mindmapcn.mind-elixir.com/',
+            },
+            {
+              label: 'mindmapcn-svelte',
+              href: 'https://mindmapcn-svelte.mind-elixir.com/',
+            },
           ],
         },
         {
