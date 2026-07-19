@@ -1,6 +1,6 @@
 # Cloudflare Workers static assets (SSG) for Docusaurus
 # https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/docusaurus/
-name = "mind-elixir-docs"
+name = "docs"
 compatibility_date = "2026-07-19"
 
 # Pure static site — no Worker entrypoint needed
