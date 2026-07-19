@@ -1,0 +1,12 @@
+# Cloudflare Workers static assets (SSG) for Docusaurus
+# https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/docusaurus/
+name = "mind-elixir-docs"
+compatibility_date = "2026-07-19"
+
+# Pure static site — no Worker entrypoint needed
+[assets]
+directory = "./build"
+# Docusaurus emits /path/index.html style routes
+html_handling = "auto-trailing-slash"
+# Serve build/404.html for unknown paths
+not_found_handling = "404-page"
