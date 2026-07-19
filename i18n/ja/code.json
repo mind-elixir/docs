@@ -293,5 +293,13 @@
   "homepage.description": {
     "message": "インタラクティブなマインドマップを作成するための強力な JavaScript マインドマップライブラリ",
     "description": "The description of the homepage"
+  },
+  "homepage.tagline": {
+    "message": "オープンソースの JavaScript マインドマップライブラリ",
+    "description": "The tagline of the homepage"
+  },
+  "homepage.quickStart": {
+    "message": "クイックスタート - 5分 ⏱️",
+    "description": "The quick start button label on the homepage"
   }
 }

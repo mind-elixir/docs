@@ -8,12 +8,16 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Tutorial": {
-    "message": "Tutorial",
+    "message": "チュートリアル",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.APIs": {
-    "message": "APIs",
+    "message": "API",
     "description": "Navbar item with label APIs"
+  },
+  "item.label.Blog": {
+    "message": "ブログ",
+    "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
     "message": "GitHub",

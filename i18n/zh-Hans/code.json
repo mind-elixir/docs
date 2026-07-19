@@ -293,5 +293,13 @@
   "homepage.description": {
     "message": "一个强大的 JavaScript 思维导图库，用于创建交互式思维导图",
     "description": "The description of the homepage"
+  },
+  "homepage.tagline": {
+    "message": "开源 JavaScript 思维导图库",
+    "description": "The tagline of the homepage"
+  },
+  "homepage.quickStart": {
+    "message": "快速开始 - 5 分钟 ⏱️",
+    "description": "The quick start button label on the homepage"
   }
 }
