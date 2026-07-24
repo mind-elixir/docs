@@ -4,6 +4,30 @@
 
 ## mind-elixir package
 
+## Classes
+
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MindElixir](./mind-elixir.mindelixir.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
 ## Functions
 
 <table><thead><tr><th>
@@ -88,12 +112,10 @@ Description
 </td></tr>
 <tr><td>
 
-[MindElixirInstance](./mind-elixir.mindelixirinstance.md)
+[MindElixir](./mind-elixir.mindelixir.md)
 
 
 </td><td>
-
-The MindElixir instance
 
 
 </td></tr>
@@ -261,6 +283,19 @@ Description
 </td><td>
 
 The exported data of MindElixir
+
+
+</td></tr>
+<tr><td>
+
+[MindElixirInstance](./mind-elixir.mindelixirinstance.md)
+
+
+</td><td>
+
+The MindElixir instance
+
+The instance shape is owned by the `MindElixir` class; this type simply derives from it so existing `MindElixirInstance` references keep working.
 
 
 </td></tr>

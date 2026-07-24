@@ -13,7 +13,7 @@ export type MindElixirData = {
     nodeData: NodeObj;
     arrows?: Arrow[];
     summaries?: Summary[];
-    direction?: 0 | 1 | 2;
+    direction?: 0 | 1 | 2 | 3;
     theme?: Theme;
     compact?: boolean;
     meta?: Record<string, any>;
