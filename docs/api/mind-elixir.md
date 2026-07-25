@@ -112,15 +112,6 @@ Description
 </td></tr>
 <tr><td>
 
-[MindElixir](./mind-elixir.mindelixir.md)
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [NodeObj](./mind-elixir.nodeobj.md)
 
 
