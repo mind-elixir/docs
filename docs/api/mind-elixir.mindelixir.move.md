@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-move: (this: MindElixirInstance, dx: number, dy: number, smooth?: boolean) => void;
+move: (this: MindElixirInstance, dx: number, dy: number, smooth?: boolean) => boolean;
 ```

@@ -1550,7 +1550,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, dx: number, dy: number, smooth?: boolean) =&gt; void
+(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, dx: number, dy: number, smooth?: boolean) =&gt; boolean
 
 
 </td><td>
