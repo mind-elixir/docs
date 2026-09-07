@@ -86,6 +86,25 @@ number
 </td></tr>
 <tr><td>
 
+[containerWidth?](./mind-elixir.mainlineparams.containerwidth.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
 [cT](./mind-elixir.mainlineparams.ct.md)
 
 
