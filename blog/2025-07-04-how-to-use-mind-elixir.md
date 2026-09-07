@@ -2,7 +2,7 @@
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
 title: "Effortlessly Integrate Professional Mind Mapping into Your Web Projects - Mind Elixir"
-tags: ["JavaScript", "Mind Mapping", "Frontend Development", "Visualization", "Open Source", "coding"]
+keywords: ["JavaScript", "Mind Mapping", "Frontend Development", "Visualization", "Open Source", "coding"]
 description: "A comprehensive guide on integrating mind mapping functionality into web projects using Mind Elixir. From basic installation to advanced customization, complete with code examples and best practices to help developers quickly master this powerful JavaScript mind mapping library."
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---

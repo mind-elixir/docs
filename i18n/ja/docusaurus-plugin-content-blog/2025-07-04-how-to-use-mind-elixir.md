@@ -2,8 +2,7 @@
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
 title: "Webページにマインドマップ機能を簡単に統合 - Mind Elixir"
-tags:
-  ["JavaScript", "マインドマップ", "フロントエンド開発", "可視化", "オープンソースツール", "coding"]
+keywords: ["JavaScript", "マインドマップ", "フロントエンド開発", "可視化", "オープンソースツール", "coding"]
 description: "Mind ElixirをWebプロジェクトに統合してマインドマップ機能を実装する方法を詳しく解説。基本的なインストールから高度なカスタマイズまで、完全なコード例とベストプラクティスを含み、開発者がこの強力なJavaScriptマインドマップライブラリを素早く習得できるよう支援します。"
 multiLang: ["en", "es", "ja", "ko", "ru"]
 ---

@@ -2,7 +2,7 @@
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
 title: "轻松在网页中集成专业思维导图功能 - Mind Elixir"
-tags: ["JavaScript", "思维导图", "前端开发", "可视化", "开源工具", "coding"]
+keywords: ["JavaScript", "思维导图", "前端开发", "可视化", "开源工具", "coding"]
 description: "详细介绍如何使用 Mind Elixir 在网页项目中集成思维导图功能。从基础安装到高级定制，包含完整代码示例和最佳实践，帮助开发者快速上手这个强大的 JavaScript 思维导图库。"
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---
