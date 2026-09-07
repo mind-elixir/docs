@@ -6,7 +6,7 @@ compatibility_date = "2026-07-19"
 # Pure static site — no Worker entrypoint needed
 [assets]
 directory = "./build"
-# Docusaurus emits /path/index.html style routes
-html_handling = "auto-trailing-slash"
+# Drop trailing slash for clean URLs (e.g. /blog instead of /blog/)
+html_handling = "drop-trailing-slash"
 # Serve build/404.html for unknown paths
 not_found_handling = "404-page"
