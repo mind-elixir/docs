@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-clearSelection: (this: MindElixirInstance) => void;
+clearSelection: () => void;
 ```

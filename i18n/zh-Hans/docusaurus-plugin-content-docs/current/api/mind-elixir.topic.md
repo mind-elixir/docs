@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-export interface Topic extends HTMLElement 
+export interface Topic<M = any> extends HTMLElement 
 ```
 **Extends:** HTMLElement
 
@@ -120,7 +120,7 @@ _(Optional)_
 
 </td><td>
 
-[NodeObj](./mind-elixir.nodeobj.md)
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;
 
 
 </td><td>

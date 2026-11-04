@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-removeArrow: (this: MindElixirInstance, linkSvg?: ArrowSvg) => void;
+removeArrow: (linkSvg?: ArrowSvg) => void;
 ```

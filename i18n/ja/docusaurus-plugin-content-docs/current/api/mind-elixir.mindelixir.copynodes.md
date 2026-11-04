@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-copyNodes: (this: MindElixirInstance, tpcs: Topic[], to: Topic) => Promise<void>;
+copyNodes: (tpcs: Topic<M>[], to: Topic<M>) => Promise<void>;
 ```

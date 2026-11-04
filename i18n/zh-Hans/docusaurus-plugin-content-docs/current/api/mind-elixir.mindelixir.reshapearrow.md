@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-reshapeArrow: (this: MindElixirInstance, arrow: Arrow, patchData: Partial<Arrow>) => void;
+reshapeArrow: (arrow: Arrow<M>, patchData: Partial<Arrow<M>>) => void;
 ```

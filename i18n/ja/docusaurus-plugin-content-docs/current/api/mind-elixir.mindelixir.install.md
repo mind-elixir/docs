@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-install: (this: MindElixirInstance, plugin: (instance: MindElixirInstance) => void) => void;
+install: (plugin: (instance: MindElixir<M>) => void) => void;
 ```

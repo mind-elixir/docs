@@ -7,9 +7,9 @@
 **Signature:**
 
 ```typescript
-createWrapper: (this: MindElixirInstance, nodeObj: NodeObj, omitChildren?: boolean) => {
+createWrapper: (nodeObj: NodeObj<M>, omitChildren?: boolean) => {
         grp: Wrapper;
         top: Parent;
-        tpc: Topic;
+        tpc: Topic<M>;
     };
 ```

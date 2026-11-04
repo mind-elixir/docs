@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-selectArrow: (this: MindElixirInstance, link: ArrowSvg) => void;
+selectArrow: (link: ArrowSvg) => void;
 ```

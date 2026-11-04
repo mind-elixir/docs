@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-toCenter: (this: MindElixirInstance) => void;
+toCenter: () => void;
 ```

@@ -7,8 +7,8 @@
 **Signature:**
 
 ```typescript
-createParent: (this: MindElixirInstance, nodeObj: NodeObj) => {
+createParent: (nodeObj: NodeObj<M>) => {
         p: Parent;
-        tpc: Topic;
+        tpc: Topic<M>;
     };
 ```

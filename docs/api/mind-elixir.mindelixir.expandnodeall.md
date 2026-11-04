@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-expandNodeAll: (this: MindElixirInstance, el: Topic, isExpand?: boolean) => void;
+expandNodeAll: (el: Topic<M>, isExpand?: boolean, options?: ExpandNodeOptions) => void;
 ```

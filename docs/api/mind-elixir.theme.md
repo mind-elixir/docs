@@ -9,14 +9,14 @@ MindElixir Theme
 **Signature:**
 
 ```typescript
-export type Theme = {
+export type Theme<M = any> = {
     name: string;
     type?: 'light' | 'dark';
     palette: string[];
     cssVar?: Partial<ThemeCssVar>;
-    generateMainBranch?: (this: MindElixirInstance, params: MainLineParams) => string;
-    generateSubBranch?: (this: MindElixirInstance, params: SubLineParams) => string;
+    generateMainBranch?: (this: MindElixir<M>, params: MainLineParams) => string;
+    generateSubBranch?: (this: MindElixir<M>, params: SubLineParams) => string;
 };
 ```
-**References:** [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)
+**References:** [MindElixir](./mind-elixir.mindelixir.md)<!-- -->, [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->, [SubLineParams](./mind-elixir.sublineparams.md)
 

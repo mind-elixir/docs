@@ -9,7 +9,7 @@ Constructs a new instance of the `MindElixir` class
 **Signature:**
 
 ```typescript
-constructor({ el, direction, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, }: Options);
+constructor({ el, direction, rtl, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, }: Options<M>);
 ```
 
 ## Parameters
@@ -32,12 +32,12 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-{ el, direction, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, }
+{ el, direction, rtl, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, }
 
 
 </td><td>
 
-[Options](./mind-elixir.options.md)
+[Options](./mind-elixir.options.md)<!-- -->&lt;M&gt;
 
 
 </td><td>

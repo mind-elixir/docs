@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-beginEdit: (this: MindElixirInstance, el?: Topic | undefined) => Promise<void>;
+beginEdit: (el?: Topic<M> | undefined) => Promise<void>;
 ```

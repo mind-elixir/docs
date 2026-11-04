@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-getObjById: (id: string, data: NodeObj) => NodeObj | null;
+getObjById: (id: string, data: NodeObj<M>) => NodeObj<M> | null;
 ```

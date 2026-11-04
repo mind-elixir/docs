@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-changeCompact: (this: MindElixirInstance, compact: boolean) => void;
+changeCompact: (compact: boolean) => void;
 ```

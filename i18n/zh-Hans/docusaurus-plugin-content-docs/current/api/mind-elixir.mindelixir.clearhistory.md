@@ -6,6 +6,8 @@
 
 Reset the undo/redo stack and update the internal baseline snapshot to the current diagram state. Call this after loading new data into an existing instance (e.g. after `refresh()`<!-- -->) to prevent users from undoing back into a previously loaded diagram.
 
+Also called automatically by `focusNode` / `cancelFocus`<!-- -->: focus mode swaps the rendered document, so history from before the switch is not replayable.
+
 Only available when `allowUndo` is `true` (the default).
 
 **Signature:**

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createArrow: (this: MindElixirInstance, from: Topic, to: Topic, options?: ArrowOptions) => void;
+createArrow: (from: Topic<M>, to: Topic<M>, options?: ArrowOptions) => void;
 ```

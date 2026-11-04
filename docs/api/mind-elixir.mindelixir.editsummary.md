@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-editSummary: (this: MindElixirInstance, el: SummarySvg) => void;
+editSummary: (el: SummarySvg) => void;
 ```

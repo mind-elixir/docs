@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-tidyArrow: (this: MindElixirInstance) => void;
+tidyArrow: () => void;
 ```

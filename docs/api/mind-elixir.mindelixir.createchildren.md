@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createChildren: (this: MindElixirInstance, wrappers: Wrapper[]) => Children;
+createChildren: (wrappers: Wrapper[]) => Children;
 ```

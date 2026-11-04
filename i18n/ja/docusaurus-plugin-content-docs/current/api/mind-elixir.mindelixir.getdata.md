@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-getData: (this: MindElixirInstance) => MindElixirData;
+getData: () => MindElixirData<M>;
 ```

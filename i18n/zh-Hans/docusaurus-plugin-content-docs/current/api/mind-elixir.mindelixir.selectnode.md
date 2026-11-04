@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-selectNode: (this: MindElixirInstance, tpc: Topic, isNewNode?: boolean, e?: MouseEvent) => void;
+selectNode: (tpc: Topic<M>, isNewNode?: boolean, e?: MouseEvent) => void;
 ```

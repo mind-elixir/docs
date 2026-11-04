@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-nodeData: NodeObj;
+nodeData: NodeObj<M>;
 ```

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-currentNodes: Topic[];
+currentNodes: Topic<M>[];
 ```

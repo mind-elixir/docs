@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-generateNewObj: (this: MindElixirInstance) => NodeObjExport;
+generateNewObj: () => NodeObjExport<M>;
 ```

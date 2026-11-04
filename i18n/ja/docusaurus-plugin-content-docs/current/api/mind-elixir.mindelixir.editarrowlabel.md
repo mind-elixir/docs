@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-editArrowLabel: (this: MindElixirInstance, el: ArrowSvg) => void;
+editArrowLabel: (el: ArrowSvg) => void;
 ```

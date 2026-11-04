@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createSummaryFrom: (this: MindElixirInstance, summary: Omit<Summary, 'id'>) => void;
+createSummaryFrom: (summary: Omit<Summary, 'id'>) => void;
 ```

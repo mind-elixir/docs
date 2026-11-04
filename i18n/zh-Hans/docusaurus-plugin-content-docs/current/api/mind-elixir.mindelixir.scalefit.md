@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-scaleFit: (this: MindElixirInstance) => void;
+scaleFit: () => void;
 ```

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-enableMobileMultiSelect: (this: MindElixirInstance, enable: boolean) => void;
+enableMobileMultiSelect: (enable: boolean) => void;
 ```

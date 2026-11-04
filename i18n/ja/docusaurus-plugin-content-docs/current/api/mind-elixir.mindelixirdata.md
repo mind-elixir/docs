@@ -9,12 +9,12 @@ The exported data of MindElixir
 **Signature:**
 
 ```typescript
-export type MindElixirData = {
-    nodeData: NodeObj;
-    arrows?: Arrow[];
+export type MindElixirData<M = any> = {
+    nodeData: NodeObj<M>;
+    arrows?: Arrow<M>[];
     summaries?: Summary[];
     direction?: 0 | 1 | 2 | 3;
-    theme?: Theme;
+    theme?: Theme<M>;
     compact?: boolean;
     meta?: Record<string, any>;
 };

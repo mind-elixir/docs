@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-changeTheme: (this: MindElixirInstance, theme: Theme, shouldRefresh?: boolean) => void;
+changeTheme: (theme: Theme<M>, shouldRefresh?: boolean) => void;
 ```

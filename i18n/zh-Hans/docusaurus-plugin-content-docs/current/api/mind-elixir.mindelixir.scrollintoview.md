@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-scrollIntoView: (this: MindElixirInstance, el: HTMLElement, forceCenter?: boolean) => void;
+scrollIntoView: (el: HTMLElement, forceCenter?: boolean) => void;
 ```

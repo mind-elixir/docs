@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-rmSubline: (this: MindElixirInstance, tpc: Topic) => Promise<void>;
+rmSubline: (tpc: Topic<M>) => Promise<void>;
 ```
