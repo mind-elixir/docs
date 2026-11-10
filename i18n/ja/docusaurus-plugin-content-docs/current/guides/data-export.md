@@ -1,11 +1,11 @@
 ---
 title: "データのインポートとエクスポート"
 sidebar_position: 1
-description: "Mind Elixir Core は初期化時または refresh 時にデータを読み込み、マインドマップを JavaScript オブジェクト、JSON 文字列、Markdown として書き出せます。"
+description: "Mind Elixir Core は初期化時または refresh 時にデータを読み込み、マインドマップを JavaScript オブジェクトまたは JSON 文字列として書き出せます。"
 keywords:
   - "データ書き出し"
   - "JSON"
-  - "Markdown"
+  - "getDataString"
   - "getData"
   - "JavaScript マインドマップ"
   - "Mind Elixir Core"
@@ -28,16 +28,26 @@ mind.refresh(data) // 新しいデータでリフレッシュ
 
 `refresh` に `data` が渡されない場合、元のデータオブジェクトが更新に使用されます。
 
+### 差分リフレッシュ
+
+`refresh(data)` はマップ全体を再構築し、フォーカスモードを解除して、データ反映後に `refresh` イベントを一度発火します。変更が少数のノードだけであれば、`diffRefresh(data)` の方が適しています。差分だけを適用するため、変更のないノードの DOM 要素・イベントリスナー・フォーカス状態が保持され、差分で表現できない変更の場合は自動的に完全な `refresh` にフォールバックします。
+
+```js
+mind.diffRefresh(data) // 変更差分のみ適用
+mind.refresh(data) // 全体を再構築
+```
+
 ## エクスポート
 
-Mind Elixir Core は 3 つのデータ出力フォーマットを提供しています：JavaScript オブジェクト、オブジェクトの文字列、markdown（非推奨、お勧めしません）。それぞれ以下の 3 つの API に対応しています：
+Mind Elixir Core は 2 つのデータ出力フォーマットを提供しています：JavaScript オブジェクトとその JSON 文字列です。
 
 ```js
 // データのエクスポート
 const data = mind.getData() // JavaScriptオブジェクト、src/example.jsを参照してください
 mind.getDataString() // オブジェクトの文字列化
-mind.getDataMd() // markdown
 ```
+
+Markdown が必要な場合は、`getData()` が返すオブジェクトを独自に変換してください。
 
 `getData` の出力例：
 
@@ -131,6 +141,6 @@ const data = {
 
 :::info
 
-出力されたデータにはデフォルトで現在のテーマが含まれ、レンダリング時にもデータの中のテーマが優先されます。一貫したテーマでレンダリングが必要な場合は、データを取得した後に `theme` フィールドを手動でクリアすることができます。
+出力されたデータには現在のテーマが含まれます。`refresh(data)` は `data.theme` を自動適用しません（テーマ処理はリフレッシュから分離されています）。テーマを切り替えたい場合は `changeTheme(data.theme)` を明示的に呼び出してください。常に同じテーマで描画したい場合は、取得後に `theme` フィールドを削除します。
 
 :::

@@ -43,3 +43,26 @@ const data: MindElixirData = {
 const mei = new MindElixir(options)
 mei.init(data)
 ```
+
+## 泛型类型
+
+默认导出本身就是一个泛型类，自定义节点 metadata 直接通过类传递：
+
+```ts
+import MindElixir, { type NodeObj, type Options } from 'mind-elixir'
+
+type Metadata = { owner?: string; due?: string }
+
+const options: Options<Metadata> = { el: '#map' }
+const mind = new MindElixir<Metadata>(options)
+const root: NodeObj<Metadata> = mind.nodeData
+```
+
+如果需要用变量保存构造函数（例如工厂函数），使用 `typeof MindElixir` 标注：
+
+```ts
+const Ctor: typeof MindElixir = MindElixir
+const anotherMind = new Ctor<Metadata>({ el: '#map' })
+```
+
+`Options`、`MindElixirData`、`NodeObj`、`NodeObjExport` 和 `Theme` 都接受同一个 metadata 类型参数。其余 API 见 [v6 API 指南](./migration-v6.md)。

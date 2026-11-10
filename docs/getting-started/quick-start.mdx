@@ -78,3 +78,20 @@ If you need to refresh the current mind map with an entirely new set of data, yo
 ```js
 mind.refresh(data)
 ```
+
+## Right-to-left languages
+
+For Arabic, Hebrew, Persian or Urdu content, pass `rtl: true` and use the bundled Arabic locale:
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl` only changes the text direction of node topics, the editor, labels and the context menu — the branch layout axis (`direction`) is unaffected. See the [v6 API Guide](./migration-v6.md) for more options.

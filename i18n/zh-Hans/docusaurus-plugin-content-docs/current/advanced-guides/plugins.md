@@ -12,7 +12,7 @@ keywords:
 ---
 # 插件
 
-逻辑十分简单，仅仅是对 `MindElixirInstance` 进行任意处理，就可以称为一个插件。
+逻辑十分简单，仅仅是对 `MindElixir` 实例进行任意处理，就可以称为一个插件。
 
 以 [@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) 为例，你可以通过 `mind.container.append(menuContainer)` 向 Mind Elixir Core 容器插入自定义元素；以 [@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65) 为例，你可以直接向 Mind Elixir Core 对象添加新的方法 `me.exportXmind =  function(){ /* ... */}`。
 

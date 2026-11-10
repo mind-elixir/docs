@@ -175,7 +175,7 @@ const blob = await mind.exportPng(false, style + katexCss)
 ## API リファレンス
 
 - [`Options.markdown`](../api/mind-elixir.options.markdown.md)
-- [`MindElixirInstance.markdown`](../api/mind-elixir.mindelixirinstance.markdown.md)
+- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown.md)
 
 ## 関連
 

@@ -23,28 +23,35 @@ We can subscribe to user operations on the mind map by listening to operation ev
 ```js
 mind.bus.addListener('operation', (operation) => {
   console.log(operation)
-  // return {
-  //   name: action name,
-  //   obj: target object
-  // }
-
-  // name: [insertSibling|addChild|removeNode|beginEdit|finishEdit]
-  // obj: target
-
-  // name: moveNode
-  // obj: {from:target1,to:target2}
+  // { name: 'addChild', target: NodeObj }
+  // { name: 'insertSibling', target: NodeObj, position: 'before' | 'after' }
+  // { name: 'copyNodes', target: NodeObj[] }
+  // { name: 'moveNodesIn', target: NodeObj[], destination: NodeObj }
 })
 
-mind.bus.addListener('selectNode', (node) => {
-  console.log(node)
+mind.bus.addListener('selectNodes', (nodes) => {
+  console.log(nodes)
 })
 
-mind.bus.addListener('expandNode', (node) => {
-  console.log('expandNode: ', node)
+// Folding is reported through the `operation` event:
+mind.bus.addListener('operation', (op) => {
+  if (op.name === 'expandNode' || op.name === 'collapseNode') {
+    console.log('node: ', op.target)
+    console.log('silent: ', op.silent)
+  }
 })
 ```
 
 The most commonly used event is the `operation` event, which encompasses all node operations.
+
+`operation` is a discriminated union on `name`:
+
+- `target` is the affected node — a single `NodeObj`, or a `NodeObj[]` for batch operations (`copyNodes`, `removeNodes`, `moveNodes*`).
+- `destination` is the move target, and `position` is `'before' | 'after'` for `insertSibling`.
+- Folding and expanding arrive on `operation` as `expandNode` / `collapseNode`. `op.silent` is `true` for internal silent expands and `{ silent: true }` calls, which never create undo entries.
+- Node methods take arrays: `copyNodes([node], to)` and `moveNodesIn` / `moveNodesBefore` / `moveNodesAfter(nodes, to)`.
+
+See the [v6 API Guide](../getting-started/migration-v6.md) for the full list.
 
 ## Node Operation Guards
 
@@ -56,16 +63,16 @@ In the configuration, set the `before` object, where the property names correspo
 let mind = new MindElixir({
   // ...
   before: {
-    insertSibling(el, obj) {
-      console.log(el, obj)
-      if (this.currentNode.nodeObj.parent.root) {
+    insertSibling(type, el, node) {
+      console.log(type, el, node)
+      if (this.currentNode?.nodeObj.parent?.root) {
         return false
       }
       return true
     },
-    async addChild(el, obj) {
+    async addChild(el, node) {
       await sleep()
-      if (this.currentNode.nodeObj.parent.root) {
+      if (this.currentNode?.nodeObj.parent?.root) {
         return false
       }
       return true
@@ -83,37 +90,22 @@ Mind Elixir Core provides an API for directly manipulating nodes:
 ```ts
 {
   insertSibling: (
-    this: MindElixirInstance,
+    this: MindElixir,
     type: 'before' | 'after',
-    el?: Topic | undefined,
-    node?: NodeObj | undefined
+    el?: Topic,
+    node?: NodeObj
   ) => Promise<void>
-  insertParent: (
-    this: MindElixirInstance,
-    el?: Topic | undefined,
-    node?: NodeObj | undefined
-  ) => Promise<void>
-  addChild: (
-    this: MindElixirInstance,
-    el?: Topic | undefined,
-    node?: NodeObj | undefined
-  ) => Promise<void>
-  copyNode: (this: MindElixirInstance, node: Topic, to: Topic) => Promise<void>
-  copyNodes: (this: MindElixirInstance, tpcs: Topic[], to: Topic) =>
-    Promise<void>
-  moveUpNode: (this: MindElixirInstance, el?: Topic | undefined) =>
-    Promise<void>
-  moveDownNode: (this: MindElixirInstance, el?: Topic | undefined) =>
-    Promise<void>
-  removeNode: (this: MindElixirInstance, el?: Topic | undefined) =>
-    Promise<void>
-  removeNodes: (this: MindElixirInstance, tpcs: Topic[]) => Promise<void>
-  moveNodeIn: (this: MindElixirInstance, from: Topic[], to: Topic) =>
-    Promise<void>
-  moveNodeBefore: (this: MindElixirInstance, from: Topic[], to: Topic) =>
-    Promise<void>
-  moveNodeAfter: (this: MindElixirInstance, from: Topic[], to: Topic) =>
-    Promise<void>
+  insertParent: (this: MindElixir, el?: Topic, node?: NodeObj) => Promise<void>
+  addChild: (this: MindElixir, el?: Topic, node?: NodeObj) => Promise<void>
+  copyNodes: (this: MindElixir, tpcs: Topic[], to: Topic) => Promise<void>
+  moveUpNode: (this: MindElixir, el?: Topic) => Promise<void>
+  moveDownNode: (this: MindElixir, el?: Topic) => Promise<void>
+  removeNodes: (this: MindElixir, tpcs: Topic[]) => Promise<void>
+  moveNodesIn: (this: MindElixir, from: Topic[], to: Topic) => Promise<void>
+  moveNodesBefore: (this: MindElixir, from: Topic[], to: Topic) => Promise<void>
+  moveNodesAfter: (this: MindElixir, from: Topic[], to: Topic) => Promise<void>
+  beginEdit: (this: MindElixir, el?: Topic) => Promise<void>
+  setNodeTopic: (this: MindElixir, el: Topic, topic: string) => Promise<void>
 }
 ```
 

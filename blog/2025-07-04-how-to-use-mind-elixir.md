@@ -7,6 +7,9 @@ description: "A comprehensive guide on integrating mind mapping functionality in
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---
 
+> [!NOTE]
+> This article was written for Mind Elixir Core 5.0. Version 6.0 is now available and changed DOM selectors, operation payloads, TypeScript types and the event map. The code below has been updated where needed — see the [v6 API Guide](/docs/getting-started/migration-v6) for the current v6 API.
+
 In our information-rich era, we're constantly dealing with vast amounts of complex data and ideas. Traditional linear note-taking often fails to capture the dynamic nature and interconnections of our thoughts, while **mind maps** serve as an intuitive note-taking tool that helps us better organize ideas, structure knowledge, and spark creativity—all while being more user-friendly than whiteboards or drawing software.
 
 Whether you're building knowledge management platforms, educational websites, or collaboration tools, integrating mind mapping functionality can significantly enhance user experience, making complex information display and interaction more intuitive and efficient.
@@ -97,7 +100,7 @@ Once you've integrated mind mapping into your project, the most common requireme
 
 Mind Elixir Core uses a `bus` to dispatch events—this term comes from the "event bus" concept, where all events are dispatched through this central "bus." Usage is similar to the browser's `addEventListener`; as long as you have access to the `bus`, you can listen for events anywhere.
 
-As of the latest Mind Elixir Core 5.0, the following events are available:
+This article was written against Mind Elixir Core 5.0, where the following events were available:
 
 ```ts
 type EventMap = {
@@ -114,6 +117,9 @@ type EventMap = {
 	showContextMenu: (e: MouseEvent) => void;
 };
 ```
+
+> [!WARNING]
+> **v6 changed the event map.** The standalone `expandNode` event no longer exists: folding is reported through `operation` with the name `expandNode` or `collapseNode`. `selectNode` became `selectNodes` / `selectNewNode`, a `refresh` event was added, and operation payloads now use `target` / `destination` / `position` instead of `obj` / `objs` / `toObj` / `type`. See the [v6 API Guide](/docs/getting-started/migration-v6).
 
 Most node operation events are grouped under the `operation` event. Talk is cheap—add this to your project and try manipulating some nodes to see how it works:
 
@@ -260,34 +266,39 @@ For other parameters that can't be adjusted through CSS variables, you can fine-
 
 Going deeper, you can adjust connection line styles through `generateMainBranch` and `generateSubBranch`. (See the CodePen link below for examples)
 
-After writing appropriate `generateMainBranch` and `generateSubBranch` functions, if you find the expand/collapse button positions are off, you can fine-tune them with CSS. The default styles are:
+After writing appropriate `generateMainBranch` and `generateSubBranch` functions, if you find the expand/collapse button positions are off, you can fine-tune them with CSS.
+
+> [!NOTE]
+> **v6 selector update.** Inner map elements are now `<div>` elements: tag selectors such as `me-main`, `me-wrapper`, `me-parent` and `me-epd` became class selectors, and direction classes are now `.me-main.lhs` / `.me-main.rhs` / `.me-main.down`. The snippet below uses the v6 selectors; on v5 use the tag selectors instead.
+
+The default styles are:
 
 ```less
 // Expand/collapse button styles for main nodes (direct children of root)
-me-main > me-wrapper > me-parent > me-epd {
+.me-main > .me-wrapper > .me-parent > .me-epd {
 	top: 50%;
 	transform: translateY(-50%);
 }
 // Expand/collapse button styles for other child nodes
-me-epd {
+.me-epd {
 	top: 100%;
 	transform: translateY(-50%);
 }
 // Specific adjustments for left-side expand/collapse buttons
-.lhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.lhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		left: -10px;
 	}
-	me-epd {
+	.me-epd {
 		left: 5px;
 	}
 }
 // Specific adjustments for right-side expand/collapse buttons
-.rhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.rhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		right: -10px;
 	}
-	me-epd {
+	.me-epd {
 		right: 5px;
 	}
 }

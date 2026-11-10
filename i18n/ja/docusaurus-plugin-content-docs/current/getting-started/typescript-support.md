@@ -43,3 +43,26 @@ const data: MindElixirData = {
 const mei = new MindElixir(options)
 mei.init(data)
 ```
+
+## ジェネリック型
+
+デフォルトエクスポートはジェネリッククラスなので、カスタムのノード metadata はクラス側で指定します：
+
+```ts
+import MindElixir, { type NodeObj, type Options } from 'mind-elixir'
+
+type Metadata = { owner?: string; due?: string }
+
+const options: Options<Metadata> = { el: '#map' }
+const mind = new MindElixir<Metadata>(options)
+const root: NodeObj<Metadata> = mind.nodeData
+```
+
+コンストラクタを変数に保持する場合（ファクトリ関数など）は、`typeof MindElixir` で注釈します：
+
+```ts
+const Ctor: typeof MindElixir = MindElixir
+const anotherMind = new Ctor<Metadata>({ el: '#map' })
+```
+
+`Options`、`MindElixirData`、`NodeObj`、`NodeObjExport`、`Theme` はいずれも同じ metadata 型パラメータを受け取ります。その他の API は [v6 API ガイド](./migration-v6.md) を参照してください。

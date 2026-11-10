@@ -16,12 +16,12 @@ Mind Elixir Core provides two APIs for exporting images:
 
 ```ts
 exportSvg: (
-  this: MindElixirInstance,
+  this: MindElixir,
   noForeignObject?: boolean,
   injectCss?: string | undefined
 ) => Blob
 exportPng: (
-  this: MindElixirInstance,
+  this: MindElixir,
   noForeignObject?: boolean,
   injectCss?: string | undefined
 ) => Promise<Blob | null>

@@ -80,3 +80,20 @@ const data = mind.getData()
 ```js
 mind.refresh(data)
 ```
+
+## 从右向左的语言
+
+处理阿拉伯语、希伯来语、波斯语或乌尔都语内容时，可以传入 `rtl: true` 并使用内置的阿拉伯语语言包：
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl` 只改变节点文字、编辑器、标签和右键菜单的文字方向，不影响分支布局轴（`direction`）。更多选项见 [v6 API 指南](./migration-v6.md)。

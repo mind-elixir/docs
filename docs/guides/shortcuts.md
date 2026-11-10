@@ -39,3 +39,7 @@ Performing operations on nodes through the right-click menu can be inconvenient,
 | Ctrl + K, Ctrl + 0 | Collapse all nodes        |
 | Ctrl + K, Ctrl + = | Expand all nodes          |
 | Ctrl + K, Ctrl + 1-9 | Expand to level N       |
+
+`↑` / `↓` cross branch boundaries: `ArrowDown` from the last child and `ArrowUp` from the first child step into the nearest sibling branch, landing on its first/last child — or on the branch node itself when it is collapsed.
+
+Collapse / expand is undoable, so `Ctrl + Z` restores the previous fold state. Folds made in the outliner and on the map share one undo timeline. A silent expand (`expandNode(node, { silent: true })`) skips the history entry. `refresh(data)` leaves focus mode and emits a `refresh` event once the data is in place.

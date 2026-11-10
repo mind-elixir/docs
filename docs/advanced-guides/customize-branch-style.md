@@ -40,7 +40,7 @@ function generateMainBranch({
     x2 = cL
   }
   const y2 = cT + cH / 2
-  const root = this.map.querySelector('me-root')
+  const root = this.map.querySelector('.me-root')
   if (this.direction === MindElixir.SIDE) {
     if (direction === 'lhs') {
       x1 = x1 - root.offsetWidth / 8

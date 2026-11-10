@@ -82,3 +82,20 @@ const data = mind.getData()
 ```js
 mind.refresh(data)
 ```
+
+## 右から左への言語
+
+アラビア語、ヘブライ語、ペルシア語、ウルドゥー語のコンテンツには `rtl: true` と同梱のアラビア語ロケールを使用します：
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl` が変更するのはノードのテキスト、エディター、ラベル、コンテキストメニューの文字方向のみで、ブランチの配置軸（`direction`）には影響しません。その他のオプションは [v6 API ガイド](./migration-v6.md) を参照してください。

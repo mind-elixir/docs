@@ -12,7 +12,7 @@ keywords:
 ---
 # プラグイン
 
-ロジックは非常に単純で、`MindElixirInstance` に対して任意の処理を行うだけで、それをプラグインと呼ぶことができます。
+ロジックは非常に単純で、`MindElixir` インスタンスに対して任意の処理を行うだけで、それをプラグインと呼ぶことができます。
 
 例えば、[@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) を見てみましょう。ここでは、`mind.container.append(menuContainer)` を使用して、Mind Elixir Core コンテナにカスタム要素を挿入できます。また、[@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65) を見てみましょう。ここでは、直接 Mind Elixir Core オブジェクトに新しいメソッドを追加できます `me.exportXmind = function(){ /* ... */}`。
 

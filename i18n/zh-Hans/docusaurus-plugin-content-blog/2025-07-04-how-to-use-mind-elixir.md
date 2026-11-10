@@ -7,6 +7,9 @@ description: "详细介绍如何使用 Mind Elixir Core 在网页项目中集成
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---
 
+> [!NOTE]
+> 本文基于 Mind Elixir Core 5.0 撰写。目前 6.0 已发布，DOM 选择器、操作事件载荷、TypeScript 类型和事件表都有变化。下文代码已按需更新，当前 v6 写法见 [v6 API 指南](/zh-Hans/docs/getting-started/migration-v6)。
+
 在信息爆炸的时代，我们每天都要处理大量复杂的信息和想法。传统的线性笔记往往难以展现思维的跳跃性和关联性，而**思维导图**作为一种半自动档的笔记工具，能够帮助我们更好地整理思路、梳理知识结构、激发创意灵感，同时操作又比白板、画图软件的操作更便利。
 
 无论是构建知识管理平台、在线教育网站，还是协作工具，集成思维导图功能都能显著提升用户体验，让复杂信息的展示和交互变得更加直观高效。
@@ -97,7 +100,7 @@ mei.init(data);
 
 Mind Elixir Core 使用 `bus` 派发事件，这个词来源于“总线”这个概念，所有事件都会由这个“总线”派发。使用上跟浏览器的 `addEventListener` 类似，只要你能拿到 `bus`，你就可以在任何地方监听事件。
 
-截止到最新版 Mind Elixir Core 5.0，有以下事件：
+本文撰写时的 Mind Elixir Core 5.0 提供了以下事件：
 
 ```ts
 type EventMap = {
@@ -114,6 +117,9 @@ type EventMap = {
 	showContextMenu: (e: MouseEvent) => void;
 };
 ```
+
+> [!WARNING]
+> **v6 调整了事件表。** 独立的 `expandNode` 事件已移除，折叠操作改为通过 `operation` 事件以 `expandNode` / `collapseNode` 名称派发；`selectNode` 变为 `selectNodes` / `selectNewNode`，并新增 `refresh` 事件；操作载荷也由 `obj` / `objs` / `toObj` / `type` 改为 `target` / `destination` / `position`。详见 [v6 API 指南](/zh-Hans/docs/getting-started/migration-v6)。
 
 其中大部分节点操作事件都被归到 `operation` 事件中，Talk is cheap！在项目中加上然后再操作一下节点就很好懂了：
 
@@ -260,34 +266,39 @@ node-gap 可以调整节点内部的间距：
 
 在深入一点，可以通过 `generateMainBranch` 和 `generateSubBranch` 调整连线的样式。（例子请看下面 codepen 链接）
 
-写好合适的 `generateMainBranch` 和 `generateSubBranch` 之后，如果你发现展开收缩的按钮位置不对，可以通过 CSS 进行微调。默认样式如下：
+写好合适的 `generateMainBranch` 和 `generateSubBranch` 之后，如果你发现展开收缩的按钮位置不对，可以通过 CSS 进行微调。
+
+> [!NOTE]
+> **v6 选择器变化。** 导图内部元素已改为 `<div>`：`me-main`、`me-wrapper`、`me-parent`、`me-epd` 等标签选择器需写成类选择器，方向类也改为 `.me-main.lhs` / `.me-main.rhs` / `.me-main.down`。下面的示例已使用 v6 写法，v5 请改回标签选择器。
+
+默认样式如下：
 
 ```less
 // 主节点（根节点的下一级节点）的展开收缩按钮样式
-me-main > me-wrapper > me-parent > me-epd {
+.me-main > .me-wrapper > .me-parent > .me-epd {
 	top: 50%;
 	transform: translateY(-50%);
 }
 // 其他子节点的展开收缩按钮样式
-me-epd {
+.me-epd {
 	top: 100%;
 	transform: translateY(-50%);
 }
 // 左侧的展开收缩按钮专用调整
-.lhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.lhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		left: -10px;
 	}
-	me-epd {
+	.me-epd {
 		left: 5px;
 	}
 }
 // 右侧的展开收缩按钮专用调整
-.rhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.rhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		right: -10px;
 	}
-	me-epd {
+	.me-epd {
 		right: 5px;
 	}
 }

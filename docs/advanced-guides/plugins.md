@@ -12,7 +12,7 @@ keywords:
 ---
 # Plugins
 
-The logic is quite straightforward, just manipulate the `MindElixirInstance` in any way, and you can call it a plugin.
+The logic is quite straightforward: just manipulate the `MindElixir` instance in any way, and you can call it a plugin.
 
 Taking [@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) as an example, you can insert custom elements into the Mind Elixir Core container by using `mind.container.append(menuContainer)`; in the case of [@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65), you can directly add new methods to the Mind Elixir Core object like `me.exportXmind =  function(){ /* ... */}`.
 

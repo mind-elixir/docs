@@ -42,3 +42,26 @@ const data: MindElixirData = {
 const mei = new MindElixir(options)
 mei.init(data)
 ```
+
+## Generic types
+
+The default export is a generic class, so custom node metadata flows through the class itself:
+
+```ts
+import MindElixir, { type NodeObj, type Options } from 'mind-elixir'
+
+type Metadata = { owner?: string; due?: string }
+
+const options: Options<Metadata> = { el: '#map' }
+const mind = new MindElixir<Metadata>(options)
+const root: NodeObj<Metadata> = mind.nodeData
+```
+
+When a variable holds the constructor (for example in a factory), annotate it with `typeof MindElixir`:
+
+```ts
+const Ctor: typeof MindElixir = MindElixir
+const anotherMind = new Ctor<Metadata>({ el: '#map' })
+```
+
+`Options`, `MindElixirData`, `NodeObj`, `NodeObjExport` and `Theme` all accept the same metadata type parameter. See the [v6 API Guide](./migration-v6.md) for the rest of the API.

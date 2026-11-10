@@ -1,11 +1,11 @@
 ---
 title: "数据导入与导出"
 sidebar_position: 1
-description: "Mind Elixir Core 支持在初始化或调用 refresh 时导入数据，并可将思维导图导出为 JavaScript 对象、JSON 字符串或 Markdown。"
+description: "Mind Elixir Core 支持在初始化或调用 refresh 时导入数据，并可将思维导图导出为 JavaScript 对象或 JSON 字符串。"
 keywords:
   - "数据导出"
   - "JSON"
-  - "Markdown"
+  - "getDataString"
   - "getData"
   - "JavaScript 思维导图"
   - "Mind Elixir Core"
@@ -28,16 +28,26 @@ mind.refresh(data) // 使用新数据刷新
 
 不向 `refresh` 传入 `data` 时会使用原来的数据对象进行更新。
 
+### 增量刷新
+
+`refresh(data)` 会整体重建导图、退出聚焦模式，并在数据就位后触发一次 `refresh` 事件。如果只有少量节点发生变化，通常更推荐 `diffRefresh(data)`：它只应用差异，保留未变化节点的 DOM 元素、事件监听和焦点状态；当变更无法用增量方式表达时会自动回退到完整的 `refresh`。
+
+```js
+mind.diffRefresh(data) // 只更新变化的部分
+mind.refresh(data) // 整体重建
+```
+
 ## 导出
 
-Mind Elixir Core 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
+Mind Elixir Core 提供两种数据输出格式：JavaScript 对象及其 JSON 字符串：
 
 ```js
 // data export
 const data = mind.getData() // javascript object, see src/example.js
 mind.getDataString() // stringify object
-mind.getDataMd() // markdown
 ```
+
+如需 Markdown 输出，请基于 `getData()` 返回的对象自行转换。
 
 `getData` 输出范例：
 
@@ -131,6 +141,6 @@ const data = {
 
 :::info
 
-输出的数据会默认包含当前主题，渲染时也会优先使用数据中的主题。如果需要按统一的主题渲染，可以在得到数据后手动清除 `theme` 字段。
+输出的数据会默认包含当前主题。`refresh(data)` 不会自动应用 `data.theme`，主题处理与刷新相互独立：需要切换主题时请显式调用 `changeTheme(data.theme)`；如果希望始终用统一主题渲染，可以在得到数据后手动清除 `theme` 字段。
 
 :::

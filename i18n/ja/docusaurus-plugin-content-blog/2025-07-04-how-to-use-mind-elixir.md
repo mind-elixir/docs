@@ -7,6 +7,9 @@ description: "Mind Elixir CoreをWebプロジェクトに統合してマイン�
 multiLang: ["en", "es", "ja", "ko", "ru"]
 ---
 
+> [!NOTE]
+> この記事は Mind Elixir Core 5.0 を対象に書かれています。現在は 6.0 が公開されており、DOM セレクター、操作イベントのペイロード、TypeScript 型、イベントマップが変更されました。以下のコードは必要な箇所を更新済みです。現在の v6 API は [v6 API ガイド](/ja/docs/getting-started/migration-v6) を参照してください。
+
 情報爆発の時代において、私たちは日々大量の複雑な情報やアイデアを処理しなければなりません。従来の線形ノートでは思考の飛躍性や関連性を表現することが困難ですが、**マインドマップ**は半自動的なノートツールとして、思考の整理、知識構造の体系化、創造的インスピレーションの刺激に役立ち、同時にホワイトボードや描画ソフトウェアよりも操作が便利です。
 
 知識管理プラットフォーム、オンライン教育サイト、コラボレーションツールの構築において、マインドマップ機能の統合はユーザーエクスペリエンスを大幅に向上させ、複雑な情報の表示とインタラクションをより直感的で効率的にします。
@@ -97,7 +100,7 @@ mei.init(data);
 
 Mind Elixir Coreは`bus`を使用してイベントを配信します。この用語は「バス」という概念に由来し、すべてのイベントはこの「バス」によって配信されます。使用方法はブラウザの`addEventListener`と似ており、`bus`にアクセスできれば、どこからでもイベントを監視できます。
 
-最新版Mind Elixir Core 5.0では、以下のイベントが利用可能です：
+この記事の執筆時点の Mind Elixir Core 5.0 では、以下のイベントが利用可能でした：
 
 ```ts
 type EventMap = {
@@ -114,6 +117,9 @@ type EventMap = {
 	showContextMenu: (e: MouseEvent) => void;
 };
 ```
+
+> [!WARNING]
+> **v6 ではイベントマップが変更されました。** 独立した `expandNode` イベントは削除され、折りたたみは `operation` イベントの `expandNode` / `collapseNode` として通知されます。`selectNode` は `selectNodes` / `selectNewNode` になり、`refresh` イベントが追加されました。操作ペイロードも `obj` / `objs` / `toObj` / `type` から `target` / `destination` / `position` に変わっています。詳しくは [v6 API ガイド](/ja/docs/getting-started/migration-v6) を参照してください。
 
 ほとんどのノード操作イベントは`operation`イベントにまとめられています。百聞は一見に如かず！プロジェクトに追加してノードを操作してみれば、すぐに理解できます：
 
@@ -260,34 +266,39 @@ CSS変数で調整できないその他のパラメータについても、CSS�
 
 さらに深く掘り下げると、`generateMainBranch`と`generateSubBranch`を使用して接続線のスタイルを調整できます。（例については下記のcodepenリンクをご覧ください）
 
-適切な`generateMainBranch`と`generateSubBranch`を作成した後、展開・折りたたみボタンの位置が正しくない場合は、CSSで微調整できます。デフォルトスタイルは以下の通りです：
+適切な`generateMainBranch`と`generateSubBranch`を作成した後、展開・折りたたみボタンの位置が正しくない場合は、CSSで微調整できます。
+
+> [!NOTE]
+> **v6 のセレクター変更。** マップ内部の要素は `<div>` になりました。`me-main`、`me-wrapper`、`me-parent`、`me-epd` などのタグセレクターはクラスセレクターに、方向クラスは `.me-main.lhs` / `.me-main.rhs` / `.me-main.down` に変わっています。以下のコードは v6 用です。v5 ではタグセレクターを使用してください。
+
+デフォルトスタイルは以下の通りです：
 
 ```less
 // メインノード（ルートノードの次のレベルのノード）の展開・折りたたみボタンスタイル
-me-main > me-wrapper > me-parent > me-epd {
+.me-main > .me-wrapper > .me-parent > .me-epd {
 	top: 50%;
 	transform: translateY(-50%);
 }
 // その他の子ノードの展開・折りたたみボタンスタイル
-me-epd {
+.me-epd {
 	top: 100%;
 	transform: translateY(-50%);
 }
 // 左側の展開・折りたたみボタン専用調整
-.lhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.lhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		left: -10px;
 	}
-	me-epd {
+	.me-epd {
 		left: 5px;
 	}
 }
 // 右側の展開・折りたたみボタン専用調整
-.rhs {
-	& > me-wrapper > me-parent > me-epd {
+.me-main.rhs {
+	& > .me-wrapper > .me-parent > .me-epd {
 		right: -10px;
 	}
-	me-epd {
+	.me-epd {
 		right: 5px;
 	}
 }

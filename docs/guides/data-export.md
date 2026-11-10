@@ -1,11 +1,11 @@
 ---
 title: "Data Import and Export"
 sidebar_position: 1
-description: "Import data on init or with refresh, and export mind maps as JavaScript objects, JSON strings or Markdown with Mind Elixir Core."
+description: "Import data on init or with refresh, and export mind maps as JavaScript objects or JSON strings with Mind Elixir Core."
 keywords:
   - "data export"
   - "JSON"
-  - "Markdown"
+  - "getDataString"
   - "getData"
   - "JavaScript mind map"
   - "Mind Elixir Core"
@@ -27,16 +27,26 @@ mind.refresh(data) // refresh with new data
 
 When `data` is not passed into `refresh`, the original data object will be used for updating.
 
+### Incremental refresh
+
+`refresh(data)` rebuilds the whole map, leaves focus mode and emits a `refresh` event once the new data is in place. If only a few nodes changed, `diffRefresh(data)` is usually the better choice: it applies only the difference, keeping unchanged nodes' DOM elements, event listeners and focus state, and falls back to a full `refresh` when the change cannot be expressed incrementally.
+
+```js
+mind.diffRefresh(data) // patch only what changed
+mind.refresh(data) // full rebuild
+```
+
 ## Export
 
-Mind Elixir Core provides three data export formats: JavaScript objects, object strings, and markdown (deprecated, not recommended). Corresponding to the following three APIs:
+Mind Elixir Core provides two data export formats: a JavaScript object and its JSON string:
 
 ```js
 // data export
 const data = mind.getData() // JavaScript object, see src/example.js
 mind.getDataString() // stringify object
-mind.getDataMd() // markdown
 ```
+
+For Markdown output, convert the object returned by `getData()` yourself.
 
 The `getData` output example:
 
@@ -130,6 +140,6 @@ Key parts to note are:
 
 :::info
 
-The exported data will default to include the current theme, and during rendering, it will prioritize using the theme from the data. If you need to render with a consistent theme, you can manually remove the `theme` field after obtaining the data.
+The exported data includes the current theme. `refresh(data)` does not apply `data.theme` — theme handling is separate from refresh. Call `changeTheme(data.theme)` explicitly when you need to switch themes, and remove the `theme` field if you want to render with one consistent theme.
 
 :::
