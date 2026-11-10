@@ -33,7 +33,7 @@
   margin-top: unset !important;
 }
 
-/* Mind map Markdown (aligned with mind-elixir-desktop) */
+/* Mind map Markdown (aligned with the Mind Elixir App) */
 /* me-tpc uses white-space: pre-wrap for plain text; HTML from markdown
    needs normal flow so block elements (tables, lists) don't pick up
    source newlines as visible gaps. */

@@ -24,7 +24,7 @@ export default function MindElixirShowcase({
       el.innerHTML = ''
       const mind = new MindElixir.default({
         el,
-        // Enable Markdown + LaTeX rendering (same approach as mind-elixir-desktop)
+        // Enable Markdown + LaTeX rendering (same approach as the Mind Elixir App)
         markdown: md2html,
       })
       mind.init(data || example)

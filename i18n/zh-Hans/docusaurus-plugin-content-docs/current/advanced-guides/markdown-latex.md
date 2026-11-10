@@ -14,7 +14,7 @@ keywords:
 
 Mind Elixir Core **不内置** Markdown 或 LaTeX 渲染器。渲染完全可插拔：在构造选项中传入自定义 `markdown` 函数即可。该函数接收节点（或箭头 / 概要）文本，并返回 HTML。
 
-这与 [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop) 的实现方式一致。
+这与 [Mind Elixir App](https://app.mind-elixir.com) 的实现方式一致。
 
 ## 安装
 
@@ -119,7 +119,7 @@ $$\ce{H2O}$$
 
 ## Markdown 能力
 
-配合 [marked](https://marked.js.org/)（或其他 Markdown 库）可在节点主题中渲染标题、强调、列表、链接、代码和表格。桌面端会将链接在新标签页打开，你也可以自定义 renderer：
+配合 [marked](https://marked.js.org/)（或其他 Markdown 库）可在节点主题中渲染标题、强调、列表、链接、代码和表格。Mind Elixir App 会将链接在新标签页打开，你也可以自定义 renderer：
 
 ```js
 import { marked } from 'marked'
@@ -134,12 +134,12 @@ const renderer = {
 marked.use({ renderer, gfm: true })
 ```
 
-可选的强调着色语法（与桌面端一致）：
+可选的强调着色语法：
 
 - `**%:red:重要**` — 彩色加粗  
 - `__%:yellow:高亮__` — 背景高亮  
 
-通过自定义 `strong` renderer 实现（可参考 Mind Elixir Desktop 中的 `md2html`）。
+通过自定义 `strong` renderer 实现（可参考本站源码中的 `md2html`）。
 
 ## 样式建议
 

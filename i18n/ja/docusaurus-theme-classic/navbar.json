@@ -22,9 +22,5 @@
   "item.label.Mind Elixir App": {
     "message": "Mind Elixir App",
     "description": "Navbar item with label Mind Elixir App"
-  },
-  "item.label.Desktop": {
-    "message": "デスクトップ版",
-    "description": "Navbar item with label Desktop"
   }
 }

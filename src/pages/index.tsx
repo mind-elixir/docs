@@ -85,21 +85,15 @@ const CONTENT: Record<string, Content> = {
         body: 'Listen to the event bus, add context-menu items, inject your own styles or publish a plugin.',
       },
     ],
-    productsTitle: 'One brand, four products',
+    productsTitle: 'One brand, three products',
     productsSubtitle:
       'Mind Elixir is the product family. Mind Elixir Core is the open-source library documented on this site.',
     products: [
       {
         name: 'Mind Elixir App',
-        body: 'The ready-to-use web app. Open a blank map in your browser and start thinking — nothing to install.',
+        body: 'The ready-to-use Mind Elixir app, available everywhere: in the browser, on desktop and on mobile. Open a blank map and start thinking.',
         href: 'https://app.mind-elixir.com',
         cta: 'Open the app',
-      },
-      {
-        name: 'Mind Elixir Desktop',
-        body: 'A desktop build of the app for macOS, Windows and Linux, with local files and the same mind mapping engine.',
-        href: 'https://desktop.mind-elixir.com',
-        cta: 'Get the desktop app',
       },
       {
         name: 'Mind Elixir Cloud',
@@ -184,21 +178,15 @@ const CONTENT: Record<string, Content> = {
         body: '可监听事件总线、添加右键菜单项、注入自定义样式，或发布自己的插件。',
       },
     ],
-    productsTitle: '一个品牌，四款产品',
+    productsTitle: '一个品牌，三款产品',
     productsSubtitle:
       'Mind Elixir 是产品家族名，Mind Elixir Core 则是本站所记录的开源内核。',
     products: [
       {
         name: 'Mind Elixir App',
-        body: '开箱即用的网页应用。在浏览器中打开一张空白导图就能开始思考，无需安装。',
+        body: '开箱即用的 Mind Elixir 应用，浏览器、桌面端与移动端都能使用。打开一张空白导图就能开始思考。',
         href: 'https://app.mind-elixir.com',
         cta: '打开应用',
-      },
-      {
-        name: 'Mind Elixir Desktop',
-        body: '适用于 macOS、Windows 与 Linux 的桌面版应用，支持本地文件，使用同样的思维导图内核。',
-        href: 'https://desktop.mind-elixir.com',
-        cta: '下载桌面版',
       },
       {
         name: 'Mind Elixir Cloud',
@@ -283,21 +271,15 @@ const CONTENT: Record<string, Content> = {
         body: 'イベントバスの購読、コンテキストメニューの追加、独自スタイルの注入、プラグインの公開が可能です。',
       },
     ],
-    productsTitle: '1 つのブランド、4 つのプロダクト',
+    productsTitle: '1 つのブランド、3 つのプロダクト',
     productsSubtitle:
       'Mind Elixir はプロダクトファミリー名です。Mind Elixir Core はこのサイトで解説しているオープンソースのコアです。',
     products: [
       {
         name: 'Mind Elixir App',
-        body: 'すぐに使える Web アプリ。ブラウザで空白のマップを開けば、インストール不要で思考を始められます。',
+        body: 'すぐに使える Mind Elixir アプリ。ブラウザ・デスクトップ・モバイルのすべてで利用できます。空白のマップを開けば、すぐに思考を始められます。',
         href: 'https://app.mind-elixir.com',
         cta: 'アプリを開く',
-      },
-      {
-        name: 'Mind Elixir Desktop',
-        body: 'macOS・Windows・Linux 向けのデスクトップ版。ローカルファイルに対応し、同じマインドマップエンジンを使用します。',
-        href: 'https://desktop.mind-elixir.com',
-        cta: 'デスクトップ版を入手',
       },
       {
         name: 'Mind Elixir Cloud',

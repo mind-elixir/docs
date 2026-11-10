@@ -38,7 +38,7 @@ function ensureMarked() {
 
 /**
  * Convert Markdown (with optional KaTeX math) to HTML for Mind Elixir's
- * `markdown` option. Pattern aligned with mind-elixir-desktop.
+ * `markdown` option. Pattern aligned with the Mind Elixir App.
  */
 export function md2html(text: string): string {
   if (!text) return ''

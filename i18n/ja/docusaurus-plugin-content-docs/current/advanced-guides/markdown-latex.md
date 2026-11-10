@@ -14,7 +14,7 @@ keywords:
 
 Mind Elixir Core には **Markdown / LaTeX の組み込みレンダラーはありません**。コンストラクタの `markdown` オプションにカスタム関数を渡すことで、完全に差し替え可能です。関数はノード（または矢印 / サマリー）のテキストを受け取り、HTML を返します。
 
-これは [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop) と同じ方式です。
+これは [Mind Elixir App](https://app.mind-elixir.com) と同じ方式です。
 
 ## インストール
 
@@ -119,7 +119,7 @@ $$\ce{H2O}$$
 
 ## Markdown の機能
 
-[marked](https://marked.js.org/)（または任意の Markdown ライブラリ）を使えば、見出し・強調・リスト・リンク・コード・表をノード内に描けます。デスクトップ版と同様にリンクを新しいタブで開く renderer も定義できます：
+[marked](https://marked.js.org/)（または任意の Markdown ライブラリ）を使えば、見出し・強調・リスト・リンク・コード・表をノード内に描けます。Mind Elixir App と同様にリンクを新しいタブで開く renderer も定義できます：
 
 ```js
 import { marked } from 'marked'
@@ -134,12 +134,12 @@ const renderer = {
 marked.use({ renderer, gfm: true })
 ```
 
-任意の強調カラー構文（デスクトップ版と同じ）：
+任意の強調カラー構文：
 
 - `**%:red:重要**` — 色付き太字  
 - `__%:yellow:ハイライト__` — 背景ハイライト  
 
-`strong` renderer をカスタマイズして実装します（Mind Elixir Desktop の `md2html` を参照）。
+`strong` renderer をカスタマイズして実装します（このサイトのソースにある `md2html` を参照）。
 
 ## スタイルのヒント
 

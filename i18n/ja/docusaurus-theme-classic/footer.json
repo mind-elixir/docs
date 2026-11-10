@@ -15,10 +15,6 @@
     "message": "Mind Elixir Cloud",
     "description": "The label of footer link with label=Mind Elixir Cloud"
   },
-  "link.item.label.Mind Elixir Desktop": {
-    "message": "Mind Elixir Desktop",
-    "description": "The label of footer link with label=Mind Elixir Desktop"
-  },
   "link.item.label.mindmapcn": {
     "message": "mindmapcn",
     "description": "The label of footer link with label=mindmapcn"

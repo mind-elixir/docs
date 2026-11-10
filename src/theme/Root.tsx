@@ -6,7 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 const ORIGIN = 'https://docs.mind-elixir.com'
 const HOME_URL = 'https://mind-elixir.com/'
 const APP_URL = 'https://app.mind-elixir.com/'
-const DESKTOP_URL = 'https://desktop.mind-elixir.com/'
 const CLOUD_URL = 'https://cloud.mind-elixir.com/'
 const REPO_URL = 'https://github.com/SSShooter/mind-elixir-core'
 const NPM_URL = 'https://www.npmjs.com/package/mind-elixir'
@@ -99,18 +98,12 @@ export default function Root({ children }: { children: ReactNode }) {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Mind Elixir Desktop',
-          url: DESKTOP_URL,
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
           name: 'Mind Elixir Cloud',
           url: CLOUD_URL,
         },
         {
           '@type': 'ListItem',
-          position: 4,
+          position: 3,
           name: 'Mind Elixir Core',
           url: `${ORIGIN}/`,
         },

@@ -14,7 +14,7 @@ keywords:
 
 Mind Elixir Core does **not** ship a built-in Markdown or LaTeX renderer. Rendering is fully pluggable: pass a custom `markdown` function in the constructor options. That function receives the node (or arrow / summary) text and should return HTML.
 
-This is the same approach used by [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop).
+This is the same approach used by the [Mind Elixir App](https://app.mind-elixir.com).
 
 ## Install
 
@@ -119,7 +119,7 @@ $$\ce{H2O}$$
 
 ## Markdown features
 
-With [marked](https://marked.js.org/) (or any other Markdown library) you can render headings, emphasis, lists, links, code, and tables inside node topics. Links in the desktop app open in a new tab via a custom renderer — you can do the same:
+With [marked](https://marked.js.org/) (or any other Markdown library) you can render headings, emphasis, lists, links, code, and tables inside node topics. Links in the Mind Elixir App open in a new tab via a custom renderer — you can do the same:
 
 ```js
 import { marked } from 'marked'
@@ -134,12 +134,12 @@ const renderer = {
 marked.use({ renderer, gfm: true })
 ```
 
-Optional desktop-style emphasis colors:
+Optional emphasis colors:
 
 - `**%:red:Important**` — colored bold text  
 - `__%:yellow:Highlight__` — highlighted background  
 
-Implement these by customizing the `strong` renderer (see `md2html` in Mind Elixir Desktop).
+Implement these by customizing the `strong` renderer (see the `md2html` helper in this site's source).
 
 ## Styling tips
 

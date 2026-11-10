@@ -172,11 +172,6 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://desktop.mind-elixir.com',
-          label: 'Desktop',
-          position: 'right',
-        },
-        {
           type: 'html',
           position: 'right',
           value:
@@ -215,10 +210,6 @@ const config: Config = {
             {
               label: 'Mind Elixir App',
               href: 'https://app.mind-elixir.com',
-            },
-            {
-              label: 'Mind Elixir Desktop',
-              href: 'https://desktop.mind-elixir.com',
             },
             {
               label: 'Mind Elixir Cloud',
