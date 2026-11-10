@@ -1,9 +1,9 @@
 ---
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
-title: "Effortlessly Integrate Professional Mind Mapping into Your Web Projects - Mind Elixir"
+title: "Effortlessly Integrate Professional Mind Mapping into Your Web Projects - Mind Elixir Core"
 keywords: ["JavaScript", "Mind Mapping", "Frontend Development", "Visualization", "Open Source", "coding"]
-description: "A comprehensive guide on integrating mind mapping functionality into web projects using Mind Elixir. From basic installation to advanced customization, complete with code examples and best practices to help developers quickly master this powerful JavaScript mind mapping library."
+description: "A comprehensive guide on integrating mind mapping functionality into web projects using Mind Elixir Core. From basic installation to advanced customization, complete with code examples and best practices to help developers quickly master this powerful JavaScript mind mapping library."
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---
 
@@ -11,11 +11,11 @@ In our information-rich era, we're constantly dealing with vast amounts of compl
 
 Whether you're building knowledge management platforms, educational websites, or collaboration tools, integrating mind mapping functionality can significantly enhance user experience, making complex information display and interaction more intuitive and efficient.
 
-If you want to add mind mapping capabilities to your web projects, [Mind Elixir](https://github.com/SSShooter/mind-elixir-core) makes it possible to **integrate professional-grade mind mapping with just a few lines of code**. For instance, in a **personal blog**, you can use mind maps to visualize article knowledge structures or create interactive study notes—features that not only make content more engaging but also significantly boost your blog's professional appeal.
+If you want to add mind mapping capabilities to your web projects, [Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core) makes it possible to **integrate professional-grade mind mapping with just a few lines of code**. For instance, in a **personal blog**, you can use mind maps to visualize article knowledge structures or create interactive study notes—features that not only make content more engaging but also significantly boost your blog's professional appeal.
 
-![Mind Elixir 内核](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
+![Mind Elixir Core](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
 
-The open-source JavaScript mind mapping core [Mind Elixir](https://github.com/SSShooter/mind-elixir-core) offers these key features:
+The open-source JavaScript mind mapping core [Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core) offers these key features:
 
 - **Smooth User Experience**
   Fluid interactions with natural feedback, including mobile support.
@@ -36,7 +36,7 @@ The open-source JavaScript mind mapping core [Mind Elixir](https://github.com/SS
 - **CSS Variable Customization**
   Easy control of node styles and overall themes through CSS variables for highly customized, beautiful layouts.
 
-Let's dive into how you can quickly integrate Mind Elixir into your projects! 🤗
+Let's dive into how you can quickly integrate Mind Elixir Core into your projects! 🤗
 
 ## Super Simple Integration
 
@@ -46,7 +46,7 @@ Install the dependency:
 npm i mind-elixir -S
 ```
 
-Import Mind Elixir:
+Import Mind Elixir Core:
 
 ```javascript
 import MindElixir from "mind-elixir";
@@ -95,9 +95,9 @@ That's it—you've completed the most basic integration!
 
 Once you've integrated mind mapping into your project, the most common requirement is event listening. You'll need to monitor various node operations and respond to user actions. For example, when a user creates a new node, you'll want to save it promptly.
 
-Mind Elixir uses a `bus` to dispatch events—this term comes from the "event bus" concept, where all events are dispatched through this central "bus." Usage is similar to the browser's `addEventListener`; as long as you have access to the `bus`, you can listen for events anywhere.
+Mind Elixir Core uses a `bus` to dispatch events—this term comes from the "event bus" concept, where all events are dispatched through this central "bus." Usage is similar to the browser's `addEventListener`; as long as you have access to the `bus`, you can listen for events anywhere.
 
-As of the latest Mind Elixir 5.0, the following events are available:
+As of the latest Mind Elixir Core 5.0, the following events are available:
 
 ```ts
 type EventMap = {
@@ -149,7 +149,7 @@ This way, the child node will only be added after `saveToDatabase()` runs succes
 
 ## Mind Map Redrawing
 
-Besides using Mind Elixir core's default behavior to update mind maps, you can also redraw mind maps by directly updating node data.
+Besides using Mind Elixir Core core's default behavior to update mind maps, you can also redraw mind maps by directly updating node data.
 
 The complete node data structure is as follows:
 
@@ -181,7 +181,7 @@ export interface NodeObj {
 }
 ```
 
-By modifying node data, you can insert **images, tags, hyperlinks, and other** elements into nodes. For example, you can read the current mind map data from the Mind Elixir instance's `nodeData`, modify it, and then call the `refresh` method to redraw the mind map.
+By modifying node data, you can insert **images, tags, hyperlinks, and other** elements into nodes. For example, you can read the current mind map data from the Mind Elixir Core instance's `nodeData`, modify it, and then call the `refresh` method to redraw the mind map.
 
 ```ts
 const data = mind.nodeData;
@@ -190,7 +190,7 @@ data.topic = data.topic + "new Data";
 mind.refresh();
 ```
 
-But what if you want to update the entire mind map with completely new data? That's possible too! Pass data that conforms to the Mind Elixir format to the `refresh` method, and you can instantly update the entire map.
+But what if you want to update the entire mind map with completely new data? That's possible too! Pass data that conforms to the Mind Elixir Core format to the `refresh` method, and you can instantly update the entire map.
 
 ```ts
 import data from "https://esm.sh/mind-elixir/dist/example.js";
@@ -202,11 +202,11 @@ mind.refresh(data);
 
 ## Freedom to Redesign
 
-Mind Elixir gives you the freedom to completely redesign your mind maps.
+Mind Elixir Core gives you the freedom to completely redesign your mind maps.
 
-First, you can easily adjust the overall style of your mind map through `theme` and `cssVar`. The core comes with two built-in themes: `MindElixir.DARK_THEME` and `MindElixir.THEME`. If you need a custom theme, you can create an object following the theme format and pass it to Mind Elixir.
+First, you can easily adjust the overall style of your mind map through `theme` and `cssVar`. The core comes with two built-in themes: `MindElixir.DARK_THEME` and `MindElixir.THEME`. If you need a custom theme, you can create an object following the theme format and pass it to Mind Elixir Core.
 
-Here's a complete Mind Elixir theme and how to use it:
+Here's a complete Mind Elixir Core theme and how to use it:
 
 ```ts
 const PROFESSIONAL_THEME = {
@@ -247,11 +247,11 @@ P.S. If you want to modify the theme after initialization, you can use the `chan
 
 The commonly used `main-gap` in `cssVar` can adjust the spacing between main nodes:
 
-![Mind Elixir main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
+![Mind Elixir Core main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
 
 The `node-gap` can adjust the internal spacing of nodes:
 
-![Mind Elixir node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
+![Mind Elixir Core node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
 
 > [!TIP]
 > Try it on CodePen: https://codepen.io/ssshooter/pen/azOgVKX
@@ -319,7 +319,7 @@ You can get even more creative with `dangerouslySetInnerHTML`, for example:
 const data = {
 	nodeData: {
 		id: "me-root",
-		topic: "Mind Elixir",
+		topic: "Mind Elixir Core",
 		tags: ["Mind Map Core"],
 		children: [
 			{
@@ -380,7 +380,7 @@ const dl2 = async () => {
 };
 ```
 
-![Mind Elixir map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
+![Mind Elixir Core map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
 
 If you still get partial screenshots, it might be due to scale not being equal to 1. Try **setting scale to 1** before taking the screenshot, then restore the original size afterward.
 
@@ -389,9 +389,9 @@ If you still get partial screenshots, it might be due to scale not being equal t
 
 ## Using with Server-Side Rendering Frameworks
 
-When using Mind Elixir in server-side rendering frameworks like Next.js, you'll often encounter issues like `window is not defined`. This is because Mind Elixir heavily relies on various DOM operations and **cannot work properly in SSR environments**.
+When using Mind Elixir Core in server-side rendering frameworks like Next.js, you'll often encounter issues like `window is not defined`. This is because Mind Elixir Core heavily relies on various DOM operations and **cannot work properly in SSR environments**.
 
-To solve this problem, you can use `useEffect` to load Mind Elixir during client-side rendering. Here's a simple example:
+To solve this problem, you can use `useEffect` to load Mind Elixir Core during client-side rendering. Here's a simple example:
 
 ```tsx
 "use client";
@@ -429,9 +429,9 @@ export const MindMap = ({ className }: { className: string }) => {
 };
 ```
 
-## Other Mind Elixir Options
+## Other Mind Elixir Core Options
 
-Mind Elixir has many other configurable options:
+Mind Elixir Core has many other configurable options:
 
 ```ts
 interface Options {
@@ -456,4 +456,4 @@ interface Options {
 
 ## Conclusion
 
-Through this guide, you should now have mastered Mind Elixir techniques from basic usage to advanced customization. If you encounter any issues during use, or have better ideas and suggestions, feel free to share in the comments or join the discussion on [GitHub](https://github.com/SSShooter/mind-elixir-core) and submit PRs! Let's make Mind Elixir even better together!
+Through this guide, you should now have mastered Mind Elixir Core techniques from basic usage to advanced customization. If you encounter any issues during use, or have better ideas and suggestions, feel free to share in the comments or join the discussion on [GitHub](https://github.com/SSShooter/mind-elixir-core) and submit PRs! Let's make Mind Elixir Core even better together!

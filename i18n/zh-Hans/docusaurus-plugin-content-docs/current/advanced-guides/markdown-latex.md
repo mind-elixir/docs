@@ -1,6 +1,18 @@
+---
+title: "Markdown 与 LaTeX"
+description: "向构造函数传入自定义 markdown 函数（如 marked、katex），即可在 Mind Elixir Core 节点中渲染 Markdown 与 LaTeX。"
+keywords:
+  - "Markdown"
+  - "LaTeX"
+  - "KaTeX"
+  - "marked"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Markdown 与 LaTeX
 
-Mind Elixir **不内置** Markdown 或 LaTeX 渲染器。渲染完全可插拔：在构造选项中传入自定义 `markdown` 函数即可。该函数接收节点（或箭头 / 概要）文本，并返回 HTML。
+Mind Elixir Core **不内置** Markdown 或 LaTeX 渲染器。渲染完全可插拔：在构造选项中传入自定义 `markdown` 函数即可。该函数接收节点（或箭头 / 概要）文本，并返回 HTML。
 
 这与 [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop) 的实现方式一致。
 

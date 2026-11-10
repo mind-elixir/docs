@@ -1,3 +1,14 @@
+---
+title: "ノードデータ"
+description: "Mind Elixir Core の NodeObj 型リファレンス。topic、id、style、タグ、アイコン、ハイパーリンク、画像、ブランチカラーなどのフィールドを解説します。"
+keywords:
+  - "NodeObj"
+  - "ノードデータ"
+  - "型リファレンス"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # ノードデータ
 
 ```typescript

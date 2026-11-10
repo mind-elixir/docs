@@ -1,23 +1,350 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.page {
+  --home-radius: 16px;
 }
 
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background:
+    radial-gradient(
+      1100px 480px at 8% -20%,
+      rgba(74, 74, 212, 0.16),
+      transparent 62%
+    ),
+    radial-gradient(
+      820px 420px at 92% -10%,
+      rgba(34, 211, 238, 0.16),
+      transparent 62%
+    );
+}
+
+[data-theme='dark'] .hero {
+  background:
+    radial-gradient(
+      1100px 480px at 8% -20%,
+      rgba(122, 122, 224, 0.24),
+      transparent 62%
+    ),
+    radial-gradient(
+      820px 420px at 92% -10%,
+      rgba(34, 211, 238, 0.16),
+      transparent 62%
+    );
+}
+
+.heroInner {
+  max-width: 830px;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .eyebrow {
+  color: var(--ifm-color-primary-light);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  margin: 1.15rem 0 0;
+  max-width: 720px;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.ghostLink {
+  margin-left: 0.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  margin: 0;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+}
+
+/* ---------- Live demo ---------- */
+
+.demo {
+  padding: 2.5rem 0 0;
+}
+
+.demoFrame {
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--home-radius);
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 18px 40px -28px rgba(15, 23, 42, 0.55);
+}
+
+.caption {
+  margin: 0.85rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ---------- Sections ---------- */
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  margin: 0.6rem 0 2rem;
+  max-width: 680px;
+  font-size: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* ---------- Install ---------- */
+
+.install {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--home-radius);
+  background: var(--ifm-background-surface-color);
+}
+
+.installTitle {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.installBody {
+  margin: 0.6rem 0 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.installLink {
+  font-weight: 600;
+}
+
+.installCode {
+  margin: 0;
+  padding: 1.25rem 1.35rem;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  color: #e6edf3;
+  background: #0d1117;
+  border: 1px solid #1f2733;
+  border-radius: 12px;
+}
+
+.installCode code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.prompt {
+  color: #58a6ff;
+  user-select: none;
+}
+
+/* ---------- Feature grid ---------- */
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--home-radius);
+  background: var(--ifm-background-surface-color);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary-lightest);
+  box-shadow: 0 14px 30px -24px rgba(15, 23, 42, 0.5);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  background: rgba(74, 74, 212, 0.1);
+  border-radius: 11px;
+}
+
+[data-theme='dark'] .iconWrap {
+  color: var(--ifm-color-primary-light);
+  background: rgba(122, 122, 224, 0.16);
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+}
+
+.cardTitle {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.cardBody {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* ---------- Products ---------- */
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-top: 3px solid var(--ifm-color-primary);
+  border-radius: var(--home-radius);
+  background: var(--ifm-background-surface-color);
+}
+
+.productName {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.productLink {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* ---------- Guides ---------- */
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+.guideCard {
+  display: block;
+  padding: 1.35rem 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--home-radius);
+  background: var(--ifm-background-surface-color);
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.guideCard:hover {
+  color: inherit;
+  text-decoration: none;
+  border-color: var(--ifm-color-primary-lightest);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.guideTitle {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+/* ---------- Responsive ---------- */
+
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .hero {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .install {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .lede {
+    font-size: 1.02rem;
+  }
+
+  .ctaRow :global(.button) {
+    width: 100%;
+  }
+
+  .ghostLink {
+    margin-left: 0;
+  }
 }

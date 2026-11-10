@@ -1,6 +1,17 @@
+---
+title: "Keyboard Shortcuts"
+description: "Complete keyboard shortcut reference for Mind Elixir Core: add, edit and navigate nodes, collapse branches, zoom and undo."
+keywords:
+  - "keyboard shortcuts"
+  - "hotkeys"
+  - "productivity"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Keyboard Shortcuts
 
-Performing operations on nodes through the right-click menu can be inconvenient, significantly reducing work and learning efficiency. Mind Elixir supports more efficient keyboard shortcuts, allowing you to smoothly create diagrams and navigate through your mind maps with ease! These shortcuts make browsing and exploring complex mind maps much more convenient and intuitive.
+Performing operations on nodes through the right-click menu can be inconvenient, significantly reducing work and learning efficiency. Mind Elixir Core supports more efficient keyboard shortcuts, allowing you to smoothly create diagrams and navigate through your mind maps with ease! These shortcuts make browsing and exploring complex mind maps much more convenient and intuitive.
 
 | Shortcut           | Function                  |
 | ------------------ | ------------------------- |

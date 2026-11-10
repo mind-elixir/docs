@@ -1,3 +1,14 @@
+---
+title: "dangerouslySetInnerHTML"
+description: "Render KaTeX, highlighted code and custom HTML inside Mind Elixir Core nodes with the dangerouslySetInnerHTML node property."
+keywords:
+  - "dangerouslySetInnerHTML"
+  - "custom HTML"
+  - "rich content"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # dangerouslySetInnerHTML
 
 ```js

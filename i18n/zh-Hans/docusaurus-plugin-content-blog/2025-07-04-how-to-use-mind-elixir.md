@@ -1,9 +1,9 @@
 ---
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
-title: "轻松在网页中集成专业思维导图功能 - Mind Elixir"
+title: "轻松在网页中集成专业思维导图功能 - Mind Elixir Core"
 keywords: ["JavaScript", "思维导图", "前端开发", "可视化", "开源工具", "coding"]
-description: "详细介绍如何使用 Mind Elixir 在网页项目中集成思维导图功能。从基础安装到高级定制，包含完整代码示例和最佳实践，帮助开发者快速上手这个强大的 JavaScript 思维导图库。"
+description: "详细介绍如何使用 Mind Elixir Core 在网页项目中集成思维导图功能。从基础安装到高级定制，包含完整代码示例和最佳实践，帮助开发者快速上手这个强大的 JavaScript 思维导图库。"
 multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 ---
 
@@ -11,11 +11,11 @@ multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 
 无论是构建知识管理平台、在线教育网站，还是协作工具，集成思维导图功能都能显著提升用户体验，让复杂信息的展示和交互变得更加直观高效。
 
-如果你想在自己的 Web 项目中集成思维导图功能，借助 [Mind Elixir](https://github.com/SSShooter/mind-elixir-core)，**最快只需几行代码**就能在你的网站中添加专业级的思维导图功能。比如在**个人博客**中，你可以用思维导图来展示文章的知识结构、制作交互式的学习笔记，这样的功能不仅能让内容更加生动有趣，还能显著提升博客的专业度。
+如果你想在自己的 Web 项目中集成思维导图功能，借助 [Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core)，**最快只需几行代码**就能在你的网站中添加专业级的思维导图功能。比如在**个人博客**中，你可以用思维导图来展示文章的知识结构、制作交互式的学习笔记，这样的功能不仅能让内容更加生动有趣，还能显著提升博客的专业度。
 
-![Mind Elixir 内核](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
+![Mind Elixir Core](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
 
-开源的 JavaScript 思维导图内核 [Mind Elixir](https://github.com/SSShooter/mind-elixir-core)，拥有以下核心特性：
+开源的 JavaScript 思维导图内核 [Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core)，拥有以下核心特性：
 
 - **流畅的用户体验**
   交互顺滑、反馈自然，支持移动端。
@@ -36,7 +36,7 @@ multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 - **CSS 变量样式自定义**
   通过 CSS 变量轻松控制节点样式和整体主题，实现高度定制化美观布局。
 
-下面简单介绍一下怎么快速在你的项目中集成 Mind Elixir 吧！🤗
+下面简单介绍一下怎么快速在你的项目中集成 Mind Elixir Core 吧！🤗
 
 ## 超简易接入
 
@@ -46,7 +46,7 @@ multiLang: ['en', 'es', 'ja', 'ko', 'ru']
 npm i mind-elixir -S
 ```
 
-引入 Mind Elixir：
+引入 Mind Elixir Core：
 
 ```javascript
 import MindElixir from "mind-elixir";
@@ -95,9 +95,9 @@ mei.init(data);
 
 在你的项目里用上思维导图之后，最常见的需求便是监听事件了，你需要监听各种节点操作，然后对用户操作做出响应。例如用户新建了一个节点，你需要及时把它保存起来。
 
-Mind Elixir 使用 `bus` 派发事件，这个词来源于“总线”这个概念，所有事件都会由这个“总线”派发。使用上跟浏览器的 `addEventListener` 类似，只要你能拿到 `bus`，你就可以在任何地方监听事件。
+Mind Elixir Core 使用 `bus` 派发事件，这个词来源于“总线”这个概念，所有事件都会由这个“总线”派发。使用上跟浏览器的 `addEventListener` 类似，只要你能拿到 `bus`，你就可以在任何地方监听事件。
 
-截止到最新版 Mind Elixir 5.0，有以下事件：
+截止到最新版 Mind Elixir Core 5.0，有以下事件：
 
 ```ts
 type EventMap = {
@@ -149,7 +149,7 @@ let mei = new MindElixir({
 
 ## 思维导图重绘
 
-除了使用 Mind Elixir 内核的默认行为更新思维导图，你还可以通过直接更新节点数据来重绘思维导图。
+除了使用 Mind Elixir Core的默认行为更新思维导图，你还可以通过直接更新节点数据来重绘思维导图。
 
 完整的节点数据结构如下：
 
@@ -181,7 +181,7 @@ export interface NodeObj {
 }
 ```
 
-通过修改节点数据可以在节点插入**图片、标签、超链接等**元素。举个例子，你可以通过读取 Mind Elixir 实例的 `nodeData` 获取到当前的思维导图数据，然后对它进行修改，最后调用 `refresh` 方法重绘思维导图。
+通过修改节点数据可以在节点插入**图片、标签、超链接等**元素。举个例子，你可以通过读取 Mind Elixir Core 实例的 `nodeData` 获取到当前的思维导图数据，然后对它进行修改，最后调用 `refresh` 方法重绘思维导图。
 
 ```ts
 const data = mind.nodeData;
@@ -190,7 +190,7 @@ data.topic = data.topic + "new Data";
 mind.refresh();
 ```
 
-但是如果你想把整个思维导图更新到全新的数据呢？也可以！把符合 Mind Elixir 格式的数据传到 `refresh` 方法，就能立即更新全图。
+但是如果你想把整个思维导图更新到全新的数据呢？也可以！把符合 Mind Elixir Core 格式的数据传到 `refresh` 方法，就能立即更新全图。
 
 ```ts
 import data from "https://esm.sh/mind-elixir/dist/example.js";
@@ -202,11 +202,11 @@ mind.refresh(data);
 
 ## 重新设计的自由
 
-Mind Elixir 赋予你重新设计思维套图的自由。
+Mind Elixir Core 赋予你重新设计思维套图的自由。
 
-首先你可以通过 `theme` 和 `cssVar` 简单调整整个思维导图的风格。内核自带明暗两个主题 `MindElixir.DARK_THEME` 和 `MindElixir.THEME` 可供选择，如果需要自定义主题，可以按照主题格式写一个对象传入 Mind Elixir。
+首先你可以通过 `theme` 和 `cssVar` 简单调整整个思维导图的风格。内核自带明暗两个主题 `MindElixir.DARK_THEME` 和 `MindElixir.THEME` 可供选择，如果需要自定义主题，可以按照主题格式写一个对象传入 Mind Elixir Core。
 
-一个完整的 Mind Elixir 主题和使用方式如下：
+一个完整的 Mind Elixir Core 主题和使用方式如下：
 
 ```ts
 const PROFESSIONAL_THEME = {
@@ -247,11 +247,11 @@ P.S. 在初始化后想要再次修改主题，可以使用 `changeTheme` 方法
 
 `cssVar` 中比较常用的 main-gap 可以调整主节点间的间距：
 
-![Mind Elixir main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
+![Mind Elixir Core main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
 
 node-gap 可以调整节点内部的间距：
 
-![Mind Elixir node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
+![Mind Elixir Core node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
 
 > [!TIP]
 > 在 Codepen 试玩：https://codepen.io/ssshooter/pen/azOgVKX
@@ -319,7 +319,7 @@ me-epd {
 const data = {
 	nodeData: {
 		id: "me-root",
-		topic: "Mind Elixir",
+		topic: "Mind Elixir Core",
 		tags: ["Mind Map Core"],
 		children: [
 			{
@@ -380,7 +380,7 @@ const dl2 = async () => {
 };
 ```
 
-![Mind Elixir map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
+![Mind Elixir Core map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
 
 如果还是出现图片只截取到一部分的情况，可能是 scale 不等于 1 导致的，可以尝试在截图前**设置 scale 为 1**，完成后恢复原来的大小。
 
@@ -389,9 +389,9 @@ const dl2 = async () => {
 
 ## 在端渲染框架使用
 
-在 Next.js 等后端渲染框架中使用 Mind Elixir 常常会遇到 `window is not defined` 之类的问题。原因是 Mind Elixir 高强度依赖各种 DOM 操作，**在 SSR 的环境下是无法正常工作的**。
+在 Next.js 等后端渲染框架中使用 Mind Elixir Core 常常会遇到 `window is not defined` 之类的问题。原因是 Mind Elixir Core 高强度依赖各种 DOM 操作，**在 SSR 的环境下是无法正常工作的**。
 
-为了解决这个问题，可以使用 `useEffect` 在客户端渲染时加载 Mind Elixir。下面是一个简单的示例：
+为了解决这个问题，可以使用 `useEffect` 在客户端渲染时加载 Mind Elixir Core。下面是一个简单的示例：
 
 ```tsx
 "use client";
@@ -429,9 +429,9 @@ export const MindMap = ({ className }: { className: string }) => {
 };
 ```
 
-## 其他 Mind Elixir 选项
+## 其他 Mind Elixir Core 选项
 
-Mind Elixir 还有很多其他选项可以配置：
+Mind Elixir Core 还有很多其他选项可以配置：
 
 ```ts
 interface Options {
@@ -456,4 +456,4 @@ interface Options {
 
 ## 结语
 
-通过本文的介绍，相信你已经掌握了 Mind Elixir 从基础使用到高级定制的各种技巧啦。如果你在使用过程中遇到问题，或者有更好的想法和建议，可以在评论区分享，也欢迎在 [GitHub](https://github.com/SSShooter/mind-elixir-core) 上参与讨论，提 PR！一起让 Mind Elixir 变得更完美！
+通过本文的介绍，相信你已经掌握了 Mind Elixir Core 从基础使用到高级定制的各种技巧啦。如果你在使用过程中遇到问题，或者有更好的想法和建议，可以在评论区分享，也欢迎在 [GitHub](https://github.com/SSShooter/mind-elixir-core) 上参与讨论，提 PR！一起让 Mind Elixir Core 变得更完美！

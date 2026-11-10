@@ -1,3 +1,14 @@
+---
+title: "dangerouslySetInnerHTML"
+description: "dangerouslySetInnerHTML ノードプロパティを使って、Mind Elixir Core のノード内に KaTeX やハイライトされたコード、独自 HTML を描画します。"
+keywords:
+  - "dangerouslySetInnerHTML"
+  - "カスタム HTML"
+  - "リッチコンテンツ"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # dangerouslySetInnerHTML
 
 ```js

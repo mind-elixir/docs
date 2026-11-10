@@ -1,6 +1,18 @@
+---
+title: "Markdown と LaTeX"
+description: "コンストラクタに marked や katex などの markdown 関数を渡すことで、Mind Elixir Core のノード内に Markdown と LaTeX を描画します。"
+keywords:
+  - "Markdown"
+  - "LaTeX"
+  - "KaTeX"
+  - "marked"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Markdown と LaTeX
 
-Mind Elixir には **Markdown / LaTeX の組み込みレンダラーはありません**。コンストラクタの `markdown` オプションにカスタム関数を渡すことで、完全に差し替え可能です。関数はノード（または矢印 / サマリー）のテキストを受け取り、HTML を返します。
+Mind Elixir Core には **Markdown / LaTeX の組み込みレンダラーはありません**。コンストラクタの `markdown` オプションにカスタム関数を渡すことで、完全に差し替え可能です。関数はノード（または矢印 / サマリー）のテキストを受け取り、HTML を返します。
 
 これは [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop) と同じ方式です。
 

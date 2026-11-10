@@ -1,3 +1,14 @@
+---
+title: "Node Data"
+description: "Reference for the NodeObj type in Mind Elixir Core: topic, id, style, tags, icons, hyperlinks, images, branch colours and more."
+keywords:
+  - "NodeObj"
+  - "node data"
+  - "type reference"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Node Data
 
 ```typescript

@@ -1,9 +1,9 @@
 ---
 slug: "how-to-use-mind-elixir"
 publishDate: "2025-07-05T10:05:18.254Z"
-title: "Webページにマインドマップ機能を簡単に統合 - Mind Elixir"
+title: "Webページにマインドマップ機能を簡単に統合 - Mind Elixir Core"
 keywords: ["JavaScript", "マインドマップ", "フロントエンド開発", "可視化", "オープンソースツール", "coding"]
-description: "Mind ElixirをWebプロジェクトに統合してマインドマップ機能を実装する方法を詳しく解説。基本的なインストールから高度なカスタマイズまで、完全なコード例とベストプラクティスを含み、開発者がこの強力なJavaScriptマインドマップライブラリを素早く習得できるよう支援します。"
+description: "Mind Elixir CoreをWebプロジェクトに統合してマインドマップ機能を実装する方法を詳しく解説。基本的なインストールから高度なカスタマイズまで、完全なコード例とベストプラクティスを含み、開発者がこの強力なJavaScriptマインドマップライブラリを素早く習得できるよう支援します。"
 multiLang: ["en", "es", "ja", "ko", "ru"]
 ---
 
@@ -11,11 +11,11 @@ multiLang: ["en", "es", "ja", "ko", "ru"]
 
 知識管理プラットフォーム、オンライン教育サイト、コラボレーションツールの構築において、マインドマップ機能の統合はユーザーエクスペリエンスを大幅に向上させ、複雑な情報の表示とインタラクションをより直感的で効率的にします。
 
-あなたのWebプロジェクトにマインドマップ機能を統合したい場合、[Mind Elixir](https://github.com/SSShooter/mind-elixir-core)を活用すれば、**わずか数行のコード**でWebサイトにプロフェッショナルレベルのマインドマップ機能を追加できます。例えば**個人ブログ**では、記事の知識構造を表示したり、インタラクティブな学習ノートを作成したりできます。このような機能はコンテンツをより生き生きと興味深くするだけでなく、ブログの専門性を大幅に向上させます。
+あなたのWebプロジェクトにマインドマップ機能を統合したい場合、[Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core)を活用すれば、**わずか数行のコード**でWebサイトにプロフェッショナルレベルのマインドマップ機能を追加できます。例えば**個人ブログ**では、記事の知識構造を表示したり、インタラクティブな学習ノートを作成したりできます。このような機能はコンテンツをより生き生きと興味深くするだけでなく、ブログの専門性を大幅に向上させます。
 
-![Mind Elixir 内核](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
+![Mind Elixir Core](https://img.ssshooter.com/img/how-to-use-mind-elixir/screenshot.jpg)
 
-オープンソースのJavaScriptマインドマップコア[Mind Elixir](https://github.com/SSShooter/mind-elixir-core)は、以下の主要機能を備えています：
+オープンソースのJavaScriptマインドマップコア[Mind Elixir Core](https://github.com/SSShooter/mind-elixir-core)は、以下の主要機能を備えています：
 
 - **スムーズなユーザーエクスペリエンス**
   滑らかなインタラクション、自然なフィードバック、モバイル対応。
@@ -36,7 +36,7 @@ multiLang: ["en", "es", "ja", "ko", "ru"]
 - **CSS変数によるスタイルカスタマイズ**
   CSS変数でノードスタイルと全体テーマを簡単に制御、高度にカスタマイズされた美しいレイアウトを実現。
 
-それでは、プロジェクトにMind Elixirを素早く統合する方法を簡単にご紹介しましょう！🤗
+それでは、プロジェクトにMind Elixir Coreを素早く統合する方法を簡単にご紹介しましょう！🤗
 
 ## 超簡単統合
 
@@ -46,7 +46,7 @@ multiLang: ["en", "es", "ja", "ko", "ru"]
 npm i mind-elixir -S
 ```
 
-Mind Elixirのインポート：
+Mind Elixir Coreのインポート：
 
 ```javascript
 import MindElixir from "mind-elixir";
@@ -95,9 +95,9 @@ mei.init(data);
 
 プロジェクトでマインドマップを使用した後、最も一般的な要件はイベントリスニングです。様々なノード操作を監視し、ユーザーの操作に応答する必要があります。例えば、ユーザーが新しいノードを作成した場合、それを適時保存する必要があります。
 
-Mind Elixirは`bus`を使用してイベントを配信します。この用語は「バス」という概念に由来し、すべてのイベントはこの「バス」によって配信されます。使用方法はブラウザの`addEventListener`と似ており、`bus`にアクセスできれば、どこからでもイベントを監視できます。
+Mind Elixir Coreは`bus`を使用してイベントを配信します。この用語は「バス」という概念に由来し、すべてのイベントはこの「バス」によって配信されます。使用方法はブラウザの`addEventListener`と似ており、`bus`にアクセスできれば、どこからでもイベントを監視できます。
 
-最新版Mind Elixir 5.0では、以下のイベントが利用可能です：
+最新版Mind Elixir Core 5.0では、以下のイベントが利用可能です：
 
 ```ts
 type EventMap = {
@@ -149,7 +149,7 @@ let mei = new MindElixir({
 
 ## マインドマップの再描画
 
-Mind Elixirコアのデフォルト動作を使用してマインドマップを更新する以外に、ノードデータを直接更新してマインドマップを再描画することも可能です。
+Mind Elixir Coreのデフォルト動作を使用してマインドマップを更新する以外に、ノードデータを直接更新してマインドマップを再描画することも可能です。
 
 完全なノードデータ構造は以下の通りです：
 
@@ -181,7 +181,7 @@ export interface NodeObj {
 }
 ```
 
-ノードデータを変更することで、ノードに**画像、タグ、ハイパーリンクなど**の要素を挿入できます。例えば、Mind Elixirインスタンスの`nodeData`を読み取って現在のマインドマップデータを取得し、それを変更してから`refresh`メソッドを呼び出してマインドマップを再描画できます。
+ノードデータを変更することで、ノードに**画像、タグ、ハイパーリンクなど**の要素を挿入できます。例えば、Mind Elixir Coreインスタンスの`nodeData`を読み取って現在のマインドマップデータを取得し、それを変更してから`refresh`メソッドを呼び出してマインドマップを再描画できます。
 
 ```ts
 const data = mind.nodeData;
@@ -190,7 +190,7 @@ data.topic = data.topic + "new Data";
 mind.refresh();
 ```
 
-しかし、マインドマップ全体を全く新しいデータに更新したい場合はどうでしょうか？それも可能です！Mind Elixir形式に準拠したデータを`refresh`メソッドに渡すことで、即座に全体を更新できます。
+しかし、マインドマップ全体を全く新しいデータに更新したい場合はどうでしょうか？それも可能です！Mind Elixir Core形式に準拠したデータを`refresh`メソッドに渡すことで、即座に全体を更新できます。
 
 ```ts
 import data from "https://esm.sh/mind-elixir/dist/example.js";
@@ -202,11 +202,11 @@ mind.refresh(data);
 
 ## 再設計の自由
 
-Mind Elixirはマインドマップを再設計する自由を提供します。
+Mind Elixir Coreはマインドマップを再設計する自由を提供します。
 
-まず、`theme`と`cssVar`を使用してマインドマップ全体のスタイルを簡単に調整できます。コアには明暗2つのテーマ`MindElixir.DARK_THEME`と`MindElixir.THEME`が組み込まれており、カスタムテーマが必要な場合は、テーマ形式に従ってオブジェクトを作成してMind Elixirに渡すことができます。
+まず、`theme`と`cssVar`を使用してマインドマップ全体のスタイルを簡単に調整できます。コアには明暗2つのテーマ`MindElixir.DARK_THEME`と`MindElixir.THEME`が組み込まれており、カスタムテーマが必要な場合は、テーマ形式に従ってオブジェクトを作成してMind Elixir Coreに渡すことができます。
 
-完全なMind Elixirテーマと使用方法は以下の通りです：
+完全なMind Elixir Coreテーマと使用方法は以下の通りです：
 
 ```ts
 const PROFESSIONAL_THEME = {
@@ -247,11 +247,11 @@ P.S. 初期化後にテーマを再度変更したい場合は、`changeTheme`�
 
 `cssVar`でよく使用されるmain-gapは、メインノード間の間隔を調整できます：
 
-![Mind Elixir main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
+![Mind Elixir Core main-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/main-gap.jpg)
 
 node-gapはノード内部の間隔を調整できます：
 
-![Mind Elixir node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
+![Mind Elixir Core node-gap](https://img.ssshooter.com/img/how-to-use-mind-elixir/node-gap.png)
 
 > [!TIP]
 > Codepenで試す：https://codepen.io/ssshooter/pen/azOgVKX
@@ -319,7 +319,7 @@ me-epd {
 const data = {
 	nodeData: {
 		id: "me-root",
-		topic: "Mind Elixir",
+		topic: "Mind Elixir Core",
 		tags: ["Mind Map Core"],
 		children: [
 			{
@@ -380,7 +380,7 @@ const dl2 = async () => {
 };
 ```
 
-![Mind Elixir map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
+![Mind Elixir Core map-padding](https://img.ssshooter.com/img/how-to-use-mind-elixir/map-padding.jpg)
 
 それでも画像の一部しかキャプチャされない場合は、scaleが1でないことが原因の可能性があります。スクリーンショット前に**scaleを1に設定**し、完了後に元のサイズに戻すことを試してください。
 
@@ -389,9 +389,9 @@ const dl2 = async () => {
 
 ## サーバーサイドレンダリングフレームワークでの使用
 
-Next.jsなどのサーバーサイドレンダリングフレームワークでMind Elixirを使用する際、`window is not defined`などの問題によく遭遇します。これはMind ElixirがDOM操作に大きく依存しており、**SSR環境では正常に動作しない**ためです。
+Next.jsなどのサーバーサイドレンダリングフレームワークでMind Elixir Coreを使用する際、`window is not defined`などの問題によく遭遇します。これはMind Elixir CoreがDOM操作に大きく依存しており、**SSR環境では正常に動作しない**ためです。
 
-この問題を解決するために、`useEffect`を使用してクライアントサイドレンダリング時にMind Elixirを読み込むことができます。以下は簡単な例です：
+この問題を解決するために、`useEffect`を使用してクライアントサイドレンダリング時にMind Elixir Coreを読み込むことができます。以下は簡単な例です：
 
 ```tsx
 "use client";
@@ -429,9 +429,9 @@ export const MindMap = ({ className }: { className: string }) => {
 };
 ```
 
-## その他のMind Elixirオプション
+## その他のMind Elixir Coreオプション
 
-Mind Elixirには他にも多くの設定可能なオプションがあります：
+Mind Elixir Coreには他にも多くの設定可能なオプションがあります：
 
 ```ts
 interface Options {
@@ -456,4 +456,4 @@ interface Options {
 
 ## まとめ
 
-本記事の紹介を通じて、Mind Elixirの基本的な使用から高度なカスタマイズまでの様々なテクニックを習得できたと思います。使用中に問題が発生したり、より良いアイデアや提案がある場合は、コメント欄で共有していただくか、[GitHub](https://github.com/SSShooter/mind-elixir-core)でディスカッションに参加してPRを提出してください！一緒にMind Elixirをより完璧にしていきましょう！
+本記事の紹介を通じて、Mind Elixir Coreの基本的な使用から高度なカスタマイズまでの様々なテクニックを習得できたと思います。使用中に問題が発生したり、より良いアイデアや提案がある場合は、コメント欄で共有していただくか、[GitHub](https://github.com/SSShooter/mind-elixir-core)でディスカッションに参加してPRを提出してください！一緒にMind Elixir Coreをより完璧にしていきましょう！

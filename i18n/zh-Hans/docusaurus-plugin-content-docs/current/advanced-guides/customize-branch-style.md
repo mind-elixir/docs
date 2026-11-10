@@ -1,3 +1,15 @@
+---
+title: "自定义分支样式"
+description: "通过 generateMainBranch 与 generateSubBranch 选项自定义 Mind Elixir Core 的主分支与子分支线条样式。"
+keywords:
+  - "分支样式"
+  - "generateMainBranch"
+  - "generateSubBranch"
+  - "SVG 路径"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # 自定义分支样式
 
 可以在配置中传入 `generateMainBranch` 和 `generateSubBranch`，修改主分支（连接根节点到主节点的分支）和次分支（连接主节点与其后代的分支）的样式。

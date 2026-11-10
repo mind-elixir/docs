@@ -1,10 +1,19 @@
 ---
+title: "TypeScript Support"
 sidebar_position: 3
+description: "Mind Elixir Core ships its own TypeScript types. No extra @types package needed — typed options, node data and instance methods out of the box."
+keywords:
+  - "TypeScript"
+  - "types"
+  - "type definitions"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
 # TypeScript Support
 
-Mind Elixir is written in TypeScript and does not require the installation of additional npm packages. It inherently supports TypeScript.
+Mind Elixir Core is written in TypeScript and does not require the installation of additional npm packages. It inherently supports TypeScript.
 
 ```ts
 import MindElixir, { MindElixirData, Options } from 'mind-elixir'

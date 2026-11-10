@@ -1,3 +1,14 @@
+---
+title: "节点数据"
+description: "Mind Elixir Core 的 NodeObj 类型参考：topic、id、style、标签、图标、超链接、图片与分支颜色等字段说明。"
+keywords:
+  - "NodeObj"
+  - "节点数据"
+  - "类型参考"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # 节点数据
 
 ```typescript

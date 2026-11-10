@@ -1,6 +1,17 @@
 ---
+title: "ノード操作"
 sidebar_position: 2
+description: "Mind Elixir Core でノード操作を購読・インターセプトする方法と、組み込み API によるプログラム的なノード操作を解説します。"
+keywords:
+  - "ノード操作"
+  - "イベント"
+  - "bus"
+  - "API"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # ノード操作
 
@@ -68,7 +79,7 @@ let mind = new MindElixir({
 
 ## プログラムでのノード操作
 
-Mind Elixir はノードを直接操作するための API を提供しています。
+Mind Elixir Core はノードを直接操作するための API を提供しています。
 
 ```ts
 {
@@ -115,6 +126,6 @@ mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
 
 :::tip
 
-`MindElixir.E` は、id によってノードの DOM オブジェクトを取得するメソッドです。Mind Elixir の多くの API では DOM オブジェクトの型として `Topic` を使用し、それらを取得するために `E` 関数を使用できます。
+`MindElixir.E` は、id によってノードの DOM オブジェクトを取得するメソッドです。Mind Elixir Core の多くの API では DOM オブジェクトの型として `Topic` を使用し、それらを取得するために `E` 関数を使用できます。
 
 :::

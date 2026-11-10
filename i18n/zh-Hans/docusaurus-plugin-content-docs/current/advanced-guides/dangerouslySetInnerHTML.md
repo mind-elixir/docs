@@ -1,3 +1,14 @@
+---
+title: "dangerouslySetInnerHTML"
+description: "使用 dangerouslySetInnerHTML 节点属性在 Mind Elixir Core 节点中渲染 KaTeX、高亮代码与自定义 HTML。"
+keywords:
+  - "dangerouslySetInnerHTML"
+  - "自定义 HTML"
+  - "富文本"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # dangerouslySetInnerHTML
 
 ```js

@@ -1,5 +1,15 @@
 ---
+title: "Node Operations"
 sidebar_position: 2
+description: "Listen to and intercept node operations in Mind Elixir Core, or manipulate nodes programmatically with the built-in node APIs."
+keywords:
+  - "node operations"
+  - "events"
+  - "bus"
+  - "API"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
 # Node Operations
@@ -68,7 +78,7 @@ With `async` in operation guards, we can intercept cases where asynchronous info
 
 ## Programmatic Node Operations
 
-Mind Elixir provides an API for directly manipulating nodes:
+Mind Elixir Core provides an API for directly manipulating nodes:
 
 ```ts
 {
@@ -115,6 +125,6 @@ mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
 
 :::tip
 
-`MindElixir.E` is a method to obtain the DOM object of a node by its id. Many APIs in Mind Elixir use `Topic` as the type for DOM objects, and you can use the `E` function to get them.
+`MindElixir.E` is a method to obtain the DOM object of a node by its id. Many APIs in Mind Elixir Core use `Topic` as the type for DOM objects, and you can use the `E` function to get them.
 
 :::

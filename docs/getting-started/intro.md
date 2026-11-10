@@ -1,12 +1,21 @@
 ---
+title: "What is Mind Elixir Core?"
 sidebar_position: 1
+description: "Mind Elixir Core is an open-source JavaScript mind map core: zero dependencies, 33 kB gzipped, framework agnostic, with plugins, SVG/PNG export and undo/redo."
+keywords:
+  - "mind map library"
+  - "open source"
+  - "zero dependencies"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
-# What is Mind Elixir?
+# What is Mind Elixir Core?
 
 ![](/img/screenshot.png)
 
-**Mind Elixir** is an open-source JavaScript mind mapping framework designed to leverage the advantages of mind maps. It comes with the following features:
+**Mind Elixir Core** is an open-source JavaScript mind mapping framework designed to leverage the advantages of mind maps. It comes with the following features:
 
 - Zero dependencies, fast installation (33kb after gzip)
 - High-performance node operations

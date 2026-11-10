@@ -1,3 +1,15 @@
+---
+title: "カスタムブランチスタイル"
+description: "generateMainBranch と generateSubBranch オプションで Mind Elixir Core のメインブランチとサブブランチの線をカスタマイズします。"
+keywords:
+  - "ブランチスタイル"
+  - "generateMainBranch"
+  - "generateSubBranch"
+  - "SVG パス"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # カスタムブランチスタイル
 
 `generateMainBranch` と `generateSubBranch` に `generateMainBranch` と `generateSubBranch` を設定して、メインブランチ（ルートノードとメインノードを接続するブランチ）とサブブランチ（メインノードとその子孫を接続するブランチ）のスタイルを変更できます。

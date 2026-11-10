@@ -1,6 +1,16 @@
 ---
+title: "安装与使用"
 sidebar_position: 2
+description: "安装 mind-elixir 包，五分钟内用 Mind Elixir Core 渲染出第一张可交互的思维导图。"
+keywords:
+  - "npm 安装"
+  - "快速开始"
+  - "入门"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
 
@@ -28,11 +38,11 @@ const data = MindElixir.new('new topic')
 mind.init(data)
 ```
 
-要使用 Mind Elixir，在 `options` 中只要传入一个 `el`（代表挂载的目标 DOM 元素）即可。更多配置可以查阅[完整配置](../api/mind-elixir.options.md)。
+要使用 Mind Elixir Core，在 `options` 中只要传入一个 `el`（代表挂载的目标 DOM 元素）即可。更多配置可以查阅[完整配置](../api/mind-elixir.options.md)。
 
 :::warning
 
-因为 Mind Elixir 挂载时高度为容器高度的 100%，所以请务必设置容器高度，否则造成显示异常。
+因为 Mind Elixir Core 挂载时高度为容器高度的 100%，所以请务必设置容器高度，否则造成显示异常。
 
 :::
 

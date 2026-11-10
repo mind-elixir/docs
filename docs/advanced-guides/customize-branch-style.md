@@ -1,3 +1,15 @@
+---
+title: "Custom Branch Styles"
+description: "Customise main and sub branch lines in Mind Elixir Core with the generateMainBranch and generateSubBranch options."
+keywords:
+  - "branch style"
+  - "generateMainBranch"
+  - "generateSubBranch"
+  - "SVG paths"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Custom Branch Styles
 
 You can modify the styles of the main branch (connecting the root node to the main node) and the sub-branches (connecting the main node to its descendants) by passing configurations for `generateMainBranch` and `generateSubBranch` in the settings.

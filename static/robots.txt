@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Algolia-backed search result pages have no standalone content
+Disallow: /search
+Disallow: /*/search
+
+# Duplicate locale-prefixed helpers
+Disallow: /blog/authors
+
+Sitemap: https://docs.mind-elixir.com/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/zh-Hans/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/ja/sitemap.xml

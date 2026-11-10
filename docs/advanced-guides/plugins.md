@@ -1,8 +1,20 @@
+---
+title: "Plugins"
+description: "Extend Mind Elixir Core with plugins: node menus, XMind and HTML export, and custom methods on the MindElixir instance."
+keywords:
+  - "plugins"
+  - "extensions"
+  - "XMind export"
+  - "node menu"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Plugins
 
 The logic is quite straightforward, just manipulate the `MindElixirInstance` in any way, and you can call it a plugin.
 
-Taking [@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) as an example, you can insert custom elements into the Mind Elixir container by using `mind.container.append(menuContainer)`; in the case of [@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65), you can directly add new methods to the Mind Elixir object like `me.exportXmind =  function(){ /* ... */}`.
+Taking [@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) as an example, you can insert custom elements into the Mind Elixir Core container by using `mind.container.append(menuContainer)`; in the case of [@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65), you can directly add new methods to the Mind Elixir Core object like `me.exportXmind =  function(){ /* ... */}`.
 
 ## Existing Plugins
 
@@ -27,4 +39,4 @@ Feel free to submit a PR for your own plugins!
 
 ## Output Extensions
 
-[@mind-elixir/export-xmind](https://github.com/ssshooter/export-xmind) and [@mind-elixir/export-html](https://github.com/ssshooter/export-html) plugins enable Mind Elixir to output files in Xmind and HTML formats, significantly increasing the versatility of output files.
+[@mind-elixir/export-xmind](https://github.com/ssshooter/export-xmind) and [@mind-elixir/export-html](https://github.com/ssshooter/export-html) plugins enable Mind Elixir Core to output files in Xmind and HTML formats, significantly increasing the versatility of output files.

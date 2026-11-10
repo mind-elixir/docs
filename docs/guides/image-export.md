@@ -1,6 +1,18 @@
+---
+title: "Image Export"
+description: "Export a Mind Elixir Core mind map to SVG or PNG with the exportSvg and exportPng APIs, including optional CSS injection."
+keywords:
+  - "SVG export"
+  - "PNG export"
+  - "exportPng"
+  - "exportSvg"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Image Export
 
-Mind Elixir provides two APIs for exporting images:
+Mind Elixir Core provides two APIs for exporting images:
 
 ```ts
 exportSvg: (

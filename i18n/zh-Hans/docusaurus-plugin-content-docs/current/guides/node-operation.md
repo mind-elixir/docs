@@ -1,6 +1,17 @@
 ---
+title: "节点操作"
 sidebar_position: 2
+description: "在 Mind Elixir Core 中监听与拦截节点操作，或通过内置节点 API 以编程方式操作节点。"
+keywords:
+  - "节点操作"
+  - "事件"
+  - "bus"
+  - "API"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # 节点操作
 
@@ -68,7 +79,7 @@ let mind = new MindElixir({
 
 ## 编程式节点操作
 
-Mind Elixir 提供直接操作节点的 API：
+Mind Elixir Core 提供直接操作节点的 API：
 
 ```ts
 {
@@ -115,6 +126,6 @@ mind.insertSibling(MindElixir.E('d6e5f69edb6336c3'))
 
 :::tip
 
-`MindElixir.E` 是一个通过节点 id 获取节点 DOM 对象的方法，在 Mind Elixir 中很多 API 会使用类型为 `Topic` 的 DOM 对象，都可以使用 `E` 函数获取。
+`MindElixir.E` 是一个通过节点 id 获取节点 DOM 对象的方法，在 Mind Elixir Core 中很多 API 会使用类型为 `Topic` 的 DOM 对象，都可以使用 `E` 函数获取。
 
 :::

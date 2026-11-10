@@ -1,6 +1,18 @@
+---
+title: "画像のエクスポート"
+description: "exportSvg と exportPng API を使って Mind Elixir Core のマインドマップを SVG / PNG に書き出します。CSS の注入にも対応します。"
+keywords:
+  - "SVG 書き出し"
+  - "PNG 書き出し"
+  - "exportPng"
+  - "exportSvg"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # 画像のエクスポート
 
-Mind Elixir の画像エクスポート API は 2 つあります：
+Mind Elixir Core の画像エクスポート API は 2 つあります：
 
 ```ts
 exportSvg: (

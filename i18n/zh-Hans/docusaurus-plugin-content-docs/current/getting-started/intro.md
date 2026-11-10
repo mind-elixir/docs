@@ -1,12 +1,22 @@
 ---
+title: "什么是 Mind Elixir Core？"
 sidebar_position: 1
+description: "Mind Elixir Core 是开源的 JavaScript 思维导图内核：零依赖、gzip 后仅 33 kB、不绑定前端框架，支持插件、SVG/PNG 导出与撤销重做。"
+keywords:
+  - "思维导图内核"
+  - "开源"
+  - "零依赖"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
-# 什么是 Mind elixir？
+
+# 什么是 Mind Elixir Core？
 
 ![](/img/screenshot.png)
 
-**Mind elixir** 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
+**Mind Elixir Core** 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
 
 - 0 依赖，高速安装（33kb gzip 后）
 - 高性能节点操作

@@ -1,12 +1,23 @@
 ---
+title: "データのインポートとエクスポート"
 sidebar_position: 1
+description: "Mind Elixir Core は初期化時または refresh 時にデータを読み込み、マインドマップを JavaScript オブジェクト、JSON 文字列、Markdown として書き出せます。"
+keywords:
+  - "データ書き出し"
+  - "JSON"
+  - "Markdown"
+  - "getData"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # データのインポートとエクスポート
 
 ## インポート
 
-Mind Elixir は、初期化時にデータを渡すか、リフレッシュメソッドを呼び出すときにデータを渡す、という 2 つの方法でデータをインポートします。
+Mind Elixir Core は、初期化時にデータを渡すか、リフレッシュメソッドを呼び出すときにデータを渡す、という 2 つの方法でデータをインポートします。
 
 ```js
 let mind = new MindElixir(options)
@@ -19,7 +30,7 @@ mind.refresh(data) // 新しいデータでリフレッシュ
 
 ## エクスポート
 
-Mind Elixir は 3 つのデータ出力フォーマットを提供しています：JavaScript オブジェクト、オブジェクトの文字列、markdown（非推奨、お勧めしません）。それぞれ以下の 3 つの API に対応しています：
+Mind Elixir Core は 3 つのデータ出力フォーマットを提供しています：JavaScript オブジェクト、オブジェクトの文字列、markdown（非推奨、お勧めしません）。それぞれ以下の 3 つの API に対応しています：
 
 ```js
 // データのエクスポート

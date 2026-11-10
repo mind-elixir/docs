@@ -1,12 +1,22 @@
 ---
+title: "什么是 Mind Elixir Core？"
 sidebar_position: 1
+description: "Mind Elixir Core はオープンソースの JavaScript マインドマップコアです。依存ゼロ、gzip 後 33 kB、フレームワーク非依存で、プラグインや SVG/PNG 書き出し、元に戻す/やり直しに対応します。"
+keywords:
+  - "マインドマップ ライブラリ"
+  - "オープンソース"
+  - "依存なし"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
-# 什么是 Mind elixir？
+
+# 什么是 Mind Elixir Core？
 
 ![](/img/screenshot.png)
 
-**Mind elixir** 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
+**Mind Elixir Core** 是一个开源的 JavaScript 思维导图框架，针对思维导图的优势，拥有以下特性：
 
 - 0 依赖，高速安装（33kb gzip 后）
 - 高性能节点操作

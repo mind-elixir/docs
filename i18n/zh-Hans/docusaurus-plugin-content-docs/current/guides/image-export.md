@@ -1,6 +1,18 @@
+---
+title: "图片导出"
+description: "使用 exportSvg 与 exportPng API 将 Mind Elixir Core 思维导图导出为 SVG 或 PNG，并支持注入自定义 CSS。"
+keywords:
+  - "SVG 导出"
+  - "PNG 导出"
+  - "exportPng"
+  - "exportSvg"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # 图片导出
 
-Mind Elixir 导出图片的 API 有 2 个：
+Mind Elixir Core 导出图片的 API 有 2 个：
 
 ```ts
 exportSvg: (

@@ -287,19 +287,19 @@
     "description": "The unlisted content banner message"
   },
   "homepage.title": {
-    "message": "Mind Elixir - プロフェッショナルJavaScriptマインドマッピングコア",
+    "message": "オープンソース JavaScript マインドマップコア - Mind Elixir Core",
     "description": "The title of the homepage"
   },
   "homepage.description": {
-    "message": "インタラクティブなマインドマップを作成するための強力な JavaScript マインドマップライブラリ",
+    "message": "Mind Elixir Core は依存パッケージ不要でフレームワークに縛られない JavaScript マインドマップコアです。任意のフロントエンドフレームワークでインタラクティブなマインドマップを作成・編集・書き出しできます。",
     "description": "The description of the homepage"
   },
   "homepage.tagline": {
-    "message": "オープンソースの JavaScript マインドマップライブラリ",
+    "message": "オープンソース JavaScript マインドマップコア",
     "description": "The tagline of the homepage"
   },
   "homepage.quickStart": {
-    "message": "クイックスタート - 5分 ⏱️",
+    "message": "クイックスタート - 5 分",
     "description": "The quick start button label on the homepage"
   }
 }

@@ -1,10 +1,20 @@
 ---
+title: "TypeScript サポート"
 sidebar_position: 3
+description: "Mind Elixir Core は TypeScript の型定義を同梱しており、追加の @types パッケージなしでオプションやノードデータ、インスタンスメソッドが型付けされます。"
+keywords:
+  - "TypeScript"
+  - "型定義"
+  - "型"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # TypeScript サポート
 
-Mind ElixirはTypeScriptで書かれており、他のnpmパッケージのインストールは不要で、ネイティブでTypeScriptをサポートしています。
+Mind Elixir CoreはTypeScriptで書かれており、他のnpmパッケージのインストールは不要で、ネイティブでTypeScriptをサポートしています。
 
 ```ts
 import MindElixir, { MindElixirData, Options } from 'mind-elixir'

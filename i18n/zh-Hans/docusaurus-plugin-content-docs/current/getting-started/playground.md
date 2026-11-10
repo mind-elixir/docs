@@ -1,12 +1,23 @@
 ---
+title: "Playground"
 sidebar_position: 4
+description: "在 CodePen、CodeSandbox 和 StackBlitz 中在线体验 Mind Elixir Core，提供原生 JavaScript、React 与 Vue 3 模板。"
+keywords:
+  - "CodePen"
+  - "CodeSandbox"
+  - "StackBlitz"
+  - "在线示例"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # Playground
 
-欢迎大家在如 [Codepen](https://codepen.io/pen?template=GReMQPX)、codesandbox、[stackblitz](https://stackblitz.com/) 等站点试用 Mind Elixir。
+欢迎大家在如 [Codepen](https://codepen.io/pen?template=GReMQPX)、codesandbox、[stackblitz](https://stackblitz.com/) 等站点试用 Mind Elixir Core。
 
-以下是纯 Javascript 和在 React 等前端框架中使用 Mind Elixir 的 Playground：
+以下是纯 Javascript 和在 React 等前端框架中使用 Mind Elixir Core 的 Playground：
 
 - Vanilla JS - https://codepen.io/ssshooter/pen/QWomvEp
 - React - https://codesandbox.io/p/sandbox/mind-elixir-4-x-react-18-x-4pkp83

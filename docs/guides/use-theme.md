@@ -1,8 +1,20 @@
+---
+title: "Theme Usage"
+description: "Create and apply custom themes in Mind Elixir Core: palette colours, CSS variables, built-in light and dark themes, and runtime theme switching."
+keywords:
+  - "themes"
+  - "palette"
+  - "dark mode"
+  - "cssVar"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Theme Usage
 
 ## Custom Theme
 
-To use a custom theme, simply define your `theme` and pass it into the `options`. The `palette` determines the colors from the root node to the main nodes, influencing the entire branch in Mind Elixir. This array of colors will be cyclically used. `cssVar` includes other major color options, allowing you to override the original CSS variables.
+To use a custom theme, simply define your `theme` and pass it into the `options`. The `palette` determines the colors from the root node to the main nodes, influencing the entire branch in Mind Elixir Core. This array of colors will be cyclically used. `cssVar` includes other major color options, allowing you to override the original CSS variables.
 
 ```js
 const theme = {
@@ -47,11 +59,11 @@ For a complete configuration, refer to the [theme API section](../api/mind-elixi
 
 :::
 
-You can experiment with adjusting the Mind Elixir theme in Codepen. The example below sets the theme's color palette to blue:
+You can experiment with adjusting the Mind Elixir Core theme in Codepen. The example below sets the theme's color palette to blue:
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir Core 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/oNVwZJw">
-  Mind Elixir 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
+  Mind Elixir Core 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
@@ -68,10 +80,10 @@ MindElixir.THEME = THEME
 MindElixir.DARK_THEME = DARK_THEME
 ```
 
-Mind Elixir will determine whether to use the light or dark theme based on the system's current color preferences during **instantiation**.
+Mind Elixir Core will determine whether to use the light or dark theme based on the system's current color preferences during **instantiation**.
 
 :::info
 
-Mind Elixir does not automatically switch themes when the system color preferences change. You need to implement this functionality manually using `changeTheme`.
+Mind Elixir Core does not automatically switch themes when the system color preferences change. You need to implement this functionality manually using `changeTheme`.
 
 :::

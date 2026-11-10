@@ -287,19 +287,19 @@
     "description": "The unlisted content banner message"
   },
   "homepage.title": {
-    "message": "Mind Elixir - 专业的JavaScript思维导图内核",
+    "message": "开源的 JavaScript 思维导图内核 - Mind Elixir Core",
     "description": "The title of the homepage"
   },
   "homepage.description": {
-    "message": "一个强大的 JavaScript 思维导图库，用于创建交互式思维导图",
+    "message": "Mind Elixir Core 是一个零依赖、不绑定框架的 JavaScript 思维导图内核，可在任意前端框架中创建、编辑与导出可交互的思维导图。",
     "description": "The description of the homepage"
   },
   "homepage.tagline": {
-    "message": "开源 JavaScript 思维导图库",
+    "message": "开源 JavaScript 思维导图内核",
     "description": "The tagline of the homepage"
   },
   "homepage.quickStart": {
-    "message": "快速开始 - 5 分钟 ⏱️",
+    "message": "快速开始 - 5 分钟",
     "description": "The quick start button label on the homepage"
   }
 }

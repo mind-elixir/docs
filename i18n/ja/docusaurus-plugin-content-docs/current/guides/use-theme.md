@@ -1,8 +1,20 @@
+---
+title: "テーマの使用"
+description: "Mind Elixir Core でカスタムテーマを作成・適用します。パレット、CSS 変数、組み込みのライト/ダークテーマ、実行時のテーマ切り替えを解説します。"
+keywords:
+  - "テーマ"
+  - "パレット"
+  - "ダークモード"
+  - "cssVar"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # テーマの使用
 
 ## カスタムテーマ
 
-カスタムテーマを使用するには、独自の `theme` を定義し、それを `options` に渡すだけです。`palette` はルートノードから主要ノードへの接続線であり、Mind Elixir はこの配列の色をループして使用します。`cssVar` は他の主要な色のオプションであり、元の CSS 変数をオーバーライドできます。
+カスタムテーマを使用するには、独自の `theme` を定義し、それを `options` に渡すだけです。`palette` はルートノードから主要ノードへの接続線であり、Mind Elixir Core はこの配列の色をループして使用します。`cssVar` は他の主要な色のオプションであり、元の CSS 変数をオーバーライドできます。
 
 ```js
 const theme = {
@@ -47,11 +59,11 @@ mind.changeTheme(theme)
 
 :::
 
-Codepen で Mind Elixir のテーマを調整する例を以下に示します。この例では、テーマの調色板を青色に設定しています：
+Codepen で Mind Elixir Core のテーマを調整する例を以下に示します。この例では、テーマの調色板を青色に設定しています：
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="600" style="width: 100%;" scrolling="no" title="Mind Elixir Core 3.x" src="https://codepen.io/ssshooter/embed/oNVwZJw?default-tab=js%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/ssshooter/pen/oNVwZJw">
-  Mind Elixir 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
+  Mind Elixir Core 3.x</a> by ssshooter (<a href="https://codepen.io/ssshooter">@ssshooter</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
@@ -68,10 +80,10 @@ MindElixir.THEME = THEME
 MindElixir.DARK_THEME = DARK_THEME
 ```
 
-Mind Elixir は**インスタンス化時**に、システムの現在のカラープリファレンスに基づいてライトモードまたはダークモードのテーマを使用するかを決定します。
+Mind Elixir Core は**インスタンス化時**に、システムの現在のカラープリファレンスに基づいてライトモードまたはダークモードのテーマを使用するかを決定します。
 
 :::info
 
-Mind Elixir 自体はシステムのカラープリファレンスの変更を監視しておらず、言い換えれば、システムのカラースキームが変更されたときに Mind Elixir は自動的にテーマを切り替えません。関連する機能は、`changeTheme`を使用して自分で実装してください。
+Mind Elixir Core 自体はシステムのカラープリファレンスの変更を監視しておらず、言い換えれば、システムのカラースキームが変更されたときに Mind Elixir Core は自動的にテーマを切り替えません。関連する機能は、`changeTheme`を使用して自分で実装してください。
 
 :::

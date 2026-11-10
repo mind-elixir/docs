@@ -1,12 +1,23 @@
 ---
+title: "数据导入与导出"
 sidebar_position: 1
+description: "Mind Elixir Core 支持在初始化或调用 refresh 时导入数据，并可将思维导图导出为 JavaScript 对象、JSON 字符串或 Markdown。"
+keywords:
+  - "数据导出"
+  - "JSON"
+  - "Markdown"
+  - "getData"
+  - "JavaScript 思维导图"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
+
 
 # 数据导入与导出
 
 ## 导入
 
-Mind Elixir 提供两种数据导入方式：初始化时传入、调用刷新方法时传入。
+Mind Elixir Core 提供两种数据导入方式：初始化时传入、调用刷新方法时传入。
 
 ```js
 let mind = new MindElixir(options)
@@ -19,7 +30,7 @@ mind.refresh(data) // 使用新数据刷新
 
 ## 导出
 
-Mind Elixir 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
+Mind Elixir Core 提供三种数据输出格式：JavaScript 对象、对象字符串、markdown（已弃用，不推荐）。对应以下三个 API：
 
 ```js
 // data export

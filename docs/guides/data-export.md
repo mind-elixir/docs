@@ -1,12 +1,22 @@
 ---
+title: "Data Import and Export"
 sidebar_position: 1
+description: "Import data on init or with refresh, and export mind maps as JavaScript objects, JSON strings or Markdown with Mind Elixir Core."
+keywords:
+  - "data export"
+  - "JSON"
+  - "Markdown"
+  - "getData"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
 ---
 
 # Data Import and Export
 
 ## Import
 
-Mind Elixir provides two ways to import data: when initializing and when calling the refresh method.
+Mind Elixir Core provides two ways to import data: when initializing and when calling the refresh method.
 
 ```js
 let mind = new MindElixir(options)
@@ -19,7 +29,7 @@ When `data` is not passed into `refresh`, the original data object will be used 
 
 ## Export
 
-Mind Elixir provides three data export formats: JavaScript objects, object strings, and markdown (deprecated, not recommended). Corresponding to the following three APIs:
+Mind Elixir Core provides three data export formats: JavaScript objects, object strings, and markdown (deprecated, not recommended). Corresponding to the following three APIs:
 
 ```js
 // data export

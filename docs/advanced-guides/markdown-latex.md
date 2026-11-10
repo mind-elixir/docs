@@ -1,6 +1,18 @@
+---
+title: "Markdown and LaTeX"
+description: "Render Markdown and LaTeX inside Mind Elixir Core nodes by passing a custom markdown function such as marked or katex to the constructor."
+keywords:
+  - "Markdown"
+  - "LaTeX"
+  - "KaTeX"
+  - "marked"
+  - "JavaScript mind map"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # Markdown and LaTeX
 
-Mind Elixir does **not** ship a built-in Markdown or LaTeX renderer. Rendering is fully pluggable: pass a custom `markdown` function in the constructor options. That function receives the node (or arrow / summary) text and should return HTML.
+Mind Elixir Core does **not** ship a built-in Markdown or LaTeX renderer. Rendering is fully pluggable: pass a custom `markdown` function in the constructor options. That function receives the node (or arrow / summary) text and should return HTML.
 
 This is the same approach used by [Mind Elixir Desktop](https://github.com/SSShooter/mind-elixir-desktop).
 

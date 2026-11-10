@@ -64,7 +64,15 @@ export function md2html(text: string): string {
     })
 
     const html = marked.parse(source) as string
-    return html.trim()
+    // Demo maps are embedded in documentation pages, so their markdown must not
+    // emit real heading tags: they would inject competing <h1>/<h2> nodes into
+    // the host page outline. Keep the visual level with data attributes instead.
+    return html
+      .replace(/<h([1-6])(?:\s[^>]*)?>/g, (_, level: string) => {
+        return `<div class="me-md-heading me-md-h${level}">`
+      })
+      .replace(/<\/h[1-6]>/g, '</div>')
+      .trim()
   } catch (error) {
     console.error('md2html error', error)
     return text

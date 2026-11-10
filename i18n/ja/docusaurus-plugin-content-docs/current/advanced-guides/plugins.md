@@ -1,8 +1,20 @@
+---
+title: "プラグイン"
+description: "プラグインで Mind Elixir Core を拡張します。ノードメニュー、XMind / HTML 書き出し、MindElixir インスタンスへのカスタムメソッド追加を解説します。"
+keywords:
+  - "プラグイン"
+  - "拡張"
+  - "XMind 書き出し"
+  - "ノードメニュー"
+  - "JavaScript マインドマップ"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
 # プラグイン
 
 ロジックは非常に単純で、`MindElixirInstance` に対して任意の処理を行うだけで、それをプラグインと呼ぶことができます。
 
-例えば、[@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) を見てみましょう。ここでは、`mind.container.append(menuContainer)` を使用して、Mind Elixir コンテナにカスタム要素を挿入できます。また、[@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65) を見てみましょう。ここでは、直接 Mind Elixir オブジェクトに新しいメソッドを追加できます `me.exportXmind = function(){ /* ... */}`。
+例えば、[@mind-elixir/node-menu](https://github.com/SSShooter/node-menu/blob/bec096cbd52770d082fce57a82568b4fb25c19f8/nodeMenu.ts#L34C26-L34C30) を見てみましょう。ここでは、`mind.container.append(menuContainer)` を使用して、Mind Elixir Core コンテナにカスタム要素を挿入できます。また、[@mind-elixir/export-xmind](https://github.com/SSShooter/export-xmind/blob/6690e97e1b081dcaa8932d20b4f14ddd58fc678c/index.js#L65) を見てみましょう。ここでは、直接 Mind Elixir Core オブジェクトに新しいメソッドを追加できます `me.exportXmind = function(){ /* ... */}`。
 
 ## 現在のプラグイン
 
@@ -27,4 +39,4 @@
 
 ## 出力拡張
 
-[@mind-elixir/export-xmind](https://github.com/ssshooter/export-xmind) および[@mind-elixir/export-html](https://github.com/ssshooter/export-html) プラグインは、Mind Elixir が Xmind および HTML 形式のファイルを出力できるようにし、出力ファイルの汎用性を大幅に向上させます。
+[@mind-elixir/export-xmind](https://github.com/ssshooter/export-xmind) および[@mind-elixir/export-html](https://github.com/ssshooter/export-html) プラグインは、Mind Elixir Core が Xmind および HTML 形式のファイルを出力できるようにし、出力ファイルの汎用性を大幅に向上させます。
