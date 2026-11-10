@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-refresh: (this: MindElixirInstance, data?: MindElixirData) => void;
+refresh: (data?: MindElixirData<M>) => void;
 ```

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-disableEdit: (this: MindElixirInstance) => void;
+disableEdit: () => void;
 ```

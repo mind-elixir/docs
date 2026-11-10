@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-addChild: (this: MindElixirInstance, el?: Topic | undefined, node?: NodeObj<unknown> | undefined) => Promise<void>;
+addChild: (el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void>;
 ```

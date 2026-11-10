@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-generateSubBranch?: (this: MindElixirInstance, params: SubLineParams) => PathString;
+generateSubBranch?: (this: MindElixir<M>, params: SubLineParams) => PathString;
 ```

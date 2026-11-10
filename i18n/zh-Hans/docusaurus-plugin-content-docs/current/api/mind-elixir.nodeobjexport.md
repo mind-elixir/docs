@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-export type NodeObjExport = Omit<NodeObj, 'parent'>;
+export type NodeObjExport<M = any> = Omit<NodeObj<M>, 'parent'>;
 ```
 **References:** [NodeObj](./mind-elixir.nodeobj.md)
 

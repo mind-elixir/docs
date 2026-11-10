@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-scale: (this: MindElixirInstance, scaleVal: number, offset?: {
+scale: (scaleVal: number, offset?: {
         x: number;
         y: number;
     }) => void;

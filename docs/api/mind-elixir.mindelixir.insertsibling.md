@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-insertSibling: (this: MindElixirInstance, type: 'before' | 'after', el?: Topic | undefined, node?: NodeObj<unknown> | undefined) => Promise<void>;
+insertSibling: (type: 'before' | 'after', el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void>;
 ```

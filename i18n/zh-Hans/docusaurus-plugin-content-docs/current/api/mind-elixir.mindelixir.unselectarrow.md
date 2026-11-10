@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-unselectArrow: (this: MindElixirInstance) => void;
+unselectArrow: () => void;
 ```

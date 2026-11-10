@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-editTopic: (this: MindElixirInstance, el: Topic) => void;
+editTopic: (el: Topic<M>) => void;
 ```

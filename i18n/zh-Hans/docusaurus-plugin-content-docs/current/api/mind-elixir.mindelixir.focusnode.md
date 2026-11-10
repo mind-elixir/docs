@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-focusNode: (this: MindElixirInstance, el: Topic) => void;
+focusNode: (el: Topic<M>) => void;
 ```

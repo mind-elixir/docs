@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createTopic: (this: MindElixirInstance, nodeObj: NodeObj) => Topic;
+createTopic: (nodeObj: NodeObj<M>) => Topic<M>;
 ```

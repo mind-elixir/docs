@@ -9,7 +9,7 @@ The MindElixir options
 **Signature:**
 
 ```typescript
-export interface Options 
+export interface Options<M = any> 
 ```
 
 ## Properties
@@ -151,25 +151,6 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
-[draggable?](./mind-elixir.options.draggable.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
 [editable?](./mind-elixir.options.editable.md)
 
 
@@ -214,7 +195,7 @@ string \| HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; PathString
+(this: [MindElixir](./mind-elixir.mindelixir.md)<!-- -->&lt;M&gt;, params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; PathString
 
 
 </td><td>
@@ -233,7 +214,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; PathString
+(this: [MindElixir](./mind-elixir.mindelixir.md)<!-- -->&lt;M&gt;, params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; PathString
 
 
 </td><td>
@@ -301,25 +282,6 @@ _(Optional)_
 </td></tr>
 <tr><td>
 
-[locale?](./mind-elixir.options.locale.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
-
-
-</td><td>
-
-_(Optional)_
-
-
-</td></tr>
-<tr><td>
-
 [markdown?](./mind-elixir.options.markdown.md)
 
 
@@ -328,7 +290,7 @@ _(Optional)_
 
 </td><td>
 
-(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md) \| [Arrow](./mind-elixir.arrow.md) \| [Summary](./mind-elixir.summary.md)<!-- -->) =&gt; string
+(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| [Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt; \| [Summary](./mind-elixir.summary.md)<!-- -->) =&gt; string
 
 
 </td><td>
@@ -434,6 +396,27 @@ _(Optional)_ Custom paste handler when there are no nodes copied;  undefined
 </td></tr>
 <tr><td>
 
+[rtl?](./mind-elixir.options.rtl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Right-to-left text mode, for languages written right to left (Arabic, Hebrew, Persian, Urdu). Adds an `rtl` class to the map container, which switches node topics, the topic editor and the labels to `direction: rtl` and flips the offsets that are otherwise pinned to the left.
+
+This is TEXT direction only — it does not mirror the layout. Where the main branches are placed is a separate axis, see [Options.direction](./mind-elixir.options.direction.md)<!-- -->.  false
+
+
+</td></tr>
+<tr><td>
+
 [scaleMax?](./mind-elixir.options.scalemax.md)
 
 
@@ -518,7 +501,7 @@ _(Optional)_
 
 </td><td>
 
-[Theme](./mind-elixir.theme.md)
+[Theme](./mind-elixir.theme.md)<!-- -->&lt;M&gt;
 
 
 </td><td>

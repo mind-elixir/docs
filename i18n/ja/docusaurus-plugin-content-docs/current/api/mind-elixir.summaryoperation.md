@@ -7,18 +7,7 @@
 **Signature:**
 
 ```typescript
-export type SummaryOperation = {
-    name: 'createSummary';
-    obj: Summary;
-} | {
-    name: 'removeSummary';
-    obj: {
-        id: string;
-    };
-} | {
-    name: 'finishEditSummary';
-    obj: Summary;
-};
+export type SummaryOperation = OperationBase<'createSummary' | 'removeSummary' | 'finishEditSummary', Summary>;
 ```
 **References:** [Summary](./mind-elixir.summary.md)
 

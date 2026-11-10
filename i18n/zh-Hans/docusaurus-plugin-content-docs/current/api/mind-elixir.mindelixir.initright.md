@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-initRight: (this: MindElixirInstance) => void;
+initRight: () => void;
 ```

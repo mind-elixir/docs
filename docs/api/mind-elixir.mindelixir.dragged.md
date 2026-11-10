@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-dragged: Topic[] | null;
+dragged: Topic<M>[] | null;
 ```

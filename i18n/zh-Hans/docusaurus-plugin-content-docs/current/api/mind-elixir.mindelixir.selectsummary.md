@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-selectSummary: (this: MindElixirInstance, el: SummarySvg) => void;
+selectSummary: (el: SummarySvg) => void;
 ```

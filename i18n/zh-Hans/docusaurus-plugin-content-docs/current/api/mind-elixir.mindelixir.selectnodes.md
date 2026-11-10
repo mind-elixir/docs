@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-selectNodes: (this: MindElixirInstance, tpcs: Topic[]) => void;
+selectNodes: (tpcs: Topic<M>[]) => void;
 ```

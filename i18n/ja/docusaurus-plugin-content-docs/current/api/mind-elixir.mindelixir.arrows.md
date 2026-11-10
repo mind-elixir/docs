@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-arrows: Arrow[];
+arrows: Arrow<M>[];
 ```

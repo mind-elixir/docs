@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createSummary: (this: MindElixirInstance, options?: SummaryOptions) => void;
+createSummary: (options?: SummaryOptions) => void;
 ```

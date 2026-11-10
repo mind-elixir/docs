@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-renderSummary: (this: MindElixirInstance) => void;
+renderSummary: () => void;
 ```

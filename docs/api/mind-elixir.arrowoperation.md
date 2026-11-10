@@ -7,22 +7,9 @@
 **Signature:**
 
 ```typescript
-export type ArrowOperation = {
-    name: 'createArrow';
-    obj: Arrow;
-} | {
-    name: 'removeArrow';
-    obj: {
-        id: string;
-    };
-} | {
-    name: 'finishEditArrowLabel';
-    obj: Arrow;
-} | {
-    name: 'reshapeArrow';
-    obj: Arrow;
+export type ArrowOperation = OperationBase<'createArrow' | 'removeArrow' | 'finishEditArrowLabel', Arrow> | (OperationBase<'reshapeArrow', Arrow> & {
     origin: Arrow;
-};
+});
 ```
 **References:** [Arrow](./mind-elixir.arrow.md)
 

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-destroy: (this: Partial<MindElixirInstance>) => void;
+destroy: () => void;
 ```

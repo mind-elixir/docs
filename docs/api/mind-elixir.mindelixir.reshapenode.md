@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-reshapeNode: (this: MindElixirInstance, tpc: Topic, patchData: Partial<NodeObj<unknown>>) => Promise<void>;
+reshapeNode: (tpc: Topic<M>, patchData: Partial<NodeObj<M>>) => Promise<void>;
 ```

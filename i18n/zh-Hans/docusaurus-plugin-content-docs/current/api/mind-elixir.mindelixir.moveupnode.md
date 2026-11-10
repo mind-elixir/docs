@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-moveUpNode: (this: MindElixirInstance, el?: Topic | undefined) => Promise<void>;
+moveUpNode: (el?: Topic<M> | undefined) => Promise<void>;
 ```

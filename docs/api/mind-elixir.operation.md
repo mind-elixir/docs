@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-export type Operation = NodeOperation | MultipleNodeOperation | SummaryOperation | ArrowOperation;
+export type Operation = NodeOperation | SummaryOperation | ArrowOperation | ExpandOperation;
 ```
-**References:** [SummaryOperation](./mind-elixir.summaryoperation.md)<!-- -->, [ArrowOperation](./mind-elixir.arrowoperation.md)
+**References:** [NodeOperation](./mind-elixir.nodeoperation.md)<!-- -->, [SummaryOperation](./mind-elixir.summaryoperation.md)<!-- -->, [ArrowOperation](./mind-elixir.arrowoperation.md)<!-- -->, [ExpandOperation](./mind-elixir.expandoperation.md)
 

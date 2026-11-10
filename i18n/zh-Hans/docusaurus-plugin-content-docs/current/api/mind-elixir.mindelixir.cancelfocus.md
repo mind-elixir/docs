@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-cancelFocus: (this: MindElixirInstance) => void;
+cancelFocus: () => void;
 ```

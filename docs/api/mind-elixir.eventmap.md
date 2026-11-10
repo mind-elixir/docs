@@ -4,29 +4,14 @@
 
 ## EventMap type
 
+Events emitted by a MindElixir instance.
+
+The intersections keep the existing bus API compatible while grouping event names by responsibility for maintainers and generated type declarations.
+
 **Signature:**
 
 ```typescript
-export type EventMap = {
-    operation: (info: Operation) => void;
-    selectNewNode: (nodeObj: NodeObj) => void;
-    selectNodes: (nodeObj: NodeObj[]) => void;
-    unselectNodes: (nodeObj: NodeObj[]) => void;
-    expandNode: (nodeObj: NodeObj) => void;
-    changeDirection: (direction: number) => void;
-    linkDiv: () => void;
-    scale: (scale: number) => void;
-    move: (data: {
-        dx: number;
-        dy: number;
-    }) => void;
-    updateArrowDelta: (arrow: Arrow) => void;
-    selectArrow: (arrow: Arrow) => void;
-    unselectArrow: () => void;
-    selectSummary: (summary: Summary) => void;
-    unselectSummary: () => void;
-    showContextMenu: (e: MouseEvent) => void;
-};
+export type EventMap = OperationEventMap & SelectionEventMap & ViewportEventMap & RenderEventMap & ContextMenuEventMap & DocumentEventMap;
 ```
-**References:** [Operation](./mind-elixir.operation.md)<!-- -->, [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, [Arrow](./mind-elixir.arrow.md)<!-- -->, [Summary](./mind-elixir.summary.md)
+**References:** [OperationEventMap](./mind-elixir.operationeventmap.md)<!-- -->, [SelectionEventMap](./mind-elixir.selectioneventmap.md)<!-- -->, [ViewportEventMap](./mind-elixir.viewporteventmap.md)<!-- -->, [RenderEventMap](./mind-elixir.rendereventmap.md)<!-- -->, [ContextMenuEventMap](./mind-elixir.contextmenueventmap.md)<!-- -->, [DocumentEventMap](./mind-elixir.documenteventmap_2.md)
 

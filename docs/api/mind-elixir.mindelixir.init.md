@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-init: (this: MindElixirInstance, data: MindElixirData) => Error | undefined;
+init: (data: MindElixirData<M>) => Promise<Error | undefined>;
 ```

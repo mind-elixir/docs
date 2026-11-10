@@ -9,7 +9,7 @@ MindElixir node object
 **Signature:**
 
 ```typescript
-export interface NodeObj<M = unknown> 
+export interface NodeObj<M = any> 
 ```
 
 ## Properties
@@ -64,7 +64,7 @@ _(Optional)_ The color of the branch.
 
 </td><td>
 
-[NodeObj](./mind-elixir.nodeobj.md)<!-- -->\[\]
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;\[\]
 
 
 </td><td>
@@ -254,7 +254,7 @@ _(Optional)_ Extra data for the node, which can be used to store any custom data
 
 </td><td>
 
-[NodeObj](./mind-elixir.nodeobj.md)
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;
 
 
 </td><td>

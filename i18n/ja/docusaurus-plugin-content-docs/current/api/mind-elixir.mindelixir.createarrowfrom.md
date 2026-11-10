@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-createArrowFrom: (this: MindElixirInstance, arrow: Omit<Arrow, 'id'>) => void;
+createArrowFrom: (arrow: Omit<Arrow<M>, 'id'>) => void;
 ```

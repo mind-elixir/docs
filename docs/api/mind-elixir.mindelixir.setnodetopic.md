@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-setNodeTopic: (this: MindElixirInstance, el: Topic, topic: string) => Promise<void>;
+setNodeTopic: (el: Topic<M>, topic: string) => Promise<void>;
 ```

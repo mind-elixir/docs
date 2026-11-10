@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-findEle: (this: MindElixirInstance, id: string, el?: HTMLElement) => Topic;
+findEle: (id: string, el?: HTMLElement) => Topic<M>;
 ```

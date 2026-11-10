@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-removeSummary: (this: MindElixirInstance, id: string) => void;
+removeSummary: (id: string) => void;
 ```

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-insertParent: (this: MindElixirInstance, el?: Topic | undefined, node?: NodeObj<unknown> | undefined) => Promise<void>;
+insertParent: (el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void>;
 ```

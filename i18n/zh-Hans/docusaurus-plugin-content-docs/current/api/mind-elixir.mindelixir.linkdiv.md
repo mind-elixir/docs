@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-linkDiv: (this: MindElixirInstance, mainNode?: Wrapper) => void;
+linkDiv: (mainNode?: Wrapper) => void;
 ```

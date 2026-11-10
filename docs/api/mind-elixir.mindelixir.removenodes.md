@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-removeNodes: (this: MindElixirInstance, tpcs: Topic[]) => Promise<void>;
+removeNodes: (tpcs: Topic<M>[]) => Promise<void>;
 ```

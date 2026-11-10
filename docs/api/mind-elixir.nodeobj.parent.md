@@ -11,5 +11,5 @@ the Root node has no parent!
 **Signature:**
 
 ```typescript
-parent?: NodeObj;
+parent?: NodeObj<M>;
 ```

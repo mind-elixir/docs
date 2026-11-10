@@ -250,10 +250,47 @@ Description
 </td></tr>
 <tr><td>
 
+[ContextMenuEventMap](./mind-elixir.contextmenueventmap.md)
+
+
+</td><td>
+
+Internal context-menu event.
+
+
+</td></tr>
+<tr><td>
+
+[DocumentEventMap\_2](./mind-elixir.documenteventmap_2.md)
+
+
+</td><td>
+
+Document lifecycle events.
+
+
+</td></tr>
+<tr><td>
+
 [EventMap](./mind-elixir.eventmap.md)
 
 
 </td><td>
+
+Events emitted by a MindElixir instance.
+
+The intersections keep the existing bus API compatible while grouping event names by responsibility for maintainers and generated type declarations.
+
+
+</td></tr>
+<tr><td>
+
+[ExpandOperation](./mind-elixir.expandoperation.md)
+
+
+</td><td>
+
+Collapse / expand of a node. `expanded` lives in the node data, so folding is a document change like any other and lands on the undo timeline. `recursive` and `level` describe the batch entry points (`expandNodeAll`<!-- -->, Ctrl+K) that touch descendants too.
 
 
 </td></tr>
@@ -279,19 +316,6 @@ The exported data of MindElixir
 </td></tr>
 <tr><td>
 
-[MindElixirInstance](./mind-elixir.mindelixirinstance.md)
-
-
-</td><td>
-
-The MindElixir instance
-
-The instance shape is owned by the `MindElixir` class; this type simply derives from it so existing `MindElixirInstance` references keep working.
-
-
-</td></tr>
-<tr><td>
-
 [MindElixirMethods](./mind-elixir.mindelixirmethods.md)
 
 
@@ -310,6 +334,15 @@ The instance shape is owned by the `MindElixir` class; this type simply derives 
 </td></tr>
 <tr><td>
 
+[NodeOperation](./mind-elixir.nodeoperation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [Operation](./mind-elixir.operation.md)
 
 
@@ -319,10 +352,43 @@ The instance shape is owned by the `MindElixir` class; this type simply derives 
 </td></tr>
 <tr><td>
 
+[OperationEventMap](./mind-elixir.operationeventmap.md)
+
+
+</td><td>
+
+Data mutation events such as node, arrow and summary operations.
+
+
+</td></tr>
+<tr><td>
+
 [OperationType](./mind-elixir.operationtype.md)
 
 
 </td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RenderEventMap](./mind-elixir.rendereventmap.md)
+
+
+</td><td>
+
+Internal rendering events.
+
+
+</td></tr>
+<tr><td>
+
+[SelectionEventMap](./mind-elixir.selectioneventmap.md)
+
+
+</td><td>
+
+Selection state events for nodes, arrows and summaries.
 
 
 </td></tr>
@@ -343,6 +409,17 @@ The instance shape is owned by the `MindElixir` class; this type simply derives 
 </td><td>
 
 MindElixir Theme
+
+
+</td></tr>
+<tr><td>
+
+[ViewportEventMap](./mind-elixir.viewporteventmap.md)
+
+
+</td><td>
+
+Viewport and map state events.
 
 
 </td></tr>

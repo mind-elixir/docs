@@ -7,7 +7,7 @@
 **Signature:**
 
 ```typescript
-declare class MindElixir 
+declare class MindElixir<M = any> 
 ```
 
 ## Constructors
@@ -30,7 +30,7 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[(constructor)({ el, direction, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, })](./mind-elixir.mindelixir._constructor_.md)
+[(constructor)({ el, direction, rtl, editable, contextMenu, toolBar, keypress, mouseSelectionButton, selectionContainer, before, newTopicName, allowUndo, generateMainBranch, generateSubBranch, overflowHidden, compact, theme, alignment, scaleSensitivity, scaleMax, scaleMin, handleWheel, markdown, imageProxy, pasteHandler, mobileMultiSelect, })](./mind-elixir.mindelixir._constructor_.md)
 
 
 </td><td>
@@ -77,7 +77,7 @@ Description
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el?: [Topic](./mind-elixir.topic.md) \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;unknown&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -128,7 +128,7 @@ boolean
 
 </td><td>
 
-[Arrow](./mind-elixir.arrow.md)<!-- -->\[\]
+[Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt;\[\]
 
 
 </td><td>
@@ -179,7 +179,7 @@ Before
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el?: [Topic](./mind-elixir.topic.md) \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -213,7 +213,7 @@ ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -230,7 +230,7 @@ ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, compact: boolean) =&gt; void
+(compact: boolean) =&gt; void
 
 
 </td><td>
@@ -247,7 +247,7 @@ ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, theme: [Theme](./mind-elixir.theme.md)<!-- -->, shouldRefresh?: boolean) =&gt; void
+(theme: [Theme](./mind-elixir.theme.md)<!-- -->&lt;M&gt;, shouldRefresh?: boolean) =&gt; void
 
 
 </td><td>
@@ -271,6 +271,8 @@ ReturnType&lt;typeof createBus&lt;[EventMap](./mind-elixir.eventmap.md)<!-- -->&
 
 _(Optional)_ Reset the undo/redo stack and update the internal baseline snapshot to the current diagram state. Call this after loading new data into an existing instance (e.g. after `refresh()`<!-- -->) to prevent users from undoing back into a previously loaded diagram.
 
+Also called automatically by `focusNode` / `cancelFocus`<!-- -->: focus mode swaps the rendered document, so history from before the switch is not replayable.
+
 Only available when `allowUndo` is `true` (the default).
 
 
@@ -285,7 +287,7 @@ Only available when `allowUndo` is `true` (the default).
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -345,23 +347,6 @@ boolean \| ContextMenuOption
 </td></tr>
 <tr><td>
 
-[copyNode](./mind-elixir.mindelixir.copynode.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, node: [Topic](./mind-elixir.topic.md)<!-- -->, to: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [copyNodes](./mind-elixir.mindelixir.copynodes.md)
 
 
@@ -370,7 +355,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpcs: [Topic](./mind-elixir.topic.md)<!-- -->\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -387,7 +372,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, from: [Topic](./mind-elixir.topic.md)<!-- -->, to: [Topic](./mind-elixir.topic.md)<!-- -->, options?: ArrowOptions) =&gt; void
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, options?: ArrowOptions) =&gt; void
 
 
 </td><td>
@@ -404,7 +389,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, arrow: Omit&lt;[Arrow](./mind-elixir.arrow.md)<!-- -->, 'id'&gt;) =&gt; void
+(arrow: Omit&lt;[Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt;, 'id'&gt;) =&gt; void
 
 
 </td><td>
@@ -421,7 +406,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, wrappers: [Wrapper](./mind-elixir.wrapper.md)<!-- -->\[\]) =&gt; [Children](./mind-elixir.children.md)
+(wrappers: [Wrapper](./mind-elixir.wrapper.md)<!-- -->\[\]) =&gt; [Children](./mind-elixir.children.md)
 
 
 </td><td>
@@ -438,7 +423,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; { p: [Parent](./mind-elixir.parent.md)<!-- -->; tpc: [Topic](./mind-elixir.topic.md)<!-- -->; }
+(nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;) =&gt; { p: [Parent](./mind-elixir.parent.md)<!-- -->; tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;; }
 
 
 </td><td>
@@ -455,7 +440,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, options?: SummaryOptions) =&gt; void
+(options?: SummaryOptions) =&gt; void
 
 
 </td><td>
@@ -472,7 +457,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, summary: Omit&lt;[Summary](./mind-elixir.summary.md)<!-- -->, 'id'&gt;) =&gt; void
+(summary: Omit&lt;[Summary](./mind-elixir.summary.md)<!-- -->, 'id'&gt;) =&gt; void
 
 
 </td><td>
@@ -489,7 +474,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; [Topic](./mind-elixir.topic.md)
+(nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;) =&gt; [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -506,7 +491,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->, omitChildren?: boolean) =&gt; { grp: [Wrapper](./mind-elixir.wrapper.md)<!-- -->; top: [Parent](./mind-elixir.parent.md)<!-- -->; tpc: [Topic](./mind-elixir.topic.md)<!-- -->; }
+(nodeObj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;, omitChildren?: boolean) =&gt; { grp: [Wrapper](./mind-elixir.wrapper.md)<!-- -->; top: [Parent](./mind-elixir.parent.md)<!-- -->; tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;; }
 
 
 </td><td>
@@ -542,7 +527,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-[Topic](./mind-elixir.topic.md) \| null
+[Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| null
 
 
 </td><td>
@@ -559,7 +544,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-[Topic](./mind-elixir.topic.md)<!-- -->\[\]
+[Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]
 
 
 </td><td>
@@ -614,10 +599,31 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: Partial&lt;[MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->&gt;) =&gt; void
+() =&gt; void
 
 
 </td><td>
+
+
+</td></tr>
+<tr><td>
+
+[diffRefresh](./mind-elixir.mindelixir.diffrefresh.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(data: [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->&lt;M&gt;) =&gt; boolean
+
+
+</td><td>
+
+Install a document like  does, but apply only the difference — unchanged nodes keep their element, listeners and measured size, and the map is never re-laid-out from scratch. Installed by default; returns `false` (after falling back to `refresh`<!-- -->) for changes that cannot be expressed locally. See `plugin/diffRefresh`<!-- -->.
+
+`refresh` itself is untouched — this is an additional entry point beside it, aimed at undo/redo and progressive (streaming) output.
 
 
 </td></tr>
@@ -648,7 +654,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -695,23 +701,6 @@ Array&lt;() =&gt; void&gt;
 </td></tr>
 <tr><td>
 
-[draggable](./mind-elixir.mindelixir.draggable.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
 [dragged](./mind-elixir.mindelixir.dragged.md)
 
 
@@ -720,7 +709,7 @@ boolean
 
 </td><td>
 
-[Topic](./mind-elixir.topic.md)<!-- -->\[\] \| null
+[Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\] \| null
 
 
 </td><td>
@@ -775,7 +764,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
+(el: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -792,7 +781,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [SummarySvg](./mind-elixir.summarysvg.md)<!-- -->) =&gt; void
+(el: [SummarySvg](./mind-elixir.summarysvg.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -809,7 +798,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; void
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; void
 
 
 </td><td>
@@ -843,7 +832,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -860,7 +849,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, enable: boolean) =&gt; void
+(enable: boolean) =&gt; void
 
 
 </td><td>
@@ -877,7 +866,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [Topic](./mind-elixir.topic.md)<!-- -->, isExpand?: boolean) =&gt; void
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, isExpand?: boolean, options?: ExpandNodeOptions) =&gt; void
 
 
 </td><td>
@@ -894,41 +883,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [Topic](./mind-elixir.topic.md)<!-- -->, isExpand?: boolean) =&gt; void
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[exportPng](./mind-elixir.mindelixir.exportpng.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, noForeignObject?: boolean, injectCss?: string) =&gt; Promise&lt;Blob \| null&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[exportSvg](./mind-elixir.mindelixir.exportsvg.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, noForeignObject?: boolean, injectCss?: string) =&gt; Blob
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, isExpand?: boolean, options?: ExpandNodeOptions) =&gt; void
 
 
 </td><td>
@@ -945,7 +900,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, id: string, el?: HTMLElement) =&gt; [Topic](./mind-elixir.topic.md)
+(id: string, el?: HTMLElement) =&gt; [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -962,7 +917,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; void
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; void
 
 
 </td><td>
@@ -979,7 +934,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; string
+(this: [MindElixir](./mind-elixir.mindelixir.md)<!-- -->&lt;M&gt;, params: [MainLineParams](./mind-elixir.mainlineparams.md)<!-- -->) =&gt; string
 
 
 </td><td>
@@ -996,7 +951,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; [NodeObjExport](./mind-elixir.nodeobjexport.md)
+() =&gt; [NodeObjExport](./mind-elixir.nodeobjexport.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -1013,7 +968,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; string
+(this: [MindElixir](./mind-elixir.mindelixir.md)<!-- -->&lt;M&gt;, params: [SubLineParams](./mind-elixir.sublineparams.md)<!-- -->) =&gt; string
 
 
 </td><td>
@@ -1030,7 +985,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; [MindElixirData](./mind-elixir.mindelixirdata.md)
+() =&gt; [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -1047,7 +1002,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; string
+() =&gt; string
 
 
 </td><td>
@@ -1064,7 +1019,7 @@ HTMLElement
 
 </td><td>
 
-(id: string, data: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->) =&gt; [NodeObj](./mind-elixir.nodeobj.md) \| null
+(id: string, data: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;) =&gt; [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| null
 
 
 </td><td>
@@ -1090,7 +1045,7 @@ true \| ((e: WheelEvent) =&gt; void)
 </td></tr>
 <tr><td>
 
-[history](./mind-elixir.mindelixir.history.md)
+[historyStack?](./mind-elixir.mindelixir.historystack.md)
 
 
 </td><td>
@@ -1098,10 +1053,12 @@ true \| ((e: WheelEvent) =&gt; void)
 
 </td><td>
 
-[Operation](./mind-elixir.operation.md)<!-- -->\[\]
+HistoryStack
 
 
 </td><td>
+
+_(Optional)_ Shared undo/redo journal, created by the operation-history plugin during `init` (when `allowUndo` is enabled). Pass it to another document — e.g. an Outliner — so both interleave on ONE undo/redo timeline. Available after `init` resolves.
 
 
 </td></tr>
@@ -1134,7 +1091,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, data: [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->) =&gt; Error \| undefined
+(data: [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;Error \| undefined&gt;
 
 
 </td><td>
@@ -1151,7 +1108,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1168,7 +1125,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1185,7 +1142,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1202,7 +1159,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1219,7 +1176,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el?: [Topic](./mind-elixir.topic.md) \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;unknown&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1236,7 +1193,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, type: 'before' \| 'after', el?: [Topic](./mind-elixir.topic.md) \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;unknown&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(type: 'before' \| 'after', el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1253,7 +1210,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, plugin: (instance: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void) =&gt; void
+(plugin: (instance: [MindElixir](./mind-elixir.mindelixir.md)<!-- -->&lt;M&gt;) =&gt; void) =&gt; void
 
 
 </td><td>
@@ -1321,7 +1278,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1427,24 +1384,7 @@ SVGElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, mainNode?: [Wrapper](./mind-elixir.wrapper.md)<!-- -->) =&gt; void
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[locale](./mind-elixir.mindelixir.locale.md)
-
-
-</td><td>
-
-
-</td><td>
-
-string
+(mainNode?: [Wrapper](./mind-elixir.wrapper.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -1478,7 +1418,7 @@ HTMLElement
 
 </td><td>
 
-(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md) \| [Arrow](./mind-elixir.arrow.md) \| [Summary](./mind-elixir.summary.md)<!-- -->) =&gt; string
+(markdown: string, obj: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| [Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt; \| [Summary](./mind-elixir.summary.md)<!-- -->) =&gt; string
 
 
 </td><td>
@@ -1550,7 +1490,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, dx: number, dy: number, smooth?: boolean) =&gt; boolean
+(dx: number, dy: number, smooth?: boolean) =&gt; boolean
 
 
 </td><td>
@@ -1567,7 +1507,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el?: [Topic](./mind-elixir.topic.md) \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1576,7 +1516,7 @@ boolean
 </td></tr>
 <tr><td>
 
-[moveNodeAfter](./mind-elixir.mindelixir.movenodeafter.md)
+[moveNodesAfter](./mind-elixir.mindelixir.movenodesafter.md)
 
 
 </td><td>
@@ -1584,24 +1524,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, from: [Topic](./mind-elixir.topic.md)<!-- -->\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
-
-
-</td><td>
-
-
-</td></tr>
-<tr><td>
-
-[moveNodeBefore](./mind-elixir.mindelixir.movenodebefore.md)
-
-
-</td><td>
-
-
-</td><td>
-
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, from: [Topic](./mind-elixir.topic.md)<!-- -->\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1610,7 +1533,7 @@ boolean
 </td></tr>
 <tr><td>
 
-[moveNodeIn](./mind-elixir.mindelixir.movenodein.md)
+[moveNodesBefore](./mind-elixir.mindelixir.movenodesbefore.md)
 
 
 </td><td>
@@ -1618,7 +1541,24 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, from: [Topic](./mind-elixir.topic.md)<!-- -->\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[moveNodesIn](./mind-elixir.mindelixir.movenodesin.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1635,7 +1575,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el?: [Topic](./mind-elixir.topic.md) \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1654,7 +1594,7 @@ boolean
 
 </td><td>
 
-(topic: string) =&gt; [MindElixirData](./mind-elixir.mindelixirdata.md)
+&lt;M\_1 = unknown&gt;(topic: string) =&gt; [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->&lt;M\_1&gt;
 
 
 </td><td>
@@ -1690,7 +1630,7 @@ string
 
 </td><td>
 
-[NodeObj](./mind-elixir.nodeobj.md)
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -1707,7 +1647,7 @@ string
 
 </td><td>
 
-[NodeObj](./mind-elixir.nodeobj.md)
+[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;
 
 
 </td><td>
@@ -1862,7 +1802,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, data?: [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->) =&gt; void
+(data?: [MindElixirData](./mind-elixir.mindelixirdata.md)<!-- -->&lt;M&gt;) =&gt; void
 
 
 </td><td>
@@ -1879,7 +1819,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, linkSvg?: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
+(linkSvg?: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -1896,7 +1836,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpcs: [Topic](./mind-elixir.topic.md)<!-- -->\[\]) =&gt; Promise&lt;void&gt;
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -1913,7 +1853,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, id: string) =&gt; void
+(id: string) =&gt; void
 
 
 </td><td>
@@ -1930,7 +1870,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1947,7 +1887,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -1964,7 +1904,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, arrow: [Arrow](./mind-elixir.arrow.md)<!-- -->, patchData: Partial&lt;[Arrow](./mind-elixir.arrow.md)<!-- -->&gt;) =&gt; void
+(arrow: [Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt;, patchData: Partial&lt;[Arrow](./mind-elixir.arrow.md)<!-- -->&lt;M&gt;&gt;) =&gt; void
 
 
 </td><td>
@@ -1981,7 +1921,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpc: [Topic](./mind-elixir.topic.md)<!-- -->, patchData: Partial&lt;[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;unknown&gt;&gt;) =&gt; Promise&lt;void&gt;
+(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, patchData: Partial&lt;[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;&gt;) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -2019,7 +1959,7 @@ _(Optional)_
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpc: [Topic](./mind-elixir.topic.md)<!-- -->) =&gt; Promise&lt;void&gt;
+(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -2045,6 +1985,23 @@ HTMLElement
 </td></tr>
 <tr><td>
 
+[rtl](./mind-elixir.mindelixir.rtl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [scale](./mind-elixir.mindelixir.scale.md)
 
 
@@ -2053,7 +2010,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, scaleVal: number, offset?: { x: number; y: number; }) =&gt; void
+(scaleVal: number, offset?: { x: number; y: number; }) =&gt; void
 
 
 </td><td>
@@ -2070,7 +2027,7 @@ HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -2155,7 +2112,7 @@ number
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: HTMLElement, forceCenter?: boolean) =&gt; void
+(el: HTMLElement, forceCenter?: boolean) =&gt; void
 
 
 </td><td>
@@ -2172,7 +2129,7 @@ number
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, link: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
+(link: [ArrowSvg](./mind-elixir.arrowsvg.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -2223,7 +2180,7 @@ string \| HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpc: [Topic](./mind-elixir.topic.md)<!-- -->, isNewNode?: boolean, e?: MouseEvent) =&gt; void
+(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, isNewNode?: boolean, e?: MouseEvent) =&gt; void
 
 
 </td><td>
@@ -2240,7 +2197,7 @@ string \| HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpcs: [Topic](./mind-elixir.topic.md)<!-- -->\[\]) =&gt; void
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]) =&gt; void
 
 
 </td><td>
@@ -2257,7 +2214,7 @@ string \| HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [SummarySvg](./mind-elixir.summarysvg.md)<!-- -->) =&gt; void
+(el: [SummarySvg](./mind-elixir.summarysvg.md)<!-- -->) =&gt; void
 
 
 </td><td>
@@ -2274,7 +2231,7 @@ string \| HTMLElement
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, el: [Topic](./mind-elixir.topic.md)<!-- -->, topic: string) =&gt; Promise&lt;void&gt;
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, topic: string) =&gt; Promise&lt;void&gt;
 
 
 </td><td>
@@ -2397,7 +2354,7 @@ SVGElement
 
 </td><td>
 
-ResolvedTheme
+ResolvedTheme&lt;M&gt;
 
 
 </td><td>
@@ -2435,7 +2392,7 @@ ResolvedTheme
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -2452,7 +2409,7 @@ ResolvedTheme
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -2503,7 +2460,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>
@@ -2520,7 +2477,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->, tpcs: [Topic](./mind-elixir.topic.md)<!-- -->\[\]) =&gt; void
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]) =&gt; void
 
 
 </td><td>
@@ -2537,7 +2494,7 @@ boolean
 
 </td><td>
 
-(this: [MindElixirInstance](./mind-elixir.mindelixirinstance.md)<!-- -->) =&gt; void
+() =&gt; void
 
 
 </td><td>

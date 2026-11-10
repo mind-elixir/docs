@@ -9,5 +9,5 @@
 **Signature:**
 
 ```typescript
-static new: (topic: string) => MindElixirData;
+static new: <M_1 = unknown>(topic: string) => MindElixirData<M_1>;
 ```
