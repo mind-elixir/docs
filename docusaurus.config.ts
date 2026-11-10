@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 const config: Config = {
   future: {
     v4: true,
-    experimental_faster: true,
+    faster: true,
   },
   title: 'Mind Elixir',
   tagline: 'A Open Source JavaScript Mind Map Library',
@@ -24,9 +24,11 @@ const config: Config = {
   // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
   markdown: {
     format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
