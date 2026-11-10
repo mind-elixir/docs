@@ -3,11 +3,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
 import type { ReactNode } from 'react'
-import { useMemo } from 'react'
 
 import styles from './index.module.css'
 import MindElixirShowcase from '../components/MindElixirShowcase'
-import { createHomepageMindMap } from '../components/homepageMindMap'
 
 type Card = { title: string; body: string }
 type Product = { name: string; body: string; href: string; cta: string }
@@ -384,7 +382,6 @@ export default function Home() {
   const { i18n } = useDocusaurusContext()
   const locale = i18n.currentLocale
   const t = CONTENT[locale] ?? CONTENT.en
-  const demoMap = useMemo(() => createHomepageMindMap(locale), [locale])
 
   return (
     <Layout
@@ -434,7 +431,7 @@ export default function Home() {
       <section className={styles.demo}>
         <div className="container">
           <div className={styles.demoFrame}>
-            <MindElixirShowcase height="520px" data={demoMap} />
+            <MindElixirShowcase height="520px" />
           </div>
           <p className={styles.caption}>{t.demoCaption}</p>
         </div>
