@@ -4,13 +4,15 @@ publishDate: "2025-07-05T10:05:18.254Z"
 title: "Effortlessly Integrate Professional Mind Mapping into Your Web Projects - Mind Elixir Core"
 keywords: ["JavaScript", "Mind Mapping", "Frontend Development", "Visualization", "Open Source", "coding"]
 description: "A comprehensive guide on integrating mind mapping functionality into web projects using Mind Elixir Core. From basic installation to advanced customization, complete with code examples and best practices to help developers quickly master this powerful JavaScript mind mapping library."
-multiLang: ['en', 'es', 'ja', 'ko', 'ru']
+multiLang: ['en', 'zh-Hans', 'ja', 'de', 'es', 'pt-BR', 'ko']
 ---
 
 > [!NOTE]
 > This article was written for Mind Elixir Core 5.0. Version 6.0 is now available and changed DOM selectors, operation payloads, TypeScript types and the event map. The code below has been updated where needed — see the [v6 API Guide](/docs/getting-started/migration-v6) for the current v6 API.
 
 In our information-rich era, we're constantly dealing with vast amounts of complex data and ideas. Traditional linear note-taking often fails to capture the dynamic nature and interconnections of our thoughts, while **mind maps** serve as an intuitive note-taking tool that helps us better organize ideas, structure knowledge, and spark creativity—all while being more user-friendly than whiteboards or drawing software.
+
+<!-- truncate -->
 
 Whether you're building knowledge management platforms, educational websites, or collaboration tools, integrating mind mapping functionality can significantly enhance user experience, making complex information display and interaction more intuitive and efficient.
 

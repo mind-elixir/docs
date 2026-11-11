@@ -4,13 +4,15 @@ publishDate: "2025-07-05T10:05:18.254Z"
 title: "轻松在网页中集成专业思维导图功能 - Mind Elixir Core"
 keywords: ["JavaScript", "思维导图", "前端开发", "可视化", "开源工具", "coding"]
 description: "详细介绍如何使用 Mind Elixir Core 在网页项目中集成思维导图功能。从基础安装到高级定制，包含完整代码示例和最佳实践，帮助开发者快速上手这个强大的 JavaScript 思维导图库。"
-multiLang: ['en', 'es', 'ja', 'ko', 'ru']
+multiLang: ['en', 'zh-Hans', 'ja', 'de', 'es', 'pt-BR', 'ko']
 ---
 
 > [!NOTE]
 > 本文基于 Mind Elixir Core 5.0 撰写。目前 6.0 已发布，DOM 选择器、操作事件载荷、TypeScript 类型和事件表都有变化。下文代码已按需更新，当前 v6 写法见 [v6 API 指南](/zh-Hans/docs/getting-started/migration-v6)。
 
 在信息爆炸的时代，我们每天都要处理大量复杂的信息和想法。传统的线性笔记往往难以展现思维的跳跃性和关联性，而**思维导图**作为一种半自动档的笔记工具，能够帮助我们更好地整理思路、梳理知识结构、激发创意灵感，同时操作又比白板、画图软件的操作更便利。
+
+<!-- truncate -->
 
 无论是构建知识管理平台、在线教育网站，还是协作工具，集成思维导图功能都能显著提升用户体验，让复杂信息的展示和交互变得更加直观高效。
 

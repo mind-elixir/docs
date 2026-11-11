@@ -285,21 +285,5 @@
   "theme.unlistedContent.message": {
     "message": "此页面未列出。搜索引擎不会对其索引，只有拥有直接链接的用户才能访问。",
     "description": "The unlisted content banner message"
-  },
-  "homepage.title": {
-    "message": "开源的 JavaScript 思维导图内核 - Mind Elixir Core",
-    "description": "The title of the homepage"
-  },
-  "homepage.description": {
-    "message": "Mind Elixir Core 是一个零依赖、不绑定框架的 JavaScript 思维导图内核，可在任意前端框架中创建、编辑与导出可交互的思维导图。",
-    "description": "The description of the homepage"
-  },
-  "homepage.tagline": {
-    "message": "开源 JavaScript 思维导图内核",
-    "description": "The tagline of the homepage"
-  },
-  "homepage.quickStart": {
-    "message": "快速开始 - 5 分钟",
-    "description": "The quick start button label on the homepage"
   }
 }
