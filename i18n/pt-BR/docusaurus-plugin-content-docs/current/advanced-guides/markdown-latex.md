@@ -174,8 +174,8 @@ A opção `markdown` escreve HTML no mapa mental da mesma forma que [`dangerousl
 
 ## Referência da API
 
-- [`Options.markdown`](../api/mind-elixir.options.markdown.md)
-- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown.md)
+- [`Options.markdown`](../api/mind-elixir.options.markdown)
+- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown)
 
 ## Relacionados
 

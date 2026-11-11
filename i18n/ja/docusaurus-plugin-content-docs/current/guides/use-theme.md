@@ -55,7 +55,7 @@ mind.changeTheme(theme)
 
 :::info
 
-完全な構成は[theme API セクション](../api/mind-elixir.theme.md)を参照してください。
+完全な構成は[theme API セクション](../api/mind-elixir.theme)を参照してください。
 
 :::
 

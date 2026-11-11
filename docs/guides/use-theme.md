@@ -55,7 +55,7 @@ mind.changeTheme(theme)
 
 :::info
 
-For a complete configuration, refer to the [theme API section](../api/mind-elixir.theme.md).
+For a complete configuration, refer to the [theme API section](../api/mind-elixir.theme).
 
 :::
 

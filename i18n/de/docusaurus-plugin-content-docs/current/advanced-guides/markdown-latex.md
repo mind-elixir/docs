@@ -174,8 +174,8 @@ Die Option `markdown` schreibt HTML auf dieselbe Weise in die Mindmap wie [`dang
 
 ## API-Referenz
 
-- [`Options.markdown`](../api/mind-elixir.options.markdown.md)
-- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown.md)
+- [`Options.markdown`](../api/mind-elixir.options.markdown)
+- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown)
 
 ## Weiterführendes
 

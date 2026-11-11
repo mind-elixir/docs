@@ -174,8 +174,8 @@ The `markdown` option writes HTML into the mind map the same way as [`dangerousl
 
 ## API reference
 
-- [`Options.markdown`](../api/mind-elixir.options.markdown.md)
-- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown.md)
+- [`Options.markdown`](../api/mind-elixir.options.markdown)
+- [`MindElixir.markdown`](../api/mind-elixir.mindelixir.markdown)
 
 ## Related
 

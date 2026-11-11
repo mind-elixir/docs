@@ -55,7 +55,7 @@ mind.changeTheme(theme)
 
 :::info
 
-完整配置可以参考[theme API 章节](../api/mind-elixir.theme.md)
+完整配置可以参考[theme API 章节](../api/mind-elixir.theme)
 
 :::
 

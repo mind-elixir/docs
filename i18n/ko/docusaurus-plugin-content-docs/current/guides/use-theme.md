@@ -55,7 +55,7 @@ mind.changeTheme(theme)
 
 :::info
 
-전체 설정은 [테마 API 섹션](../api/mind-elixir.theme.md)을 참고하세요.
+전체 설정은 [테마 API 섹션](../api/mind-elixir.theme)을 참고하세요.
 
 :::
 
