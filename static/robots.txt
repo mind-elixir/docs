@@ -11,3 +11,7 @@ Disallow: /blog/authors
 Sitemap: https://docs.mind-elixir.com/sitemap.xml
 Sitemap: https://docs.mind-elixir.com/zh-Hans/sitemap.xml
 Sitemap: https://docs.mind-elixir.com/ja/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/de/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/es/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/pt-BR/sitemap.xml
+Sitemap: https://docs.mind-elixir.com/ko/sitemap.xml

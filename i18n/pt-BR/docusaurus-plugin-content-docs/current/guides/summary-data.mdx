@@ -1,0 +1,90 @@
+---
+title: "Resumo"
+sidebar_position: 3
+description: "Adicione resumos que agrupam nós irmãos em um mapa mental do Mind Elixir Core, com texto próprio e âncoras de início e fim."
+keywords:
+  - "resumo"
+  - "summaries"
+  - "agrupar nós"
+  - "mapa mental JavaScript"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Resumo
+
+O Mind Elixir Core permite adicionar resumos de nós em mapas mentais, como mostrado abaixo:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 0',
+                        id: 'child0',
+                        children:[
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ]
+                    }, 
+                ],
+            }
+         ,
+        summaries:[{
+            id: 's1',
+            text: 'Summary',
+            parent: 'child0',
+            start: 0,
+            end: 2
+        }
+
+        ]
+    }}
+ />
+
+## Dados do resumo
+
+```typescript
+export interface Summary {
+    id: string;
+    text: string; 
+    parent: string; 
+    start: number; 
+    end: number;
+}
+```
+
+Os dados do resumo contêm os seguintes campos:
+
+- `id`: Identificador único
+- `text`: Texto do resumo
+- `parent`: Id do nó pai ao qual o resumo pertence
+- `start`: Índice do primeiro nó filho do resumo
+- `end`: Índice do último nó filho do resumo
+
+:::warning
+
+O nó pai de um resumo não pode ser o nó raiz.
+
+:::

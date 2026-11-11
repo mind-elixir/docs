@@ -1,0 +1,90 @@
+---
+title: "Resumen"
+sidebar_position: 3
+description: "Añade resúmenes que agrupan nodos hermanos en un mapa mental de Mind Elixir Core, con texto propio y anclajes de inicio y fin."
+keywords:
+  - "resumen"
+  - "summaries"
+  - "agrupar nodos"
+  - "mapa mental JavaScript"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Resumen
+
+Mind Elixir Core permite añadir resúmenes de nodos en los mapas mentales, como se muestra a continuación:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 0',
+                        id: 'child0',
+                        children:[
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ]
+                    }, 
+                ],
+            }
+         ,
+        summaries:[{
+            id: 's1',
+            text: 'Summary',
+            parent: 'child0',
+            start: 0,
+            end: 2
+        }
+
+        ]
+    }}
+ />
+
+## Datos del resumen
+
+```typescript
+export interface Summary {
+    id: string;
+    text: string; 
+    parent: string; 
+    start: number; 
+    end: number;
+}
+```
+
+Los datos del resumen contienen los siguientes campos:
+
+- `id`: Identificador único
+- `text`: Texto del resumen
+- `parent`: Id del nodo padre al que pertenece el resumen
+- `start`: Índice del primer nodo hijo incluido en el resumen
+- `end`: Índice del último nodo hijo incluido en el resumen
+
+:::warning
+
+El nodo padre de un resumen no puede ser el nodo raíz.
+
+:::

@@ -1,0 +1,97 @@
+---
+title: "Instalação e uso"
+sidebar_position: 2
+description: "Instale o pacote mind-elixir e renderize seu primeiro mapa mental interativo em menos de cinco minutos com o Mind Elixir Core."
+keywords:
+  - "npm install"
+  - "início rápido"
+  - "instalação"
+  - "mapa mental JavaScript"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+# Instalação e uso
+
+## Instalação
+
+```bash
+npm i mind-elixir -S
+```
+
+## Uso
+
+```js
+import MindElixir from 'mind-elixir'
+
+let options = {
+  el: '#map', // or HTMLDivElement
+}
+
+let mind = new MindElixir(options)
+
+// create new map data
+const data = MindElixir.new('new topic')
+mind.init(data)
+```
+
+Para usar o Mind Elixir Core, basta passar um `el` (o elemento do DOM onde o mapa será montado) em `options`. Para mais configurações, consulte as [opções completas](../api/mind-elixir.options.md).
+
+:::warning
+
+Como o Mind Elixir Core é montado com 100% da altura do contêiner, defina a altura do contêiner para evitar problemas de exibição.
+
+:::
+
+```html
+<div id="map"></div>
+<style>
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+</style>
+```
+
+## Interação com o mapa mental
+
+- A interação é semelhante à de aplicativos de mapas mentais comuns
+- Os atalhos de teclado estão na [seção de atalhos](../guides/shortcuts.md)
+- Com o botão esquerdo do mouse você pode arrastar nós ou selecionar vários nós
+- Com o botão direito do mouse você pode arrastar a área de desenho
+- Depois de escolher "Conectar" com o botão direito, clique em outro nó para ligar os dois nós
+
+<MindElixirShowcase />
+
+## Exportação e atualização de dados
+
+Após as interações do usuário com o mapa mental, os dados mudam de acordo. Você pode usar o método `getData` para obter os dados mais recentes. O formato dos dados está em [Exportação de dados](../guides/data-export.md).
+
+```js
+const data = mind.getData()
+```
+
+Se você precisa atualizar o mapa atual com um conjunto de dados totalmente novo, use o método `refresh`.
+
+```js
+mind.refresh(data)
+```
+
+## Idiomas da direita para a esquerda
+
+Para conteúdo em árabe, hebraico, persa ou urdu, passe `rtl: true` e use o locale árabe incluído:
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl` altera apenas a direção do texto dos tópicos, do editor, dos rótulos e do menu de contexto — o eixo de layout dos ramos (`direction`) não é afetado. Consulte o [Guia da API v6](./migration-v6.md) para mais opções.

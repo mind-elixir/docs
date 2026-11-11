@@ -1,0 +1,97 @@
+---
+title: "설치와 사용"
+sidebar_position: 2
+description: "mind-elixir 패키지를 설치하고 Mind Elixir Core로 5분 안에 첫 번째 인터랙티브 마인드맵을 그려 보세요."
+keywords:
+  - "npm install"
+  - "빠른 시작"
+  - "설치"
+  - "JavaScript 마인드맵"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+# 설치와 사용
+
+## 설치
+
+```bash
+npm i mind-elixir -S
+```
+
+## 사용
+
+```js
+import MindElixir from 'mind-elixir'
+
+let options = {
+  el: '#map', // or HTMLDivElement
+}
+
+let mind = new MindElixir(options)
+
+// create new map data
+const data = MindElixir.new('new topic')
+mind.init(data)
+```
+
+Mind Elixir Core를 사용하려면 `options`에 `el`(마인드맵이 마운트될 대상 DOM 요소)만 전달하면 됩니다. 더 많은 설정은 [전체 옵션](../api/mind-elixir.options.md)을 참고하세요.
+
+:::warning
+
+Mind Elixir Core는 컨테이너 높이의 100%로 마운트되므로, 표시 이상을 피하려면 반드시 컨테이너 높이를 지정하세요.
+
+:::
+
+```html
+<div id="map"></div>
+<style>
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+</style>
+```
+
+## 마인드맵 조작
+
+- 조작 방식은 일반적인 마인드맵 애플리케이션과 비슷합니다
+- 단축키는 [단축키 섹션](../guides/shortcuts.md)에서 확인할 수 있습니다
+- 마우스 왼쪽 버튼으로 노드를 드래그하거나 여러 노드를 선택할 수 있습니다
+- 마우스 오른쪽 버튼으로 캔버스를 드래그할 수 있습니다
+- 마우스 오른쪽 버튼으로 "연결"을 선택한 뒤 다른 노드를 클릭하면 두 노드가 연결됩니다
+
+<MindElixirShowcase />
+
+## 데이터 내보내기와 갱신
+
+사용자가 마인드맵을 조작하면 데이터도 그에 따라 변경됩니다. `getData` 메서드로 최신 데이터를 얻을 수 있습니다. 데이터 형식은 [데이터 내보내기](../guides/data-export.md)를 참고하세요.
+
+```js
+const data = mind.getData()
+```
+
+현재 마인드맵을 완전히 새로운 데이터로 갱신하려면 `refresh` 메서드를 사용하세요.
+
+```js
+mind.refresh(data)
+```
+
+## 오른쪽에서 왼쪽으로 쓰는 언어
+
+아랍어, 히브리어, 페르시아어, 우르두어 콘텐츠에는 `rtl: true`를 전달하고 함께 제공되는 아랍어 로케일을 사용하세요:
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl`은 노드 주제, 편집기, 라벨, 컨텍스트 메뉴의 텍스트 방향만 바꾸며, 가지 레이아웃 축(`direction`)은 영향을 받지 않습니다. 더 많은 옵션은 [v6 API 가이드](./migration-v6.md)를 참고하세요.

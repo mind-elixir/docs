@@ -1,0 +1,97 @@
+---
+title: "Installation und Verwendung"
+sidebar_position: 2
+description: "Installiere das Paket mind-elixir und rendere in unter fünf Minuten deine erste interaktive Mindmap mit Mind Elixir Core."
+keywords:
+  - "npm install"
+  - "Schnellstart"
+  - "Installation"
+  - "JavaScript-Mindmap"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+# Installation und Verwendung
+
+## Installation
+
+```bash
+npm i mind-elixir -S
+```
+
+## Verwendung
+
+```js
+import MindElixir from 'mind-elixir'
+
+let options = {
+  el: '#map', // or HTMLDivElement
+}
+
+let mind = new MindElixir(options)
+
+// create new map data
+const data = MindElixir.new('new topic')
+mind.init(data)
+```
+
+Um Mind Elixir Core zu verwenden, übergib einfach ein `el` (das Zielelement im DOM, in das die Mindmap eingehängt wird) in den `options`. Weitere Konfigurationen findest du in den [vollständigen Optionen](../api/mind-elixir.options.md).
+
+:::warning
+
+Da Mind Elixir Core mit 100 % Höhe des Containers eingehängt wird, solltest du die Containerhöhe festlegen, um Darstellungsfehler zu vermeiden.
+
+:::
+
+```html
+<div id="map"></div>
+<style>
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+</style>
+```
+
+## Interaktion mit der Mindmap
+
+- Die Bedienung ähnelt gängigen Mindmap-Anwendungen
+- Die Tastenkürzel findest du im [Abschnitt Tastenkürzel](../guides/shortcuts.md)
+- Mit der linken Maustaste kannst du Knoten verschieben oder mehrere Knoten auswählen
+- Mit der rechten Maustaste kannst du die Zeichenfläche verschieben
+- Nachdem du mit der rechten Maustaste "Verbinden" gewählt hast, klicke auf einen anderen Knoten, um die beiden Knoten zu verbinden
+
+<MindElixirShowcase />
+
+## Datenexport und Aktualisierung
+
+Nach Interaktionen mit der Mindmap ändern sich die Daten entsprechend. Mit der Methode `getData` kannst du die aktuellen Daten abrufen. Das Datenformat findest du unter [Datenexport](../guides/data-export.md).
+
+```js
+const data = mind.getData()
+```
+
+Wenn du die aktuelle Mindmap mit völlig neuen Daten aktualisieren möchtest, verwende die Methode `refresh`.
+
+```js
+mind.refresh(data)
+```
+
+## Rechts-nach-links-Sprachen
+
+Für Inhalte auf Arabisch, Hebräisch, Persisch oder Urdu übergib `rtl: true` und verwende die mitgelieferte arabische Sprachdatei:
+
+```js
+import MindElixir from 'mind-elixir'
+import { ar } from 'mind-elixir/i18n'
+
+const mind = new MindElixir({
+  el: '#map',
+  rtl: true,
+  contextMenu: { locale: ar },
+})
+```
+
+`rtl` ändert nur die Textrichtung von Knotenthemen, Editor, Beschriftungen und Kontextmenü – die Achse des Zweig-Layouts (`direction`) bleibt unberührt. Weitere Optionen findest du im [v6-API-Leitfaden](./migration-v6.md).

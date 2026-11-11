@@ -1,0 +1,112 @@
+---
+title: "Setas"
+sidebar_position: 3
+description: "Adicione setas direcionais entre nós em um mapa mental do Mind Elixir Core, com extremidades, rótulos e estilos configuráveis."
+keywords:
+  - "setas"
+  - "conexões"
+  - "ligações entre nós"
+  - "mapa mental JavaScript"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Setas
+
+O Mind Elixir Core permite adicionar setas em mapas mentais, como mostrado abaixo:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ],
+            }
+         ,
+        arrows: [ 
+            {
+                id: 'arrow',
+                label: 'Arrow',
+                from: 'child1',
+                to: 'child2',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+            },
+            {
+                id: 'arrow2',
+                label: 'Arrow2',
+                from: 'child3',
+                to: 'child4',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+                bidirectional: true,
+            }
+        ],
+    }}
+ />
+
+## Dados das setas
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```
+
+Os dados de uma seta contêm os seguintes campos:
+
+- `id`: Identificador único
+- `label`: Texto exibido
+- `from`: Id do nó de origem
+- `to`: Id do nó de destino
+- `delta1`: Deslocamento do ponto de controle do nó de origem
+- `delta2`: Deslocamento do ponto de controle do nó de destino
+- `bidirectional`: Indica se a seta é bidirecional
+
+Os pontos de controle são os da curva de Bézier quadrática da seta. Ajustando seus deslocamentos, você modifica o formato da seta. Consulte o [comando `C` de caminhos SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves) para mais informações.

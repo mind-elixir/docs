@@ -1,0 +1,112 @@
+---
+title: "Pfeile"
+sidebar_position: 3
+description: "Gerichtete Pfeile zwischen Knoten in einer Mind Elixir Core-Mindmap hinzufügen – mit konfigurierbaren Endpunkten, Beschriftungen und Stilen."
+keywords:
+  - "Pfeile"
+  - "Verbindungen"
+  - "Knotenverknüpfungen"
+  - "JavaScript-Mindmap"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# Pfeile
+
+Mind Elixir Core unterstützt das Hinzufügen von Pfeilen in Mindmaps, wie unten gezeigt:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ],
+            }
+         ,
+        arrows: [ 
+            {
+                id: 'arrow',
+                label: 'Arrow',
+                from: 'child1',
+                to: 'child2',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+            },
+            {
+                id: 'arrow2',
+                label: 'Arrow2',
+                from: 'child3',
+                to: 'child4',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+                bidirectional: true,
+            }
+        ],
+    }}
+ />
+
+## Pfeildaten
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```
+
+Pfeildaten enthalten folgende Felder:
+
+- `id`: Eindeutige Kennung
+- `label`: Angezeigter Text
+- `from`: ID des Quellknotens
+- `to`: ID des Zielknotens
+- `delta1`: Versatz des Kontrollpunkts für den Quellknoten
+- `delta2`: Versatz des Kontrollpunkts für den Zielknoten
+- `bidirectional`: Gibt an, ob der Pfeil bidirektional ist
+
+Kontrollpunkte sind die Kontrollpunkte der quadratischen Bézier-Kurve des Pfeils. Über ihre Versätze kannst du die Form des Pfeils verändern. Weitere Informationen findest du beim [SVG-Pfad-Befehl `C`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves).

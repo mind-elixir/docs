@@ -1,0 +1,66 @@
+{
+  "link.title.Docs": {
+    "message": "Documentación",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Products": {
+    "message": "Productos",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.More": {
+    "message": "Más",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Primeros pasos",
+    "description": "The label of footer link with label=Getting Started linking to /docs/getting-started/intro"
+  },
+  "link.item.label.Guides": {
+    "message": "Guías",
+    "description": "The label of footer link with label=Guides linking to /docs/guides/data-export"
+  },
+  "link.item.label.Advanced Guides": {
+    "message": "Guías avanzadas",
+    "description": "The label of footer link with label=Advanced Guides linking to /docs/advanced-guides/customize-branch-style"
+  },
+  "link.item.label.API Reference": {
+    "message": "Referencia de API",
+    "description": "The label of footer link with label=API Reference linking to /docs/api/mind-elixir"
+  },
+  "link.item.label.Mind Elixir App": {
+    "message": "Mind Elixir App",
+    "description": "The label of footer link with label=Mind Elixir App linking to https://app.mind-elixir.com"
+  },
+  "link.item.label.Mind Elixir Cloud": {
+    "message": "Mind Elixir Cloud",
+    "description": "The label of footer link with label=Mind Elixir Cloud linking to https://cloud.mind-elixir.com"
+  },
+  "link.item.label.mindmapcn": {
+    "message": "mindmapcn",
+    "description": "The label of footer link with label=mindmapcn linking to https://mindmapcn.mind-elixir.com/"
+  },
+  "link.item.label.mindmapcn-svelte": {
+    "message": "mindmapcn-svelte",
+    "description": "The label of footer link with label=mindmapcn-svelte linking to https://mindmapcn-svelte.mind-elixir.com/"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ssshooter/mind-elixir-core"
+  },
+  "link.item.label.npm": {
+    "message": "npm",
+    "description": "The label of footer link with label=npm linking to https://www.npmjs.com/package/mind-elixir"
+  },
+  "link.item.label.SS ToolBox": {
+    "message": "SS ToolBox",
+    "description": "The label of footer link with label=SS ToolBox linking to https://tools.mind-elixir.com/"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Mind Elixir Core",
+    "description": "The footer copyright"
+  }
+}

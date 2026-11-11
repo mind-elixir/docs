@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Mind Elixir Core Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Versionshinweise, Tutorials und Implementierungsleitfäden für die JavaScript-Mindmap-Bibliothek Mind Elixir Core.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Neueste Beiträge",
+    "description": "The label for the left sidebar"
+  }
+}

@@ -32,7 +32,7 @@ const config: Config = {
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans', 'ja'],
+    locales: ['en', 'zh-Hans', 'ja', 'de', 'es', 'pt-BR', 'ko'],
   },
 
   presets: [
@@ -59,7 +59,14 @@ const config: Config = {
             const { defaultCreateSitemapItems, ...rest } = params
             const items = await defaultCreateSitemapItems(rest)
 
-            const localePrefixes = ['/zh-Hans', '/ja']
+            const localePrefixes = [
+              '/zh-Hans',
+              '/ja',
+              '/de',
+              '/es',
+              '/pt-BR',
+              '/ko',
+            ]
 
             const pathOf = (url: string) => {
               const pathname = new URL(url).pathname.replace(/\/$/, '') || '/'

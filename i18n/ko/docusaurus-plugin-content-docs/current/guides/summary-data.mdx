@@ -1,0 +1,90 @@
+---
+title: "요약"
+sidebar_position: 3
+description: "Mind Elixir Core 마인드맵에서 형제 노드를 묶는 요약을 추가하고 텍스트와 시작/끝 기준을 지정하세요."
+keywords:
+  - "요약"
+  - "summaries"
+  - "노드 그룹화"
+  - "JavaScript 마인드맵"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# 요약
+
+Mind Elixir Core는 아래와 같이 마인드맵에 노드 요약을 추가할 수 있습니다:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 0',
+                        id: 'child0',
+                        children:[
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ]
+                    }, 
+                ],
+            }
+         ,
+        summaries:[{
+            id: 's1',
+            text: 'Summary',
+            parent: 'child0',
+            start: 0,
+            end: 2
+        }
+
+        ]
+    }}
+ />
+
+## 요약 데이터
+
+```typescript
+export interface Summary {
+    id: string;
+    text: string; 
+    parent: string; 
+    start: number; 
+    end: number;
+}
+```
+
+요약 데이터에는 다음 필드가 있습니다:
+
+- `id`: 고유 식별자
+- `text`: 요약 텍스트
+- `parent`: 요약이 속한 부모 노드 ID
+- `start`: 요약에 포함되는 첫 자식 노드 인덱스
+- `end`: 요약에 포함되는 마지막 자식 노드 인덱스
+
+:::warning
+
+요약의 부모 노드는 루트 노드가 될 수 없습니다.
+
+:::

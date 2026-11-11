@@ -9,12 +9,20 @@ const LOCALES = {
   en: 'docs',
   zh: path.join('i18n', 'zh-Hans', 'docusaurus-plugin-content-docs', 'current'),
   ja: path.join('i18n', 'ja', 'docusaurus-plugin-content-docs', 'current'),
+  de: path.join('i18n', 'de', 'docusaurus-plugin-content-docs', 'current'),
+  es: path.join('i18n', 'es', 'docusaurus-plugin-content-docs', 'current'),
+  'pt-BR': path.join('i18n', 'pt-BR', 'docusaurus-plugin-content-docs', 'current'),
+  ko: path.join('i18n', 'ko', 'docusaurus-plugin-content-docs', 'current'),
 }
 
 const BRAND_GENERIC = {
   en: 'JavaScript mind map',
   zh: 'JavaScript 思维导图',
   ja: 'JavaScript マインドマップ',
+  de: 'JavaScript-Mindmap',
+  es: 'mapa mental JavaScript',
+  'pt-BR': 'mapa mental JavaScript',
+  ko: 'JavaScript 마인드맵',
 }
 
 const META = {
@@ -34,6 +42,26 @@ const META = {
         'Mind Elixir Core はオープンソースの JavaScript マインドマップコアです。依存ゼロ、gzip 後 33 kB、フレームワーク非依存で、プラグインや SVG/PNG 書き出し、元に戻す/やり直しに対応します。',
       keywords: ['マインドマップ ライブラリ', 'オープンソース', '依存なし'],
     },
+    de: {
+      description:
+        'Mind Elixir Core ist ein Open-Source-JavaScript-Mindmap-Kern ohne Abhängigkeiten, 33 kB gzip-komprimiert, framework-unabhängig, mit Plugins, SVG/PNG-Export und Undo/Redo.',
+      keywords: ['Mindmap-Bibliothek', 'Open Source', 'ohne Abhängigkeiten'],
+    },
+    es: {
+      description:
+        'Mind Elixir Core es un núcleo JavaScript de código abierto para mapas mentales: sin dependencias, 33 kB comprimidos con gzip, independiente de frameworks, con plugins, exportación SVG/PNG y deshacer/rehacer.',
+      keywords: ['biblioteca de mapas mentales', 'código abierto', 'sin dependencias'],
+    },
+    'pt-BR': {
+      description:
+        'Mind Elixir Core é um núcleo JavaScript open source para mapas mentais: zero dependências, 33 kB após gzip, independente de frameworks, com plugins, exportação SVG/PNG e desfazer/refazer.',
+      keywords: ['biblioteca de mapas mentais', 'open source', 'zero dependências'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core는 의존성 없는 오픈 소스 JavaScript 마인드맵 코어입니다. gzip 후 33 kB, 프레임워크 비종속, 플러그인·SVG/PNG 내보내기·실행 취소/다시 실행 지원.',
+      keywords: ['마인드맵 라이브러리', '오픈 소스', '의존성 없음'],
+    },
   },
   'getting-started/quick-start.mdx': {
     en: {
@@ -50,6 +78,26 @@ const META = {
       description:
         'mind-elixir パッケージをインストールし、5 分以内に Mind Elixir Core で最初のインタラクティブなマインドマップを描画します。',
       keywords: ['npm install', 'クイックスタート', '導入'],
+    },
+    de: {
+      description:
+        'Installiere das Paket mind-elixir und rendere in unter fünf Minuten deine erste interaktive Mindmap mit Mind Elixir Core.',
+      keywords: ['npm install', 'Schnellstart', 'Installation'],
+    },
+    es: {
+      description:
+        'Instala el paquete mind-elixir y renderiza tu primer mapa mental interactivo en menos de cinco minutos con Mind Elixir Core.',
+      keywords: ['npm install', 'inicio rápido', 'instalación'],
+    },
+    'pt-BR': {
+      description:
+        'Instale o pacote mind-elixir e renderize seu primeiro mapa mental interativo em menos de cinco minutos com o Mind Elixir Core.',
+      keywords: ['npm install', 'início rápido', 'instalação'],
+    },
+    ko: {
+      description:
+        'mind-elixir 패키지를 설치하고 Mind Elixir Core로 5분 안에 첫 번째 인터랙티브 마인드맵을 그려 보세요.',
+      keywords: ['npm install', '빠른 시작', '설치'],
     },
   },
   'getting-started/typescript-support.md': {
@@ -68,6 +116,26 @@ const META = {
         'Mind Elixir Core は TypeScript の型定義を同梱しており、追加の @types パッケージなしでオプションやノードデータ、インスタンスメソッドが型付けされます。',
       keywords: ['TypeScript', '型定義', '型'],
     },
+    de: {
+      description:
+        'Mind Elixir Core liefert eigene TypeScript-Typen mit. Kein zusätzliches @types-Paket nötig – typisierte Optionen, Knotendaten und Instanzmethoden direkt einsatzbereit.',
+      keywords: ['TypeScript', 'Typen', 'Typdefinitionen'],
+    },
+    es: {
+      description:
+        'Mind Elixir Core incluye sus propios tipos de TypeScript. No hace falta ningún paquete @types adicional: opciones, datos de nodos y métodos de instancia tipados desde el principio.',
+      keywords: ['TypeScript', 'tipos', 'definiciones de tipos'],
+    },
+    'pt-BR': {
+      description:
+        'O Mind Elixir Core já traz seus próprios tipos TypeScript. Não é necessário nenhum pacote @types extra: opções, dados de nós e métodos de instância tipados de imediato.',
+      keywords: ['TypeScript', 'tipos', 'definições de tipos'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core는 자체 TypeScript 타입을 제공합니다. 추가 @types 패키지 없이 옵션, 노드 데이터, 인스턴스 메서드에 타입이 적용됩니다.',
+      keywords: ['TypeScript', '타입', '타입 정의'],
+    },
   },
   'getting-started/playground.md': {
     en: {
@@ -84,6 +152,26 @@ const META = {
       description:
         'CodePen、CodeSandbox、StackBlitz で Mind Elixir Core を試せます。Vanilla JavaScript、React、Vue 3 のテンプレートを用意しています。',
       keywords: ['CodePen', 'CodeSandbox', 'StackBlitz', 'サンプル'],
+    },
+    de: {
+      description:
+        'Probiere Mind Elixir Core live in CodePen, CodeSandbox und StackBlitz aus – mit Vorlagen für Vanilla JavaScript, React und Vue 3.',
+      keywords: ['CodePen', 'CodeSandbox', 'StackBlitz', 'Beispiele'],
+    },
+    es: {
+      description:
+        'Prueba Mind Elixir Core en vivo en CodePen, CodeSandbox y StackBlitz, con plantillas para JavaScript puro, React y Vue 3.',
+      keywords: ['CodePen', 'CodeSandbox', 'StackBlitz', 'ejemplos'],
+    },
+    'pt-BR': {
+      description:
+        'Experimente o Mind Elixir Core ao vivo no CodePen, CodeSandbox e StackBlitz, com modelos para JavaScript puro, React e Vue 3.',
+      keywords: ['CodePen', 'CodeSandbox', 'StackBlitz', 'exemplos'],
+    },
+    ko: {
+      description:
+        'CodePen, CodeSandbox, StackBlitz에서 Mind Elixir Core를 바로 체험해 보세요. 순수 JavaScript, React, Vue 3 시작 템플릿 제공.',
+      keywords: ['CodePen', 'CodeSandbox', 'StackBlitz', '예제'],
     },
   },
   'guides/data-export.md': {
@@ -102,6 +190,26 @@ const META = {
         'Mind Elixir Core は初期化時または refresh 時にデータを読み込み、マインドマップを JavaScript オブジェクト、JSON 文字列、Markdown として書き出せます。',
       keywords: ['データ書き出し', 'JSON', 'Markdown', 'getData'],
     },
+    de: {
+      description:
+        'Daten beim Initialisieren oder mit refresh importieren und Mindmaps mit Mind Elixir Core als JavaScript-Objekt oder JSON-Zeichenkette exportieren.',
+      keywords: ['Datenexport', 'JSON', 'getDataString', 'getData'],
+    },
+    es: {
+      description:
+        'Importa datos al inicializar o con refresh, y exporta mapas mentales como objetos JavaScript o cadenas JSON con Mind Elixir Core.',
+      keywords: ['exportación de datos', 'JSON', 'getDataString', 'getData'],
+    },
+    'pt-BR': {
+      description:
+        'Importe dados na inicialização ou com refresh e exporte mapas mentais como objetos JavaScript ou strings JSON com o Mind Elixir Core.',
+      keywords: ['exportação de dados', 'JSON', 'getDataString', 'getData'],
+    },
+    ko: {
+      description:
+        '초기화 시점이나 refresh로 데이터를 가져오고, Mind Elixir Core 마인드맵을 JavaScript 객체 또는 JSON 문자열로 내보내세요.',
+      keywords: ['데이터 내보내기', 'JSON', 'getDataString', 'getData'],
+    },
   },
   'guides/node-data.md': {
     en: {
@@ -118,6 +226,26 @@ const META = {
       description:
         'Mind Elixir Core の NodeObj 型リファレンス。topic、id、style、タグ、アイコン、ハイパーリンク、画像、ブランチカラーなどのフィールドを解説します。',
       keywords: ['NodeObj', 'ノードデータ', '型リファレンス'],
+    },
+    de: {
+      description:
+        'Referenz für den Typ NodeObj in Mind Elixir Core: topic, id, style, tags, Icons, Hyperlinks, Bilder, Zweigfarben und mehr.',
+      keywords: ['NodeObj', 'Knotendaten', 'Typreferenz'],
+    },
+    es: {
+      description:
+        'Referencia del tipo NodeObj en Mind Elixir Core: topic, id, style, tags, iconos, hipervínculos, imágenes, colores de rama y más.',
+      keywords: ['NodeObj', 'datos de nodos', 'referencia de tipos'],
+    },
+    'pt-BR': {
+      description:
+        'Referência do tipo NodeObj no Mind Elixir Core: topic, id, style, tags, ícones, hiperlinks, imagens, cores de ramo e mais.',
+      keywords: ['NodeObj', 'dados dos nós', 'referência de tipos'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core의 NodeObj 타입 레퍼런스: topic, id, style, tags, 아이콘, 하이퍼링크, 이미지, 가지 색상 등.',
+      keywords: ['NodeObj', '노드 데이터', '타입 레퍼런스'],
     },
   },
   'guides/node-operation.md': {
@@ -136,6 +264,26 @@ const META = {
         'Mind Elixir Core でノード操作を購読・インターセプトする方法と、組み込み API によるプログラム的なノード操作を解説します。',
       keywords: ['ノード操作', 'イベント', 'bus', 'API'],
     },
+    de: {
+      description:
+        'Knotenoperationen in Mind Elixir Core beobachten und abfangen oder Knoten programmatisch über die integrierten APIs bearbeiten.',
+      keywords: ['Knotenoperationen', 'Ereignisse', 'Bus', 'API'],
+    },
+    es: {
+      description:
+        'Escucha e intercepta las operaciones con nodos en Mind Elixir Core, o manipula nodos mediante código con las APIs integradas.',
+      keywords: ['operaciones con nodos', 'eventos', 'bus', 'API'],
+    },
+    'pt-BR': {
+      description:
+        'Escute e intercepte operações com nós no Mind Elixir Core, ou manipule nós programaticamente com as APIs integradas.',
+      keywords: ['operações com nós', 'eventos', 'bus', 'API'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core에서 노드 연산을 구독하고 가로채거나, 기본 제공 노드 API로 코드에서 노드를 조작하세요.',
+      keywords: ['노드 연산', '이벤트', 'bus', 'API'],
+    },
   },
   'guides/arrow-data.mdx': {
     en: {
@@ -152,6 +300,26 @@ const META = {
       description:
         'Mind Elixir Core のマインドマップでノード間に方向付きの矢印を追加します。端点、ラベル、スタイルを設定できます。',
       keywords: ['矢印', 'コネクション', 'ノードリンク'],
+    },
+    de: {
+      description:
+        'Gerichtete Pfeile zwischen Knoten in einer Mind Elixir Core-Mindmap hinzufügen – mit konfigurierbaren Endpunkten, Beschriftungen und Stilen.',
+      keywords: ['Pfeile', 'Verbindungen', 'Knotenverknüpfungen'],
+    },
+    es: {
+      description:
+        'Añade flechas direccionales entre nodos en un mapa mental de Mind Elixir Core, con extremos, etiquetas y estilos configurables.',
+      keywords: ['flechas', 'conexiones', 'enlaces entre nodos'],
+    },
+    'pt-BR': {
+      description:
+        'Adicione setas direcionais entre nós em um mapa mental do Mind Elixir Core, com extremidades, rótulos e estilos configuráveis.',
+      keywords: ['setas', 'conexões', 'ligações entre nós'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core 마인드맵의 노드 사이에 방향 화살표를 추가하고 시작점·끝점, 라벨, 스타일을 설정하세요.',
+      keywords: ['화살표', '연결', '노드 링크'],
     },
   },
   'guides/summary-data.mdx': {
@@ -170,6 +338,26 @@ const META = {
         'Mind Elixir Core のマインドマップで兄弟ノードをまとめるサマリーを追加します。テキストと開始/終了アンカーを指定できます。',
       keywords: ['サマリー', '要約', 'ノードのグループ化'],
     },
+    de: {
+      description:
+        'Zusammenfassungen hinzufügen, die Geschwisterknoten in einer Mind Elixir Core-Mindmap gruppieren – mit eigenem Text und Start-/Endankern.',
+      keywords: ['Zusammenfassung', 'Summaries', 'Knoten gruppieren'],
+    },
+    es: {
+      description:
+        'Añade resúmenes que agrupan nodos hermanos en un mapa mental de Mind Elixir Core, con texto propio y anclajes de inicio y fin.',
+      keywords: ['resumen', 'summaries', 'agrupar nodos'],
+    },
+    'pt-BR': {
+      description:
+        'Adicione resumos que agrupam nós irmãos em um mapa mental do Mind Elixir Core, com texto próprio e âncoras de início e fim.',
+      keywords: ['resumo', 'summaries', 'agrupar nós'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core 마인드맵에서 형제 노드를 묶는 요약을 추가하고 텍스트와 시작/끝 기준을 지정하세요.',
+      keywords: ['요약', 'summaries', '노드 그룹화'],
+    },
   },
   'guides/image-export.md': {
     en: {
@@ -186,6 +374,26 @@ const META = {
       description:
         'exportSvg と exportPng API を使って Mind Elixir Core のマインドマップを SVG / PNG に書き出します。CSS の注入にも対応します。',
       keywords: ['SVG 書き出し', 'PNG 書き出し', 'exportPng', 'exportSvg'],
+    },
+    de: {
+      description:
+        'Eine Mind Elixir Core-Mindmap mit den APIs exportSvg und exportPng als SVG oder PNG ausgeben, optional mit eingefügtem CSS.',
+      keywords: ['SVG-Export', 'PNG-Export', 'exportPng', 'exportSvg'],
+    },
+    es: {
+      description:
+        'Exporta un mapa mental de Mind Elixir Core a SVG o PNG con las APIs exportSvg y exportPng, incluida la inyección opcional de CSS.',
+      keywords: ['exportación SVG', 'exportación PNG', 'exportPng', 'exportSvg'],
+    },
+    'pt-BR': {
+      description:
+        'Exporte um mapa mental do Mind Elixir Core como SVG ou PNG com as APIs exportSvg e exportPng, incluindo injeção opcional de CSS.',
+      keywords: ['exportação SVG', 'exportação PNG', 'exportPng', 'exportSvg'],
+    },
+    ko: {
+      description:
+        'exportSvg와 exportPng API로 Mind Elixir Core 마인드맵을 SVG 또는 PNG로 내보내세요. CSS 주입도 지원합니다.',
+      keywords: ['SVG 내보내기', 'PNG 내보내기', 'exportPng', 'exportSvg'],
     },
   },
   'guides/use-theme.md': {
@@ -204,6 +412,26 @@ const META = {
         'Mind Elixir Core でカスタムテーマを作成・適用します。パレット、CSS 変数、組み込みのライト/ダークテーマ、実行時のテーマ切り替えを解説します。',
       keywords: ['テーマ', 'パレット', 'ダークモード', 'cssVar'],
     },
+    de: {
+      description:
+        'Eigene Themes in Mind Elixir Core erstellen und anwenden: Farbpalette, CSS-Variablen, eingebaute helle und dunkle Themes sowie Themewechsel zur Laufzeit.',
+      keywords: ['Themes', 'Farbpalette', 'Dark Mode', 'cssVar'],
+    },
+    es: {
+      description:
+        'Crea y aplica temas personalizados en Mind Elixir Core: colores de la paleta, variables CSS, temas claro y oscuro integrados y cambio de tema en tiempo de ejecución.',
+      keywords: ['temas', 'paleta', 'modo oscuro', 'cssVar'],
+    },
+    'pt-BR': {
+      description:
+        'Crie e aplique temas personalizados no Mind Elixir Core: cores da paleta, variáveis CSS, temas claro e escuro embutidos e troca de tema em tempo de execução.',
+      keywords: ['temas', 'paleta', 'modo escuro', 'cssVar'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core에서 팔레트 색상, CSS 변수, 기본 밝은/어두운 테마, 런타임 테마 전환까지 사용자 정의 테마를 만들고 적용하세요.',
+      keywords: ['테마', '팔레트', '다크 모드', 'cssVar'],
+    },
   },
   'guides/shortcuts.md': {
     en: {
@@ -220,6 +448,26 @@ const META = {
       description:
         'Mind Elixir Core のキーボードショートカット一覧。ノードの追加・編集・移動、ブランチの折りたたみ、ズーム、元に戻すを網羅します。',
       keywords: ['キーボードショートカット', 'ホットキー', '効率化'],
+    },
+    de: {
+      description:
+        'Vollständige Referenz der Tastenkürzel von Mind Elixir Core: Knoten hinzufügen, bearbeiten und navigieren, Zweige einklappen, zoomen und rückgängig machen.',
+      keywords: ['Tastenkürzel', 'Hotkeys', 'Produktivität'],
+    },
+    es: {
+      description:
+        'Referencia completa de los atajos de teclado de Mind Elixir Core: añadir, editar y navegar por nodos, plegar ramas, zoom y deshacer.',
+      keywords: ['atajos de teclado', 'teclas rápidas', 'productividad'],
+    },
+    'pt-BR': {
+      description:
+        'Referência completa dos atalhos de teclado do Mind Elixir Core: adicionar, editar e navegar por nós, recolher ramos, zoom e desfazer.',
+      keywords: ['atalhos de teclado', 'teclas de atalho', 'produtividade'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core 단축키 전체 레퍼런스: 노드 추가·편집·이동, 가지 접기, 확대/축소, 실행 취소.',
+      keywords: ['단축키', '핫키', '생산성'],
     },
   },
   'advanced-guides/customize-branch-style.md': {
@@ -238,6 +486,26 @@ const META = {
         'generateMainBranch と generateSubBranch オプションで Mind Elixir Core のメインブランチとサブブランチの線をカスタマイズします。',
       keywords: ['ブランチスタイル', 'generateMainBranch', 'generateSubBranch', 'SVG パス'],
     },
+    de: {
+      description:
+        'Haupt- und Unterzweige in Mind Elixir Core mit den Optionen generateMainBranch und generateSubBranch anpassen.',
+      keywords: ['Zweigstil', 'generateMainBranch', 'generateSubBranch', 'SVG-Pfade'],
+    },
+    es: {
+      description:
+        'Personaliza las líneas de las ramas principales y secundarias en Mind Elixir Core con las opciones generateMainBranch y generateSubBranch.',
+      keywords: ['estilo de rama', 'generateMainBranch', 'generateSubBranch', 'rutas SVG'],
+    },
+    'pt-BR': {
+      description:
+        'Personalize as linhas dos ramos principais e secundários no Mind Elixir Core com as opções generateMainBranch e generateSubBranch.',
+      keywords: ['estilo de ramo', 'generateMainBranch', 'generateSubBranch', 'caminhos SVG'],
+    },
+    ko: {
+      description:
+        'generateMainBranch와 generateSubBranch 옵션으로 Mind Elixir Core의 주 가지와 하위 가지 선을 원하는 대로 바꾸세요.',
+      keywords: ['가지 스타일', 'generateMainBranch', 'generateSubBranch', 'SVG 경로'],
+    },
   },
   'advanced-guides/plugins.md': {
     en: {
@@ -255,6 +523,26 @@ const META = {
         'プラグインで Mind Elixir Core を拡張します。ノードメニュー、XMind / HTML 書き出し、MindElixir インスタンスへのカスタムメソッド追加を解説します。',
       keywords: ['プラグイン', '拡張', 'XMind 書き出し', 'ノードメニュー'],
     },
+    de: {
+      description:
+        'Mind Elixir Core mit Plugins erweitern: Knotenmenüs, XMind- und HTML-Export sowie eigene Methoden auf der MindElixir-Instanz.',
+      keywords: ['Plugins', 'Erweiterungen', 'XMind-Export', 'Knotenmenü'],
+    },
+    es: {
+      description:
+        'Amplía Mind Elixir Core con plugins: menús de nodos, exportación a XMind y HTML, y métodos personalizados en la instancia de MindElixir.',
+      keywords: ['plugins', 'extensiones', 'exportación XMind', 'menú de nodos'],
+    },
+    'pt-BR': {
+      description:
+        'Estenda o Mind Elixir Core com plugins: menus de nós, exportação XMind e HTML, e métodos personalizados na instância MindElixir.',
+      keywords: ['plugins', 'extensões', 'exportação XMind', 'menu de nós'],
+    },
+    ko: {
+      description:
+        '노드 메뉴, XMind·HTML 내보내기, MindElixir 인스턴스에 메서드 추가 등 플러그인으로 Mind Elixir Core를 확장하세요.',
+      keywords: ['플러그인', '확장', 'XMind 내보내기', '노드 메뉴'],
+    },
   },
   'advanced-guides/markdown-latex.md': {
     en: {
@@ -270,6 +558,26 @@ const META = {
     ja: {
       description:
         'コンストラクタに marked や katex などの markdown 関数を渡すことで、Mind Elixir Core のノード内に Markdown と LaTeX を描画します。',
+      keywords: ['Markdown', 'LaTeX', 'KaTeX', 'marked'],
+    },
+    de: {
+      description:
+        'Markdown und LaTeX innerhalb von Mind Elixir Core-Knoten rendern, indem du eine eigene markdown-Funktion wie marked oder katex an den Konstruktor übergibst.',
+      keywords: ['Markdown', 'LaTeX', 'KaTeX', 'marked'],
+    },
+    es: {
+      description:
+        'Renderiza Markdown y LaTeX dentro de los nodos de Mind Elixir Core pasando una función markdown personalizada como marked o katex al constructor.',
+      keywords: ['Markdown', 'LaTeX', 'KaTeX', 'marked'],
+    },
+    'pt-BR': {
+      description:
+        'Renderize Markdown e LaTeX dentro dos nós do Mind Elixir Core passando uma função markdown personalizada como marked ou katex ao construtor.',
+      keywords: ['Markdown', 'LaTeX', 'KaTeX', 'marked'],
+    },
+    ko: {
+      description:
+        'marked나 katex 같은 사용자 정의 markdown 함수를 생성자에 전달해 Mind Elixir Core 노드 안에서 Markdown과 LaTeX를 렌더링하세요.',
       keywords: ['Markdown', 'LaTeX', 'KaTeX', 'marked'],
     },
   },
@@ -289,6 +597,100 @@ const META = {
         'dangerouslySetInnerHTML ノードプロパティを使って、Mind Elixir Core のノード内に KaTeX やハイライトされたコード、独自 HTML を描画します。',
       keywords: ['dangerouslySetInnerHTML', 'カスタム HTML', 'リッチコンテンツ'],
     },
+    de: {
+      description:
+        'KaTeX, hervorgehobenen Code und eigenes HTML innerhalb von Mind Elixir Core-Knoten mit der Knoteneigenschaft dangerouslySetInnerHTML darstellen.',
+      keywords: ['dangerouslySetInnerHTML', 'eigenes HTML', 'Rich Content'],
+    },
+    es: {
+      description:
+        'Renderiza KaTeX, código resaltado y HTML personalizado dentro de los nodos de Mind Elixir Core con la propiedad dangerouslySetInnerHTML.',
+      keywords: ['dangerouslySetInnerHTML', 'HTML personalizado', 'contenido enriquecido'],
+    },
+    'pt-BR': {
+      description:
+        'Renderize KaTeX, código destacado e HTML personalizado dentro dos nós do Mind Elixir Core com a propriedade dangerouslySetInnerHTML.',
+      keywords: ['dangerouslySetInnerHTML', 'HTML personalizado', 'conteúdo rico'],
+    },
+    ko: {
+      description:
+        'dangerouslySetInnerHTML 노드 속성으로 Mind Elixir Core 노드 안에 KaTeX, 구문 강조 코드, 사용자 정의 HTML을 렌더링하세요.',
+      keywords: ['dangerouslySetInnerHTML', '사용자 정의 HTML', '리치 콘텐츠'],
+    },
+  },
+  'advanced-guides/outliner.md': {
+    en: {
+      description:
+        'Use the Outliner entry point to render a Mind Elixir document as an editable outline that shares data and undo history with the map.',
+      keywords: ['outliner', 'outline', 'mind-elixir/outliner', 'undo'],
+    },
+    zh: {
+      description:
+        '使用 Outliner 独立入口，把 Mind Elixir 文档渲染成可编辑大纲，并与导图共享数据和撤销历史。',
+      keywords: ['大纲', 'outliner', 'mind-elixir/outliner', '撤销'],
+    },
+    ja: {
+      description:
+        'Outliner 専用エントリーポイントを使い、Mind Elixir のドキュメントを編集可能なアウトラインとして表示し、データとアンドゥ履歴をマップと共有します。',
+      keywords: ['アウトライナー', 'アウトライン', 'mind-elixir/outliner', 'アンドゥ'],
+    },
+    de: {
+      description:
+        'Mit dem Outliner-Einstiegspunkt ein Mind Elixir-Dokument als editierbare Gliederung darstellen, die Daten und Undo-Historie mit der Mindmap teilt.',
+      keywords: ['Outliner', 'Gliederung', 'mind-elixir/outliner', 'Undo'],
+    },
+    es: {
+      description:
+        'Usa el punto de entrada Outliner para mostrar un documento de Mind Elixir como un esquema editable que comparte datos e historial de deshacer con el mapa.',
+      keywords: ['outliner', 'esquema', 'mind-elixir/outliner', 'deshacer'],
+    },
+    'pt-BR': {
+      description:
+        'Use o ponto de entrada Outliner para exibir um documento do Mind Elixir como um esquema editável que compartilha dados e histórico de desfazer com o mapa.',
+      keywords: ['outliner', 'esquema', 'mind-elixir/outliner', 'desfazer'],
+    },
+    ko: {
+      description:
+        'Outliner 진입점으로 Mind Elixir 문서를 편집 가능한 아웃라인으로 표시하고, 데이터와 실행 취소 기록을 마인드맵과 공유하세요.',
+      keywords: ['아웃라이너', '아웃라인', 'mind-elixir/outliner', '실행 취소'],
+    },
+  },
+  'getting-started/migration-v6.md': {
+    en: {
+      description:
+        'The Mind Elixir Core 6.0 API: DOM selectors, node operations, operation payloads, TypeScript generics and bus events.',
+      keywords: ['migration', 'v6', 'API', 'upgrade'],
+    },
+    zh: {
+      description:
+        'Mind Elixir Core 6.0 当前 API：DOM 选择器、节点操作、事件载荷、TypeScript 泛型与事件表。',
+      keywords: ['迁移', 'v6', 'API', '升级'],
+    },
+    ja: {
+      description:
+        'Mind Elixir Core 6.0 の現在の API：DOM セレクター、ノード操作、イベントペイロード、TypeScript ジェネリクス、イベントマップ。',
+      keywords: ['移行', 'v6', 'API', 'アップグレード'],
+    },
+    de: {
+      description:
+        'Die API von Mind Elixir Core 6.0: DOM-Selektoren, Knotenoperationen, Operations-Payloads, TypeScript-Generics und Bus-Ereignisse.',
+      keywords: ['Migration', 'v6', 'API', 'Upgrade'],
+    },
+    es: {
+      description:
+        'La API de Mind Elixir Core 6.0: selectores del DOM, operaciones con nodos, payloads de operación, genéricos de TypeScript y eventos del bus.',
+      keywords: ['migración', 'v6', 'API', 'actualización'],
+    },
+    'pt-BR': {
+      description:
+        'A API do Mind Elixir Core 6.0: seletores DOM, operações com nós, payloads de operação, generics TypeScript e eventos do bus.',
+      keywords: ['migração', 'v6', 'API', 'atualização'],
+    },
+    ko: {
+      description:
+        'Mind Elixir Core 6.0 API: DOM 셀렉터, 노드 연산, 연산 페이로드, TypeScript 제네릭, 버스 이벤트.',
+      keywords: ['마이그레이션', 'v6', 'API', '업그레이드'],
+    },
   },
 }
 
@@ -304,13 +706,20 @@ function rebrand(text) {
 }
 
 function splitFrontMatter(raw) {
-  if (!raw.startsWith('---')) return { frontMatter: '', body: raw }
-  const end = raw.indexOf('\n---', 3)
-  if (end === -1) return { frontMatter: '', body: raw }
+  // Docs may be checked out with CRLF (core.autocrlf=true). Normalise so the
+  // frontmatter/body boundary is detected consistently on every platform.
+  const text = raw.replace(/\r\n/g, '\n')
+  if (!text.startsWith('---')) return { frontMatter: '', body: text }
+  const end = text.indexOf('\n---', 3)
+  if (end === -1) return { frontMatter: '', body: text }
   return {
-    frontMatter: raw.slice(3, end).replace(/^\n/, ''),
-    body: raw.slice(end + 4).replace(/^\n/, ''),
+    frontMatter: text.slice(3, end).replace(/^\n/, ''),
+    body: text.slice(end + 4).replace(/^\n/, ''),
   }
+}
+
+function restoreEol(text, eol) {
+  return eol === '\n' ? text : text.replace(/\n/g, eol)
 }
 
 function firstHeading(body) {
@@ -368,8 +777,12 @@ for (const [locale, dir] of Object.entries(LOCALES)) {
         keywords: [...new Set(keywords)],
       }) + rebrandedBody
 
-    fs.writeFileSync(file, next)
-    docsChanged++
+    // Compare on normalised newlines: a file that already matches META must
+    // not be rewritten (and therefore must not have its line endings churned).
+    if (next !== raw.replace(/\r\n/g, '\n')) {
+      fs.writeFileSync(file, restoreEol(next, raw.includes('\r\n') ? '\r\n' : '\n'))
+      docsChanged++
+    }
   }
 }
 
@@ -383,6 +796,11 @@ const BLOG = [
   path.join(ROOT, 'i18n', 'zh-Hans', 'docusaurus-plugin-content-blog', '2025-07-04-how-to-use-mind-elixir.md'),
   path.join(ROOT, 'i18n', 'ja', 'docusaurus-plugin-content-blog', '2024-02-02-mind-elixir-4.mdx'),
   path.join(ROOT, 'i18n', 'ja', 'docusaurus-plugin-content-blog', '2025-07-04-how-to-use-mind-elixir.md'),
+  // The long v5 blog post is intentionally not translated into the new locales.
+  path.join(ROOT, 'i18n', 'de', 'docusaurus-plugin-content-blog', '2024-02-02-mind-elixir-4.mdx'),
+  path.join(ROOT, 'i18n', 'es', 'docusaurus-plugin-content-blog', '2024-02-02-mind-elixir-4.mdx'),
+  path.join(ROOT, 'i18n', 'pt-BR', 'docusaurus-plugin-content-blog', '2024-02-02-mind-elixir-4.mdx'),
+  path.join(ROOT, 'i18n', 'ko', 'docusaurus-plugin-content-blog', '2024-02-02-mind-elixir-4.mdx'),
 ]
 
 for (const file of BLOG) {

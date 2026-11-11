@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Mind Elixir Core 블로그",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Mind Elixir Core JavaScript 마인드맵 라이브러리의 릴리스 노트, 튜토리얼 및 구현 가이드.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "최근 게시물",
+    "description": "The label for the left sidebar"
+  }
+}

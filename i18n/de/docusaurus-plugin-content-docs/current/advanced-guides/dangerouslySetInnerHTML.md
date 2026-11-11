@@ -1,0 +1,69 @@
+---
+title: "dangerouslySetInnerHTML"
+description: "KaTeX, hervorgehobenen Code und eigenes HTML innerhalb von Mind Elixir Core-Knoten mit der Knoteneigenschaft dangerouslySetInnerHTML darstellen."
+keywords:
+  - "dangerouslySetInnerHTML"
+  - "eigenes HTML"
+  - "Rich Content"
+  - "JavaScript-Mindmap"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+# dangerouslySetInnerHTML
+
+```js
+const katexHTML = `<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.85em;"><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span></span></span></span><span class="vlist-s">&ZeroWidthSpace;</span></span><span class="vlist-r"><span class="vlist" style="height:0.35em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.85em;"><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">&ZeroWidthSpace;</span></span><span class="vlist-r"><span class="vlist" style="height:0.35em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">]</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">a</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">b</span></span></span></span><span class="vlist-s">&ZeroWidthSpace;</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">c</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span></span></span></span><span class="vlist-s">&ZeroWidthSpace;</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span></span></div>`
+
+const codeBlock = `<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">'Hello world'</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span></code></pre>`
+
+const styledDiv = `<div><style>.title{font-size:50px}</style><div class="title">Title</div><div style="color: red; font-size: 20px;">Hello world</div></div>`
+
+const data = {
+  children: [
+    {
+      direction: 0,
+      id: 'd34338c074901546',
+      topic: 'new node',
+    },
+  ],
+  dangerouslySetInnerHTML: styledDiv,
+  id: 'root',
+  root: true,
+  topic: 'ceshi',
+}
+```
+
+:::warning
+
+Bei Verwendung von `dangerouslySetInnerHTML` kann es zu unerwarteten Problemen bei der Bildausgabe kommen. Sind eigene Stile vorhanden, übergib sie unbedingt über die Eigenschaft `injectCss`.
+
+:::
+
+## Vorsicht: Mit Bedacht verwenden
+
+:::danger
+
+Wie der Name schon sagt, kann der unbedachte Einsatz von `dangerouslySetInnerHTML` deine Website für XSS-Angriffe öffnen. Verwende `dangerouslySetInnerHTML` nur bei vertrauenswürdigen Inhalten.
+
+:::
+
+In Szenarien wie dem folgenden können ohne Behandlung die Cookies der Nutzer offengelegt werden:
+
+```json
+{
+  "children": [
+    {
+      "direction": 0,
+      "id": "d34338c074901546",
+      "topic": "new node"
+    }
+  ],
+  "dangerouslySetInnerHTML": "<img src=\"\" onerror=\"alert(document.cookie);\"><img src=\"https://dda.com\" />",
+  "id": "root",
+  "root": true,
+  "topic": "ceshi"
+}
+```
+
+Bevor du `dangerouslySetInnerHTML` zuweist, solltest du die Daten mit einer Bibliothek wie [DOMPurify](https://github.com/cure53/DOMPurify) bereinigen, um XSS-Angriffe zu verhindern.

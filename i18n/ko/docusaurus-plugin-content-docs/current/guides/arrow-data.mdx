@@ -1,0 +1,112 @@
+---
+title: "화살표"
+sidebar_position: 3
+description: "Mind Elixir Core 마인드맵의 노드 사이에 방향 화살표를 추가하고 시작점·끝점, 라벨, 스타일을 설정하세요."
+keywords:
+  - "화살표"
+  - "연결"
+  - "노드 링크"
+  - "JavaScript 마인드맵"
+  - "Mind Elixir Core"
+  - "mind-elixir"
+---
+
+import MindElixirShowcase from '@site/src/components/MindElixirShowcase'
+
+
+# 화살표
+
+Mind Elixir Core는 아래와 같이 마인드맵에 화살표를 추가할 수 있습니다:
+
+<MindElixirShowcase
+    height='380px'
+    data={{
+        nodeData: 
+            {
+                id: 'root',
+                topic: 'Root',
+                children: [
+                    {
+                        topic: 'Child 1',
+                        id: 'child1',
+                    },
+                    {
+                        topic: 'Child 2',
+                        id: 'child2',
+                    },
+                    {
+                        topic: 'Child 3',
+                        id: 'child3',
+                    },
+                    {
+                        topic: 'Child 4',
+                        id: 'child4',
+                    }
+                ],
+            }
+         ,
+        arrows: [ 
+            {
+                id: 'arrow',
+                label: 'Arrow',
+                from: 'child1',
+                to: 'child2',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+            },
+            {
+                id: 'arrow2',
+                label: 'Arrow2',
+                from: 'child3',
+                to: 'child4',
+                delta1: {
+                    x: 200,
+                    y: 10,
+                },
+                delta2: {
+                    x: 200,
+                    y: 10,
+                },
+                bidirectional: true,
+            }
+        ],
+    }}
+ />
+
+## 화살표 데이터
+
+```typescript
+export type Arrow = {
+    id: string;
+    label: string;
+    from: Uid;
+    to: Uid;
+    delta1: {
+        x: number;
+        y: number;
+    };
+    delta2: {
+        x: number;
+        y: number;
+    };
+    bidirectional?: boolean;
+};
+```
+
+화살표 데이터에는 다음 필드가 있습니다:
+
+- `id`: 고유 식별자
+- `label`: 표시 텍스트
+- `from`: 시작 노드 id
+- `to`: 대상 노드 id
+- `delta1`: 시작 노드의 제어점 오프셋
+- `delta2`: 대상 노드의 제어점 오프셋
+- `bidirectional`: 양방향 화살표 여부
+
+제어점은 화살표의 2차 베지어 곡선 제어점을 말합니다. 오프셋을 조정하면 화살표 모양을 바꿀 수 있습니다. 자세한 내용은 [SVG Path `C` 명령](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#b%C3%A9zier_curves)을 참고하세요.
