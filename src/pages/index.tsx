@@ -317,6 +317,378 @@ const CONTENT: Record<string, Content> = {
       },
     ],
   },
+  de: {
+    title: 'Open-Source-JavaScript-Mindmap-Kern',
+    description:
+      'Mind Elixir Core ist ein JavaScript-Mindmap-Kern ohne Abhängigkeiten und ohne Framework-Bindung. Erstellen, bearbeiten und exportieren Sie interaktive Mindmaps in React, Vue, Svelte oder mit Vanilla JS.',
+    eyebrow: 'MIT-Lizenz · Keine Abhängigkeiten',
+    h1: 'Mind Elixir Core',
+    lede: 'Ein JavaScript-Mindmap-Kern für das Web. Rendern, bearbeiten und exportieren Sie interaktive Mindmaps in jedem Frontend-Framework – mit Plugins, Tastenkürzeln, Rückgängig/Wiederholen sowie SVG- und PNG-Export von Haus aus.',
+    ctaStart: 'Schnellstart - 5 Min.',
+    ctaApi: 'API-Referenz',
+    ctaGithub: 'Auf GitHub einen Stern geben',
+    chips: ['33 kB gzip-komprimiert', 'Framework-unabhängig', 'TypeScript', 'Touch-Bedienung'],
+    demoCaption:
+      'Eine live mit Mind Elixir Core gerenderte Mindmap. Ziehen Sie die Zeichenfläche, doppelklicken Sie zum Bearbeiten oder öffnen Sie das Kontextmenü.',
+    installTitle: 'In Sekunden installiert',
+    installBody:
+      'Mind Elixir Core wird als Paket mind-elixir auf npm veröffentlicht. Es hat keine Laufzeitabhängigkeiten und liefert eigene TypeScript-Typen mit.',
+    featuresTitle: 'Warum Entwickler Mind Elixir Core wählen',
+    featuresSubtitle:
+      'Eine fokussierte Bibliothek, um Mind Mapping in das eigene Produkt einzubetten – keine gehostete App und an kein Framework gebunden.',
+    features: [
+      {
+        title: 'Keine Abhängigkeiten',
+        body: 'Der gesamte Kern wird als einziges Bundle von rund 33 kB (gzip) ausgeliefert – ohne transitive Laufzeitabhängigkeiten, die geprüft oder gepatcht werden müssten.',
+      },
+      {
+        title: 'Framework-unabhängig',
+        body: 'Lässt sich in jedes DOM-Element einhängen. Erstklassige TypeScript-Typen mit fertigen Beispielen für React, Vue 3 und Vanilla JavaScript.',
+      },
+      {
+        title: 'Für große Mindmaps gebaut',
+        body: 'Effiziente Knotensuche und gebündelte DOM-Updates halten die Interaktion auch bei Tausenden von Knoten flüssig.',
+      },
+      {
+        title: 'Vielfältige Knoteninhalte',
+        body: 'Bilder, Tags, Icons, Hyperlinks, Markdown, LaTeX und eigenes HTML können direkt in einem Knoten liegen.',
+      },
+      {
+        title: 'Überall exportieren',
+        body: 'Erzeugt SVG oder PNG direkt und unterstützt XMind oder HTML über die offiziellen Export-Plugins.',
+      },
+      {
+        title: 'Von Grund auf erweiterbar',
+        body: 'Den Event-Bus abonnieren, Kontextmenü-Einträge ergänzen, eigene Styles einbringen oder ein Plugin veröffentlichen.',
+      },
+    ],
+    productsTitle: 'Eine Marke, drei Produkte',
+    productsSubtitle:
+      'Mind Elixir ist die Produktfamilie. Mind Elixir Core ist die Open-Source-Bibliothek, die auf dieser Seite dokumentiert wird.',
+    products: [
+      {
+        name: 'Mind Elixir App',
+        body: 'Die sofort einsatzbereite Mind Elixir App – im Browser, auf dem Desktop und auf Mobilgeräten. Öffnen Sie eine leere Map und beginnen Sie zu denken.',
+        href: 'https://app.mind-elixir.com',
+        cta: 'App öffnen',
+      },
+      {
+        name: 'Mind Elixir Cloud',
+        body: 'Gehostete Mindmaps mit Synchronisierung und Freigabe für Teams, die von überall auf ihre Maps zugreifen wollen.',
+        href: 'https://cloud.mind-elixir.com',
+        cta: 'Cloud ausprobieren',
+      },
+      {
+        name: 'Mind Elixir Core',
+        body: 'Die Open-Source-Bibliothek, die diese Dokumentation beschreibt. Betten Sie Mind Mapping unter der MIT-Lizenz in Ihr eigenes Produkt ein.',
+        href: '/docs/getting-started/intro',
+        cta: 'Dokumentation lesen',
+      },
+    ],
+    guidesTitle: 'Beliebte Anleitungen',
+    guidesSubtitle: 'Springen Sie direkt zu der Aufgabe, an der Sie gerade arbeiten.',
+    guides: [
+      {
+        title: 'Installation und Verwendung',
+        body: 'Installieren Sie das Paket und rendern Sie in unter fünf Minuten Ihre erste Mindmap.',
+        href: '/docs/getting-started/quick-start',
+      },
+      {
+        title: 'Datenimport und -export',
+        body: 'Laden Sie Maps aus JavaScript-Objekten oder JSON und schreiben Sie sie wieder zurück.',
+        href: '/docs/guides/data-export',
+      },
+      {
+        title: 'Bildexport',
+        body: 'Geben Sie die aktuelle Map mit exportSvg und exportPng als SVG oder PNG aus.',
+        href: '/docs/guides/image-export',
+      },
+      {
+        title: 'Tastenkürzel',
+        body: 'Alle Kürzel zum Bearbeiten, Navigieren und Einklappen von Zweigen.',
+        href: '/docs/guides/shortcuts',
+      },
+    ],
+  },
+  es: {
+    title: 'Núcleo de mapas mentales JavaScript de código abierto',
+    description:
+      'Mind Elixir Core es un núcleo de mapas mentales en JavaScript sin dependencias e independiente del framework. Cree, edite y exporte mapas mentales interactivos en React, Vue, Svelte o JavaScript puro.',
+    eyebrow: 'Licencia MIT · Sin dependencias',
+    h1: 'Mind Elixir Core',
+    lede: 'Un núcleo de mapas mentales JavaScript para la web. Renderice, edite y exporte mapas mentales interactivos en cualquier framework frontend, con plugins, atajos de teclado, deshacer/rehacer y exportación SVG o PNG integrados.',
+    ctaStart: 'Inicio rápido - 5 min',
+    ctaApi: 'Referencia de la API',
+    ctaGithub: 'Dar una estrella en GitHub',
+    chips: ['33 kB comprimidos con gzip', 'Independiente del framework', 'TypeScript', 'Compatible con táctil'],
+    demoCaption:
+      'Un mapa mental en vivo renderizado con Mind Elixir Core. Arrastre el lienzo, haga doble clic para editar o abra el menú contextual.',
+    installTitle: 'Instalación en segundos',
+    installBody:
+      'Mind Elixir Core se publica en npm como el paquete mind-elixir. No tiene dependencias en tiempo de ejecución e incluye sus propios tipos de TypeScript.',
+    featuresTitle: 'Por qué los desarrolladores eligen Mind Elixir Core',
+    featuresSubtitle:
+      'Una biblioteca centrada en integrar mapas mentales en su propio producto: no es una aplicación alojada ni está atada a un framework.',
+    features: [
+      {
+        title: 'Sin dependencias',
+        body: 'Todo el núcleo se distribuye como un único paquete de unos 33 kB comprimidos con gzip, sin dependencias transitivas que auditar o parchear.',
+      },
+      {
+        title: 'Independiente del framework',
+        body: 'Se monta en cualquier elemento del DOM. Tipos de TypeScript de primera clase con ejemplos listos para React, Vue 3 y JavaScript puro.',
+      },
+      {
+        title: 'Preparado para mapas grandes',
+        body: 'La búsqueda eficiente de nodos y las actualizaciones por lotes del DOM mantienen la interacción fluida incluso con miles de nodos.',
+      },
+      {
+        title: 'Contenido enriquecido en los nodos',
+        body: 'Imágenes, etiquetas, iconos, hipervínculos, Markdown, LaTeX y HTML personalizado pueden convivir dentro de un nodo.',
+      },
+      {
+        title: 'Exporte a cualquier formato',
+        body: 'Genere SVG o PNG directamente y añada salida XMind o HTML mediante los plugins oficiales de exportación.',
+      },
+      {
+        title: 'Ampliable por diseño',
+        body: 'Suscríbase al bus de eventos, añada entradas al menú contextual, inyecte sus propios estilos o publique un plugin.',
+      },
+    ],
+    productsTitle: 'Una marca, tres productos',
+    productsSubtitle:
+      'Mind Elixir es la familia de productos. Mind Elixir Core es la biblioteca de código abierto que documenta este sitio.',
+    products: [
+      {
+        name: 'Mind Elixir App',
+        body: 'La aplicación Mind Elixir lista para usar, disponible en el navegador, el escritorio y el móvil. Abra un mapa en blanco y empiece a pensar.',
+        href: 'https://app.mind-elixir.com',
+        cta: 'Abrir la app',
+      },
+      {
+        name: 'Mind Elixir Cloud',
+        body: 'Mapas mentales alojados con sincronización y uso compartido para equipos que quieren acceder a sus mapas desde cualquier lugar.',
+        href: 'https://cloud.mind-elixir.com',
+        cta: 'Probar la nube',
+      },
+      {
+        name: 'Mind Elixir Core',
+        body: 'La biblioteca de código abierto que cubre esta documentación. Integre mapas mentales en su propio producto bajo la licencia MIT.',
+        href: '/docs/getting-started/intro',
+        cta: 'Leer la documentación',
+      },
+    ],
+    guidesTitle: 'Guías populares',
+    guidesSubtitle: 'Vaya directo a la tarea que tiene entre manos.',
+    guides: [
+      {
+        title: 'Instalación y uso',
+        body: 'Instale el paquete y renderice su primer mapa mental en menos de cinco minutos.',
+        href: '/docs/getting-started/quick-start',
+      },
+      {
+        title: 'Importación y exportación de datos',
+        body: 'Cargue mapas desde objetos JavaScript o JSON y vuelva a exportarlos.',
+        href: '/docs/guides/data-export',
+      },
+      {
+        title: 'Exportación de imágenes',
+        body: 'Convierta el mapa actual a SVG o PNG con exportSvg y exportPng.',
+        href: '/docs/guides/image-export',
+      },
+      {
+        title: 'Atajos de teclado',
+        body: 'Todos los atajos para editar, navegar y plegar ramas.',
+        href: '/docs/guides/shortcuts',
+      },
+    ],
+  },
+  'pt-BR': {
+    title: 'Núcleo de mapas mentais JavaScript de código aberto',
+    description:
+      'O Mind Elixir Core é um núcleo de mapas mentais em JavaScript sem dependências e independente de framework. Crie, edite e exporte mapas mentais interativos em React, Vue, Svelte ou JavaScript puro.',
+    eyebrow: 'Licença MIT · Sem dependências',
+    h1: 'Mind Elixir Core',
+    lede: 'Um núcleo de mapas mentais JavaScript para a web. Renderize, edite e exporte mapas mentais interativos em qualquer framework frontend, com plugins, atalhos de teclado, desfazer/refazer e exportação SVG ou PNG integrados.',
+    ctaStart: 'Início rápido - 5 min',
+    ctaApi: 'Referência da API',
+    ctaGithub: 'Dar uma estrela no GitHub',
+    chips: ['33 kB após gzip', 'Independente de framework', 'TypeScript', 'Compatível com toque'],
+    demoCaption:
+      'Um mapa mental ao vivo renderizado com o Mind Elixir Core. Arraste a tela, clique duas vezes para editar ou abra o menu de contexto.',
+    installTitle: 'Instale em segundos',
+    installBody:
+      'O Mind Elixir Core é publicado no npm como o pacote mind-elixir. Não tem dependências em tempo de execução e já inclui seus próprios tipos TypeScript.',
+    featuresTitle: 'Por que desenvolvedores escolhem o Mind Elixir Core',
+    featuresSubtitle:
+      'Uma biblioteca focada em incorporar mapas mentais ao seu próprio produto — não é um app hospedado e não está presa a um framework.',
+    features: [
+      {
+        title: 'Sem dependências',
+        body: 'Todo o núcleo é distribuído como um único bundle de cerca de 33 kB após gzip, sem dependências transitivas para auditar ou corrigir.',
+      },
+      {
+        title: 'Independente de framework',
+        body: 'Monte em qualquer elemento do DOM. Tipos TypeScript de primeira classe com exemplos prontos para React, Vue 3 e JavaScript puro.',
+      },
+      {
+        title: 'Feito para mapas grandes',
+        body: 'Buscas eficientes de nós e atualizações em lote do DOM mantêm a interação fluida mesmo com milhares de nós.',
+      },
+      {
+        title: 'Conteúdo rico nos nós',
+        body: 'Imagens, tags, ícones, hiperlinks, Markdown, LaTeX e HTML personalizado podem coexistir dentro de um nó.',
+      },
+      {
+        title: 'Exporte para onde quiser',
+        body: 'Gere SVG ou PNG diretamente e adicione saída XMind ou HTML com os plugins oficiais de exportação.',
+      },
+      {
+        title: 'Extensível por design',
+        body: 'Ouça o barramento de eventos, adicione itens ao menu de contexto, injete seus próprios estilos ou publique um plugin.',
+      },
+    ],
+    productsTitle: 'Uma marca, três produtos',
+    productsSubtitle:
+      'Mind Elixir é a família de produtos. O Mind Elixir Core é a biblioteca de código aberto documentada neste site.',
+    products: [
+      {
+        name: 'Mind Elixir App',
+        body: 'O app Mind Elixir pronto para usar, disponível no navegador, no desktop e no celular. Abra um mapa em branco e comece a pensar.',
+        href: 'https://app.mind-elixir.com',
+        cta: 'Abrir o app',
+      },
+      {
+        name: 'Mind Elixir Cloud',
+        body: 'Mapas mentais hospedados com sincronização e compartilhamento para equipes que querem seus mapas disponíveis em qualquer lugar.',
+        href: 'https://cloud.mind-elixir.com',
+        cta: 'Testar a nuvem',
+      },
+      {
+        name: 'Mind Elixir Core',
+        body: 'A biblioteca de código aberto que esta documentação cobre. Incorpore mapas mentais ao seu produto sob a licença MIT.',
+        href: '/docs/getting-started/intro',
+        cta: 'Ler a documentação',
+      },
+    ],
+    guidesTitle: 'Guias populares',
+    guidesSubtitle: 'Vá direto para a tarefa que você está fazendo.',
+    guides: [
+      {
+        title: 'Instalação e uso',
+        body: 'Instale o pacote e renderize seu primeiro mapa mental em menos de cinco minutos.',
+        href: '/docs/getting-started/quick-start',
+      },
+      {
+        title: 'Importação e exportação de dados',
+        body: 'Carregue mapas de objetos JavaScript ou JSON e exporte-os novamente.',
+        href: '/docs/guides/data-export',
+      },
+      {
+        title: 'Exportação de imagens',
+        body: 'Renderize o mapa atual como SVG ou PNG com exportSvg e exportPng.',
+        href: '/docs/guides/image-export',
+      },
+      {
+        title: 'Atalhos de teclado',
+        body: 'Todos os atalhos para editar, navegar e recolher ramificações.',
+        href: '/docs/guides/shortcuts',
+      },
+    ],
+  },
+  ko: {
+    title: '오픈 소스 JavaScript 마인드맵 코어',
+    description:
+      'Mind Elixir Core는 의존성이 없고 특정 프레임워크에 종속되지 않는 JavaScript 마인드맵 코어입니다. React, Vue, Svelte, Vanilla JS에서 대화형 마인드맵을 만들고 편집하고 내보낼 수 있습니다.',
+    eyebrow: 'MIT 라이선스 · 의존성 없음',
+    h1: 'Mind Elixir Core',
+    lede: '웹을 위한 JavaScript 마인드맵 코어입니다. 어떤 프론트엔드 프레임워크에서든 대화형 마인드맵을 렌더링·편집·내보낼 수 있으며, 플러그인, 단축키, 실행 취소/다시 실행, SVG/PNG 내보내기를 기본으로 제공합니다.',
+    ctaStart: '빠른 시작 - 5분',
+    ctaApi: 'API 레퍼런스',
+    ctaGithub: 'GitHub에서 별 주기',
+    chips: ['gzip 후 33 kB', '프레임워크 비종속', 'TypeScript', '터치 지원'],
+    demoCaption:
+      'Mind Elixir Core로 실시간 렌더링한 마인드맵입니다. 캔버스를 드래그하거나 더블 클릭해 편집하고, 컨텍스트 메뉴를 열어 보세요.',
+    installTitle: '몇 초 만에 설치',
+    installBody:
+      'Mind Elixir Core는 npm에 mind-elixir 패키지로 공개되어 있습니다. 런타임 의존성이 없으며 TypeScript 타입을 자체 제공합니다.',
+    featuresTitle: '개발자가 Mind Elixir Core를 선택하는 이유',
+    featuresSubtitle:
+      '자신의 제품에 마인드맵을 넣기 위한 라이브러리입니다. 호스팅 서비스도 아니고 특정 프레임워크에 묶이지도 않습니다.',
+    features: [
+      {
+        title: '의존성 없음',
+        body: '코어 전체가 gzip 후 약 33 kB의 단일 번들로 제공되며, 검토하거나 패치해야 할 전이적 런타임 의존성이 없습니다.',
+      },
+      {
+        title: '프레임워크 비종속',
+        body: '모든 DOM 요소에 마운트할 수 있습니다. React, Vue 3, Vanilla JavaScript용 예제와 함께 완성도 높은 TypeScript 타입을 제공합니다.',
+      },
+      {
+        title: '큰 맵에 최적화',
+        body: '효율적인 노드 조회와 배치 DOM 업데이트로 노드가 수천 개로 늘어나도 상호작용이 매끄럽습니다.',
+      },
+      {
+        title: '풍부한 노드 콘텐츠',
+        body: '이미지, 태그, 아이콘, 하이퍼링크, Markdown, LaTeX, 사용자 정의 HTML을 노드 안에 넣을 수 있습니다.',
+      },
+      {
+        title: '어디로든 내보내기',
+        body: 'SVG나 PNG를 바로 생성하고, 공식 내보내기 플러그인으로 XMind 또는 HTML 출력도 추가할 수 있습니다.',
+      },
+      {
+        title: '확장을 고려한 설계',
+        body: '이벤트 버스를 구독하고, 컨텍스트 메뉴 항목을 추가하고, 직접 만든 스타일을 주입하거나 플러그인을 배포할 수 있습니다.',
+      },
+    ],
+    productsTitle: '하나의 브랜드, 세 가지 제품',
+    productsSubtitle:
+      'Mind Elixir는 제품군 이름입니다. Mind Elixir Core는 이 사이트에서 설명하는 오픈 소스 라이브러리입니다.',
+    products: [
+      {
+        name: 'Mind Elixir App',
+        body: '바로 사용할 수 있는 Mind Elixir 앱으로, 브라우저·데스크톱·모바일에서 모두 이용할 수 있습니다. 빈 맵을 열고 바로 생각을 정리해 보세요.',
+        href: 'https://app.mind-elixir.com',
+        cta: '앱 열기',
+      },
+      {
+        name: 'Mind Elixir Cloud',
+        body: '동기화와 공유를 지원하는 호스팅 마인드맵입니다. 어디서든 맵에 접근해야 하는 팀에 적합합니다.',
+        href: 'https://cloud.mind-elixir.com',
+        cta: '클라우드 체험',
+      },
+      {
+        name: 'Mind Elixir Core',
+        body: '이 문서에서 다루는 오픈 소스 라이브러리입니다. MIT 라이선스로 자사 제품에 마인드맵 기능을 넣을 수 있습니다.',
+        href: '/docs/getting-started/intro',
+        cta: '문서 읽기',
+      },
+    ],
+    guidesTitle: '인기 가이드',
+    guidesSubtitle: '지금 작업 중인 내용으로 바로 이동하세요.',
+    guides: [
+      {
+        title: '설치와 사용',
+        body: '패키지를 설치하고 5분 안에 첫 마인드맵을 렌더링하세요.',
+        href: '/docs/getting-started/quick-start',
+      },
+      {
+        title: '데이터 가져오기와 내보내기',
+        body: 'JavaScript 객체나 JSON에서 맵을 불러오고 다시 내보냅니다.',
+        href: '/docs/guides/data-export',
+      },
+      {
+        title: '이미지 내보내기',
+        body: 'exportSvg와 exportPng로 현재 맵을 SVG 또는 PNG로 만듭니다.',
+        href: '/docs/guides/image-export',
+      },
+      {
+        title: '키보드 단축키',
+        body: '편집, 이동, 가지 접기에 사용하는 모든 단축키입니다.',
+        href: '/docs/guides/shortcuts',
+      },
+    ],
+  },
 }
 
 const ICONS: Record<string, ReactNode> = {

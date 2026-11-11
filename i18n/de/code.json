@@ -556,21 +556,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "homepage.title": {
-    "message": "Open-Source-JavaScript-Mindmap-Kern - Mind Elixir Core",
-    "description": "The title of the homepage"
-  },
-  "homepage.description": {
-    "message": "Mind Elixir Core ist ein JavaScript-Mindmap-Kern ohne Abhängigkeiten und ohne Framework-Bindung. Erstellen, bearbeiten und exportieren Sie interaktive Mindmaps in jedem Frontend-Framework.",
-    "description": "The description of the homepage"
-  },
-  "homepage.tagline": {
-    "message": "Open-Source-JavaScript-Mindmap-Kern",
-    "description": "The tagline of the homepage"
-  },
-  "homepage.quickStart": {
-    "message": "Schnellstart - 5 Min.",
-    "description": "The quick start button label on the homepage"
   }
 }

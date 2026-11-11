@@ -556,21 +556,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
-  },
-  "homepage.title": {
-    "message": "Núcleo de mapas mentais JavaScript open source - Mind Elixir Core",
-    "description": "The title of the homepage"
-  },
-  "homepage.description": {
-    "message": "O Mind Elixir Core é um núcleo de mapas mentais em JavaScript sem dependências e independente de framework. Crie, edite e exporte mapas mentais interativos em qualquer framework frontend.",
-    "description": "The description of the homepage"
-  },
-  "homepage.tagline": {
-    "message": "Núcleo de mapas mentais JavaScript open source",
-    "description": "The tagline of the homepage"
-  },
-  "homepage.quickStart": {
-    "message": "Início rápido - 5 min",
-    "description": "The quick start button label on the homepage"
   }
 }

@@ -556,21 +556,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
-  },
-  "homepage.title": {
-    "message": "오픈 소스 JavaScript 마인드맵 코어 - Mind Elixir Core",
-    "description": "The title of the homepage"
-  },
-  "homepage.description": {
-    "message": "Mind Elixir Core는 의존성이 없고 특정 프레임워크에 종속되지 않는 JavaScript 마인드맵 코어입니다. 어떤 프론트엔드 프레임워크에서든 대화형 마인드맵을 만들고 편집하고 내보낼 수 있습니다.",
-    "description": "The description of the homepage"
-  },
-  "homepage.tagline": {
-    "message": "오픈 소스 JavaScript 마인드맵 코어",
-    "description": "The tagline of the homepage"
-  },
-  "homepage.quickStart": {
-    "message": "빠른 시작 - 5분",
-    "description": "The quick start button label on the homepage"
   }
 }
