@@ -84,7 +84,8 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Versión: {versionLabel}"
+    "message": "Versión: {versionLabel}",
+    "description": "The label of the version badge"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Esta es la documentación sin publicar para {siteTitle}, versión {versionLabel}.",
@@ -303,7 +304,8 @@
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.seeAll": {
-    "message": "Ver todos los {count} resultados"
+    "message": "Ver todos los {count} resultados",
+    "description": "The label for the see all search results link"
   },
   "theme.SearchBar.label": {
     "message": "Buscar",
@@ -556,5 +558,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Página no listada",
+    "description": "The title of the unlisted content banner"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Esta página no está listada. Los motores de búsqueda no la indexarán y solo podrán acceder a ella los usuarios con un enlace directo.",
+    "description": "The message of the unlisted content banner"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "Categoría",
+    "description": "The default description for a category card"
   }
 }

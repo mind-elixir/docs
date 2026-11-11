@@ -44,7 +44,7 @@
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
+    "message": "시스템 모드",
     "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
@@ -84,7 +84,8 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "버전: {versionLabel}"
+    "message": "버전: {versionLabel}",
+    "description": "The label of the version badge"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "{siteTitle} {versionLabel} 문서는 아직 정식 공개되지 않았습니다.",
@@ -175,7 +176,7 @@
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new tab)",
+    "message": "(새 탭에서 열림)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.NavBar.navAriaLabel": {
@@ -255,11 +256,11 @@
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
+    "message": "드롭다운 펼치기",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
+    "message": "드롭다운 접기",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.docs.sidebar.expandButtonTitle": {
@@ -271,7 +272,8 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.seeAll": {
-    "message": "{count}개의 결과 확인하기"
+    "message": "{count}개의 결과 확인하기",
+    "description": "The label for the see all search results link"
   },
   "theme.SearchBar.label": {
     "message": "검색",
@@ -556,5 +558,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "theme.unlistedContent.title": {
+    "message": "비공개 페이지",
+    "description": "The title of the unlisted content banner"
+  },
+  "theme.unlistedContent.message": {
+    "message": "이 페이지는 비공개입니다. 검색 엔진에 색인되지 않으며, 직접 링크가 있는 사용자만 접근할 수 있습니다.",
+    "description": "The message of the unlisted content banner"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "카테고리",
+    "description": "The default description for a category card"
   }
 }

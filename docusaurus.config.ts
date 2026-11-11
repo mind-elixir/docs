@@ -10,6 +10,12 @@ const config: Config = {
     v4: true,
     faster: true,
   },
+  // future.v4 enables siteStorageNamespacing, which hashes url + baseUrl.
+  // Each i18n locale has its own baseUrl, so pin the namespace to keep the
+  // color mode (and other stored state) shared across locales.
+  storage: {
+    namespace: 'mind-elixir',
+  },
   title: 'Mind Elixir Core',
   titleDelimiter: '|',
   tagline:

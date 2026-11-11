@@ -44,7 +44,7 @@
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
+    "message": "Systemmodus",
     "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
@@ -76,7 +76,7 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Ein doc getaggt|{count} docs getaggt",
+    "message": "Ein Dokument getaggt|{count} Dokumente getaggt",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
@@ -84,7 +84,8 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "Version: {versionLabel}",
+    "description": "The label of the version badge"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Das ist die unveröffentlichte Dokumentation für {siteTitle} {versionLabel}.",
@@ -167,19 +168,19 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
+    "message": "Seitenleisten-Kategorie '{label}' ausklappen",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
+    "message": "Seitenleisten-Kategorie '{label}' einklappen",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new tab)",
+    "message": "(öffnet in neuem Tab)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "Hauptnavigation",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
@@ -223,11 +224,11 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Zeilenumbruch umschalten",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Startseite",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -239,19 +240,19 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "Dokumentations-Sidebar",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
+    "message": "Dropdown-Menü ausklappen",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
+    "message": "Dropdown-Menü einklappen",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "Navigationsleiste schließen",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -259,7 +260,7 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "Navigationsleiste umschalten",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
@@ -271,7 +272,8 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.seeAll": {
-    "message": "Alle {count} Ergebnisse anzeigen"
+    "message": "Alle {count} Ergebnisse anzeigen",
+    "description": "The label for the see all search results link"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "Ein Dokument gefunden|{count} Dokumente gefunden",
@@ -310,11 +312,11 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "Clear the query",
+    "message": "Suche löschen",
     "description": "The label and ARIA label for search box reset button"
   },
   "theme.SearchModal.searchBox.cancelButtonText": {
-    "message": "Cancel",
+    "message": "Abbrechen",
     "description": "The label and ARIA label for search box cancel button"
   },
   "theme.SearchModal.searchBox.placeholderText": {
@@ -350,27 +352,27 @@
     "description": "The ARIA label for back to keyword search button"
   },
   "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "Recent",
+    "message": "Kürzlich",
     "description": "The title for recent searches"
   },
   "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "No recent searches",
+    "message": "Keine aktuellen Suchen",
     "description": "The text when there are no recent searches"
   },
   "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "Save this search",
+    "message": "Diese Suche speichern",
     "description": "The title for save recent search button"
   },
   "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "Remove this search from history",
+    "message": "Diese Suche aus dem Verlauf entfernen",
     "description": "The title for remove recent search button"
   },
   "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "Favorite",
+    "message": "Favoriten",
     "description": "The title for favorite searches"
   },
   "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "Remove this search from favorites",
+    "message": "Diese Suche aus den Favoriten entfernen",
     "description": "The title for remove favorite search button"
   },
   "theme.SearchModal.startScreen.recentConversationsTitle": {
@@ -382,11 +384,11 @@
     "description": "The title for remove recent conversation button"
   },
   "theme.SearchModal.errorScreen.titleText": {
-    "message": "Unable to fetch results",
+    "message": "Ergebnisse konnten nicht abgerufen werden",
     "description": "The title for error screen"
   },
   "theme.SearchModal.errorScreen.helpText": {
-    "message": "You might want to check your network connection.",
+    "message": "Überprüfe deine Netzwerkverbindung.",
     "description": "The help text for error screen"
   },
   "theme.SearchModal.resultsScreen.askAiPlaceholder": {
@@ -442,7 +444,7 @@
     "description": "The text after tool call"
   },
   "theme.SearchModal.footer.selectText": {
-    "message": "to select",
+    "message": "Auswählen",
     "description": "The select text for footer"
   },
   "theme.SearchModal.footer.submitQuestionText": {
@@ -450,31 +452,31 @@
     "description": "The submit question text for footer"
   },
   "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "Enter key",
+    "message": "Eingabetaste",
     "description": "The ARIA label for select key in footer"
   },
   "theme.SearchModal.footer.navigateText": {
-    "message": "to navigate",
+    "message": "Navigieren",
     "description": "The navigate text for footer"
   },
   "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "Arrow up",
+    "message": "Pfeil nach oben",
     "description": "The ARIA label for navigate up key in footer"
   },
   "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "Arrow down",
+    "message": "Pfeil nach unten",
     "description": "The ARIA label for navigate down key in footer"
   },
   "theme.SearchModal.footer.closeText": {
-    "message": "to close",
+    "message": "Schließen",
     "description": "The close text for footer"
   },
   "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "Escape key",
+    "message": "Escape-Taste",
     "description": "The ARIA label for close key in footer"
   },
   "theme.SearchModal.footer.searchByText": {
-    "message": "Powered by",
+    "message": "Bereitgestellt von",
     "description": "The 'Powered by' text for footer"
   },
   "theme.SearchModal.footer.backToSearchText": {
@@ -482,23 +484,23 @@
     "description": "The back to search text for footer"
   },
   "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "No results for",
+    "message": "Keine Ergebnisse für",
     "description": "The text when there are no results"
   },
   "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "Try searching for",
+    "message": "Versuche zu suchen nach",
     "description": "The text for suggested query"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "Believe this query should return results?",
+    "message": "Meinst du, diese Abfrage sollte Ergebnisse liefern?",
     "description": "The text for reporting missing results"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "Let us know.",
+    "message": "Lass es uns wissen.",
     "description": "The link text for reporting missing results"
   },
   "theme.SearchModal.placeholder": {
-    "message": "Search docs",
+    "message": "Dokumentation durchsuchen",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.blog.post.plurals": {
@@ -514,31 +516,31 @@
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
+    "message": "Autoren",
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
+    "message": "Alle Autoren anzeigen",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
+    "message": "Dieser Autor hat noch keine Beiträge geschrieben.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Unlisted page",
+    "message": "Nicht gelistete Seite",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "message": "Diese Seite ist nicht gelistet. Suchmaschinen indexieren sie nicht, und nur Nutzer mit direktem Link können sie aufrufen.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
+    "message": "Entwurfsseite",
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "message": "Diese Seite ist ein Entwurf. Sie ist nur in der Entwicklung sichtbar und wird nicht in den Produktions-Build aufgenommen.",
     "description": "The draft content banner message"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
@@ -556,5 +558,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Nicht gelistete Seite",
+    "description": "The title of the unlisted content banner"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Diese Seite ist nicht gelistet. Suchmaschinen indexieren sie nicht, und nur Nutzer mit direktem Link können sie aufrufen.",
+    "description": "The message of the unlisted content banner"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "Kategorie",
+    "description": "The default description for a category card"
   }
 }
