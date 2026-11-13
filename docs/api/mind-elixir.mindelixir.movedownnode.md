@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-moveDownNode: (el?: Topic<M> | undefined) => Promise<void>;
+moveDownNode: (el?: Topic<M> | undefined) => Promise<void | undefined>;
 ```

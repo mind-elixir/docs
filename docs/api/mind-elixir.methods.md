@@ -68,19 +68,19 @@ methods: {
     editArrowLabel(this: MindElixir, el: import("./index").ArrowSvg): void;
     tidyArrow(this: MindElixir): void;
     reshapeArrow: (this: MindElixir, arrow: arrow.Arrow, patchData: Partial<arrow.Arrow>) => void;
-    addChild: (this: MindElixir, el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void>;
-    beginEdit: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void>;
-    copyNodes: (this: MindElixir, tpcs: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<void>;
-    insertParent: (this: MindElixir, el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void>;
-    insertSibling: (this: MindElixir, type: "after" | "before", el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void>;
-    moveDownNode: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void>;
-    moveNodesAfter: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<void>;
-    moveNodesBefore: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<void>;
-    moveNodesIn: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<void>;
-    moveUpNode: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void>;
-    removeNodes: (this: MindElixir, tpcs: import("./index").Topic<any>[]) => Promise<void>;
-    reshapeNode: (this: MindElixir, tpc: import("./index").Topic<any>, patchData: Partial<import("./types").NodeObj<any>>) => Promise<void>;
-    rmSubline: (this: MindElixir, tpc: import("./index").Topic<any>) => Promise<void>;
-    setNodeTopic: (this: MindElixir, el: import("./index").Topic<any>, topic: string) => Promise<void>;
+    addChild: (this: MindElixir, el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void | undefined>;
+    beginEdit: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void | undefined>;
+    copyNodes: (this: MindElixir, tpcs: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<void | undefined>;
+    insertParent: (this: MindElixir, el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void | undefined>;
+    insertSibling: (this: MindElixir, type: "after" | "before", el?: import("./index").Topic<any> | undefined, node?: import("./types").NodeObj<any> | undefined) => Promise<void | undefined>;
+    moveDownNode: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void | undefined>;
+    moveNodesAfter: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<boolean | undefined>;
+    moveNodesBefore: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<boolean | undefined>;
+    moveNodesIn: (this: MindElixir, from: import("./index").Topic<any>[], to: import("./index").Topic<any>) => Promise<boolean | undefined>;
+    moveUpNode: (this: MindElixir, el?: import("./index").Topic<any> | undefined) => Promise<void | undefined>;
+    removeNodes: (this: MindElixir, tpcs: import("./index").Topic<any>[]) => Promise<void | undefined>;
+    reshapeNode: (this: MindElixir, tpc: import("./index").Topic<any>, patchData: Partial<import("./types").NodeObj<any>>) => Promise<void | undefined>;
+    rmSubline: (this: MindElixir, tpc: import("./index").Topic<any>) => Promise<void | undefined>;
+    setNodeTopic: (this: MindElixir, el: import("./index").Topic<any>, topic: string) => Promise<void | undefined>;
 }
 ```

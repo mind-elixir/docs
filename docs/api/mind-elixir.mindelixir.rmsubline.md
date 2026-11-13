@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-rmSubline: (tpc: Topic<M>) => Promise<void>;
+rmSubline: (tpc: Topic<M>) => Promise<void | undefined>;
 ```

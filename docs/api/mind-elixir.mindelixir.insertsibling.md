@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-insertSibling: (type: 'before' | 'after', el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void>;
+insertSibling: (type: 'before' | 'after', el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void | undefined>;
 ```

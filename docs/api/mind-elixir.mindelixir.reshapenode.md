@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-reshapeNode: (tpc: Topic<M>, patchData: Partial<NodeObj<M>>) => Promise<void>;
+reshapeNode: (tpc: Topic<M>, patchData: Partial<NodeObj<M>>) => Promise<void | undefined>;
 ```

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-moveNodesBefore: (from: Topic<M>[], to: Topic<M>) => Promise<void>;
+moveNodesBefore: (from: Topic<M>[], to: Topic<M>) => Promise<boolean | undefined>;
 ```

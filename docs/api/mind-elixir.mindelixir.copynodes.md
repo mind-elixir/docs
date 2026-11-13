@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-copyNodes: (tpcs: Topic<M>[], to: Topic<M>) => Promise<void>;
+copyNodes: (tpcs: Topic<M>[], to: Topic<M>) => Promise<void | undefined>;
 ```

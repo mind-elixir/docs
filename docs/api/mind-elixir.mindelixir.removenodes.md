@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-removeNodes: (tpcs: Topic<M>[]) => Promise<void>;
+removeNodes: (tpcs: Topic<M>[]) => Promise<void | undefined>;
 ```

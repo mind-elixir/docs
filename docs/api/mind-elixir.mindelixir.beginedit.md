@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-beginEdit: (el?: Topic<M> | undefined) => Promise<void>;
+beginEdit: (el?: Topic<M> | undefined) => Promise<void | undefined>;
 ```

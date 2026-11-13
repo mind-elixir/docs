@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-addChild: (el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void>;
+addChild: (el?: Topic<M> | undefined, node?: NodeObj<M> | undefined) => Promise<void | undefined>;
 ```

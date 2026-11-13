@@ -77,7 +77,7 @@ Description
 
 </td><td>
 
-(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -179,7 +179,7 @@ Before
 
 </td><td>
 
-(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -355,7 +355,7 @@ boolean \| ContextMenuOption
 
 </td><td>
 
-(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1176,7 +1176,7 @@ _(Optional)_
 
 </td><td>
 
-(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1193,7 +1193,7 @@ _(Optional)_
 
 </td><td>
 
-(type: 'before' \| 'after', el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(type: 'before' \| 'after', el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined, node?: [NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1507,7 +1507,7 @@ boolean
 
 </td><td>
 
-(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1524,7 +1524,7 @@ boolean
 
 </td><td>
 
-(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;boolean \| undefined&gt;
 
 
 </td><td>
@@ -1541,7 +1541,7 @@ boolean
 
 </td><td>
 
-(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;boolean \| undefined&gt;
 
 
 </td><td>
@@ -1558,7 +1558,7 @@ boolean
 
 </td><td>
 
-(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+(from: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\], to: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;boolean \| undefined&gt;
 
 
 </td><td>
@@ -1575,7 +1575,7 @@ boolean
 
 </td><td>
 
-(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void&gt;
+(el?: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt; \| undefined) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1836,7 +1836,7 @@ _(Optional)_
 
 </td><td>
 
-(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]) =&gt; Promise&lt;void&gt;
+(tpcs: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;\[\]) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1921,7 +1921,7 @@ _(Optional)_
 
 </td><td>
 
-(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, patchData: Partial&lt;[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;&gt;) =&gt; Promise&lt;void&gt;
+(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, patchData: Partial&lt;[NodeObj](./mind-elixir.nodeobj.md)<!-- -->&lt;M&gt;&gt;) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -1959,7 +1959,7 @@ _(Optional)_
 
 </td><td>
 
-(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void&gt;
+(tpc: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>
@@ -2231,7 +2231,7 @@ string \| HTMLElement
 
 </td><td>
 
-(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, topic: string) =&gt; Promise&lt;void&gt;
+(el: [Topic](./mind-elixir.topic.md)<!-- -->&lt;M&gt;, topic: string) =&gt; Promise&lt;void \| undefined&gt;
 
 
 </td><td>

@@ -7,5 +7,5 @@
 **Signature:**
 
 ```typescript
-setNodeTopic: (el: Topic<M>, topic: string) => Promise<void>;
+setNodeTopic: (el: Topic<M>, topic: string) => Promise<void | undefined>;
 ```
