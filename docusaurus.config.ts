@@ -2,6 +2,13 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
 
+// swc 1.16+ validates the cache root it uses to materialize its native binding
+// and rejects the Cloudflare Workers Builds image (world-writable
+// /opt/buildhome), which breaks `future.faster` with ERR_SWC_NATIVE_CACHE.
+// Opt out of that check before @swc/html or @swc/core are required.
+// See https://github.com/swc-project/swc/issues/12498
+process.env.SWC_NATIVE_BINDING_CACHE_SKIP_SECURITY_CHECK ??= '1'
+
 const siteUrl = 'https://docs.mind-elixir.com'
 const siteImage = 'img/og-image.png'
 
